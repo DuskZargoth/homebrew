@@ -1092,6 +1092,7 @@
                 "With one effective blow you can take the wind out of your foe. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a delaying strike. The target must succeed on a Wisdom saving throw or it can't take reactions until the start of your next turn."
             ],
             "featureType": [
+				"DZC:KF",
                 "DZC:KF:O"
             ]
         },
@@ -1105,7 +1106,8 @@
                 "amount": 1
             },
             "featureType": [
-                "DZC:KF:O"
+                "DZC:KF",
+				"DZC:KF:O"
             ],
             "entries": [
                 "When you make your first attack on your turn, you can spend 1 ki point to increase the distance of your attacks until the end of your turn. For the duration, you add 5 feet to your reach with melee weapon attacks and attacking at long range doesn't impose disadvantage on your ranged weapon attack rolls."
@@ -1121,7 +1123,8 @@
                 "amount": 1
             },
             "featureType": [
-                "DZC:KF:O"
+                "DZC:KF",
+				"DZC:KF:O"
             ],
             "entries": [
                 "When you take the Attack action on your turn, you can spend 1 ki point to make two unarmed strikes as a bonus action."
@@ -1144,7 +1147,8 @@
                 "amount": 1
             },
             "featureType": [
-                "DZC:KF:O"
+                "DZC:KF",
+				"DZC:KF:O"
             ],
             "entries": [
                 "You can deal a massive blow to a creature that causes it to crush on its own weight. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a heavy strike. The target must succeed on a Dexterity saving throw or be knocked prone."
@@ -1160,7 +1164,8 @@
                 "amount": 1
             },
             "featureType": [
-                "DZC:KF:O"
+                "DZC:KF",
+				"DZC:KF:O"
             ],
             "entries": [
                 "With the storm by your side you can send creatures flying far away. When you hit with a melee weapon attack a creature no more than one size larger than you, you can spend 1 ki point to attempt a pushing strike. The target must succeed on a Strength saving throw or be pushed up to 15 feet away from you."
@@ -1176,7 +1181,8 @@
                 "amount": 1
             },
             "featureType": [
-                "DZC:KF:O"
+                "DZC:KF",
+				"DZC:KF:O"
             ],
             "entries": [
                 "When a creature provokes an opportunity attack from you, you can spend 1 ki point as a reaction to attempt to grapple or shove it."
@@ -1199,7 +1205,8 @@
                 "amount": 1
             },
             "featureType": [
-                "DZC:KF:O"
+                "DZC:KF",
+				"DZC:KF:O"
             ],
             "entries": [
                 "You can turn a creature dizzy with a powerful strike. When you hit another creature with a melee weapon attack, you can spend 1 ki point to use a concussive hit. The creature takes a -2 penalty to skill checks and attack rolls until the start of your next turn.",
@@ -1228,7 +1235,8 @@
                 "amount": 1
             },
             "featureType": [
-                "DZC:KF:O"
+                "DZC:KF",
+				"DZC:KF:O"
             ],
             "entries": [
                 "Before you make an attack, you can spend 1 ki point to add one roll of your Martial Arts die to the attack or damage roll."
@@ -1263,7 +1271,8 @@
                 "amount": 1
             },
             "featureType": [
-                "DZC:KF:O"
+                "DZC:KF",
+				"DZC:KF:O"
             ],
             "entries": [
                 "As a bonus action, you can spend 1 ki point to grant your unarmed strikes a +1 bonus to attack and damage rolls for 10 minutes. This benefit ends early if you are incapacitated."
@@ -1294,7 +1303,8 @@
                 "amount": 1
             },
             "featureType": [
-                "DZC:KF:O"
+                "DZC:KF",
+				"DZC:KF:O"
             ],
             "entries": [
                 "You can provoke a creature so it deems you as the only threat. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a taunting strike. The target must make a Wisdom saving throw. On a failed save, the creature can't target creatures other than you with attacks, spells, or any harmful ability until the start of your next turn. For the duration, creatures other than you have advantage on attack rolls against that creature."
@@ -1322,7 +1332,8 @@
                 "amount": 1
             },
             "featureType": [
-                "DZC:KF:O"
+                "DZC:KF",
+				"DZC:KF:O"
             ],
             "entries": [
                 "If you use your Deflect Physical Attacks and reduce the damage to 0, you can spend 1 ki point to counter attack as part of the same reaction. If you do so, make a melee attack if the triggering attack was a melee attack, or a ranged attack using the weapon or piece of ammunition you just caught if it was a ranged attack.",
@@ -1354,7 +1365,8 @@
                 "amount": 1
             },
             "featureType": [
-                "DZC:KF:O"
+                "DZC:KF",
+				"DZC:KF:O"
             ],
             "entries": [
                 "When you succeed on a grapple check against a creature, you can spend 1 ki point to lock the creature. The creature becomes restrained for the duration of the grapple."
@@ -1385,7 +1397,8 @@
                 "amount": 1
             },
             "featureType": [
-                "DZC:KF:O"
+                "DZC:KF",
+				"DZC:KF:O"
             ],
             "entries": [
                 "You can interfere with the flow of ki in an opponent's body. When you hit another creature with a melee weapon attack, you can spend 1 ki point to attempt a stunning strike. The target must succeed on a Constitution saving throw or be {@condition stunned} until the end of the creature's next turn."
@@ -1420,7 +1433,8 @@
                 "amount": 1
             },
             "featureType": [
-                "DZC:KF:O"
+                "DZC:KF",
+				"DZC:KF:O"
             ],
             "entries": [
                 "As a bonus action, you can spend 1 ki point to gain the ability to grapple and shove creatures up to three sizes larger than you for 10 minutes."
@@ -1451,7 +1465,8 @@
                 "amount": 1
             },
             "featureType": [
-                "DZC:KF:O"
+                "DZC:KF",
+				"DZC:KF:O"
             ],
             "entries": [
                 "As a bonus action, you can spend 1 ki point to turn your fists into destructive weapons for 10 minutes. For the duration, your unarmed strikes deal double damage to objects and ignore an amount of reduction to bludgeoning, piercing, and slashing damage equal to your monk level plus your Wisdom modifier."
@@ -1482,7 +1497,8 @@
                 "amount": 1
             },
             "featureType": [
-                "DZC:KF:O"
+                "DZC:KF",
+				"DZC:KF:O"
             ],
             "entries": [
                 "You can weaken a creature's resistance to your ki effects. When you hit a creature with a melee weapon attack, you can spend 1 ki point to impose a penalty to the next saving throw it makes against a ki feature you use before the end of your next turn. The penalty equals your Wisdom modifier."
@@ -1510,7 +1526,8 @@
                 "amount": 1
             },
             "featureType": [
-                "DZC:KF:O"
+                "DZC:KF",
+				"DZC:KF:O"
             ],
             "entries": [
                 "When you make an attack roll with disadvantage, you can spend 1 ki point to make the attack without disadvantage."
@@ -1538,7 +1555,8 @@
                 "amount": 2
             },
             "featureType": [
-                "DZC:KF:O"
+                "DZC:KF",
+				"DZC:KF:O"
             ],
             "entries": [
                 "When you successfully grapple or shove a creature, you can spend 2 ki points to deal extra damage equal to two rolls of your Martial Arts die + one additional roll per creature size difference."
@@ -1569,7 +1587,8 @@
                 "amount": 2
             },
             "featureType": [
-                "DZC:KF:O"
+                "DZC:KF",
+				"DZC:KF:O"
             ],
             "entries": [
                 "When you miss an attack roll with an unarmed strike against a creature, you can spend 2 ki point to deal damage to the target equal to your Strength modifier. The damage is of the same type as your unarmed strike. The attack also counts as a hit for any effect that was added to it previous to making the attack roll."
@@ -1600,7 +1619,8 @@
                 "amount": 1
             },
             "featureType": [
-                "DZC:KF:D"
+                "DZC:KF",
+				"DZC:KF:D"
             ],
             "entries": [
                 "You can spend 1 ki point to use your reaction to deflect, or stop an attack when you are hit by a weapon attack, provided that the weapon, ammunition, or other damaging element is at least one size smaller than you. When you do so, the damage you take from the attack is reduced by one roll of your Martial Arts die + your Dexterity modifier + your monk level.",
@@ -1629,7 +1649,8 @@
                 "amount": 3
             },
             "featureType": [
-                "DZC:KF:U"
+                "DZC:KF",
+				"DZC:KF:U"
             ],
             "entries": [
                 "You can spend 3 ki points to cast {@spell tongues}."
