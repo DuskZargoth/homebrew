@@ -139,7 +139,18 @@
                         10,
                         10
                     ]
-                }
+                },
+				{
+					"name": "Martial Arts",
+					"featureType": [
+						"MA:MR"
+					],
+					"progression": {
+						"1": 2,
+						"9": 3,
+						"18": 4
+					}
+				}
             ],
             "classTableGroups": [
                 {
@@ -573,20 +584,7 @@
                         "Not only are you capable of wielding a larger variety of weapons, but you can use it in a more defensive style. Your monk weapons are longbows and any weapon that doesn't have the two-handed, heavy, or special property."
                     ]
                 }
-            ],
-			"optionalfeatureProgression": [
-				{
-					"name": "Martial Arts",
-					"featureType": [
-						"MA:MR"
-					],
-					"progression": {
-						"1": 2,
-						"9": 3,
-						"18": 4
-					}
-				}
-			]
+            ]
         },
 		{
 			"name": "Martial Arts improvement",
