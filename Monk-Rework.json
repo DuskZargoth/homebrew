@@ -486,7 +486,7 @@
             "classFeatures": [
                 "Martial Arts|Monk Rework|DZC:ANA|1",
                 "Meditation|Monk Rework|DZC:ANA|1",
-				"Unarmored Defense|Monk Rework|DZC:ANA|1",
+		"Unarmored Defense|Monk Rework|DZC:ANA|1",
                 "Ki|Monk Rework|DZC:ANA|2",
                 "Unarmored Movement|Monk Rework|DZC:ANA|2",
                 {
@@ -645,7 +645,7 @@
             "foundryImg": "icons/magic/control/debuff-energy-hold-yellow.webp",
             "className": "Monk Rework",
             "classSource": "DZC:ANA",
-            "page": 0,
+            "page": 1,
             "level": 1,
 			"foundrySystem": {
 				"effects": [
