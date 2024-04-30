@@ -19,6 +19,11 @@
         "dateAdded": 1714358643,
         "dateLastModified": 1714358643,
         "optionalFeatureTypes": {
+			"MA:MR": "Martial Arts; Monk Rework",
+			"MA:MR:MS": "Martial Arts; Monk Rework; Mixed Style",
+			"MA:MR:GS": "Martial Arts; Monk Rework; Grappling Style",
+			"MA:MR:US": "Martial Arts; Monk Rework; Unarmed Style",
+			"MA:MR:WS": "Martial Arts; Monk Rework; Weapon Style",
             "DZC:KF": "Monk Rework; Ki Features",
             "DZC:KF:O": "Monk Rework; Ki Features; Offense",
             "DZC:KF:D": "Monk Rework; Ki Features; Defense",
@@ -532,49 +537,16 @@
             "page": 3,
             "level": 1,
             "entries": [
-                "At 1st level, your are adept at a combat style focused on hand to hand combat and the use of monk weapons, represented by a special die called Martial Arts die, as shown in the Martial Arts column of the Monk table.",
+                "At 1st level, you are adept at a combat style focused on hand to hand combat and the use of monk weapons, represented by a special die called Martial Arts die, as shown in the Martial Arts column of the Monk table.",
                 "While all martial arts share some principles, each monk adapts them to better suit themselves, thus specializing in one Martial Arts Style or combining them to create their own. Each syle is described below and each one defines what are considered as your monk weapons.",
-                "You learn two features of your choice from any style. When you reach 9th and 18th level in this class, you learn an additional feature of your choice from any style. If a style feature requires a level, you must meet that level in this class to learn it.",
+                "You learn two {@filter Martial Arts Features|optionalfeatures|feature type=MA:MR} of your choice from any style. When you reach 9th and 18th level in this class, you learn an additional martial arts feature of your choice from any style. If a martial arts feature requires a level, you must meet that level in this class to learn it.",
                 "You lose the benefits of your Martial Arts if you are wielding a non-monk weapon or wearing heavy armor.",
                 {
                     "type": "entries",
                     "name": "Mixed Style",
                     "page": 3,
                     "entries": [
-                        "A balanced style taught to beginners so that they can adapt to any situation. Your monk weapons are any simple melee weapon that doesn't have the two-handed or heavy property.",
-                        {
-                            "type": "list",
-                            "items": [
-                                {
-                                    "type": "entries",
-                                    "name": "Chain Attack",
-                                    "entries": [
-                                        "When you take the Attack action on your turn, you can use your bonus action to either make one attack with an unarmed strike or monk weapon you're wielding, or attempt a grapple or shove check."
-                                    ]
-                                },
-                                {
-                                    "type": "entries",
-                                    "name": "Ground Fighting",
-                                    "entries": [
-                                        "Creatures don't have advantage on attack rolls against you for being prone."
-                                    ]
-                                },
-                                {
-                                    "type": "entries",
-                                    "name": "Push Back (9th level)",
-                                    "entries": [
-                                        "If a creature misses you with an attack, you can attempt to push it as a reaction."
-                                    ]
-                                },
-                                {
-                                    "type": "entries",
-                                    "name": "Set Up (18th level)",
-                                    "entries": [
-                                        "On your turn, when you take an action that requires ki points, you can use your bonus action to either make one attack with an unarmed strike or monk weapon you're wielding, or attempt a grapple or shove check."
-                                    ]
-                                }
-                            ]
-                        }
+                        "A balanced style taught to beginners so that they can adapt to any situation. Your monk weapons are any simple melee weapon that doesn't have the two-handed or heavy property."
                     ]
                 },
                 {
@@ -582,40 +554,7 @@
                     "name": "Grappling Style",
                     "page": 3,
                     "entries": [
-                        "You trained to control the weight of your opponents with your own, crushing them in the process. Your monk weapons are any simple melee weapon that doesn't have the two-handed or heavy property.",
-                        {
-                            "type": "list",
-                            "items": [
-                                {
-                                    "type": "entries",
-                                    "name": "Wrestling Mastery",
-                                    "entries": [
-                                        "If you succeed on a grapple or shove check, you can deal bludgeoning damage to the target equal to one roll of your Martial Arts die + your Strength modifier."
-                                    ]
-                                },
-                                {
-                                    "type": "entries",
-                                    "name": "Ground Hold",
-                                    "entries": [
-                                        "You can grapple a creature with both of your legs. To do so, either you or the creature must be prone. If the target is prone, you must also sit on top of them."
-                                    ]
-                                },
-                                {
-                                    "type": "entries",
-                                    "name": "Dynamic Hold (9th level)",
-                                    "entries": [
-                                        "Creatures grappled by you have disadvantage on skill checks made to escape your grapples or to shove you."
-                                    ]
-                                },
-                                {
-                                    "type": "entries",
-                                    "name": "Lock (18th level)",
-                                    "entries": [
-                                        "A creature grappled by you takes a penalty to its attack rolls equal to your Strength modifier."
-                                    ]
-                                }
-                            ]
-                        }
+                        "You trained to control the weight of your opponents with your own, crushing them in the process. Your monk weapons are any simple melee weapon that doesn't have the two-handed or heavy property."
                     ]
                 },
                 {
@@ -623,85 +562,56 @@
                     "name": "Unarmed Style",
                     "page": 3,
                     "entries": [
-                        "You conditioned your body to throw swift and precise unarmed strikes, which can carry a lot of power. Your monk weapons are shortswords and any simple melee weapon that doesn't have the two-handed or heavy property.",
-                        {
-                            "type": "list",
-                            "items": [
-                                {
-                                    "type": "entries",
-                                    "name": "Unarmed Mastery",
-                                    "entries": [
-                                        "You can roll your Martial Arts die in place of the normal damage of your unarmed strikes."
-                                    ]
-                                },
-                                {
-                                    "type": "entries",
-                                    "name": "Vital's Hit",
-                                    "entries": [
-                                        "Before you make an unarmed strike, you can take a -5 penalty to the attack roll. If the attack hits, you gain a bonus to the damage roll equal to one roll of your Martial Arts die + your Wisdom modifier."
-                                    ]
-                                },
-                                {
-                                    "type": "entries",
-                                    "name": "Potent Strike (9th level)",
-                                    "entries": [
-                                        "Once on your turn, you can give yourself advantage on an attack roll you make with an unarmed strike."
-                                    ]
-                                },
-                                {
-                                    "type": "entries",
-                                    "name": "Fake Strike (18th level)",
-                                    "entries": [
-                                        "Once on your turn, if you miss an attack roll with an unarmed strike, you can reroll it."
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
+                        "You conditioned your body to throw swift and precise unarmed strikes, which can carry a lot of power. Your monk weapons are shortswords and any simple melee weapon that doesn't have the two-handed or heavy property."
+					]
                 },
                 {
                     "type": "entries",
                     "name": "Weapon Style",
                     "page": 3,
                     "entries": [
-                        "Not only are you capable of wielding a larger variety of weapons, but you can use it in a more defensive style. Your monk weapons are longbows and any weapon that doesn't have the two-handed, heavy, or special property.",
-                        {
-                            "type": "list",
-                            "items": [
-                                {
-                                    "type": "entries",
-                                    "name": "Monk Weapon Mastery",
-                                    "entries": [
-                                        "You can roll your Martial Arts die in place of the normal damage of your monk weapons."
-                                    ]
-                                },
-                                {
-                                    "type": "entries",
-                                    "name": "Embracing Branch",
-                                    "entries": [
-                                        "When a creature you can see attacks a target within 5 feet from you, you can use your reaction to interpose between them a monk weapon you're wielding, imposing disadvantage on the attack roll."
-                                    ]
-                                },
-                                {
-                                    "type": "entries",
-                                    "name": "Returning Guard (9th level)",
-                                    "entries": [
-                                        "When you make an attack with a monk weapon on your turn, you can use a monk weapon you are holding to protect yourself against the next attack you can see that targets you before the start of your next turn. When you do so, roll your Martial Arts die and add it to your AC against that attack."
-                                    ]
-                                },
-                                {
-                                    "type": "entries",
-                                    "name": "Passive Blockade (18th level)",
-                                    "entries": [
-                                        "While holding a monk weapon, the next attack made against you before the start of your next turn has disadvantage."
-                                    ]
-                                }
-                            ]
-                        }
+                        "Not only are you capable of wielding a larger variety of weapons, but you can use it in a more defensive style. Your monk weapons are longbows and any weapon that doesn't have the two-handed, heavy, or special property."
                     ]
                 }
-            ]
+            ],
+			"optionalfeatureProgression": [
+				{
+					"name": "Martial Arts",
+					"featureType": [
+						"MA:MR"
+					],
+					"progression": {
+						"1": 2,
+						"9": 3,
+						"18": 4
+					}
+				}
+			]
         },
+		{
+			"name": "Martial Arts improvement",
+			"source": "DZC",
+            "foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp",
+            "className": "Monk Rework",
+            "classSource": "DZC",
+            "page": 3,
+            "level": 9,
+            "entries": [
+                "At 9th level, you learn an additional {@filter Martial Arts Feature|optionalfeatures|feature type=MA:MR} of your choice from any style."
+            ]
+		},
+		{
+			"name": "Martial Arts improvement",
+			"source": "DZC",
+            "foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp",
+            "className": "Monk Rework",
+            "classSource": "DZC",
+            "page": 3,
+            "level": 18,
+            "entries": [
+                "At 18th level, you learn an additional {@filter Martial Arts Feature|optionalfeatures|feature type=MA:MR} of your choice from any style."
+            ]
+		},
         {
             "name": "Meditation",
             "source": "DZC",
@@ -714,6 +624,19 @@
                 "At 1st level, you know how to block your senses from the external world, entering a state of absolute focus, called meditation. While in this state you remain motionless and unconscious, and the only action you can take is to awaken yourself from it. Your meditation ends if you take damage or another creature uses its action to reach and awaken you.",
                 "With uninterrupted meditation you can finish a short or long rest in half the time, and gain the same benefits of 8 hours of sleep in 4 hours.",
                 "Starting at 7th level, you're no longer rendered unconscious while meditating, and you can see and hear as normal."
+            ]
+        },
+
+		{
+            "name": "Meditation improvement",
+            "source": "DZC",
+            "foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp",
+            "className": "Monk Rework",
+            "classSource": "DZC",
+            "page": 3,
+            "level": 7,
+            "entries": [
+                "At 7th level, you're no longer rendered unconscious while meditating, and you can see and hear as normal."
             ]
         },
 
@@ -779,6 +702,7 @@
                     "page": 4,
                     "entries": [
                         "Your ki fuels various techniques called {@filter Ki Features|optionalfeatures|feature type=DZC:KF}, each detailed in the Ki Features section of this class. The number of ki features you know is shown in the Ki Features column of the Monk table.",
+						"If a ki feature has prerequisites, you must meet them to learn it. You can learn a ki feature at the same time that you meet its prerequisites. A level prerequisite referes to your level in this class.",
                         "Whenever you gain a level in this class, you can choose one of the ki features you know and replace it with another one that you could learn at that level."
                     ]
                 },
@@ -805,6 +729,7 @@
                         "Some subclass features use ki to fuel an ability, these count as Ki Features for the purpose of this section.",
                         "When a Ki Feature uses one of your Ability modifiers for calculation, the minimum modifier you can use is 1.",
                         "You can't use ki and lose the benefits of any Ki Feature you have active if you are wielding a non-monk weapon or wearing heavy armor, if you are unconscious, or dead.",
+						"You can neither apply on the same effect multiple ki features that impose a saving throw nor one such a feature together with Weakening Strike.",
                         "Some of your Ki Features allow you to cast spells. To cast one of these spells, you use its casting time and other rules, but you don't need to provide material components for it. Wisdom is your spellcasting ability for spells cast in this way."
                     ]
                 }
@@ -1079,7 +1004,341 @@
         }
     ],
     "optionalfeature": [
-        {
+        
+		{
+            "name": "Chain Attack",
+            "source": "DZC",
+            "page": 3,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "featureType": [
+				"MA:MR",
+                "MA:MR:MS"
+            ],
+            "entries": [
+                "When you take the Attack action on your turn, you can use your bonus action to either make one attack with an unarmed strike or monk weapon you're wielding, or attempt a grapple or shove check."
+            ]
+        },
+
+		{
+            "name": "Ground Fighting",
+            "source": "DZC",
+            "page": 3,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "featureType": [
+				"MA:MR",
+                "MA:MR:MS"
+            ],
+            "entries": [
+                "Creatures don't have advantage on attack rolls against you for being prone."
+            ]
+        },
+
+		{
+            "name": "Push Back",
+            "source": "DZC",
+            "page": 3,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"MA:MR",
+                "MA:MR:MS"
+            ],
+            "entries": [
+                "If a creature misses you with an attack, you can attempt to push it as a reaction."
+            ],
+			"prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+
+		{
+            "name": "Set Up",
+            "source": "DZC",
+            "page": 3,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"MA:MR",
+                "MA:MR:MS"
+            ],
+            "entries": [
+                "On your turn, when you take an action that requires ki points, you can use your bonus action to either make one attack with an unarmed strike or monk weapon you're wielding, or attempt a grapple or shove check."
+            ],
+			"prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+
+		{
+            "name": "Wrestling Mastery",
+            "source": "DZC",
+            "page": 3,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"MA:MR",
+                "MA:MR:GS"
+            ],
+            "entries": [
+                "If you succeed on a grapple or shove check, you can deal bludgeoning damage to the target equal to one roll of your Martial Arts die + your Strength modifier."
+            ]
+        },
+
+		{
+            "name": "Ground Hold",
+            "source": "DZC",
+            "page": 3,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"MA:MR",
+                "MA:MR:GS"
+            ],
+            "entries": [
+                "You can grapple a creature with both of your legs. To do so, either you or the creature must be prone. If the target is prone, you must also sit on top of them."
+            ]
+        },
+
+		{
+            "name": "Dynamic Hold",
+            "source": "DZC",
+            "page": 3,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"MA:MR",
+                "MA:MR:GS"
+            ],
+            "entries": [
+                "Creatures grappled by you have disadvantage on skill checks made to escape your grapples or to shove you."
+            ],
+			"prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+
+		{
+            "name": "Lock",
+            "source": "DZC",
+            "page": 3,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"MA:MR",
+                "MA:MR:GS"
+            ],
+            "entries": [
+                "A creature grappled by you takes a penalty to its attack rolls equal to your Strength modifier."
+            ],
+			"prerequisite": [
+                {
+                    "level": {
+                        "level": 18,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+
+		{
+            "name": "Unarmed Mastery",
+            "source": "DZC",
+            "page": 3,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"MA:MR",
+                "MA:MR:US"
+            ],
+            "entries": [
+                "You can roll your Martial Arts die in place of the normal damage of your unarmed strikes."
+            ]
+        },
+
+		{
+            "name": "Vital's Hit",
+            "source": "DZC",
+            "page": 3,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"MA:MR",
+                "MA:MR:US"
+            ],
+            "entries": [
+				"Before you make an unarmed strike, you can take a -5 penalty to the attack roll. If the attack hits, you gain a bonus to the damage roll equal to one roll of your Martial Arts die + your Wisdom modifier."
+            ]
+        },
+
+		{
+            "name": "Potent Strike",
+            "source": "DZC",
+            "page": 3,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"MA:MR",
+                "MA:MR:US"
+            ],
+            "entries": [
+                "Once on your turn, you can give yourself advantage on an attack roll you make with an unarmed strike."
+            ],
+			"prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+
+		{
+            "name": "Fake Strike",
+            "source": "DZC",
+            "page": 3,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"MA:MR",
+                "MA:MR:US"
+            ],
+            "entries": [
+                "Once on your turn, if you miss an attack roll with an unarmed strike, you can reroll it."
+            ],
+			"prerequisite": [
+                {
+                    "level": {
+                        "level": 18,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+
+		{
+            "name": "Monk Weapon Mastery",
+            "source": "DZC",
+            "page": 3,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"MA:MR",
+                "MA:MR:WS"
+            ],
+            "entries": [
+                "You can roll your Martial Arts die in place of the normal damage of your monk weapons."
+            ]
+        },
+
+		{
+            "name": "Embracing Branch",
+            "source": "DZC",
+            "page": 3,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"MA:MR",
+                "MA:MR:WS"
+            ],
+            "entries": [
+                "When a creature you can see attacks a target within 5 feet from you, you can use your reaction to interpose between them a monk weapon you're wielding, imposing disadvantage on the attack roll."
+            ]
+        },
+
+		{
+            "name": "Returning Guard",
+            "source": "DZC",
+            "page": 3,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"MA:MR",
+                "MA:MR:GS"
+            ],
+            "entries": [
+                "When you make an attack with a monk weapon on your turn, you can use a monk weapon you are holding to protect yourself against the next attack you can see that targets you before the start of your next turn. When you do so, roll your Martial Arts die and add it to your AC against that attack."
+            ],
+			"prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+
+		{
+            "name": "Passive Blockade",
+            "source": "DZC",
+            "page": 3,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"MA:MR",
+                "MA:MR:GS"
+            ],
+            "entries": [
+                "While holding a monk weapon, the next attack made against you before the start of your next turn has disadvantage."
+            ],
+			"prerequisite": [
+                {
+                    "level": {
+                        "level": 18,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+
+						
+					
+				
+					
+
+
+
+
+
+
+
+
+
+		{
             "name": "Delaying Strike",
             "source": "DZC",
             "page": 11,
