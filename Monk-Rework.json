@@ -778,7 +778,7 @@
                     "name": "Ki Features",
                     "page": 4,
                     "entries": [
-                        "Your ki fuels various techniques called Ki Features, each detailed in the Ki Features section of this class. The number of ki features you know is shown in the Ki Features column of the Monk table.",
+                        "Your ki fuels various techniques called {@filter Ki Features|optionalfeatures|feature type=DZC:KF}, each detailed in the Ki Features section of this class. The number of ki features you know is shown in the Ki Features column of the Monk table.",
                         "Whenever you gain a level in this class, you can choose one of the ki features you know and replace it with another one that you could learn at that level."
                     ]
                 },
