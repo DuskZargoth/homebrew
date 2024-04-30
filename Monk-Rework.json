@@ -1,4 +1,5 @@
 {
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
 	"_meta": {
         "sources": [
             {
@@ -2171,7 +2172,7 @@
 							"name": "Quick Build",
 							"page": 2,
 							"entries": [
-								"You can make a monk quickly by using these suggestions. First, make Dexterity your highest ability score, followed by your Constitution if you wish to focus on physical power, or your Wisdom if you wish to focus on spiritual enlightenment. Second, choose either the {@background acolyte} or the {@background hermit} background."
+								"You can make a monk quickly by following these suggestions. First, make Dexterity your highest ability score, followed by Wisdom. Second, choose the {@background hermit} background. Take the Unarmed Style and when you learn ki features, choose {@optfeature Flurry of Blows|DZC}, {@optfeature Patient Defense|DZC}, and {@optfeature Step of the Wind|DZC}."
 							]
 						}
 					]
