@@ -591,7 +591,7 @@
 		{
 			"name": "Martial Arts improvement",
 			"source": "DZC",
-            "foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp",
+            "foundryImg": "icons/skills/melee/unarmed-punch-fist-blue.webp",
             "className": "Monk Rework",
             "classSource": "DZC",
             "page": 3,
@@ -603,7 +603,7 @@
 		{
 			"name": "Martial Arts improvement",
 			"source": "DZC",
-            "foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp",
+            "foundryImg": "icons/skills/melee/unarmed-punch-fist-blue.webp",
             "className": "Monk Rework",
             "classSource": "DZC",
             "page": 3,
