@@ -1338,7 +1338,6 @@
             "name": "Thunderous Strike",
             "source": "DZC:ANA",
             "page": 6,
-            "foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp",
             "consumes": {
 				"name": "Ki",
 				"amount": 1
@@ -1369,7 +1368,6 @@
             "name": "Rocky Strike",
             "source": "DZC:ANA",
             "page": 6,
-            "foundryImg": "icons/magic/air/projectile-boulder-dust.webp",
             "consumes": {
 				"name": "Ki",
 				"amount": 1
@@ -1400,7 +1398,6 @@
             "name": "Igneous Strike",
             "source": "DZC:ANA",
             "page": 6,
-            "foundryImg": "icons/magic/air/projectile-smoke-swirl-red.webp",
             "consumes": {
 				"name": "Ki",
 				"amount": 1
@@ -1431,7 +1428,6 @@
             "name": "Gelid Strike",
             "source": "DZC:ANA",
             "page": 6,
-            "foundryImg": "icons/magic/air/projectile-ice-snowball.webp",
             "consumes": {
 				"name": "Ki",
 				"amount": 1
@@ -1462,7 +1458,6 @@
             "name": "Wind Blast",
             "source": "DZC:ANA",
             "page": 6,
-            "foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp",
             "consumes": {
 				"name": "Ki",
 				"amount": 1
@@ -1482,7 +1477,6 @@
             "name": "Stone Boulder",
             "source": "DZC:ANA",
             "page": 6,
-            "foundryImg": "icons/magic/air/projectile-boulder-dust.webp",
             "consumes": {
 				"name": "Ki",
 				"amount": 1
@@ -1501,7 +1495,6 @@
             "name": "Flaming Blast",
             "source": "DZC:ANA",
             "page": 6,
-            "foundryImg": "icons/magic/air/projectile-smoke-swirl-red.webp",
             "consumes": {
 				"name": "Ki",
 				"amount": 1
@@ -1521,7 +1514,6 @@
             "name": "Water Swirl",
             "source": "DZC:ANA",
             "page": 6,
-            "foundryImg": "icons/magic/air/projectile-ice-snowball.webp",
             "consumes": {
 				"name": "Ki",
 				"amount": 1
@@ -1540,7 +1532,6 @@
             "name": "Wind Stance",
             "source": "DZC:ANA",
             "page": 6,
-            "foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp",
             "consumes": {
 				"name": "Ki",
 				"amount": 2
@@ -1559,7 +1550,6 @@
             "name": "Mountain Stance",
             "source": "DZC:ANA",
             "page": 7,
-            "foundryImg": "icons/magic/air/projectile-boulder-dust.webp",
             "consumes": {
 				"name": "Ki",
 				"amount": 2
@@ -1578,7 +1568,6 @@
             "name": "Flame Stance",
             "source": "DZC:ANA",
             "page": 7,
-            "foundryImg": "icons/magic/air/projectile-smoke-swirl-red.webp",
             "consumes": {
 				"name": "Ki",
 				"amount": 2
@@ -1597,7 +1586,6 @@
             "name": "River Stance",
             "source": "DZC:ANA",
             "page": 7,
-            "foundryImg": "icons/magic/air/projectile-ice-snowball.webp",
             "consumes": {
 				"name": "Ki",
 				"amount": 2
@@ -1616,7 +1604,6 @@
             "name": "Aerial Lift",
             "source": "DZC:ANA",
             "page": 6,
-            "foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp",
             "featureType": [
 				"DZC:EA",
                 "DZC:EA:A",
@@ -1631,7 +1618,6 @@
             "name": "Rock Walk",
             "source": "DZC:ANA",
             "page": 7,
-            "foundryImg": "icons/magic/air/projectile-boulder-dust.webp",
             "featureType": [
 				"DZC:EA",
                 "DZC:EA:E",
@@ -1646,7 +1632,6 @@
             "name": "Jet Burst",
             "source": "DZC:ANA",
             "page": 7,
-            "foundryImg": "icons/magic/air/projectile-smoke-swirl-red.webp",
             "featureType": [
 				"DZC:EA",
                 "DZC:EA:F",
@@ -1661,7 +1646,6 @@
             "name": "Underwater Adaptations",
             "source": "DZC:ANA",
             "page": 7,
-            "foundryImg": "icons/magic/air/projectile-ice-snowball.webp",
             "featureType": [
 				"DZC:EA",
                 "DZC:EA:W",
@@ -1678,7 +1662,6 @@
             "name": "Air Master",
             "source": "DZC:ANA",
             "page": 7,
-            "foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp",
             "featureType": [
 				"DZC:EA",
                 "DZC:EA:A",
@@ -1700,7 +1683,6 @@
             "name": "Earth Master",
             "source": "DZC:ANA",
             "page": 7,
-            "foundryImg": "icons/magic/air/projectile-boulder-dust.webp",
             "featureType": [
 				"DZC:EA",
                 "DZC:EA:E",
@@ -1723,7 +1705,6 @@
             "name": "Fire Master",
             "source": "DZC:ANA",
             "page": 7,
-            "foundryImg": "icons/magic/air/projectile-smoke-swirl-red.webp",
             "featureType": [
 				"DZC:EA",
                 "DZC:EA:F",
@@ -1745,7 +1726,6 @@
             "name": "Water Master",
             "source": "DZC:ANA",
             "page": 7,
-            "foundryImg": "icons/magic/air/projectile-ice-snowball.webp",
             "featureType": [
 				"DZC:EA",
                 "DZC:EA:W",
@@ -1767,7 +1747,6 @@
             "name": "Lightning Adept",
             "source": "DZC:ANA",
             "page": 7,
-            "foundryImg": "icons/magic/lightning/bolt-strike-sparks-blue.webp",
             "featureType": [
 				"DZC:EA",
                 "DZC:EA:A",
@@ -1793,7 +1772,6 @@
             "name": "Acid Adept",
             "source": "DZC:ANA",
             "page": 7,
-            "foundryImg": "icons/magic/acid/dissolve-drip-droplet-smoke.webp",
             "featureType": [
 				"DZC:EA",
                 "DZC:EA:E",
@@ -1819,7 +1797,6 @@
             "name": "Light Adept",
             "source": "DZC:ANA",
             "page": 7,
-            "foundryImg": "icons/magic/light/beam-rays-yellow-blue-large.webp",
             "featureType": [
 				"DZC:EA",
                 "DZC:EA:F",
@@ -1845,7 +1822,6 @@
             "name": "Heal Adept",
             "source": "DZC:ANA",
             "page": 7,
-            "foundryImg": "icons/magic/life/heart-cross-blue.webp",
             "featureType": [
 				"DZC:EA",
                 "DZC:EA:W",
@@ -1871,7 +1847,6 @@
             "name": "Nature's Vessel",
             "source": "DZC:ANA",
             "page": 7,
-            "foundryImg": "icons/magic/air/silhouette-hold-change-green.webp",
             "featureType": [
 				"DZC:EA",
                 "DZC:EA:A",
