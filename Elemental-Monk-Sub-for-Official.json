@@ -31,7 +31,7 @@
             "DZC:EA:W": "Monk Rework; Elemental Arts: Water",
             "DZC:EA:ES": "Monk Rework; Elemental Arts: Elemental Strike",
             "DZC:EA:EM": "Monk Rework; Elemental Arts: Elemental Manifestation",
-            "DZC:EA:PM": "Monk Rework; Elemental Arts: Primal Stances",
+            "DZC:EA:PS": "Monk Rework; Elemental Arts: Primal Stances",
             "DZC:EA:SS": "Monk Rework; Elemental Arts: Step Shift",
             "DZC:EA:EMa": "Monk Rework; Elemental Arts: Elemental Mastery",
             "DZC:KF": "Monk Rework; Ki Features",
@@ -687,7 +687,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting when you choose this tradition at 3rd level, you learn to release elemental energy from your attacks. Once on your turn, when you hit a target with a weapon attack, you can spend 1 ki point to use an {@filter Elemental Strike|optionalfeature|feature type:DZC:EA:ES} option you know, dealing extra damage equal to one roll of your Martial Arts die, choosing from one of the damage types of its associated art. Each option has additional effect you can apply with it.",
+				"Starting when you choose this tradition at 3rd level, you learn to release elemental energy from your attacks. Once on your turn, when you hit a target with a weapon attack, you can spend 1 ki point to use an {@filter Elemental Strike|optionalfeature|feature type=DZC:EA:ES} option you know, dealing extra damage equal to one roll of your Martial Arts die, choosing from one of the damage types of its associated art. Each option has additional effect you can apply with it.",
                 {
                     "type": "options",
                     "count": 1,
@@ -729,7 +729,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Also at 3rd level, you learn to shape the elements' energy into different effects. Once on your turn, you can spend 1 ki point to replace an attack from the Attack action with an {@filter Elemental Manifestation|optionalfeature|feature type:DZC:EA:EM} option you know.",
+				"Also at 3rd level, you learn to shape the elements' energy into different effects. Once on your turn, you can spend 1 ki point to replace an attack from the Attack action with an {@filter Elemental Manifestation|optionalfeature|feature type=DZC:EA:EM} option you know.",
                 {
                     "type": "options",
                     "count": 1,
@@ -771,7 +771,7 @@
 			"level": 6,
 			"header": 2,
 			"entries": [
-				"At 6th level, you learn to infuse yourself with elemental energy. As a bonus action, you can spend 2 ki points to enter a {@filter Primal Stance|optionalfeature|feature type:DZC:EA:PS} option you know for 1 minute. For the duration, you gain the benefits of the chosen option. Your Primal Stance ends early if you are knocked unconscious, if you end it as a bonus action, or until you use this feature again.",
+				"At 6th level, you learn to infuse yourself with elemental energy. As a bonus action, you can spend 2 ki points to enter a {@filter Primal Stance|optionalfeature|feature type=DZC:EA:PS} option you know for 1 minute. For the duration, you gain the benefits of the chosen option. Your Primal Stance ends early if you are knocked unconscious, if you end it as a bonus action, or until you use this feature again.",
                 "Alternatively, you can learn an additional option from one of your previous features.",
                 {
                     "type": "options",
@@ -834,7 +834,7 @@
 			"level": 11,
 			"header": 2,
 			"entries": [
-				"At 11th level, you learn how to move as one with the elements. Choose one of the {@filter Step Shift|optionalfeature|feature type:DZC:EA:SS}",
+				"At 11th level, you learn how to move as one with the elements. Choose one of the {@filter Step Shift|optionalfeature|feature type=DZC:EA:SS}",
                 "Alternatively, you can learn an additional option from one of your previous features.",
                 {
                     "type": "options",
@@ -925,7 +925,7 @@
 						"You gain resistance to one of the damage types of an elemental art you know. If you have four arts in a single element, you ignore resistance to that damage."
 					]
                 },
-                "You also gain one of the following {@filter Elemental Mastery|optionalfeatures|feature type:DZC:EA:EMa} options of your choice. You must know the amount of elemental arts shown in parenthesis in order to take it.",
+                "You also gain one of the following {@filter Elemental Mastery|optionalfeatures|feature type=DZC:EA:EMa} options of your choice. You must know the amount of elemental arts shown in parenthesis in order to take it.",
                 {
                     "type": "options",
                     "count": 1,
