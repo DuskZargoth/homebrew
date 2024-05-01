@@ -5,7 +5,7 @@
             {
                 "json": "DZC:ANA",
                 "abbreviation": "DZC:ANA",
-                "full": "Monk Rework",
+                "full": "Way of the Elements",
                 "authors": [
                     "Dusk Zargoth"
                 ],
@@ -14,7 +14,7 @@
                 ],
                 "version": "1.0.1",
                 "color": "DC3636",
-                "url": "https://homebrewery.naturalcrit.com/share/HJys_qVgDJdo"
+                "url": "https://homebrewery.naturalcrit.com/share/PSkVJHKOeItK"
             }
         ],
         "dateAdded": 1714358643,
@@ -42,44 +42,569 @@
         }
     },
   "subclass": [
-		{
-			"name": "Way of the Inner Strength",
-			"shortName": "Inner Strength",
-			"source": "DZC:ANA",
-			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
-			"page": 4,
-			"subclassFeatures": [
-				"Way of the Inner Strength|Monk Rework|DZC:ANA|Inner Strength|DZC:ANA|3",
-				"Wholeness of Body|Monk Rework|DZC:ANA|Inner Strength|DZC:ANA|6",
-				"Blank Mind|Monk Rework|DZC:ANA|Inner Strength|DZC:ANA|11",
-				"Enlightenment|Monk Rework|DZC:ANA|Inner Strength|DZC:ANA|17"
-			]
-		},
         {
 			"name": "Way of the Elements",
             "foundryImg": "icons/magic/symbols/elements-air-earth-fire-water.webp",
 			"shortName": "Elements",
 			"source": "DZC:ANA",
-			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
-			"page": 6,
+			"className": "Monk",
+			"classSource": "PHB",
+			"page": 1,
 			"subclassFeatures": [
-				"Way of the Elements|Monk Rework|DZC:ANA|Elements|DZC:ANA|3",
-				"Primal Stances|Monk Rework|DZC:ANA|Elements|DZC:ANA|6",
-				"Step Shift|Monk Rework|DZC:ANA|Elements|DZC:ANA|11",
-				"Elemental Mastery|Monk Rework|DZC:ANA|Elements|DZC:ANA|17"
+				"Way of the Elements|Monk||Elements|DZC:ANA|3",
+				"Primal Stances|Monk||Elements|DZC:ANA|6",
+				"Step Shift|Monk||Elements|DZC:ANA|11",
+				"Elemental Mastery|Monk||Elements|DZC:ANA|17"
 			]
 		}
 	],
-  "subclassFeature": [
-    {
+	"optionalfeature": [
+		{
+            "name": "Thunderous Strike",
+            "source": "DZC:ANA",
+            "page": 6,
+            "consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+            "featureType": [
+				"DZC:EA",
+                "DZC:EA:A",
+                "DZC:EA:ES"
+            ],
+            "entries": [
+                "A bubble of compressed air burst from your attack, sending your enemy flying away. If the target is a creature or an unsecured object that is no more than one size larger than you, then you can push it up to 10 feet away from you."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "Once on your turn, when you hit with a weapon attack",
+                "activation.cost": 1,
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))"
+                    ],
+                    "thunder"
+                ]
+            }
+        },
+
+        {
+            "name": "Rocky Strike",
+            "source": "DZC:ANA",
+            "page": 6,
+            "consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+            "featureType": [
+				"DZC:EA",
+                "DZC:EA:E",
+                "DZC:EA:ES"
+            ],
+            "entries": [
+                "A thick layer of stones forms around your attack, making it so heavy it temporarily disorientates your enemy. The target has disadvantage on the next attack roll it makes before the start of your next turn."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "Once on your turn, when you hit with a weapon attack",
+                "activation.cost": 1,
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2)) + @abilities.wis.mod"
+                    ],
+                    "bludgeoning"
+                ]
+            }
+        },
+
+        {
+            "name": "Igneous Strike",
+            "source": "DZC:ANA",
+            "page": 6,
+            "consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+            "featureType": [
+				"DZC:EA",
+                "DZC:EA:F",
+                "DZC:EA:ES"
+            ],
+            "entries": [
+                "A short lived blaze sparks from your attack, hot enough to burn through flesh. You add your Wisdom modifier to the extra damage of this strike."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "Once on your turn, when you hit with a weapon attack",
+                "activation.cost": 1,
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2)) + @abilities.wis.mod"
+                    ],
+                    "fire"
+                ]
+            }
+        },
+
+        {
+            "name": "Gelid Strike",
+            "source": "DZC:ANA",
+            "page": 6,
+            "consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+            "featureType": [
+				"DZC:EA",
+                "DZC:EA:W",
+                "DZC:EA:ES"
+            ],
+            "entries": [
+                "You cover your attacks with freezing water that hinders your enemy's movement. The target's speed is reduced by 15 feet until the start of your next turn."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "Once on your turn, when you hit with a weapon attack",
+                "activation.cost": 1,
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))"
+                    ],
+                    "cold"
+                ]
+            }
+        },
+
+        {
+            "name": "Wind Blast",
+            "source": "DZC:ANA",
+            "page": 6,
+            "consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+            "featureType": [
+				"DZC:EA",
+                "DZC:EA:A",
+                "DZC:EA:EM"
+            ],
+            "entries": [
+                "A line of compressed air 30 feet long and 5 feet wide blasts from you in a direction you choose. Each creature in that area must succeed on a Constitution saving throw or take thunder damage equal to one roll of your Martial Arts die and be pushed up to 10 feet away from you in a direction following the line.",
+                "Unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the feature's effect."
+            ]
+        },
+
+        {
+            "name": "Stone Boulder",
+            "source": "DZC:ANA",
+            "page": 6,
+            "consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+            "featureType": [
+				"DZC:EA",
+                "DZC:EA:E",
+                "DZC:EA:EM"
+            ],
+            "entries": [
+                "You hurl a Medium rock against a creature you can see within 30 feet from you. The creature must succeed on a Strength saving throw or take bludgeoning damage equal to one roll of your Martial Arts die and be knocked prone."
+            ]
+        },
+
+        {
+            "name": "Flaming Blast",
+            "source": "DZC:ANA",
+            "page": 6,
+            "consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+            "featureType": [
+				"DZC:EA",
+                "DZC:EA:F",
+                "DZC:EA:EM"
+            ],
+            "entries": [
+                "You shoot a fire projectile towards a point you choose that you can see within 30 feet from you. The projectile explodes when it reaches its destination or impacts against a solid surface. Each creature within 5 feet of the point where the projectile explodes must make a Dexterity saving throw, taking fire damage equal to two rolls of your Martial Arts die on a failed save.",
+                "The explosion damages objects in the area that aren't being worn or carried."
+            ]
+        },
+
+        {
+            "name": "Water Swirl",
+            "source": "DZC:ANA",
+            "page": 6,
+            "consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+            "featureType": [
+				"DZC:EA",
+                "DZC:EA:W",
+                "DZC:EA:EM"
+            ],
+            "entries": [
+                "A pillar of swirling water appears in a point you can see within 30 feet from you. Each creature in a 10-foot-radius, 15-foot-high cylinder centered on a point within range must make a Strength saving throw. On a failed save, a creature takes cold damage equal to one roll of your Martial Arts die and is pushed 5 feet in any direction you choose."
+            ]
+        },
+
+        {
+            "name": "Wind Stance",
+            "source": "DZC:ANA",
+            "page": 6,
+            "consumes": {
+				"name": "Ki",
+				"amount": 2
+			},
+            "featureType": [
+				"DZC:EA",
+                "DZC:EA:A",
+                "DZC:EA:PS"
+            ],
+            "entries": [
+                "Soft currents move you out of harms way. When you take the Disengage or Dodge action, until the start of your next turn you gain a bonus to your AC and Dexterity saving throws equal to half your Wisdom modifier (rounded up) against attacks and effects you can see. You don't benefit from this stance while your speed is 0."
+            ]
+        },
+
+        {
+            "name": "Mountain Stance",
+            "source": "DZC:ANA",
+            "page": 7,
+            "consumes": {
+				"name": "Ki",
+				"amount": 2
+			},
+            "featureType": [
+				"DZC:EA",
+                "DZC:EA:E",
+                "DZC:EA:PS"
+            ],
+            "entries": [
+                "Your skin adopts the sturdiness of the rock. Bludgeoning, piercing and slashing damage that you take is reduced by an amount equal to twice your Wisdom modifier."
+            ]
+        },
+
+        {
+            "name": "Flame Stance",
+            "source": "DZC:ANA",
+            "page": 7,
+            "consumes": {
+				"name": "Ki",
+				"amount": 2
+			},
+            "featureType": [
+				"DZC:EA",
+                "DZC:EA:F",
+                "DZC:EA:PS"
+            ],
+            "entries": [
+                "Your limbs become wreathed in flames. You gain a bonus to melee weapon attack rolls, grapple and shove checks equal to half your Wisdom modifier (rounded up). Creatures take fire damage equal to that bonus when you hit them with a melee weapon attack, or you successfully grapple or shove them."
+            ]
+        },
+
+        {
+            "name": "River Stance",
+            "source": "DZC:ANA",
+            "page": 7,
+            "consumes": {
+				"name": "Ki",
+				"amount": 2
+			},
+            "featureType": [
+				"DZC:EA",
+                "DZC:EA:W",
+                "DZC:EA:PS"
+            ],
+            "entries": [
+                "Water tendrils sprout from your limbs. The range of your melee weapon attacks, grapples, and shoves increases by a number of feet equal to five times your Wisdom modifier. In addition, when you hit a creature with a melee weapon attack, the target's speed is reduced by 10 feet until the start of your next turn."
+            ]
+        },
+        
+        {
+            "name": "Aerial Lift",
+            "source": "DZC:ANA",
+            "page": 6,
+            "featureType": [
+				"DZC:EA",
+                "DZC:EA:A",
+                "DZC:EA:SS"
+            ],
+            "entries": [
+                "Soft currents move you out of harms way. When you take the Disengage or Dodge action, until the start of your next turn you gain a bonus to your AC and Dexterity saving throws equal to half your Wisdom modifier (rounded up) against attacks and effects you can see. You don't benefit from this stance while your speed is 0."
+            ]
+        },
+
+        {
+            "name": "Rock Walk",
+            "source": "DZC:ANA",
+            "page": 7,
+            "featureType": [
+				"DZC:EA",
+                "DZC:EA:E",
+                "DZC:EA:SS"
+            ],
+            "entries": [
+                "With solid footing you can stride through any terrain. You ignore difficult terrain on solid surfaces. You also gain a climbing speed equal to your walking speed. If a vertical surface is made of soil or rock, you don't need your hands to climb."
+            ]
+        },
+
+        {
+            "name": "Jet Burst",
+            "source": "DZC:ANA",
+            "page": 7,
+            "featureType": [
+				"DZC:EA",
+                "DZC:EA:F",
+                "DZC:EA:SS"
+            ],
+            "entries": [
+                "Your fire can propel you to new heights. Once on your turn, you can move up to 30 feet in a straight line in any direction you choose. If you are grappled or restrained, you can instead forgo this movement to attempt to escape the effect or creature causing the condition, as long as it asks for a successful Strength check or saving throw to escape."
+            ]
+        },
+
+        {
+            "name": "Underwater Adaptations",
+            "source": "DZC:ANA",
+            "page": 7,
+            "featureType": [
+				"DZC:EA",
+                "DZC:EA:W",
+                "DZC:EA:SS"
+            ],
+            "entries": [
+                "Your body becomes one with the ocean. You gain a swimming speed equal to your walking speed and you can breath normally underwater."
+            ]
+        },
+
+
+
+        {
+            "name": "Air Master",
+            "source": "DZC:ANA",
+            "page": 7,
+            "featureType": [
+				"DZC:EA",
+                "DZC:EA:A",
+                "DZC:EA:EMa"
+            ],
+            "entries": [
+                "Once on your turn, when you use your Thunderous Strike or Wind Blast, you can spend up to 3 additional ki points on it to increase its damage by one roll of your Martial Arts die per ki point spent."
+            ],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Four Air Arts"
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "Earth Master",
+            "source": "DZC:ANA",
+            "page": 7,
+            "featureType": [
+				"DZC:EA",
+                "DZC:EA:E",
+                "DZC:EA:EMa"
+            ],
+            "entries": [
+                "Once on your turn, when you use your Rocky Strike or Stone Boulder, you can spend up to 3 additional ki points on it to increase its damage by one roll of your Martial Arts die per ki point spent."
+            ],
+            "prerequisite": [
+              
+                {
+                    "feature": [
+                        "Four Earth Arts"
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "Fire Master",
+            "source": "DZC:ANA",
+            "page": 7,
+            "featureType": [
+				"DZC:EA",
+                "DZC:EA:F",
+                "DZC:EA:EMa"
+            ],
+            "entries": [
+                "Once on your turn, when you use your Igneous Strike or Flaming Blast, you can spend up to 3 additional ki points on it to increase the damage by one roll of your Martial Arts die per ki point spent."
+            ],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Four Fire Arts"
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "Water Master",
+            "source": "DZC:ANA",
+            "page": 7,
+            "featureType": [
+				"DZC:EA",
+                "DZC:EA:W",
+                "DZC:EA:EMa"
+            ],
+            "entries": [
+                "Once on your turn, when you use your Gelid Strike or Water Swirl, you can spend up to 3 additional ki points on it to increase the damage by one roll of your Martial Arts die per ki point spent."
+            ],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Four Water Arts"
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "Lightning Adept",
+            "source": "DZC:ANA",
+            "page": 7,
+            "featureType": [
+				"DZC:EA",
+                "DZC:EA:A",
+                "DZC:EA:EMa"
+            ],
+            "consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+            "entries": [
+                "You can spend 1 ki point when you take the Dash or Disengage action to charge yourself with electricity. Until the end of your turn, a creature takes lightning damage equal to 5 + your Wisdom modifier the first time you move within 5 feet from it."
+            ],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Two or more Air Arts"
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "Acid Adept",
+            "source": "DZC:ANA",
+            "page": 7,
+            "featureType": [
+				"DZC:EA",
+                "DZC:EA:E",
+                "DZC:EA:EMa"
+            ],
+            "consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+            "entries": [
+                "You can spend 1 ki point when you take the Dodge action to protect yourself with acid. Until the start of your next turn, a creature that hits you with a melee weapon attack takes acid damage equal to 5 + your Wisdom modifier."
+            ],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Two or more Earth Arts"
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "Light Adept",
+            "source": "DZC:ANA",
+            "page": 7,
+            "featureType": [
+				"DZC:EA",
+                "DZC:EA:F",
+                "DZC:EA:EMa"
+            ],
+            "consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+            "entries": [
+                "You can spend 1 ki point when you take the Attack action to engulf your arms in radiance. Until the end of your turn, your melee weapon attacks deal extra radiant damage equal to your Wisdom modifier."
+            ],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Two or more Fire Arts"
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "Heal Adept",
+            "source": "DZC:ANA",
+            "page": 7,
+            "featureType": [
+				"DZC:EA",
+                "DZC:EA:W",
+                "DZC:EA:EMa"
+            ],
+            "consumes": {
+				"name": "Ki",
+				"amount": 1
+			},
+            "entries": [
+                "Immediatly after you take the Help action on your turn, you can spend 1 ki point to heal a creature you can touch. That creature can spend up to a number of Hit Die equal to your Wisdom modifier to heal itself."
+            ],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "Two or more Water Arts"
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "Nature's Vessel",
+            "source": "DZC:ANA",
+            "page": 7,
+            "featureType": [
+				"DZC:EA",
+                "DZC:EA:A",
+                "DZC:EA:E",
+                "DZC:EA:F",
+                "DZC:EA:W",
+                "DZC:EA:EMa"
+            ],
+            "consumes": {
+				"name": "Ki",
+				"amount": 3
+			},
+            "entries": [
+                "When you finish a long rest, you can replace one of the elemental arts that you know with another one from the same element. In addition, you can spend 3 ki points to enter your Primal Stance. When you do so, you gain the benefits of two different stance options that you know."
+            ],
+            "prerequisite": [
+                {
+                    "feature": [
+                        "One Art in Each Element"
+                    ]
+                }
+            ]
+        }
+
+	],
+	"subclassFeature": [
+		{
 			"name": "Way of the Elements",
 			"source": "DZC:ANA",
-			"page": 6,
+			"page": 1,
 			"foundryImg": "icons/magic/symbols/elements-air-earth-fire-water.webp",
-			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"className": "Monk",
+			"classSource": "PHB",
 			"subclassShortName": "Elements",
 			"subclassSource": "DZC:ANA",
 			"level": 3,
@@ -90,15 +615,15 @@
 				"More often than not, practicioners of this tradition isolate themselves for long periods of time, disconnecting their terrenal senses in order to heighten their spiritual eye. Only a few can endure this journey, and even less monks can achieve the state of true enlightenment.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Elemental Arts|Monk Rework|DZC:ANA|Elements|DZC:ANA|3"
+					"subclassFeature": "Elemental Arts|Monk||Elements|DZC:ANA|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Elemental Strike|Monk Rework|DZC:ANA|Elements|DZC:ANA|3"
+					"subclassFeature": "Elemental Strike|Monk||Elements|DZC:ANA|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Elemental Manifestation|Monk Rework|DZC:ANA|Elements|DZC:ANA|3"
+					"subclassFeature": "Elemental Manifestation|Monk||Elements|DZC:ANA|3"
 				}
 			]
 		},
@@ -108,8 +633,8 @@
 			"source": "DZC:ANA",
 			"page": 6,
 			"foundryImg": "icons/magic/nature/beam-hand-leaves-green.webp",
-			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"className": "Monk",
+			"classSource": "PHB",
 			"subclassShortName": "Elements",
 			"subclassSource": "DZC:ANA",
 			"level": 3,
@@ -156,8 +681,8 @@
 			"source": "DZC:ANA",
 			"page": 6,
 			"foundryImg": "icons/magic/fire/flame-burning-fist-strike.webp",
-			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"className": "Monk",
+			"classSource": "PHB",
 			"subclassShortName": "Elements",
 			"subclassSource": "DZC:ANA",
 			"level": 3,
@@ -198,8 +723,8 @@
 			"source": "DZC:ANA",
 			"page": 6,
 			"foundryImg": "icons/magic/earth/projectile-stone-boulder-brown.webp",
-			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"className": "Monk",
+			"classSource": "PHB",
 			"subclassShortName": "Elements",
 			"subclassSource": "DZC:ANA",
 			"level": 3,
@@ -240,8 +765,8 @@
 			"source": "DZC:ANA",
 			"page": 6,
 			"foundryImg": "icons/magic/water/elemental-water.webp",
-			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"className": "Monk",
+			"classSource": "PHB",
 			"subclassShortName": "Elements",
 			"subclassSource": "DZC:ANA",
 			"level": 6,
@@ -303,8 +828,8 @@
 			"source": "DZC:ANA",
 			"page": 7,
 			"foundryImg": "icons/creatures/abilities/wings-birdlike-blue.webp",
-			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"className": "Monk",
+			"classSource": "PHB",
 			"subclassShortName": "Elements",
 			"subclassSource": "DZC:ANA",
 			"level": 11,
@@ -386,8 +911,8 @@
 			"source": "DZC:ANA",
 			"page": 7,
 			"foundryImg": "icons/magic/nature/explosion-flame-blue",
-			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"className": "Monk",
+			"classSource": "PHB",
 			"subclassShortName": "Elements",
 			"subclassSource": "DZC:ANA",
 			"level": 17,
