@@ -122,7 +122,7 @@
 
         {
             "name": "Igneous Strike",
-		"foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp"
+		"foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp",
             "source": "DZC:ANA",
             "page": 6,
             "consumes": {
@@ -223,7 +223,7 @@
 
         {
             "name": "Flaming Blast",
-		"foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp"
+		"foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp",
             "source": "DZC:ANA",
             "page": 6,
             "consumes": {
@@ -300,7 +300,7 @@
 
         {
             "name": "Flame Stance",
-		"foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp"
+		"foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp",
             "source": "DZC:ANA",
             "page": 7,
             "consumes": {
@@ -368,7 +368,7 @@
 
         {
             "name": "Jet Burst",
-		"foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp"
+		"foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp",
             "source": "DZC:ANA",
             "page": 7,
             "featureType": [
@@ -445,7 +445,7 @@
 
         {
             "name": "Fire Master",
-		"foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp"
+		"foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp",
             "source": "DZC:ANA",
             "page": 7,
             "featureType": [
