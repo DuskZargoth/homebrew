@@ -44,6 +44,7 @@
         {
             "name": "Monk Rework",
             "source": "DZC:ANA",
+            "foundryImg": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/classes/PHB/Monk.webp",
             "page": 1,
             "hd": {
                 "number": 1,
@@ -2553,6 +2554,7 @@
 		},
         {
 			"name": "Way of the Elements",
+            "foundryImg": "icons/magic/symbols/elements-air-earth-fire-water.webp",
 			"shortName": "Elements",
 			"source": "DZC:ANA",
 			"className": "Monk Rework",
@@ -2679,7 +2681,7 @@
 			"name": "Way of the Elements",
 			"source": "DZC:ANA",
 			"page": 6,
-			"foundryImg": "icons/magic/holy/elements-air-earth-fire-water.webp",
+			"foundryImg": "icons/magic/symbols/elements-air-earth-fire-water.webp",
 			"className": "Monk Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Elements",
@@ -2709,7 +2711,7 @@
 			"name": "Elemental Arts",
 			"source": "DZC:ANA",
 			"page": 6,
-			"foundryImg": "icons/magic/control/beam-hand-leaves-green.webp",
+			"foundryImg": "icons/magic/nature/beam-hand-leaves-green.webp",
 			"className": "Monk Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Elements",
