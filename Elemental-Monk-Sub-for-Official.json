@@ -81,7 +81,7 @@
                 "actionType": "other",
                 "damage.parts": [
                     [
-                        "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))"
+                        "1d(4 + (ceil(@classes.monk.levels / 5) * 2))"
                     ],
                     "thunder"
                 ]
@@ -111,7 +111,7 @@
                 "actionType": "other",
                 "damage.parts": [
                     [
-                        "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2)) + @abilities.wis.mod"
+                        "1d(4 + (ceil(@classes.monk.levels / 5) * 2)) + @abilities.wis.mod"
                     ],
                     "bludgeoning"
                 ]
@@ -141,7 +141,7 @@
                 "actionType": "other",
                 "damage.parts": [
                     [
-                        "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2)) + @abilities.wis.mod"
+                        "1d(4 + (ceil(@classes.monk.levels / 5) * 2)) + @abilities.wis.mod"
                     ],
                     "fire"
                 ]
@@ -171,7 +171,7 @@
                 "actionType": "other",
                 "damage.parts": [
                     [
-                        "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))"
+                        "1d(4 + (ceil(@classes.monk.levels / 5) * 2))"
                     ],
                     "cold"
                 ]
