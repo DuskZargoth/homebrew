@@ -2550,6 +2550,20 @@
 				"Blank Mind|Monk Rework|DZC:ANA|Inner Strength|DZC:ANA|11",
 				"Enlightenment|Monk Rework|DZC:ANA|Inner Strength|DZC:ANA|17"
 			]
+		},
+        {
+			"name": "Way of the Elements",
+			"shortName": "Elements",
+			"source": "DZC:ANA",
+			"className": "Monk Rework",
+			"classSource": "DZC:ANA",
+			"page": 6,
+			"subclassFeatures": [
+				"Way of the Elements|Monk Rework|DZC:ANA|Elements|DZC:ANA|3",
+				"Primal Stances|Monk Rework|DZC:ANA|Elements|DZC:ANA|6",
+				"Step Shift|Monk Rework|DZC:ANA|Elements|DZC:ANA|11",
+				"Elemental Mastery|Monk Rework|DZC:ANA|Elements|DZC:ANA|17"
+			]
 		}
 	],
 	"subclassFeature": [
