@@ -1766,7 +1766,7 @@
             "name": "Lightning Adept",
             "source": "DZC:ANA",
             "page": 7,
-            "foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp",
+            "foundryImg": "icons/magic/lightning/bolt-strike-sparks-blue.webp",
             "featureType": [
 				"DZC:EA",
                 "DZC:EA:A",
@@ -1792,7 +1792,7 @@
             "name": "Acid Adept",
             "source": "DZC:ANA",
             "page": 7,
-            "foundryImg": "icons/magic/air/projectile-boulder-dust.webp",
+            "foundryImg": "icons/magic/acid/dissolve-drip-droplet-smoke.webp",
             "featureType": [
 				"DZC:EA",
                 "DZC:EA:E",
@@ -1818,7 +1818,7 @@
             "name": "Light Adept",
             "source": "DZC:ANA",
             "page": 7,
-            "foundryImg": "icons/magic/air/projectile-smoke-swirl-red.webp",
+            "foundryImg": "icons/magic/light/beam-rays-yellow-blue-large.webp",
             "featureType": [
 				"DZC:EA",
                 "DZC:EA:F",
@@ -1844,7 +1844,7 @@
             "name": "Heal Adept",
             "source": "DZC:ANA",
             "page": 7,
-            "foundryImg": "icons/magic/air/projectile-ice-snowball.webp",
+            "foundryImg": "icons/magic/life/heart-cross-blue.webp",
             "featureType": [
 				"DZC:EA",
                 "DZC:EA:W",
@@ -1870,7 +1870,7 @@
             "name": "Nature's Vessel",
             "source": "DZC:ANA",
             "page": 7,
-            "foundryImg": "icons/magic/air/projectile-ice-snowball.webp",
+            "foundryImg": "icons/magic/air/silhouette-hold-change-green.webp",
             "featureType": [
 				"DZC:EA",
                 "DZC:EA:A",
@@ -2695,7 +2695,7 @@
 			"name": "Elemental Arts",
 			"source": "DZC:ANA",
 			"page": 6,
-			"foundryImg": "",
+			"foundryImg": "icons/magic/control/beam-hand-leaves-green.webp",
 			"className": "Monk Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Elements",
@@ -2743,7 +2743,7 @@
 			"name": "Elemental Strike",
 			"source": "DZC:ANA",
 			"page": 6,
-			"foundryImg": "",
+			"foundryImg": "icons/magic/fire/flame-burning-fist-strike.webp",
 			"className": "Monk Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Elements",
@@ -2758,22 +2758,22 @@
 					"entries": [
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Thunderous Strike",
+							"optionalfeature": "Thunderous Strike|DZC:ANA",
 							"name": "Thunderous Strike (Air Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Rocky Strike",
+							"optionalfeature": "Rocky Strike|DZC:ANA",
 							"name": "Rocky Strike (Earth Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Igneous Strike",
+							"optionalfeature": "Igneous Strike|DZC:ANA",
 							"name": "Igneous Strike (Fire Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Gelid Strike",
+							"optionalfeature": "Gelid Strike|DZC:ANA",
 							"name": "Gelid Strike (Water Art)"
                         }
                     ]
@@ -2785,7 +2785,7 @@
 			"name": "Elemental Manifestation",
 			"source": "DZC:ANA",
 			"page": 6,
-			"foundryImg": "",
+			"foundryImg": "icons/magic/earth/projectile-stone-boulder-brown.webp",
 			"className": "Monk Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Elements",
@@ -2800,22 +2800,22 @@
 					"entries": [
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Wind Blast",
+							"optionalfeature": "Wind Blast|DZC:ANA",
 							"name": "Wind Blast (Air Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Stone Boulder",
+							"optionalfeature": "Stone Boulder|DZC:ANA",
 							"name": "Stone Boulder (Earth Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Flaming Blast",
+							"optionalfeature": "Flaming Blast|DZC:ANA",
 							"name": "Flaming Blast (Fire Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Water Swirl",
+							"optionalfeature": "Water Swirl|DZC:ANA",
 							"name": "Water Swirl (Water Art)"
                         }
                     ]
@@ -2827,7 +2827,7 @@
 			"name": "Primal Stances",
 			"source": "DZC:ANA",
 			"page": 6,
-			"foundryImg": "",
+			"foundryImg": "icons/magic/water/elemental-water.webp",
 			"className": "Monk Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Elements",
@@ -2843,42 +2843,42 @@
 					"entries": [
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Wind Stance",
+							"optionalfeature": "Wind Stance|DZC:ANA",
 							"name": "Wind Stance (Air Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Mountain Stance",
+							"optionalfeature": "Mountain Stance|DZC:ANA",
 							"name": "Mountain Stance (Earth Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Flame Stance",
+							"optionalfeature": "Flame Stance|DZC:ANA",
 							"name": "Flame Stance (Fire Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "River Stance",
+							"optionalfeature": "River Stance|DZC:ANA",
 							"name": "River Stance (Water Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Wind Blast",
+							"optionalfeature": "Wind Blast|DZC:ANA",
 							"name": "Wind Blast (Air Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Stone Boulder",
+							"optionalfeature": "Stone Boulder|DZC:ANA",
 							"name": "Stone Boulder (Earth Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Flaming Blast",
+							"optionalfeature": "Flaming Blast|DZC:ANA",
 							"name": "Flaming Blast (Fire Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Water Swirl",
+							"optionalfeature": "Water Swirl|DZC:ANA",
 							"name": "Water Swirl (Water Art)"
                         }
                     ]
@@ -2890,7 +2890,7 @@
 			"name": "Step Shift",
 			"source": "DZC:ANA",
 			"page": 7,
-			"foundryImg": "",
+			"foundryImg": "icons/creatures/abilities/wings-birdlike-blue.webp",
 			"className": "Monk Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Elements",
@@ -2906,62 +2906,62 @@
 					"entries": [
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Aerial Lift",
+							"optionalfeature": "Aerial Lift|DZC:ANA",
 							"name": "Aerial Lift (Air Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Rock Walk",
+							"optionalfeature": "Rock Walk|DZC:ANA",
 							"name": "Rock Walk (Earth Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Jet Burst",
+							"optionalfeature": "Jet Burst|DZC:ANA",
 							"name": "Jet Burst (Fire Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Underwater Adaptations",
+							"optionalfeature": "Underwater Adaptations|DZC:ANA",
 							"name": "Underwater Adaptations (Water Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Wind Stance",
+							"optionalfeature": "Wind Stance|DZC:ANA",
 							"name": "Wind Stance (Air Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Mountain Stance",
+							"optionalfeature": "Mountain Stance|DZC:ANA",
 							"name": "Mountain Stance (Earth Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Flame Stance",
+							"optionalfeature": "Flame Stance|DZC:ANA",
 							"name": "Flame Stance (Fire Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "River Stance",
+							"optionalfeature": "River Stance|DZC:ANA",
 							"name": "River Stance (Water Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Wind Blast",
+							"optionalfeature": "Wind Blast|DZC:ANA",
 							"name": "Wind Blast (Air Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Stone Boulder",
+							"optionalfeature": "Stone Boulder|DZC:ANA",
 							"name": "Stone Boulder (Earth Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Flaming Blast",
+							"optionalfeature": "Flaming Blast|DZC:ANA",
 							"name": "Flaming Blast (Fire Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Water Swirl",
+							"optionalfeature": "Water Swirl|DZC:ANA",
 							"name": "Water Swirl (Water Art)"
                         }
                     ]
@@ -2973,7 +2973,7 @@
 			"name": "Elemental Mastery",
 			"source": "DZC:ANA",
 			"page": 7,
-			"foundryImg": "",
+			"foundryImg": "icons/magic/nature/explosion-flame-blue",
 			"className": "Monk Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Elements",
@@ -2996,47 +2996,47 @@
 					"entries": [
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Air Master",
+							"optionalfeature": "Air Master|DZC:ANA",
 							"name": "Air Master (Four Air Arts)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Earth Master",
+							"optionalfeature": "Earth Master|DZC:ANA",
 							"name": "Earth Master (Four Earth Arts)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Fire Master",
+							"optionalfeature": "Fire Master|DZC:ANA",
 							"name": "Fire Master (Four Fire Arts)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Water Master",
+							"optionalfeature": "Water Master|DZC:ANA",
 							"name": "Water Master (Four Water Arts)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Lightning Adept",
+							"optionalfeature": "Lightning Adept|DZC:ANA",
 							"name": "Lightning Adept (Two or more Air Arts)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Acid Adept",
+							"optionalfeature": "Acid Adept|DZC:ANA",
 							"name": "Acid Adept (Two or more Earth Arts)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Light Adept",
+							"optionalfeature": "Light Adept|DZC:ANA",
 							"name": "Light Adept (Two or more Fire Arts)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Heal Adept",
+							"optionalfeature": "Heal Adept|DZC:ANA",
 							"name": "Heal Adept (Two or more Water Arts)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Nature's Vessel",
+							"optionalfeature": "Nature's Vessel|DZC:ANA",
 							"name": "Nature's Vessel (One Art in each Elemental)"
                         }
                     ]
