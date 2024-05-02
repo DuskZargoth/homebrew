@@ -82,9 +82,9 @@
                 "actionType": "other",
                 "damage.parts": [
                     [
-                        "@scale.monk.die"
-                    ],
-                    "thunder"
+                        "@scale.monk.die",
+			    "thunder"
+                    ]
                 ]
             }
         },
@@ -115,7 +115,7 @@
                     [
                         "@scale.monk.die + @abilities.wis.mod"
                     ],
-                    "bludgeoning"
+                    "quickDamage.context.0": "Your choice of bludgeoning, piercing, or slashing"
                 ]
             }
         },
@@ -144,9 +144,9 @@
                 "actionType": "other",
                 "damage.parts": [
                     [
-                        "@scale.monk.die + @abilities.wis.mod"
-                    ],
-                    "fire"
+                        "@scale.monk.die + @abilities.wis.mod",
+			    "fire"
+                    ]
                 ]
             }
         },
@@ -175,9 +175,9 @@
                 "actionType": "other",
                 "damage.parts": [
                     [
-                        "@scale.monk.die"
-                    ],
-                    "cold"
+                        "@scale.monk.die",
+			    "cold"
+                    ]
                 ]
             }
         },
@@ -199,7 +199,20 @@
             "entries": [
                 "A line of compressed air 30 feet long and 5 feet wide blasts from you in a direction you choose. Each creature in that area must succeed on a Constitution saving throw or take thunder damage equal to one roll of your Martial Arts die and be pushed up to 10 feet away from you in a direction following the line.",
                 "Unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the feature's effect."
-            ]
+            ],
+		"foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "Spend 1 ki to replace an attack from the Attack action",
+                "actionType": "save",
+			"damage.parts": [
+					[
+						"@scale.monk.die",
+						"thunder"
+					]
+				],
+                "save.ability": "con",
+                "save.scaling": "wis"
+            }
         },
 
         {
@@ -218,7 +231,20 @@
             ],
             "entries": [
                 "You hurl a Medium rock against a creature you can see within 30 feet from you. The creature must succeed on a Strength saving throw or take bludgeoning damage equal to one roll of your Martial Arts die and be knocked prone."
-            ]
+            ],
+		"foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "Spend 1 ki to replace an attack from the Attack action",
+                "actionType": "save",
+			"damage.parts": [
+					[
+						"@scale.monk.die",
+						"bludgeoning"
+					]
+				],
+                "save.ability": "str",
+                "save.scaling": "wis"
+            }
         },
 
         {
@@ -238,7 +264,20 @@
             "entries": [
                 "You shoot a fire projectile towards a point you choose that you can see within 30 feet from you. The projectile explodes when it reaches its destination or impacts against a solid surface. Each creature within 5 feet of the point where the projectile explodes must make a Dexterity saving throw, taking fire damage equal to two rolls of your Martial Arts die on a failed save.",
                 "The explosion damages objects in the area that aren't being worn or carried."
-            ]
+            ],
+		"foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "Spend 1 ki to replace an attack from the Attack action",
+                "actionType": "save",
+			"damage.parts": [
+					[
+						"2@scale.monk.die",
+						"fire"
+					]
+				],
+                "save.ability": "dex",
+                "save.scaling": "wis"
+            }
         },
 
         {
@@ -257,7 +296,20 @@
             ],
             "entries": [
                 "A pillar of swirling water appears in a point you can see within 30 feet from you. Each creature in a 10-foot-radius, 15-foot-high cylinder centered on a point within range must make a Strength saving throw. On a failed save, a creature takes cold damage equal to one roll of your Martial Arts die and is pushed 5 feet in any direction you choose."
-            ]
+            ],
+		"foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "Spend 1 ki to replace an attack from the Attack action",
+                "actionType": "save",
+			"damage.parts": [
+					[
+						"@scale.monk.die",
+						"cold"
+					]
+				],
+                "save.ability": "con",
+                "save.scaling": "wis"
+            }
         },
 
         {
