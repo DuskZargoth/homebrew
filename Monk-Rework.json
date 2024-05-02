@@ -1359,7 +1359,7 @@
                 "damage.parts": [
                     [
                         "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))",
-			    "thunder"
+                        "thunder"
                     ]
                 ]
             }
@@ -1390,9 +1390,9 @@
                 "damage.parts": [
                     [
                         "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2)) + @abilities.wis.mod"
-                    ],
-                    "quickDamage.context.0": "Your choice of bludgeoning, piercing, or slashing"
-                ]
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Your choice of bludgeoning, piercing, or slashing"
             }
         },
 
@@ -1421,7 +1421,7 @@
                 "damage.parts": [
                     [
                         "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2)) + @abilities.wis.mod",
-			    "fire"
+                        "fire"
                     ]
                 ]
             }
@@ -1452,7 +1452,7 @@
                 "damage.parts": [
                     [
                         "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))",
-			    "cold"
+                        "cold"
                     ]
                 ]
             }
