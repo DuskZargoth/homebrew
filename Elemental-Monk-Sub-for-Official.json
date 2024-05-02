@@ -1,5 +1,5 @@
 {
-	"_meta": {
+    "_meta": {
         "sources": [
             {
                 "json": "DZC:ANA",
@@ -83,7 +83,7 @@
                 "damage.parts": [
                     [
                         "@scale.monk.die",
-			    "thunder"
+                        "thunder"
                     ]
                 ]
             }
@@ -114,9 +114,9 @@
                 "damage.parts": [
                     [
                         "@scale.monk.die + @abilities.wis.mod"
-                    ],
-                    "quickDamage.context.0": "Your choice of bludgeoning, piercing, or slashing"
-                ]
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Your choice of bludgeoning, piercing, or slashing"
             }
         },
 
@@ -145,7 +145,7 @@
                 "damage.parts": [
                     [
                         "@scale.monk.die + @abilities.wis.mod",
-			    "fire"
+                        "fire"
                     ]
                 ]
             }
@@ -176,7 +176,7 @@
                 "damage.parts": [
                     [
                         "@scale.monk.die",
-			    "cold"
+                        "cold"
                     ]
                 ]
             }
