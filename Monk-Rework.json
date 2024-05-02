@@ -3032,7 +3032,7 @@
 			"name": "Elemental Mastery",
 			"source": "DZC:ANA",
 			"page": 7,
-			"foundryImg": "icons/magic/nature/explosion-flame-blue",
+			"foundryImg": "icons/magic/nature/explosion-flame-blue.webp",
 			"className": "Monk Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Elements",
