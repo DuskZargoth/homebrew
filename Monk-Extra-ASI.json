@@ -487,7 +487,7 @@
 				"Stunning Strike|Monk||5",
 				"Focused Aim|Monk||5|TCE",
 				"Ki-Empowered Strikes|Monk||6",
-				"Ability Score Improvement|Monk||6",
+				"Ability Score Improvement|Monk|DZC:ANA|6",
 				{
 					"classFeature": "Monastic Tradition feature|Monk||6",
 					"gainSubclassFeature": true
@@ -529,9 +529,9 @@
 			"level": 6,
 			"isClassFeatureVariant": true,
 			"entries": [
-        "{@i 6th-level monk {@variantrule optional class features|tce|optional feature}, which replaces the {@classFeature Stunning Strike|monk||5||} and {@classFeature Ki-Empowered Strikes|monk||6||} features}",
+				"{@i 6th-level monk {@variantrule optional class features|tce|optional feature}, which replaces the {@classFeature Stunning Strike|monk||5||} and {@classFeature Ki-Empowered Strikes|monk||6||} features}",
 				"When you reach 6th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can't increase an ability score above 20 using this feature.",
-        "If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
+				"If your DM allows the use of feats, you may instead take a {@5etools feat|feats.html}."
 			]
 		}
   ]
