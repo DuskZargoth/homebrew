@@ -595,7 +595,39 @@
                     "entries": [
                         "Not only are you capable of wielding a larger variety of weapons, but you can use it in a more defensive style. Your monk weapons are longbows and any weapon that doesn't have the two-handed, heavy, or special property."
                     ]
-                }
+                },
+                {
+					"type": "inset",
+					"name": "Changes to Unarmed Strikes and the Finesse Property",
+					"entries": [
+						"In this compendium unarmed strikes and the finesse property suffer important changes meant to keep balance in check.",
+                        {
+                            "type": "entries",
+                            "name": "Finesse Property",
+                            "page": 14,
+                            "entries": [
+                                "The property now allows to choose between your Strength or Dexterity modifier only for the attack roll with the weapon, but not for the damage roll. For the damage roll you still have to use your Strength modifier for melee weapon attacks or your Dexterity modifier for ranged weapon attacks."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Unarmed Strikes",
+                            "page": 14,
+                            "entries": [
+                                "Unarmed strikes are now considered to have the finesse and light properties."
+                            ]
+                        }
+					]
+				},
+                {
+					"type": "inset",
+					"name": "Unarmored Defense",
+					"entries": [
+						"Some characters have access to a specialized form of defense called Unarmored Defense. If your character has proficiency with it, your AC equals to 10 + your Dexterity modifier + your ability modifier listed in parenthesis, while you aren't wearing armor. You also lose this benefit if you wield a shield and lack proficiency with it.",
+                        "If you have proficiency in this trait with different abilities, you can only benefit from one at the time.",
+                        "Each ability offers a different interpretation of this trait. For instance, Wisdom allows you to predict attacks and increases your overall awareness of your surroundings; Constitution prevents harm by increasing your studiness; and Charisma makes your presence tangible to others, making them think twice before laying a finger on you."
+					]
+				}
             ]
         },
 		{
@@ -3178,7 +3210,14 @@
 							"name": "Quick Build",
 							"page": 2,
 							"entries": [
-								"You can make a monk quickly by following these suggestions. First, make Dexterity your highest ability score, followed by Wisdom. Second, choose the {@background hermit} background. Take the Unarmed Style and when you learn ki features, choose {@optfeature Flurry of Blows|DZC}, {@optfeature Patient Defense|DZC}, and {@optfeature Step of the Wind|DZC}."
+								"You can make a monk quickly by following these suggestions. First, make Dexterity your highest ability score, followed by Wisdom. Second, choose the {@background hermit} background. Take the Unarmed Style and when you learn ki features, choose {@optfeature Flurry of Blows|DZC}, {@optfeature Patient Defense|DZC}, and {@optfeature Step of the Wind|DZC}.",
+                                {
+                                    "type": "inset",
+                                    "name": "Can I add this Bonus?",
+                                    "entries": [
+                                        "Sometimes an ability, feature, or spell allows you to add a bonus to an attack roll, ability check, or saving throw, such as the bard's Bardic Inspiration, a war cleric's  Channel Divinity: Guided Strike, the *bless* spell, the martial technique boost offensive, and many others. Other abilities allow you to reroll the die for those die rolls, such as the drunken master monk's Drunkard's Luck. There is another type of abilities, much rarer than the others, ones that allow you to add special effects to your actions, reactions, die rolls, etc., such as the monk's Evasion ki feature. These abilities have in common the lack of key words for its trigger, such as hit, succeed, miss, or fail, which is why you can choose to use these after seeing the roll, but before the DM says wether the roll succeeds or fails."
+                                    ]
+                                }
 							]
 						}
 					]
