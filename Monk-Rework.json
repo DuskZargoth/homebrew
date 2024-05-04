@@ -1,4 +1,5 @@
 {
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
     "_meta": {
         "sources": [
             {
@@ -3150,7 +3151,7 @@
 						"name": "Unarmed Strike (Monk)",
                         "source": "DZC:ANA",
                         "page": 1,
-						"srd": true,
+						"srd": false,
 						"type": "M",
 						"rarity": "none",
 						"weaponCategory": "simple",
@@ -3162,6 +3163,7 @@
 									"bludgeoning"
 								]
 							],
+                            "ability": "str",
                             "properties": [
                                 "fin",
                                 "lgt"
