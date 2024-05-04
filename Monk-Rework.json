@@ -735,8 +735,7 @@
                     "name": "Ki Points",
                     "page": 3,
                     "entries": [
-                        "Your access to this energy is represented by a number of ki points. You have an amount of ki points equal to your monk level + your Wisdom modifier, unless that modifier is negative. You regain all expended ki points when you use your meditation to finish a short or long rest.",
-                        "Whenever you gain a level in this class, you can choose one of the ki features you know and replace it with another one that you could learn at that level."
+                        "Your access to this energy is represented by a number of ki points. You have an amount of ki points equal to your monk level + your Wisdom modifier, unless that modifier is negative. You regain 1 + your Wisdom modifier (minimum of 2) ki points if you finish a short rest meditating, and all of them if you finish a long rest with it."
                     ]
                 },
                 {
