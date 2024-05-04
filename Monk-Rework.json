@@ -1,5 +1,6 @@
 {
-	"_meta": {
+	"$schema": "https://raw.githubusercontent.com/TheGiddyLimit/5etools-utils/master/schema/brew-fast/homebrew.json",
+    "_meta": {
         "sources": [
             {
                 "json": "DZC:ANA",
@@ -3139,6 +3140,37 @@
 
 	"foundryClassFeature": [
 		{
+            "name": "Martial Arts",
+            "source": "RZC:ANA",
+            "className": "Monk Rework",
+            "classSource": "RZC:ANA",
+            "level": 1,
+            "subEntities": {
+				"item": [
+					{
+						"name": "Unarmed Strike (Monk)",
+						"srd": true,
+						"type": "M",
+						"rarity": "none",
+						"weaponCategory": "simple",
+						"foundrySystem": {
+							"equipped": true,
+							"damage.parts": [
+								[
+									"1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2)) + @abilities.str.mod",
+									"bludgeoning"
+								]
+							],
+                            "properties": [
+                                "fin",
+                                "lgt"
+                            ]
+						}
+					}
+				]
+			}
+        },
+        {
 			"name": "Ki",
 			"source": "DZC:ANA",
 			"className": "Monk Rework",
