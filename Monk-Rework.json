@@ -1232,7 +1232,27 @@
             ],
             "entries": [
 				"Before you make an unarmed strike, you can take a -5 penalty to the attack roll. If the attack hits, you gain a bonus to the damage roll equal to one roll of your Martial Arts die + your Wisdom modifier."
-            ]
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "Before making an unarmed strike",
+                "activation.cost": 1,
+                "actionType": "mwak",
+                "attack": {
+                    "bonus": -5,
+                    "flat": false
+                },
+                "damage.parts": [
+                    [
+                        "2d(4 + (ceil(@classes.monk-rework.levels / 5) * 2)) + @abilities.str.mod + @abilities.wis.mod",
+                        "bludgeoning"
+                    ]
+                ],
+                "properties": [
+                    "fin",
+                    "lgt"
+                ]
+            }
         },
 
 		{
@@ -2159,7 +2179,8 @@
                 "actionType": "other",
                 "formula": [
                     "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))"
-                ]
+                ],
+                "rsr5e.quickDamage.context.0": "Your choice of bonus to attack or damage roll"
             }
         },
         {
@@ -2512,6 +2533,36 @@
         },
         {
             "name": "Deflect Physical Attacks",
+            "source": "DZC:ANA",
+            "page": 12,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:D"
+            ],
+            "entries": [
+                "You can spend 1 ki point to use your reaction to deflect, or stop an attack when you are hit by a weapon attack, provided that the weapon, ammunition, or other damaging element is at least one size smaller than you. When you do so, the damage you take from the attack is reduced by one roll of your Martial Arts die + your Dexterity modifier + your monk level.",
+                "If you have a free hand, you can use it to catch the weapon or ammunition, provided you reduced the damage to 0."
+            ],
+            "foundrySystem": {
+                "activation.type": "reaction",
+                "activation.condition": "When you are hit by a weapon attack",
+                "activation.cost": 1,
+                "actionType": "healing",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2)) + @abilities.dex.mod + @classes.monk-rework.levels",
+                        "healing"
+                    ]
+                ]
+            }
+        },
+        {
+            "name": "Ki Coat",
             "source": "DZC:ANA",
             "page": 12,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
