@@ -3632,6 +3632,38 @@
 
 	"foundryClassFeature": [
         {
+        "name": "Martial Arts",
+			"source": "DZC:ANA",
+			"className": "Monk Rework",
+			"classSource": "DZC:ANA",
+			"level": 1,
+			"subEntities": {
+				"item": [
+					{
+						"name": "Unarmed Strike (Monk)",
+						"source": "DZC:ANA",
+						"page": 1,
+						"type": "M",
+						"rarity": "none",
+						"weaponCategory": "simple",
+						"foundrySystem": {
+							"equipped": true,
+							"damage.parts": [
+								[
+									"1d(4 + ceil((@classes.monk-levels.levels + 2) / 6) * 2) + @abilities.str.mod",
+									"bludgeoning"
+								]
+							],
+							"properties": [
+                                "fin",
+                                "lgt"
+                            ]
+						}
+					}
+				]
+			}
+		},
+        {
 			"name": "Ki",
 			"source": "DZC:ANA",
 			"className": "Monk Rework",
