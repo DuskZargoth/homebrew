@@ -3654,6 +3654,7 @@
 									"bludgeoning"
 								]
 							],
+                            "ability": "",
 							"properties": [
                                 "fin",
                                 "lgt"
