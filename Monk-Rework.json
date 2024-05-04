@@ -3638,7 +3638,7 @@
 			"classSource": "DZC:ANA",
 			"level": 2,
 			"system": {
-				"uses.per": "sr",
+				"uses.per": "lr",
 				"uses.max": "@classes.monk-rework.levels + @abilities.wis.mod"
 			}
 		}
