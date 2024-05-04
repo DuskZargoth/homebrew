@@ -3163,7 +3163,7 @@
 									"bludgeoning"
 								]
 							],
-                            "abilities": "str",
+                            "ability": "default",
                             "properties": [
                                 "fin",
                                 "lgt"
