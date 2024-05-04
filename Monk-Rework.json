@@ -3654,7 +3654,7 @@
 									"bludgeoning"
 								]
 							],
-                            "ability": "",
+                            "ability": "default",
 							"properties": [
                                 "fin",
                                 "lgt"
