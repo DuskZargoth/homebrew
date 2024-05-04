@@ -3151,7 +3151,7 @@
 						"name": "Unarmed Strike (Monk)",
                         "source": "DZC:ANA",
                         "page": 1,
-						"srd": false,
+						"srd": true,
 						"type": "M",
 						"rarity": "none",
 						"weaponCategory": "simple",
