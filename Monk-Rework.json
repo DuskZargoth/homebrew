@@ -794,27 +794,27 @@
                             {
                                 "key": "data.attributes.movement.walk",
                                 "mode": "ADD",
-                                "value": "+ sign(@attributes.movement.walk) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5)"
+                                "value": "+ (sign(@attributes.movement.walk) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5))"
                             },
                             {
                                 "key": "data.attributes.movement.burrow",
                                 "mode": "ADD",
-                                "value": "+ sign(@attributes.movement.burrow) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5)"
+                                "value": "+ (sign(@attributes.movement.burrow) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5))"
                             },
                             {
                                 "key": "data.attributes.movement.climb",
                                 "mode": "ADD",
-                                "value": "+ sign(@attributes.movement.climb) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5)"
+                                "value": "+ (sign(@attributes.movement.climb) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5))"
                             },
                             {
                                 "key": "data.attributes.movement.fly",
                                 "mode": "ADD",
-                                "value": "+ sign(@attributes.movement.fly) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5)"
+                                "value": "+ (sign(@attributes.movement.fly) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5))"
                             },
                             {
                                 "key": "data.attributes.movement.swim",
                                 "mode": "ADD",
-                                "value": "+ sign(@attributes.movement.swim) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5)"
+                                "value": "+ (sign(@attributes.movement.swim) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5))"
                             }
                         ]
                     }
@@ -3145,13 +3145,172 @@
             ],
             "foundrySystem": {
                 "activation.type": "special",
-                "activation.condition": "When you roll initiative",
+                "activation.condition": "When you make an Insight, Medicine, or Perception check",
                 "activation.cost": 1,
                 "actionType": "other",
                 "formula": [
                     "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))"
                 ]
             }
+        },
+        {
+            "name": "Slow Fall",
+            "source": "DZC:ANA",
+            "page": 14,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "You can spend 1 ki point as a reaction when you fall to reduce any falling damage you take by an amount equal to five times your monk level."
+            ],
+            "foundrySystem": {
+                "activation.type": "reaction",
+                "activation.condition": "When you fall",
+                "activation.cost": 1,
+                "actionType": "other",
+                "formula": [
+                    "5*@classes.monk-rework.levels"
+                ]
+            }
+        },
+        {
+            "name": "Spectacular Training",
+            "source": "DZC:ANA",
+            "page": 14,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "When you make an Intimidation, Performance, or Persuasion check, you can spend 1 ki point to add one roll your Martial Arts die to the roll."
+            ],
+            "foundrySystem": {
+                "activation.type": "reaction",
+                "activation.condition": "When you make an Intimidation, Performance, or Persuasion check",
+                "activation.cost": 1,
+                "actionType": "other",
+                "formula": [
+                    "5*@classes.monk-rework.levels"
+                ]
+            }
+        },
+        {
+            "name": "Step of the Wind",
+            "source": "DZC:ANA",
+            "page": 14,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "As a bonus action, you can spend 1 ki point to take the Dash or Disengage action and double your jump distance for the turn."
+            ]
+        },
+        {
+            "name": "Blinding Speed",
+            "source": "DZC:ANA",
+            "page": 14,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "Once on your turn, when you take the Dash or Disengage action on your turn, you can spend 1 ki point to double your movement speed for the turn."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    },
+                    "feature": [
+                        "Step of the Wind ki feature"
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Break Bindings",
+            "source": "DZC:ANA",
+            "page": 14,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "At the start of your turn, you can spend 1 ki point to end one effect on yourself that is causing you to be {@condition grappled} or {@condition restrained}. When you do so, your movement speed is halved until the end of your turn."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Stillness of Mind",
+            "source": "DZC:ANA",
+            "page": 14,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "At the start of your turn, you can spend 1 ki point to end one effect on yourself that is causing you to be {@condition charmed} or {@condition frightened}."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 5,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
         },
         {
             "name": "Tongue of the Sun and Moon",
@@ -3189,6 +3348,201 @@
                     "innate": {
                         "_": [
                             "tongues"
+                        ]
+                    },
+                    "ability": "wis"
+                }
+            ]
+        },
+        {
+            "name": "Agile Feet",
+            "source": "DZC:ANA",
+            "page": 14,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "You gain the ability to move along vertical surfaces, across liquids and surfaces that don't support your weight on your turn without falling during the move.",
+                "You can spend 1 ki point whenever you stop moving to not fall off vertical surfaces, sink in liquid, or fall from surfaces that don't support your weight. This benefit lasts until the end of your next turn or until you are {@condition incapacitated}."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Healthy Body",
+            "source": "DZC:ANA",
+            "page": 14,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 2
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "When you finish a short or long rest, you can spend 2 ki points to reduce your {@condition exhaustion} level by one."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Light Reflection",
+            "source": "DZC:ANA",
+            "page": 14,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 4
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "You can distort the light around you to hide your pressence. As an action, you can spend 4 ki points to become {@condition invisible} for 1 minute."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Third Sense",
+            "source": "DZC:ANA",
+            "page": 14,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 2
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "As a bonus action, you can spend 2 ki points to impose the {@condition blinded} and {@condition deafened} condition on yourself. For the duration, you gain a tremorsense with a range of 120 feet. Creatures and objects you can detect with this special sense are considered to be perfectly visible for you. You can end this effect early on your turn as a bonus action."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 9,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Astral Sense",
+            "source": "DZC:ANA",
+            "page": 14,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 6
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "You can spend 6 ki points to cast {@spell true seeing} on yourself."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 13,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": [
+                            "true seeing"
+                        ]
+                    },
+                    "ability": "wis"
+                }
+            ]
+        },
+        {
+            "name": "Emptry Body",
+            "source": "DZC:ANA",
+            "page": 14,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 8
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "You can spend 8 ki points to cast {@spell astral projection} on yourself."
+            ],
+            "prerequisite": [
+                {
+                    "level": {
+                        "level": 17,
+                        "class": {
+                            "name": "Monk Rework",
+                            "source": "DZC:ANA",
+                            "visible": true
+                        }
+                    }
+                }
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": [
+                            "astral projection"
                         ]
                     },
                     "ability": "wis"
@@ -3239,6 +3593,20 @@
 				"Wholeness of Body|Monk Rework|DZC:ANA|Inner Strength|DZC:ANA|6",
 				"Blank Mind|Monk Rework|DZC:ANA|Inner Strength|DZC:ANA|11",
 				"Enlightenment|Monk Rework|DZC:ANA|Inner Strength|DZC:ANA|17"
+			]
+		},
+        {
+			"name": "Way of the Shadows",
+			"shortName": "Shadows",
+			"source": "DZC:ANA",
+			"className": "Monk Rework",
+			"classSource": "DZC:ANA",
+			"page": 5,
+			"subclassFeatures": [
+				"Way of the Shadows|Monk Rework|DZC:ANA|Shadows|DZC:ANA|3",
+				"Shadow Step|Monk Rework|DZC:ANA|Shadows|DZC:ANA|6",
+				"Cloak of Shadows|Monk Rework|DZC:ANA|Shadows|DZC:ANA|11",
+				"Opportunist|Monk Rework|DZC:ANA|Shadows|DZC:ANA|17"
 			]
 		},
         {
@@ -3365,7 +3733,97 @@
 				"By reaching deep within yourself, your soul blossomed to its maximum potential. At 17th level, you can now add one ki feature with a 5th level restriction and one with a 9th level restriction to your Specialized Ki Features."
 			]
 		},
-        
+
+        {
+			"name": "Way of the Shadows",
+			"source": "DZC:ANA",
+			"page": 5,
+			"foundryImg": "icons/magic/holy/prayer-hands-glowing-yellow.webp",
+			"className": "Monk Rework",
+			"classSource": "DZC:ANA",
+			"subclassShortName": "Shadows",
+			"subclassSource": "DZC:ANA",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Monks of the Way of the Shadows follow a tradition that values stealth and subterfuge. These monks might be called ninjas or shadowdancers, and they serve as spies and assassins.",
+
+				"Sometimes the members of a ninja monastery are family members, forming a clan sworn to secrecy about their arts and missions. Other monasteries are more like thieves' guilds, hiring out their services to nobles, rich merchants, or anyone else who can pay their fees.",
+
+                "Regardless of their methods, the heads of these monasteries expect from their students unquestioning obedience, to show no scruple on their actions, and to carry their missions without failure. Otherwise, they won't hesitate to deliver severe punishment.",
+				{
+					"type": "refSubclassFeature",
+					"subclassFeature": "Shadow Arts|Monk Rework|DZC:ANA|Shadows|DZC:ANA|3"
+				}
+			]
+		},
+
+		{
+			"name": "Shadow Arts",
+			"source": "DZC:ANA",
+			"page": 5,
+			"foundryImg": "icons/magic/light/hand-sparks-glow-yellow.webp",
+			"className": "Monk Rework",
+			"classSource": "DZC:ANA",
+			"subclassShortName": "Shadow",
+			"subclassSource": "DZC:ANA",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"With your training you are capable of replicating certain spells. At 3rd level, you gain the {@spell message} and {@spell minor illusion} cantrips if you don't already know them. In addition, you can spend 1 ki point to cast {@spell fog cloud}, {@spell silent image}, or {@spell jump}, and you can spend 2 ki points to cast {@spell darkness}, {@spell darkvision}, {@spell pass without trace}, or {@spell silence}.",
+
+				"When you cast {@spell silent image} in this way, you can only use it to create an image of yourself, and you can only cast {@spell jump} on yourself in this way."
+			]
+		},
+
+		{
+			"name": "Shadow Step",
+			"source": "DZC:ANA",
+			"page": 5,
+			"foundryImg": "icons/magic/light/explosion-star-blue.webp",
+			"className": "Monk Rework",
+			"classSource": "DZC:ANA",
+			"subclassShortName": "Shadows",
+			"subclassSource": "DZC:ANA",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, you gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness. You then have advantage on the first attack you make on that turn."
+			]
+		},
+
+		{
+			"name": "Cloak of Shadows",
+			"source": "DZC:ANA",
+			"page": 5,
+			"foundryImg": "icons/magic/life/heart-glowing-red.webp",
+			"className": "Monk Rework",
+			"classSource": "DZC:ANA",
+			"subclassShortName": "Shadows",
+			"subclassSource": "DZC:ANA",
+			"level": 11,
+			"header": 2,
+			"entries": [
+				"At 11th level, you learn how to become one with the shadows. You can spend 2 ki points when you use your Shadow Step to become {@spell invisible}. You remain {@spell invisible} until you make an attack, cast a spell, or until you get into an area of bright light."
+			]
+		},
+
+		{
+			"name": "Opportunist",
+			"source": "DZC:ANA",
+			"page": 5,
+			"foundryImg": "icons/magic/holy/prayer-hands-glowing-yellow-white.webp",
+			"className": "Monk Rework",
+			"classSource": "DZC:ANA",
+			"subclassShortName": "Shadows",
+			"subclassSource": "DZC:ANA",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"At 17th level, you can exploit a creature's momentary distraction when it is hit by an attack. Whenever a creature within 5 feet of you is hit by an attack made by a creature other than you, you can use your reaction to make an attack against that creature."
+			]
+		},
+
         {
 			"name": "Way of the Elements",
 			"source": "DZC:ANA",
