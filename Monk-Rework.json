@@ -3053,7 +3053,9 @@
                 "activation.condition": "When you make an Athletics, Acrobatics, or Stealth check",
                 "activation.cost": 1,
                 "actionType": "other",
-                "formula": "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))",
+                "formula": [
+                    "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))"
+                ],
                 "rsr5e.quickOther.context": "Bonus to an Athletics, Acrobatics, or Stealth check"
             }
         },
