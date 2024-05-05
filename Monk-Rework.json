@@ -3014,7 +3014,7 @@
 				"DZC:KF:D"
             ],
             "entries": [
-                "You can spend 2 ki points as a bonus action to enter a defensive stance while wielding a monk weapon until the start of your next turn. For the duration, the first time any hostile creature you can see attempts to enter your reach on its turn has its speed reduced by 15 feet until the end of its turn. Furthermore, any friendly creature you can see within 5 feet from you (including you) has a +2 bonus to its AC. However, your speed becomes 0 for the duration.."
+                "You can spend 2 ki points as a bonus action to enter a defensive stance while wielding a monk weapon until the start of your next turn. For the duration, the first time any hostile creature you can see attempts to enter your reach on its turn has its speed reduced by 15 feet until the end of its turn. Furthermore, any friendly creature you can see within 5 feet from you (including you) has a +2 bonus to its AC. However, your speed becomes 0 for the duration."
             ],
             "prerequisite": [
                 {
@@ -3031,6 +3031,31 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "Body Training",
+            "source": "DZC:ANA",
+            "page": 13,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "When you make an Athletics, Acrobatics, or Stealth check, you can spend 1 ki point to add one roll your Martial Arts die to the roll."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you make an Athletics, Acrobatics, or Stealth check",
+                "activation.cost": 1,
+                "actionType": "other",
+                "formula": "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))",
+                "flags.rsr5e.quickOther.context": "Bonus to an Athletics, Acrobatics, or Stealth check"
+            }
         },
         {
             "name": "Tongue of the Sun and Moon",
