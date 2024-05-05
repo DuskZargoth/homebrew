@@ -794,27 +794,27 @@
                             {
                                 "key": "data.attributes.movement.walk",
                                 "mode": "ADD",
-                                "value": "sign(@attributes.movement.walk) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5)"
+                                "value": "+ sign(@attributes.movement.walk) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5)"
                             },
                             {
                                 "key": "data.attributes.movement.burrow",
                                 "mode": "ADD",
-                                "value": "sign(@attributes.movement.burrow) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5)"
+                                "value": "+ sign(@attributes.movement.burrow) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5)"
                             },
                             {
                                 "key": "data.attributes.movement.climb",
                                 "mode": "ADD",
-                                "value": "sign(@attributes.movement.climb) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5)"
+                                "value": "+ sign(@attributes.movement.climb) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5)"
                             },
                             {
                                 "key": "data.attributes.movement.fly",
                                 "mode": "ADD",
-                                "value": "sign(@attributes.movement.fly) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5)"
+                                "value": "+ sign(@attributes.movement.fly) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5)"
                             },
                             {
                                 "key": "data.attributes.movement.swim",
                                 "mode": "ADD",
-                                "value": "sign(@attributes.movement.swim) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5)"
+                                "value": "+ sign(@attributes.movement.swim) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5)"
                             }
                         ]
                     }
@@ -2174,8 +2174,7 @@
                 "actionType": "other",
                 "formula": [
                     "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))"
-                ],
-                "rsr5e.quickDamage.context.0": "Your choice of bonus to attack or damage roll"
+                ]
             }
         },
         {
@@ -3055,8 +3054,103 @@
                 "actionType": "other",
                 "formula": [
                     "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))"
-                ],
-                "flags.rsr5e.quickOther.context": "Bonus to an Athletics, Acrobatics, or Stealth check"
+                ]
+            }
+        },
+        {
+            "name": "Combat Awareness",
+            "source": "DZC:ANA",
+            "page": 13,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "When you make an initiative roll, you can spend 1 ki point to add one roll of your Martial Arts die to the roll."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you roll initiative",
+                "activation.cost": 1,
+                "actionType": "other",
+                "formula": [
+                    "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))"
+                ]
+            }
+        },
+        {
+            "name": "Ear of the Ancients",
+            "source": "DZC:ANA",
+            "page": 13,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "You can spend 1 ki point to cast {@spell comprehend languages}."
+            ],
+            "additionalSpells": [
+                {
+                    "innate": {
+                        "_": [
+                            "comprehend languages"
+                        ]
+                    },
+                    "ability": "wis"
+                }
+            ]
+        },
+        {
+            "name": "Extra Speed",
+            "source": "DZC:ANA",
+            "page": 13,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "At the start of your turn, you can spend 1 ki point to double the movement speed bonus from your {@optfeature Unarmored Movement|DZC:ANA} feature for 10 minutes and you ignore difficult terrain for the duration. This benefit ends early if you are incapacitated."
+            ]
+        },
+        {
+            "name": "Mental Training",
+            "source": "DZC:ANA",
+            "page": 14,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Ki",
+                "amount": 1
+            },
+            "featureType": [
+                "DZC:KF",
+				"DZC:KF:U"
+            ],
+            "entries": [
+                "When you make an Insight, Medicine, or Perception check, you can spend 1 ki point to add one roll your Martial Arts die to the roll."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you roll initiative",
+                "activation.cost": 1,
+                "actionType": "other",
+                "formula": [
+                    "1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))"
+                ]
             }
         },
         {
