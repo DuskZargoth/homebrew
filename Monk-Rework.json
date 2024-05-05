@@ -3804,7 +3804,7 @@
 			"level": 11,
 			"header": 2,
 			"entries": [
-				"At 11th level, you learn how to become one with the shadows. You can spend 2 ki points when you use your Shadow Step to become {@spell invisible}. You remain {@spell invisible} until you make an attack, cast a spell, or until you get into an area of bright light."
+				"At 11th level, you learn how to become one with the shadows. You can spend 2 ki points when you use your Shadow Step to become {@condition invisible}. You remain {@condition invisible} until you make an attack, cast a spell, or until you get into an area of bright light."
 			]
 		},
 
