@@ -810,6 +810,7 @@
                 "effects": [
                     {
                         "name": "Unarmored Movement",
+                        "foundryImg": "icons/skills/movement/feet-winged-sandals-tan.webp",
                         "changes": [
                             {
                                 "key": "system.attributes.movement.walk",
