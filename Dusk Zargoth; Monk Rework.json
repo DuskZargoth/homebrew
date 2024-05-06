@@ -4266,10 +4266,10 @@
 			"source": "DZC:ANA",
 			"className": "Monk Rework",
 			"classSource": "DZC:ANA",
-			"level": 1,
+			"level": 2,
             "effects": [
                 {
-					"name": "Unarmored Defense (Wisdom)",
+					"name": "Unarmored Movement",
 					"changes": [
                         {
                             "key": "system.attributes.movement.walk",
