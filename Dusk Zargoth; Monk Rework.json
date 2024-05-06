@@ -180,7 +180,8 @@
                                         "number": 1,
                                         "faces": 6
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -196,7 +197,8 @@
                                         "number": 1,
                                         "faces": 6
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -212,7 +214,8 @@
                                         "number": 1,
                                         "faces": 6
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -228,7 +231,8 @@
                                         "number": 1,
                                         "faces": 6
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -244,7 +248,8 @@
                                         "number": 1,
                                         "faces": 6
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -260,7 +265,8 @@
                                         "number": 1,
                                         "faces": 8
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -276,7 +282,8 @@
                                         "number": 1,
                                         "faces": 8
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -292,7 +299,8 @@
                                         "number": 1,
                                         "faces": 8
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -308,7 +316,8 @@
                                         "number": 1,
                                         "faces": 8
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -324,7 +333,8 @@
                                         "number": 1,
                                         "faces": 8
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -340,7 +350,8 @@
                                         "number": 1,
                                         "faces": 10
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -356,7 +367,8 @@
                                         "number": 1,
                                         "faces": 10
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -372,7 +384,8 @@
                                         "number": 1,
                                         "faces": 10
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -388,7 +401,8 @@
                                         "number": 1,
                                         "faces": 10
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -404,7 +418,8 @@
                                         "number": 1,
                                         "faces": 10
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -420,7 +435,8 @@
                                         "number": 1,
                                         "faces": 12
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -436,7 +452,8 @@
                                         "number": 1,
                                         "faces": 12
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -452,7 +469,8 @@
                                         "number": 1,
                                         "faces": 12
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -468,7 +486,8 @@
                                         "number": 1,
                                         "faces": 12
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -484,7 +503,8 @@
                                         "number": 1,
                                         "faces": 12
                                     }
-                                ]
+                                ],
+                                "rollable": true
                             },
                             {
                                 "type": "bonusSpeed",
@@ -792,29 +812,29 @@
                         "name": "Unarmored Movement",
                         "changes": [
                             {
-                                "key": "data.attributes.movement.walk",
+                                "key": "system.attributes.movement.walk",
                                 "mode": "ADD",
-                                "value": "+ (sign(@attributes.movement.walk) * @scale.monk-rework.unarmored-movement)"
+                                "value": "+ (sign(@attributes.movement.walk) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5))"
                             },
                             {
-                                "key": "data.attributes.movement.burrow",
+                                "key": "system.attributes.movement.burrow",
                                 "mode": "ADD",
-                                "value": "+ (sign(@attributes.movement.burrow) * @scale.monk-rework.unarmored-movement)"
+                                "value": "+ (sign(@attributes.movement.burrow) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5))"
                             },
                             {
-                                "key": "data.attributes.movement.climb",
+                                "key": "system.attributes.movement.climb",
                                 "mode": "ADD",
-                                "value": "+ (sign(@attributes.movement.climb) * @scale.monk-rework.unarmored-movement)"
+                                "value": "+ (sign(@attributes.movement.climb) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5))"
                             },
                             {
-                                "key": "data.attributes.movement.fly",
+                                "key": "system.attributes.movement.fly",
                                 "mode": "ADD",
-                                "value": "+ (sign(@attributes.movement.fly) * @scale.monk-rework.unarmored-movement)"
+                                "value": "+ (sign(@attributes.movement.fly) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5))"
                             },
                             {
-                                "key": "data.attributes.movement.swim",
+                                "key": "system.attributes.movement.swim",
                                 "mode": "ADD",
-                                "value": "+ (sign(@attributes.movement.swim) * @scale.monk-rework.unarmored-movement)"
+                                "value": "+ (sign(@attributes.movement.swim) * ((ceil((@classes.monk-rework.levels - 1) / 3) * 5) + 5))"
                             }
                         ]
                     }
