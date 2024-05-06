@@ -663,9 +663,9 @@
             "page": 3,
             "level": 1,
             "entries": [
-                "At 1st level, you know how to block your senses from the external world, entering a state of absolute focus, called meditation. While in this state you remain motionless and unconscious, and the only action you can take is to awaken yourself from it. Your meditation ends if you take damage or another creature uses its action to reach and awaken you.",
+                "At 1st level, you know how to block your senses from the external world, entering a state of absolute focus, called meditation. While in this state you remain motionless and {@condition unconscious}, and the only action you can take is to awaken yourself from it. Your meditation ends if you take damage or another creature uses its action to reach and awaken you.",
                 "With uninterrupted meditation you can finish a short or long rest in half the time, and gain the same benefits of 8 hours of sleep in 4 hours.",
-                "Starting at 7th level, you're no longer rendered unconscious while meditating, and you can see and hear as normal."
+                "Starting at 7th level, you're no longer rendered {@condition unconscious} while meditating, and you can see and hear as normal."
             ]
         },
 
@@ -3863,9 +3863,9 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Monks of the Way of the Inner Strength are dedicated to cultivating the true potential of ki. They take on a path of diligent meditation and self discovery, searching for the mysteries that dwelve deep within them, rather than those of the universe around them.",
+				"This tradition teaches you to harness the energy of the four elements in ways that improve your combat prowess. Bend the forces of nature to invoke harmful effects on your enemies, or to surpass the mortal limits of your body. Some members of this tradition dedicate themselves to a single element, others explore different paths with them, and a few can weave the four elements together.",
 
-				"More often than not, practicioners of this tradition isolate themselves for long periods of time, disconnecting their terrenal senses in order to heighten their spiritual eye. Only a few can endure this journey, and even less monks can achieve the state of true enlightenment.",
+				"Each element is often associated with an aspect of an individual's personality or ideology. Air is associated with playfulness, peace, and solving problems from different angles. Earth with toughness, stability, and stubborness. Fire with anger, passion, and direct confrontation. Water with sadness, kindness, and adaptability.",
 				{
 					"type": "refSubclassFeature",
 					"subclassFeature": "Elemental Arts|Monk Rework|DZC:ANA|Elements|DZC:ANA|3"
