@@ -3587,6 +3587,7 @@
 			"className": "Monk Rework",
 			"classSource": "DZC:ANA",
 			"page": 4,
+			"foundryImg": "icons/magic/holy/prayer-hands-glowing-yellow.webp",
 			"subclassFeatures": [
 				"Way of the Inner Strength|Monk Rework|DZC:ANA|Inner Strength|DZC:ANA|3",
 				"Wholeness of Body|Monk Rework|DZC:ANA|Inner Strength|DZC:ANA|6",
@@ -3601,6 +3602,7 @@
 			"className": "Monk Rework",
 			"classSource": "DZC:ANA",
 			"page": 5,
+			"foundryImg": "icons/skills/melee/maneuver-sword-katana-yellow.webp",
 			"subclassFeatures": [
 				"Way of the Shadows|Monk Rework|DZC:ANA|Shadows|DZC:ANA|3",
 				"Shadow Step|Monk Rework|DZC:ANA|Shadows|DZC:ANA|6",
@@ -3644,6 +3646,7 @@
 			"className": "Monk Rework",
 			"classSource": "DZC:ANA",
 			"page": 6,
+			"foundryImg": "icons/magic/symbols/elements-air-earth-fire-water.webp",
 			"subclassFeatures": [
 				"Way of the Elements|Monk Rework|DZC:ANA|Elements|DZC:ANA|3",
 				"Primal Stances|Monk Rework|DZC:ANA|Elements|DZC:ANA|6",
@@ -3657,7 +3660,6 @@
 			"name": "Way of the Inner Strength",
 			"source": "DZC:ANA",
 			"page": 4,
-			"foundryImg": "icons/magic/holy/prayer-hands-glowing-yellow.webp",
 			"className": "Monk Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Inner Strength",
@@ -3765,7 +3767,6 @@
 			"name": "Way of the Shadows",
 			"source": "DZC:ANA",
 			"page": 5,
-			"foundryImg": "icons/skills/melee/maneuver-sword-katana-yellow.webp",
 			"className": "Monk Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Shadows",
@@ -3855,7 +3856,6 @@
 			"name": "Way of the Elements",
 			"source": "DZC:ANA",
 			"page": 6,
-			"foundryImg": "icons/magic/symbols/elements-air-earth-fire-water.webp",
 			"className": "Monk Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Elements",
