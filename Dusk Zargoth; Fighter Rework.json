@@ -752,17 +752,17 @@
                             {
                                 "key": "data.attributes.movement.climb",
                                 "mode": "ADD",
-                                "value": "+ (sign(@attributes.movement.climb) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5))"
+                                "value": "+ (sign(@attributes.movement.climb) * @scale.monk-rework.unarmored-movement"
                             },
                             {
                                 "key": "data.attributes.movement.fly",
                                 "mode": "ADD",
-                                "value": "+ (sign(@attributes.movement.fly) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5))"
+                                "value": "+ (sign(@attributes.movement.fly) * @scale.monk-rework.unarmored-movement"
                             },
                             {
                                 "key": "data.attributes.movement.swim",
                                 "mode": "ADD",
-                                "value": "+ (sign(@attributes.movement.swim) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5))"
+                                "value": "+ (sign(@attributes.movement.swim) * @scale.monk-rework.unarmored-movement"
                             }
                         ]
                     }
