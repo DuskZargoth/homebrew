@@ -4269,7 +4269,7 @@
 			"level": 2,
             "effects": [
                 {
-					"name": "Unarmored Movement",
+					"name": "S",
 					"changes": [
                         {
                             "key": "system.attributes.movement.walk",
