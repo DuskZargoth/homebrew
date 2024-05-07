@@ -20,10 +20,10 @@
         "dateAdded": 1714935701,
         "dateLastModified": 1714935701,
         "optionalFeatureTypes": {
-			"DZC:WT": "Fighter Rework; Warrior's Training",
-			"DZC:WT:MS": "Fighter Rework; Warrior's Training: Weapon Specialization",
-			"DZC:WT:AS": "Fighter Rework; Warrior's Training: Armor Specialization",
-			"DZC:WT:PS": "Fighter Rework; Warrior's Training: Physical Specialization",
+			"DZC:CS": "Fighter Rework; Combat Specialization",
+			"DZC:CS:MS": "Fighter Rework; Combat Specialization: Weapon Specialization",
+			"DZC:CS:AS": "Fighter Rework; Combat Specialization: Armor Specialization",
+			"DZC:CS:PS": "Fighter Rework; Combat Specialization: Physical Specialization",
             "DZC:M": "Fighter Rework; Maneuvers"
         }
     },
@@ -510,49 +510,39 @@
     ],
     "classFeature": [
         {
-            "name": "Martial Arts",
+            "name": "Warrior's Training",
             "source": "DZC:ANA",
-            "foundryImg": "icons/skills/melee/unarmed-punch-fist-blue.webp",
+            "foundryImg": "",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
             "page": 3,
             "level": 1,
             "entries": [
-                "At 1st level, you are adept at a combat style focused on hand to hand combat and the use of monk weapons, represented by a special die called Martial Arts die, as shown in the Martial Arts column of the Monk table.",
-                "While all martial arts share some principles, each monk adapts them to better suit themselves, thus specializing in one Martial Arts Style or combining them to create their own. Each syle is described below and each one defines what are considered as your monk weapons.",
-                "You learn two {@filter Martial Arts Features|optionalfeatures|feature type=DZC:MA} of your choice from any style. When you reach 9th and 18th level in this class, you learn an additional martial arts feature of your choice from any style. If a martial arts feature requires a level, you must meet that level in this class to learn it.",
-                "You lose the benefits of your Martial Arts if you are wielding a non-monk weapon or wearing heavy armor.",
+                "At 1st level, you take upon a training regime in order to cultivate your fighting prowess, which takes on the form of a {@filter Combat Specialization|optionalfeatures|feature type=DZC:CS}, each one is described below.",
+                "You learn two features of your choice from any Combat Specialization. When you reach 9th and 13th level in this class, you learn an additional feature of your choice from any specialization.",
                 {
                     "type": "entries",
-                    "name": "Mixed Style",
+                    "name": "Weapon Specialization",
                     "page": 3,
                     "entries": [
-                        "A balanced style taught to beginners so that they can adapt to any situation. Your monk weapons are any simple melee weapon that doesn't have the two-handed or heavy property."
+                        "To overwhelm your opponent, to skillfully wield your weapons in different ways to use them in unique ways, that is the key to success in the battlefield."
                     ]
                 },
                 {
                     "type": "entries",
-                    "name": "Grappling Style",
+                    "name": "Armor Specialization",
                     "page": 3,
                     "entries": [
-                        "You trained to control the weight of your opponents with your own, crushing them in the process. Your monk weapons are any simple melee weapon that doesn't have the two-handed or heavy property."
+                        "Those foolish enough will say that the best defense is the best offense, however, the best defense is that which allows you to fight longer."
                     ]
                 },
                 {
                     "type": "entries",
-                    "name": "Unarmed Style",
+                    "name": "Physical Specialization",
                     "page": 3,
                     "entries": [
-                        "You conditioned your body to throw swift and precise unarmed strikes, which can carry a lot of power. Your monk weapons are shortswords and any simple melee weapon that doesn't have the two-handed or heavy property."
+                        "Your body takes the major part of the work load, making it the most important part to train."
 					]
-                },
-                {
-                    "type": "entries",
-                    "name": "Weapon Style",
-                    "page": 3,
-                    "entries": [
-                        "Not only are you capable of wielding a larger variety of weapons, but you can use it in a more defensive style. Your monk weapons are longbows and any weapon that doesn't have the two-handed, heavy, or special property."
-                    ]
                 },
                 {
 					"type": "inset",
@@ -580,110 +570,58 @@
             ]
         },
 		{
-			"name": "Martial Arts improvement",
+			"name": "Warrior's Training improvement",
 			"source": "DZC:ANA",
-            "foundryImg": "icons/skills/melee/unarmed-punch-fist-blue.webp",
+            "foundryImg": "",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
             "page": 3,
             "level": 9,
             "entries": [
-                "At 9th level, you learn an additional {@filter Martial Arts Feature|optionalfeatures|feature type=DZC:MA} of your choice from any style."
+                "At 9th level, you learn an additional {@filter Combat Specialization|optionalfeatures|feature type=DZC:CS} of your choice from any specialization."
             ]
 		},
 		{
-			"name": "Martial Arts improvement",
+			"name": "Warrior's Training improvement",
 			"source": "DZC:ANA",
-            "foundryImg": "icons/skills/melee/unarmed-punch-fist-blue.webp",
+            "foundryImg": "",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
             "page": 3,
-            "level": 18,
+            "level": 13,
             "entries": [
-                "At 18th level, you learn an additional {@filter Martial Arts Feature|optionalfeatures|feature type=DZC:MA} of your choice from any style."
+                "At 13th level, you learn an additional {@filter Combat Specialization|optionalfeatures|feature type=DZC:CS} of your choice from any specialization."
             ]
 		},
         {
-            "name": "Meditation",
+            "name": "Pump ActionMeditation",
             "source": "DZC:ANA",
-            "foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp",
+            "foundryImg": "",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
             "page": 3,
             "level": 1,
             "entries": [
-                "At 1st level, you know how to block your senses from the external world, entering a state of absolute focus, called meditation. While in this state you remain motionless and {@condition unconscious}, and the only action you can take is to awaken yourself from it. Your meditation ends if you take damage or another creature uses its action to reach and awaken you.",
-                "With uninterrupted meditation you can finish a short or long rest in half the time, and gain the same benefits of 8 hours of sleep in 4 hours.",
-                "Starting at 7th level, you're no longer rendered {@condition unconscious} while meditating, and you can see and hear as normal."
-            ]
-        },
-
-		{
-            "name": "Meditation improvement",
-            "source": "DZC:ANA",
-            "foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp",
-            "className": "Fighter Rework",
-            "classSource": "DZC:ANA",
-            "page": 3,
-            "level": 7,
-            "entries": [
-                "At 7th level, you're no longer rendered unconscious while meditating, and you can see and hear as normal."
-            ]
-        },
-
-		{
-            "name": "Unarmored Defense",
-            "source": "DZC:ANA",
-            "foundryImg": "icons/magic/control/debuff-energy-hold-yellow.webp",
-            "className": "Fighter Rework",
-            "classSource": "DZC:ANA",
-            "page": 1,
-            "level": 1,
-			"foundrySystem": {
-				"effects": [
-					{
-						"name": "Unarmored Defense (Wisdom)",
-						"foundryImg": "icons/magic/control/debuff-energy-hold-yellow.webp",
-						"changes": [
-							{
-								"key": "system.attributes.ac.calc",
-								"mode": "OVERRIDE",
-								"value": "custom"
-							},
-							{
-								"key": "system.attributes.ac.formula",
-								"mode": "CUSTOM",
-								"value": "10+@abilities.dex.mod+@abilities.wis.mod"
-							}
-						]
-					}
-				]
-			},
-            "entries": [
-                "Some characters have access to a specialized form of defense called Unarmored Defense. If your character has proficiency with it, your AC equals to 10 + your Dexterity modifier + your ability modifier listed in parenthesis, while you aren't wearing armor. You also lose this benefit if you wield a shield and lack proficiency with it.",
-
-				"If you have proficiency in this trait with different abilities, you can only benefit from one at the time.",
-
-				"Each ability offers a different interpretation of this trait. For instance, Wisdom allows you to predict attacks and increases your overall awareness of your surroundings; Constitution prevents harm by increasing your studiness; and Charisma makes your presence tangible to others, making them think twice before laying a finger on you."
+                "At 1st level, on your turn, you can forgo your bonus action and your reaction to take an additional action this turn."
             ]
         },
 
         {
-            "name": "Ki",
+            "name": "Combat Superiority",
             "source": "DZC:ANA",
-            "foundryImg": "icons/magic/symbols/runes-star-pentagon-blue.webp",
+            "foundryImg": "",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
             "page": 3,
             "level": 2,
             "entries": [
-                "Starting at 2nd level, you have reached the stage in which you can harness the mystic energy of ki, which can be used to perform superhuman feats through a variety of techniques.",
+                "Starting at 2nd level, you learn maneuvers that are fueled by special dice called superiority dice.",
                 {
                     "type": "entries",
-                    "name": "Ki Points",
+                    "name": "Maneuvers",
                     "page": 3,
                     "entries": [
-                        "Your access to this energy is represented by a number of ki points. You have an amount of ki points equal to your monk level + your Wisdom modifier, unless that modifier is negative. You regain 1 + your Wisdom modifier (minimum of 2) ki points if you finish a short rest meditating, and all of them if you finish a long rest with it."
+                        "You learn three maneuvers of your choice. Your maneuvers are detailed at the end of the class description. When you gain certain fighter levels, you gain additional maneuvers of your choice, as shown in the Maneuvers Known column of the Fighter table."
                     ]
                 },
                 {
