@@ -169,7 +169,7 @@
 					"type": "ScaleValue",
 					"configuration": {
 						"identifier": "ki-points",
-						"type": "number",
+						"type": "formula",
 						"scale": {
 							"2": {
 								"value": "@classes.monk-rework.levels + @abilities.wis.mod"
