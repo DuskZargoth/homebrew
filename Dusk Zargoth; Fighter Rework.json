@@ -615,62 +615,50 @@
             "page": 3,
             "level": 2,
             "entries": [
-                "Starting at 2nd level, you learn maneuvers that are fueled by special dice called superiority dice.",
+                "Starting at 2nd level, you learn {@filter Maneuvers|optionalfeatures|feature type=DZC:M} that are fueled by special dice called superiority dice.",
                 {
                     "type": "entries",
                     "name": "Maneuvers",
                     "page": 3,
                     "entries": [
-                        "You learn three maneuvers of your choice. Your maneuvers are detailed at the end of the class description. When you gain certain fighter levels, you gain additional maneuvers of your choice, as shown in the Maneuvers Known column of the Fighter table."
+                        "You learn three {@filter maneuvers|optionalfeatures|feature type=DZC:M} of your choice. Your maneuvers are detailed at the end of the class description. When you gain certain fighter levels, you gain additional maneuvers of your choice, as shown in the Maneuvers Known column of the Fighter table.",
+                        "Whenever you gain a level in this class, you can replace a maneuver you know with another one."
                     ]
                 },
                 {
                     "type": "entries",
-                    "name": "Ki Features",
-                    "page": 4,
+                    "name": "Superiority Dice",
+                    "page": 3,
                     "entries": [
-                        "Your ki fuels various techniques called {@filter Ki Features|optionalfeatures|feature type=DZC:KF}, each detailed in the Ki Features section of this class. The number of ki features you know is shown in the Ki Features column of the Monk table.",
-						"If a ki feature has prerequisites, you must meet them to learn it. You can learn a ki feature at the same time that you meet its prerequisites. A level prerequisite referes to your level in this class.",
-                        "Whenever you gain a level in this class, you can choose one of the ki features you know and replace it with another one that you could learn at that level."
+                        "You have a special die called Superiority Dice, as shown in the Superiority Dice column of the Fighter table. You have a pool of these die available, as shown in the Superiority Pool column of said table. Whenever you use a maneuver, you spend a Superiority Dice. You regain all of your expended die when you finish a short or long rest."
                     ]
                 },
                 {
                     "type": "entries",
-                    "name": "Ki Saving Throws",
-                    "page": 4,
+                    "name": "Saving Throws",
+                    "page": 3,
                     "entries": [
-                        "Some of your ki features require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:",
+                        "Some of your maneuvers require your target to make a saving throw to resist the maneuver's effects. The saving throw DC is calculated as follows:",
                         {
                             "type": "abilityDc",
-                            "name": "Ki",
+                            "name": "Maneuver",
                             "attributes": [
-                                "wis"
+                                "str",
+                                "dex"
                             ]
                         }
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Ki Rules and Restrictions",
-                    "page": 4,
-                    "entries": [
-                        "Some subclass features use ki to fuel an ability, these count as Ki Features for the purpose of this section.",
-                        "When a Ki Feature uses one of your Ability modifiers for calculation, the minimum modifier you can use is 1.",
-                        "You can't use ki and lose the benefits of any Ki Feature you have active if you are wielding a non-monk weapon or wearing heavy armor, if you are unconscious, or dead.",
-						"You can neither apply on the same effect multiple ki features that impose a saving throw nor one such a feature together with Weakening Strike.",
-                        "Some of your Ki Features allow you to cast spells. To cast one of these spells, you use its casting time and other rules, but you don't need to provide material components for it. Wisdom is your spellcasting ability for spells cast in this way."
                     ]
                 }
             ]
         },
 
         {
-            "name": "Unarmored Movement",
+            "name": "Determination",
             "source": "DZC:ANA",
-            "foundryImg": "icons/skills/movement/feet-winged-sandals-tan.webp",
+            "foundryImg": "",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
-            "page": 4,
+            "page": 3,
             "level": 2,
             "foundrySystem": {
                 "effects": [
