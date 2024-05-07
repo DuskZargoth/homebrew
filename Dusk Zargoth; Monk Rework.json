@@ -779,7 +779,7 @@
             "resources": [
                 {
                     "name": "Ki",
-                    "type": "numeric",
+                    "type": "number",
                     "recharge": "restShort",
                     "count": "@classes.monk-rework.levels + @abilities.wis.mod"
                 }
