@@ -1389,7 +1389,7 @@
 
         {
             "name": "Rocky Strike",
-		"foundryImg": "icons/magic/earth/projectile-boulder-dust.webp",
+		    "foundryImg": "icons/magic/earth/projectile-boulder-dust.webp",
             "source": "DZC:ANA",
             "page": 6,
             "consumes": {
@@ -1420,7 +1420,7 @@
 
         {
             "name": "Igneous Strike",
-		"foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp",
+		    "foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp",
             "source": "DZC:ANA",
             "page": 6,
             "consumes": {
@@ -1451,7 +1451,7 @@
 
         {
             "name": "Gelid Strike",
-		"foundryImg": "icons/magic/water/projectile-ice-snowball.webp",
+		    "foundryImg": "icons/magic/water/projectile-ice-snowball.webp",
             "source": "DZC:ANA",
             "page": 6,
             "consumes": {
@@ -1482,7 +1482,7 @@
 
         {
             "name": "Wind Blast",
-		"foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp",
+		    "foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp",
             "source": "DZC:ANA",
             "page": 6,
             "consumes": {
@@ -1498,11 +1498,11 @@
                 "A line of compressed air 30 feet long and 5 feet wide blasts from you in a direction you choose. Each creature in that area must succeed on a Constitution saving throw or take thunder damage equal to one roll of your Martial Arts die and be pushed up to 10 feet away from you in a direction following the line.",
                 "Unsecured objects that are completely within the area of effect are automatically pushed 10 feet away from you by the feature's effect."
             ],
-		"foundrySystem": {
+		    "foundrySystem": {
                 "activation.type": "special",
                 "activation.condition": "Spend 1 ki to replace an attack from the Attack action",
                 "actionType": "save",
-			"damage.parts": [
+			    "damage.parts": [
 					[
 						"1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))",
 						"thunder"
@@ -1515,7 +1515,7 @@
 
         {
             "name": "Stone Boulder",
-		"foundryImg": "icons/magic/earth/projectile-boulder-dust.webp",
+		    "foundryImg": "icons/magic/earth/projectile-boulder-dust.webp",
             "source": "DZC:ANA",
             "page": 6,
             "consumes": {
@@ -1530,11 +1530,11 @@
             "entries": [
                 "You hurl a Medium rock against a creature you can see within 30 feet from you. The creature must succeed on a Strength saving throw or take bludgeoning damage equal to one roll of your Martial Arts die and be knocked prone."
             ],
-		"foundrySystem": {
+		    "foundrySystem": {
                 "activation.type": "special",
                 "activation.condition": "Spend 1 ki to replace an attack from the Attack action",
                 "actionType": "save",
-			"damage.parts": [
+			    "damage.parts": [
 					[
 						"1d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))",
 						"bludgeoning"
@@ -1547,7 +1547,7 @@
 
         {
             "name": "Flaming Blast",
-		"foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp",
+		    "foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp",
             "source": "DZC:ANA",
             "page": 6,
             "consumes": {
@@ -1563,11 +1563,11 @@
                 "You shoot a fire projectile towards a point you choose that you can see within 30 feet from you. The projectile explodes when it reaches its destination or impacts against a solid surface. Each creature within 5 feet of the point where the projectile explodes must make a Dexterity saving throw, taking fire damage equal to two rolls of your Martial Arts die on a failed save.",
                 "The explosion damages objects in the area that aren't being worn or carried."
             ],
-		"foundrySystem": {
+		    "foundrySystem": {
                 "activation.type": "special",
                 "activation.condition": "Spend 1 ki to replace an attack from the Attack action",
                 "actionType": "save",
-			"damage.parts": [
+			    "damage.parts": [
 					[
 						"2d(4 + (ceil(@classes.monk-rework.levels / 5) * 2))",
 						"fire"
@@ -1580,7 +1580,7 @@
 
         {
             "name": "Water Swirl",
-		"foundryImg": "icons/magic/water/projectile-ice-snowball.webp",
+		    "foundryImg": "icons/magic/water/projectile-ice-snowball.webp",
             "source": "DZC:ANA",
             "page": 6,
             "consumes": {
@@ -1595,7 +1595,7 @@
             "entries": [
                 "A pillar of swirling water appears in a point you can see within 30 feet from you. Each creature in a 10-foot-radius, 15-foot-high cylinder centered on a point within range must make a Strength saving throw. On a failed save, a creature takes cold damage equal to one roll of your Martial Arts die and is pushed 5 feet in any direction you choose."
             ],
-		"foundrySystem": {
+		    "foundrySystem": {
                 "activation.type": "special",
                 "activation.condition": "Spend 1 ki to replace an attack from the Attack action",
                 "actionType": "save",
@@ -1612,7 +1612,7 @@
 
         {
             "name": "Wind Stance",
-		"foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp",
+		    "foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp",
             "source": "DZC:ANA",
             "page": 6,
             "consumes": {
@@ -1631,7 +1631,7 @@
 
         {
             "name": "Mountain Stance",
-		"foundryImg": "icons/magic/earth/projectile-boulder-dust.webp",
+		    "foundryImg": "icons/magic/earth/projectile-boulder-dust.webp",
             "source": "DZC:ANA",
             "page": 7,
             "consumes": {
@@ -1650,7 +1650,7 @@
 
         {
             "name": "Flame Stance",
-		"foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp",
+		    "foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp",
             "source": "DZC:ANA",
             "page": 7,
             "consumes": {
@@ -1669,7 +1669,7 @@
 
         {
             "name": "River Stance",
-		"foundryImg": "icons/magic/water/projectile-ice-snowball.webp",
+		    "foundryImg": "icons/magic/water/projectile-ice-snowball.webp",
             "source": "DZC:ANA",
             "page": 7,
             "consumes": {
@@ -1688,7 +1688,7 @@
         
         {
             "name": "Aerial Lift",
-		"foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp",
+		    "foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp",
             "source": "DZC:ANA",
             "page": 6,
             "featureType": [
@@ -1703,7 +1703,7 @@
 
         {
             "name": "Rock Walk",
-		"foundryImg": "icons/magic/earth/projectile-boulder-dust.webp",
+		    "foundryImg": "icons/magic/earth/projectile-boulder-dust.webp",
             "source": "DZC:ANA",
             "page": 7,
             "featureType": [
@@ -1718,7 +1718,7 @@
 
         {
             "name": "Jet Burst",
-		"foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp",
+		    "foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp",
             "source": "DZC:ANA",
             "page": 7,
             "featureType": [
@@ -1733,7 +1733,7 @@
 
         {
             "name": "Underwater Adaptations",
-		"foundryImg": "icons/magic/water/projectile-ice-snowball.webp",
+		    "foundryImg": "icons/magic/water/projectile-ice-snowball.webp",
             "source": "DZC:ANA",
             "page": 7,
             "featureType": [
@@ -1750,7 +1750,7 @@
 
         {
             "name": "Air Master",
-		"foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp",
+		    "foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp",
             "source": "DZC:ANA",
             "page": 7,
             "featureType": [
@@ -1772,7 +1772,7 @@
 
         {
             "name": "Earth Master",
-		"foundryImg": "icons/magic/earth/projectile-boulder-dust.webp",
+		    "foundryImg": "icons/magic/earth/projectile-boulder-dust.webp",
             "source": "DZC:ANA",
             "page": 7,
             "featureType": [
@@ -1795,7 +1795,7 @@
 
         {
             "name": "Fire Master",
-		"foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp",
+		    "foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp",
             "source": "DZC:ANA",
             "page": 7,
             "featureType": [
@@ -1817,7 +1817,7 @@
 
         {
             "name": "Water Master",
-		"foundryImg": "icons/magic/water/projectile-ice-snowball.webp",
+		    "foundryImg": "icons/magic/water/projectile-ice-snowball.webp",
             "source": "DZC:ANA",
             "page": 7,
             "featureType": [
@@ -1839,7 +1839,7 @@
 
         {
             "name": "Lightning Adept",
-		"foundryImg": "icons/magic/lightning/bolt-strike-sparks-blue.webp",
+		    "foundryImg": "icons/magic/lightning/bolt-strike-sparks-blue.webp",
             "source": "DZC:ANA",
             "page": 7,
             "featureType": [
@@ -1865,7 +1865,7 @@
 
         {
             "name": "Acid Adept",
-		"foundryImg": "icons/magic/acid/dissolve-drip-droplet-smoke.webp",
+		    "foundryImg": "icons/magic/acid/dissolve-drip-droplet-smoke.webp",
             "source": "DZC:ANA",
             "page": 7,
             "featureType": [
@@ -1891,7 +1891,7 @@
 
         {
             "name": "Light Adept",
-		"foundryImg": "icons/magic/light/beam-rays-orange-large.webp",
+		    "foundryImg": "icons/magic/light/beam-rays-orange-large.webp",
             "source": "DZC:ANA",
             "page": 7,
             "featureType": [
@@ -1917,7 +1917,7 @@
 
         {
             "name": "Heal Adept",
-		"foundryImg": "icons/magic/life/heart-cross-blue.webp",
+		    "foundryImg": "icons/magic/life/heart-cross-blue.webp",
             "source": "DZC:ANA",
             "page": 7,
             "featureType": [
@@ -1943,7 +1943,7 @@
 
         {
             "name": "Nature's Vessel",
-		"foundryImg": "icons/magic/control/silhouette-hold-change-green.webp",
+		    "foundryImg": "icons/magic/control/silhouette-hold-change-green.webp",
             "source": "DZC:ANA",
             "page": 7,
             "featureType": [
