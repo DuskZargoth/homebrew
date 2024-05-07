@@ -230,7 +230,7 @@
 							}
 						}
 					},
-					"title": "Ki Points"
+					"title": "Ki"
 				}
 			],
             "classTableGroups": [
@@ -3670,7 +3670,7 @@
 							}
 						}
 					},
-					"resourceName": "Ki Points",
+					"resourceName": "Ki",
 					"ability": "wis"
 				}
 			]
