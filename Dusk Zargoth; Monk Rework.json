@@ -585,123 +585,36 @@
                 "While all martial arts share some principles, each monk adapts them to better suit themselves, thus specializing in one Martial Arts Style or combining them to create their own. Each syle is described below, each defining what are considered as your monk weapons. You can't benefit from a style if you wield a weapon not included in its description.",
                 "You learn two {@filter Martial Arts Features|optionalfeatures|feature type=DZC:MA} of your choice from any style. When you reach 9th and 18th level in this class, you learn an additional martial arts feature of your choice from any style. If a martial arts feature requires a level, you must meet that level in this class to learn it.",
                 "You lose the benefits of your Martial Arts if you are wielding a non-monk weapon or wearing heavy armor.",
-                
                 {
-                    "type": "options",
-                    "count": 2,
-					"entries": [
-                        {
-                            "type": "entries",
-                            "name": "Mixed Style",
-                            "page": 3,
-                            "entries": [
-                                "An adaptable and balanced style. Your monk weapons are any melee weapon that doesn't have the heavy, two-handed, or special property.",
-                                {
-                                    "type": "refOptionalfeature",
-                                    "optionalfeature": "Chain Attack|DZC:ANA",
-                                    "name": "Chain Attack"
-                                },
-                                {
-                                    "type": "refOptionalfeature",
-                                    "optionalfeature": "Ground Fighting|DZC:ANA",
-                                    "name": "Ground Fighting"
-                                },
-                                {
-                                    "type": "refOptionalfeature",
-                                    "optionalfeature": "Push Back|DZC:ANA",
-                                    "name": "Push Back (9th level)"
-                                },
-                                {
-                                    "type": "refOptionalfeature",
-                                    "optionalfeature": "Set Up|DZC:ANA",
-                                    "name": "Set Up (18th level)"
-                                }
-                            ]                            
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Grappling Style",
-                            "page": 3,
-                            "entries": [
-                                "You trained to control the weight of your opponents with your own, crushing them in the process. Your monk weapons are any melee weapon that doesn't have the heavy, reach, two-handed, or special property.",
-                                {
-                                    "type": "refOptionalfeature",
-                                    "optionalfeature": "Wrestling Mastery|DZC:ANA",
-                                    "name": "Wrestling Mastery"
-                                },
-                                {
-                                    "type": "refOptionalfeature",
-                                    "optionalfeature": "Ground Hold|DZC:ANA",
-                                    "name": "Ground Hold"
-                                },
-                                {
-                                    "type": "refOptionalfeature",
-                                    "optionalfeature": "Dynamic Hold|DZC:ANA",
-                                    "name": "Dynamic Hold (9th level)"
-                                },
-                                {
-                                    "type": "refOptionalfeature",
-                                    "optionalfeature": "Lock|DZC:ANA",
-                                    "name": "Lock (18th level)"
-                                }
-                            ]                            
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Unarmed Style",
-                            "page": 3,
-                            "entries": [
-                                "You conditioned your body to throw swift and precise unarmed strikes. Your monk weapons are shortswords and any simple melee weapon that doesn't have the heavy, two-handed, or special property.",
-                                {
-                                    "type": "refOptionalfeature",
-                                    "optionalfeature": "Unarmed Mastery|DZC:ANA",
-                                    "name": "Unarmed Mastery"
-                                },
-                                {
-                                    "type": "refOptionalfeature",
-                                    "optionalfeature": "Vital's Hit|DZC:ANA",
-                                    "name": "Vital's Hit"
-                                },
-                                {
-                                    "type": "refOptionalfeature",
-                                    "optionalfeature": "Potent Strike|DZC:ANA",
-                                    "name": "Potent Strike (9th level)"
-                                },
-                                {
-                                    "type": "refOptionalfeature",
-                                    "optionalfeature": "Fake Strike|DZC:ANA",
-                                    "name": "Fake Strike (18th level)"
-                                }
-                            ]                            
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Weapon Style",
-                            "page": 3,
-                            "entries": [
-                                "You are capable of wielding a larger variety of weapons, specially for defensive movements. Your monk weapons are longbows and any weapon that doesn't have the heavy, two-handed, or special property.",
-                                {
-                                    "type": "refOptionalfeature",
-                                    "optionalfeature": "Monk Weapon Mastery|DZC:ANA",
-                                    "name": "Monk Weapon Mastery"
-                                },
-                                {
-                                    "type": "refOptionalfeature",
-                                    "optionalfeature": "Embracing Branch|DZC:ANA",
-                                    "name": "Embracing Branch"
-                                },
-                                {
-                                    "type": "refOptionalfeature",
-                                    "optionalfeature": "Returning Guard|DZC:ANA",
-                                    "name": "Returning Guard (9th level)"
-                                },
-                                {
-                                    "type": "refOptionalfeature",
-                                    "optionalfeature": "Passive Blockade|DZC:ANA",
-                                    "name": "Passive Blockade (18th level)"
-                                }
-                            ]                            
-                        }
+                    "type": "entries",
+                    "name": "Mixed Style",
+                    "page": 3,
+                    "entries": [
+                        "An adaptable and balanced style. Your monk weapons are any melee weapon that doesn't have the heavy, two-handed, or special property."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Grappling Style",
+                    "page": 3,
+                    "entries": [
+                        "You trained to control the weight of your opponents with your own, crushing them in the process. Your monk weapons are any melee weapon that doesn't have the heavy, reach, two-handed, or special property."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Unarmed Style",
+                    "page": 3,
+                    "entries": [
+                        "You conditioned your body to throw swift and precise unarmed strikes. Your monk weapons are shortswords and any simple melee weapon that doesn't have the heavy, two-handed, or special property."
+					]
+                },
+                {
+                    "type": "entries",
+                    "name": "Weapon Style",
+                    "page": 3,
+                    "entries": [
+                        "You are capable of wielding a larger variety of weapons, specially for defensive movements. Your monk weapons are longbows and any weapon that doesn't have the heavy, two-handed, or special property."
                     ]
                 },
                 {
