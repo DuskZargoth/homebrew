@@ -775,14 +775,6 @@
                         "Some of your Ki Features allow you to cast spells. To cast one of these spells, you use its casting time and other rules, but you don't need to provide material components for it. Wisdom is your spellcasting ability for spells cast in this way."
                     ]
                 }
-            ],
-            "resources": [
-                {
-                    "name": "Ki",
-                    "type": "number",
-                    "recharge": "restShort",
-                    "count": "@classes.monk-rework.levels + @abilities.wis.mod"
-                }
             ]
         },
 
@@ -4307,6 +4299,17 @@
                     ]
 				}
 			]
+		},
+        {
+			"name": "Ki",
+			"source": "DZC:ANA",
+			"className": "Monk Rework",
+			"classSource": "DZC:ANA",
+			"level": 2,
+			"system": {
+				"uses.per": "lr",
+				"uses.max": "@classes.monk-rework.levels + @abilities.wis.mod"
+			}
 		}
 	],
 	
