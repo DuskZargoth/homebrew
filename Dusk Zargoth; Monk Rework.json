@@ -169,64 +169,64 @@
 					"type": "ScaleValue",
 					"configuration": {
 						"identifier": "ki-points",
-						"type": "formula",
+						"type": "number",
 						"scale": {
 							"2": {
-								"value": "@classes.monk-rework.levels + @abilities.wis.mod"
+								"value": 2
 							},
 							"3": {
-								"value": "@classes.monk-rework.levels + @abilities.wis.mod"
+								"value": 3
 							},
 							"4": {
-								"value": "@classes.monk-rework.levels + @abilities.wis.mod"
+								"value": 4
 							},
 							"5": {
-								"value": "@classes.monk-rework.levels + @abilities.wis.mod"
+								"value": 5
 							},
 							"6": {
-								"value": "@classes.monk-rework.levels + @abilities.wis.mod"
+								"value": 6
 							},
 							"7": {
-								"value": "@classes.monk-rework.levels + @abilities.wis.mod"
+								"value": 7
 							},
 							"8": {
-								"value": "@classes.monk-rework.levels + @abilities.wis.mod"
+								"value": 8
 							},
 							"9": {
-								"value": "@classes.monk-rework.levels + @abilities.wis.mod"
+								"value": 9
 							},
 							"10": {
-								"value": "@classes.monk-rework.levels + @abilities.wis.mod"
+								"value": 10
 							},
 							"11": {
-								"value": "@classes.monk-rework.levels + @abilities.wis.mod"
+								"value": 11
 							},
 							"12": {
-								"value": "@classes.monk-rework.levels + @abilities.wis.mod"
+								"value": 12
 							},
 							"13": {
-								"value": "@classes.monk-rework.levels + @abilities.wis.mod"
+								"value": 13
 							},
 							"14": {
-								"value": "@classes.monk-rework.levels + @abilities.wis.mod"
+								"value": 14
 							},
 							"15": {
-								"value": "@classes.monk-rework.levels + @abilities.wis.mod"
+								"value": 15
 							},
 							"16": {
-								"value": "@classes.monk-rework.levels + @abilities.wis.mod"
+								"value": 16
 							},
 							"17": {
-								"value": "@classes.monk-rework.levels + @abilities.wis.mod"
+								"value": 17
 							},
 							"18": {
-								"value": "@classes.monk-rework.levels + @abilities.wis.mod"
+								"value": 18
 							},
 							"19": {
-								"value": "@classes.monk-rework.levels + @abilities.wis.mod"
+								"value": 19
 							},
 							"20": {
-								"value": "@classes.monk-rework.levels + @abilities.wis.mod"
+								"value": 20
 							}
 						}
 					},
