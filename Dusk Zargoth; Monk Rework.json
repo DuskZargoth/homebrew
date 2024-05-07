@@ -626,8 +626,8 @@
                                 "You trained to control the weight of your opponents with your own, crushing them in the process. Your monk weapons are any melee weapon that doesn't have the heavy, reach, two-handed, or special property.",
                                 {
                                     "type": "refOptionalfeature",
-                                    "optionalfeature": "Grappling Mastery|DZC:ANA",
-                                    "name": "Grappling Mastery"
+                                    "optionalfeature": "Wrestling Mastery|DZC:ANA",
+                                    "name": "Wrestling Mastery"
                                 },
                                 {
                                     "type": "refOptionalfeature",
