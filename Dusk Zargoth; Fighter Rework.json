@@ -660,90 +660,97 @@
             "classSource": "DZC:ANA",
             "page": 3,
             "level": 2,
-            "foundrySystem": {
-                "effects": [
-                    {
-                        "name": "Unarmored Movement",
-                        "changes": [
-                            {
-                                "key": "data.attributes.movement.walk",
-                                "mode": "ADD",
-                                "value": "+ (sign(@attributes.movement.walk) * ((ceil((@classes.fighter-rework.levels - 1) / 3) * 5) + 5))"
-                            },
-                            {
-                                "key": "data.attributes.movement.burrow",
-                                "mode": "ADD",
-                                "value": "+ (sign(@attributes.movement.burrow) * ((ceil((@classes.fighter-rework.levels - 1) / 3) * 5) + 5))"
-                            },
-                            {
-                                "key": "data.attributes.movement.climb",
-                                "mode": "ADD",
-                                "value": "+ (sign(@attributes.movement.climb) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5))"
-                            },
-                            {
-                                "key": "data.attributes.movement.fly",
-                                "mode": "ADD",
-                                "value": "+ (sign(@attributes.movement.fly) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5))"
-                            },
-                            {
-                                "key": "data.attributes.movement.swim",
-                                "mode": "ADD",
-                                "value": "+ (sign(@attributes.movement.swim) * ((ceil((@classes.alternate-monk.levels - 1) / 3) * 5) + 5))"
-                            }
-                        ]
-                    }
-                ]
-            },
             "entries": [
-                "Starting at 2nd level, you gain a bonus to your movement speed, as shown in the Unarmored Movement column of the Monk table. You lose this benefit if you lose the benefits of your Martial Arts."
+                "You can't fail, not when everyone depends on you. At 2nd level, you can cancel the disadvantage or a penalty to an attack roll, ability check, or saving throw you make. You can cancel a penalty of up to -5 with this feature.",
+                "You can use this feature three times. You regain all expended uses after you finish a short or long rest.",
+                "Starting at 9th level, you can cancel both a disadvantage and a penalty to one of the listed rolls you make with a single use of this feature."
             ]
         },
 
         {
-            "name": "Monastic Tradition",
+            "name": "Determination improvement",
+            "source": "DZC:ANA",
+            "foundryImg": "",
+            "className": "Fighter Rework",
+            "classSource": "DZC:ANA",
+            "page": 3,
+            "level": 2,
+            "entries": [
+                "Starting at 9th level, you can cancel both a disadvantage and a penalty to one of the listed rolls you make with a single use of this feature."
+            ]
+        },
+
+        {
+            "name": "Know Your Enemy",
+            "source": "DZC:ANA",
+            "foundryImg": "",
+            "className": "Fighter Rework",
+            "classSource": "DZC:ANA",
+            "page": 3,
+            "level": 3,
+            "entries": [
+                "At 3rd level, if you spend at least 10 minutes examinating a creature through observation, interaction, or combat, you can collect certain information about its capabilities or demeanors. Make a DC 10 Insight check. If you succeed on the check, you learn one of the following creature's characteristics of your choice:",
+                {
+                    "type": "list",
+                    "items": [
+                        "If one of its ability scores is equal, superior, or inferior to yours.",
+                        "If its Armor Class and hit point maximum is equal, superior, or inferior to yours.",
+                        "Your choice of one skill, tool, saving throw, or weapon proficiency it has if its total modifier is equal, superior, or inferior to yours.",
+                        "Vulnerability, resistance, or immunity to a damage type you choose.",
+                        "Any demeanor, tic, and vocal inflection it has along with their meaning, if it has one.",
+                        "What causes it to shift to a friendly, indifferent, or hostile attitude."
+                    ]
+                },
+                "You learn an additional characteristic of your choice for every 5 points you get with your check above the DC. You can choose to learn an ability score or proficiency it has multiple times in this way.",
+                "Once you use this feature on a creature, you can't use it on it again for the next hour."
+            ]
+        },
+
+        {
+            "name": "Martial Archetype",
             "source": "DZC:ANA",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
             "page": 4,
             "level": 3,
             "entries": [
-                "When you reach 3rd level, you commit yourself to a monastic tradition, all detailed at the end of the class description. Your tradition grants you features at 3rd level and again at 6th, 11th, and 17th level."
+                "At 3rd level, you choose an archetype that you strive to emulate in your combat style and techniques, all detailed at the end of the class description. Your archetype grants you features at 3rd level and again at 7th, 15th, and 18th level."
             ]
         },
 
         {
-            "name": "Monastic Tradition feature",
+            "name": "Martial Archetype feature",
             "source": "DZC:ANA",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
             "page": 4,
-            "level": 6,
+            "level": 7,
             "entries": [
-                "At 6th level, you gain a feature granted by your Monastic Tradition."
+                "At 7th level, you gain a feature granted by your Martial Archetype."
             ]
         },
 
         {
-            "name": "Monastic Tradition feature",
+            "name": "Martial Archetype feature",
             "source": "DZC:ANA",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
             "page": 4,
-            "level": 11,
+            "level": 15,
             "entries": [
-                "At 11th level, you gain a feature granted by your Monastic Tradition."
+                "At 15th level, you gain a feature granted by your Martial Archetype."
             ]
         },
 
         {
-            "name": "Monastic Tradition feature",
+            "name": "Martial Archetype feature",
             "source": "DZC:ANA",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
             "page": 4,
-            "level": 17,
+            "level": 18,
             "entries": [
-                "At 17th level, you gain a feature granted by your Monastic Tradition."
+                "At 18th level, you gain a feature granted by your Martial Archetype."
             ]
         },
         {
@@ -840,7 +847,7 @@
             "level": 5,
             "entries": [
                 "Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn.",
-                "The number of attacks increases to three when you reach 15th level in this class."
+                "The number of attacks increases to three when you reach 11th level in this class and to four when you reach 17th level in this class."
             ]
         },
         {
@@ -850,72 +857,72 @@
             "classSource": "DZC:ANA",
             "foundryImg": "icons/skills/melee/spear-tips-triple-orange.webp",
             "page": 4,
-            "level": 15,
+            "level": 11,
             "entries": [
-                "At 15th level, you can attack three times whenever you take the {@action Attack} action on your turn."
+                "At 11th level, you can attack three times whenever you take the {@action Attack} action on your turn."
             ]
         },
         {
-            "name": "Ki-Empowered Strikes",
+            "name": "Extra Attack (3)",
             "source": "DZC:ANA",
-            "foundryImg": "icons/magic/symbols/runes-star-pentagon-orange.webp",
+            "className": "Fighter Rework",
+            "classSource": "DZC:ANA",
+            "foundryImg": "icons/skills/melee/spear-tips-triple-orange.webp",
+            "page": 4,
+            "level": 17,
+            "entries": [
+                "At 17th level, you can attack three times whenever you take the {@action Attack} action on your turn."
+            ]
+        },
+        {
+            "name": "Combat Expertise",
+            "source": "DZC:ANA",
+            "foundryImg": "",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
             "page": 4,
             "level": 5,
             "entries": [
-                "Starting at 5th level, your attacks with unarmed strikes and monk weapons count as magical, as well as the damage of your grapples and shoves."
+                "You learn the strengths and weaknesses of your combat style. At 5th level, whenever you make a contested check using Strength, Dexterity, or Constitution, you have advantage on that check.",
+                "You also become a freak for the history of anything combat related. Whenever you make an Intelligence (History) check related to combat or adventuring, you are considered proficient in that skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus."
             ]
         },
         {
-            "name": "Timeless Body",
+            "name": "Relentless",
             "source": "DZC:ANA",
-            "foundryImg": "icons/magic/unholy/orb-swirling-teal.webp",
-            "className": "Fighter Rework",
-            "classSource": "DZC:ANA",
-            "page": 4,
-            "level": 13,
-            "entries": [
-                "At 13th level, your ki sustains you so that you suffer none of the frailty of old age, and you can't be aged magically. However, you can still die of old age.",
-                "In addition, you can ignore your food and water requirements for a day if you spend it in uninterrupted medidtation. You can do so a number of times equal to your Wisdom modifier before you consume the amount of food and water your body needs to not suffer from exhaustion."
-            ]
-        },
-        {
-            "name": "Unrelenting Soul",
-            "source": "DZC:ANA",
-            "foundryImg": "icons/magic/control/debuff-energy-hold-yellow.webp",
+            "foundryImg": "",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
             "page": 4,
             "level": 14,
             "entries": [
-                "Starting at 14th level, when you roll for initiative and have no ki points remaining, you regain 2 ki points. You also regain 1 ki point at the start of each of your turns during combat, unless you are unconscious."
+                "Starting at 14th level, when you roll initiative and have no superiority dice remaining, you regain 1 superiority die. You also regain a superiority die when you or an ally score a critical hit or you succeed on a saving throw."
             ]
         },
         {
-            "name": "Quickened Recovery",
+            "name": "Knowledge Advantage",
             "source": "DZC:ANA",
-            "foundryImg": "icons/magic/control/buff-strength-muscle-damage-orange.webp",
+            "foundryImg": "",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
             "page": 4,
             "level": 19,
             "entries": [
-                "At 19th level, you can take a breather and recover almost immediatly. At the start of your turn, you can choose to forgo your turn and reaction to regain your energies. If you take no damage and don't fail a saving throw until the start of your next turn, you gain the benefits of a short rest and regain up to 10 spent ki points.",
-                "Once you use this feature, you can't use it again until you finish a long rest."
+                "They say knowing is half the battle, but only a few can use their knowledge to their advantage. At 19th level, when you use your {@classFeature Know Your Enemy|Fighter Rework|DZC:ANA|3|DZC:ANA}, you can designate the target as your Main Target for the next 8 hours. For the duration, you have advantage on ability checks to recall information about them, and your target can't make an attack roll, ability check, or saving throw with advantage against you.",
+                "A creature is no longer your Main Target if you see its corpse or if you designate a different creature as your Main Target."
             ]
         },
         {
-            "name": "Perfect Self",
+            "name": "Legendary Warrior",
             "source": "DZC:ANA",
-            "foundryImg": "icons/magic/control/silhouette-hold-change-blue.webp",
+            "foundryImg": "",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
             "page": 4,
             "level": 20,
             "entries": [
-                "At 20th level, you have cultivated your techniques to the point where they can never be mediocre. Choose one of the following type of rolls: saving throws, Athletics checks, attacks with unarmed strikes, or attacks with monk weapons. You can't roll below a 10 on the d20 against your will when you perform a die roll of the chosen type.",
-                "In addition, when you finish a long rest, you can choose one of the ki features you know and replace it with a different one."
+                "You have reached the peak of your career, becoming an adventurer like no other ever seen. At 20th level, whenever you spend a Superiority Dice, you gain a +5 bonus to the roll you used it for and 5 temporary hit points.",
+                "In addition, when you finish a long rest, you can choose one of the maneuvers you know and replace it with a different one."
             ]
         }
     ],
@@ -4181,7 +4188,7 @@
 							"name": "The Magic of Ki",
 							"page": 1,
 							"entries": [
-								"Monks make careful study of a magical energy that most monastic traditions call ki. This energy is an element of the magic that suffuses the multiverse-specifically, the element that flows through living bodies. Monks harness this power within themselves to create magical effects, exceed their bodies' physical capabilities, or alter the state of a creature by manipulating their ki. Using this energy, monks channel uncanny speed and strength into their attacks. As they gain experience, their martial training and their mastery of ki gives them more power over their bodies and the bodies of their foes."
+								"Monks make careful study of a magical energy that most Martial Archetypes call ki. This energy is an element of the magic that suffuses the multiverse-specifically, the element that flows through living bodies. Monks harness this power within themselves to create magical effects, exceed their bodies' physical capabilities, or alter the state of a creature by manipulating their ki. Using this energy, monks channel uncanny speed and strength into their attacks. As they gain experience, their martial training and their mastery of ki gives them more power over their bodies and the bodies of their foes."
 							]
 						},
 						{
@@ -4191,7 +4198,7 @@
 							"entries": [
 								"Small walled cloisters dot the landscapes of the worlds of D&D, tiny refuges from the flow of ordinary life, where time seems to stand still. The monks who live there seek personal perfection through contemplation and rigorous training. Many entered the monastery as children, sent to live there when their parents died, when food couldn't be found to support them, or in return for some kindness that the monks had performed for their families.",
 
-								"A monastery welcomes anyone seeking refuge, and all its inhabitants must abide by its community rules. However, to be considered a monk, it is required that one persistently and rigurously trains body and spirit, for they believe that only when both work in harmony and are pushed past its limitations everyday that one can reach their perfect self. Such is the goal of every monk. It is for that purpose that many monastic traditions have been created, for the path is unique for each individual.",
+								"A monastery welcomes anyone seeking refuge, and all its inhabitants must abide by its community rules. However, to be considered a monk, it is required that one persistently and rigurously trains body and spirit, for they believe that only when both work in harmony and are pushed past its limitations everyday that one can reach their perfect self. Such is the goal of every monk. It is for that purpose that many Martial Archetypes have been created, for the path is unique for each individual.",
 
 								"Some monks live entirely apart from the surrounding population, secluded from anything that might impede their spiritual progress. Others are sworn to isolation, emerging only to serve their mentor or a divine power, often to fulfill a spiritual task, others to carry out an important mission. In some cases, they embark themselves on a meaningful journey for self discovery.",
 
