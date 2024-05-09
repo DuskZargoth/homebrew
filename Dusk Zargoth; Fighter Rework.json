@@ -594,7 +594,7 @@
             ]
 		},
         {
-            "name": "Pump ActionMeditation",
+            "name": "Pump Action",
             "source": "DZC:ANA",
             "foundryImg": "",
             "className": "Fighter Rework",
@@ -603,7 +603,10 @@
             "level": 1,
             "entries": [
                 "At 1st level, on your turn, you can forgo your bonus action and your reaction to take an additional action this turn."
-            ]
+            ],
+            "foundrySystem": {
+                "activation.type": "bonus action"
+            }
         },
 
         {
@@ -1123,7 +1126,18 @@
             ],
             "entries": [
                 "When you make a Dexterity ({@skill Stealth}) check or an initiative roll, you can expend one superiority die and add the die to the roll, provided you aren't {@condition incapacitated}."
-            ]
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you make a Dexterity (Stealth) check or an initiative roll",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to skill check"
+            }
         },
 
         {
@@ -1141,7 +1155,18 @@
             "entries": [
                 "When you're within 5 feet of a creature on your turn, you can expend one superiority die and switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and isn't {@condition incapacitated}. This movement doesn't provoke opportunity attacks.",
                 "Roll the superiority die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled."
-            ]
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you're within 5 feet of a creature on your turn",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to AC"
+            }
         },
 
         {
@@ -1158,7 +1183,18 @@
             ],
             "entries": [
                 "When a creature you can see moves into the reach you have with the melee weapon you're wielding, you can use your reaction to expend one superiority die and make one attack against the creature, using that weapon. If the attack hits, add the superiority die to the weapon's damage roll."
-            ]
+            ],
+            "foundrySystem": {
+                "activation.type": "reaction",
+                "activation.condition": "When a creature you can see moves into your reach",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
+            }
         },
 
         {
@@ -1175,7 +1211,18 @@
             ],
             "entries": [
                 "When you make a Charisma ({@skill Intimidation}), a Charisma ({@skill Performance}), or a Charisma ({@skill Persuasion}) check, you can expend one superiority die and add the superiority die to the ability check."
-            ]
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you make a Charisma (Intimidation), a Charisma (Performance), or a Charisma (Persuasion) check",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to skill check"
+            }
         },
 
         {
@@ -1192,7 +1239,18 @@
             ],
             "entries": [
                 "When you take the Attack action on your turn, you can forgo one of your attacks and use a bonus action to direct one of your companions to strike. When you do so, choose a friendly creature who can see or hear you and expend one superiority die. That creature can immediately use its reaction to make one weapon attack, adding the superiority die to the attack's damage roll."
-            ]
+            ],
+            "foundrySystem": {
+                "activation.type": "bonus action",
+                "activation.condition": "When you take the Attack action on your turn and forgo one attack",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
+            }
         },
 
         {
@@ -1214,12 +1272,18 @@
                 "activation.type": "special",
                 "activation.condition": "When you hit a creature with a weapon attack",
                 "actionType": "save",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll",
                 "save.ability": "str"
             }
         },
 
         {
-            "name": "",
+            "name": "Distracting Strike",
             "source": "DZC:ANA",
             "page": 7,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
@@ -1231,70 +1295,534 @@
 				"DZC:M"
             ],
             "entries": [
-                ""
-            ]
-        },
-
-        {
-            "name": "Rocky Strike",
-		"foundryImg": "icons/magic/earth/projectile-boulder-dust.webp",
-            "source": "DZC:ANA",
-            "page": 6,
-            "consumes": {
-				"name": "Ki",
-				"amount": 1
-			},
-            "featureType": [
-				"DZC:EA",
-                "DZC:EA:E",
-                "DZC:EA:ES"
-            ],
-            "entries": [
-                "A thick layer of stones forms around your attack, making it so heavy it temporarily disorientates your enemy. The target has disadvantage on the next attack roll it makes before the start of your next turn."
+                "When you hit a creature with a weapon attack, you can expend one superiority die to distract the creature, giving your allies an opening. You add the superiority die to the attack's damage roll. The next attack roll against the target by an attacker other than you has advantage if the attack is made before the start of your next turn."
             ],
             "foundrySystem": {
                 "activation.type": "special",
-                "activation.condition": "Once on your turn, when you hit with a weapon attack",
+                "activation.condition": "When you hit a creature with a weapon attack",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
+            }
+        },
+
+        {
+            "name": "Evasive Footwork",
+            "source": "DZC:ANA",
+            "page": 7,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Superiority Die",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:M"
+            ],
+            "entries": [
+                "When you move, you can expend one superiority die, rolling the die and adding the number rolled to your AC until you stop moving."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you move",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to AC"
+            }
+        },
+
+        {
+            "name": "Feinting Attack",
+            "source": "DZC:ANA",
+            "page": 7,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Superiority Die",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:M"
+            ],
+            "entries": [
+                "You can expend one superiority die and use a bonus action on your turn to feint, choosing one creature within 5 feet of you as your target. You have advantage on your next attack roll against that creature this turn. If that attack hits, add the superiority die to the attack's damage roll."
+            ],
+            "foundrySystem": {
+                "activation.type": "bonus action",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
+            }
+        },
+
+        {
+            "name": "Goading Attack",
+            "source": "DZC:ANA",
+            "page": 7,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Superiority Die",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:M"
+            ],
+            "entries": [
+                "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to goad the target into attacking you. You add the superiority die to the attack's damage roll, and the target must make a Wisdom saving throw. On a failed save, the target has disadvantage on all attack rolls against targets other than you until the end of your next turn."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you hit a creature with a weapon attack",
+                "actionType": "save",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll",
+                "save.ability": "wis"
+            }
+        },
+
+        {
+            "name": "Grappling Attack",
+            "source": "DZC:ANA",
+            "page": 7,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Superiority Die",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:M"
+            ],
+            "entries": [
+                "Immediately after you hit a creature with a melee attack on your turn, you can expend one superiority die and then try to grapple the target as a bonus action. Add the superiority die to your Strength ({@skill Athletics}) check."
+            ],
+            "foundrySystem": {
+                "activation.type": "bonus action",
+                "activation.condition": "Immediately after you hit a creature with a melee attack on your turn",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to skill check"
+            }
+        },
+
+        {
+            "name": "Lunging Attack",
+            "source": "DZC:ANA",
+            "page": 7,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Superiority Die",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:M"
+            ],
+            "entries": [
+                "When you make a melee weapon attack on your turn, you can expend one superiority die to increase your reach for that attack by 5 feet. If you hit, you add the superiority die to the attack's damage roll."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you hit a creature with a weapon attack",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
+            }
+        },
+
+        {
+            "name": "Maneuvering Attack",
+            "source": "DZC:ANA",
+            "page": 7,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Superiority Die",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:M"
+            ],
+            "entries": [
+                "When you hit a creature with a weapon attack, you can expend one superiority die to maneuver one of your comrades into a more advantageous position. You add the superiority die to the attack's damage roll, and you choose a friendly creature who can see or hear you. That creature can use its reaction to move up to half its speed without provoking opportunity attacks from the target of your attack."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you hit a creature with a weapon attack",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
+            }
+        },
+
+        {
+            "name": "Menacing Attack",
+            "source": "DZC:ANA",
+            "page": 7,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Superiority Die",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:M"
+            ],
+            "entries": [
+                "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to frighten the target. You add the superiority die to the attack's damage roll, and the target must make a Wisdom saving throw. On a failed save, it is {@condition frightened} of you until the end of your next turn."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you hit a creature with a weapon attack",
+                "actionType": "save",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll",
+                "save.ability": "wis"
+            }
+        },
+        
+        {
+            "name": "Indomitable",
+            "source": "DZC:ANA",
+            "page": 7,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Superiority Die",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:M"
+            ],
+            "entries": [
+                "When you fail a saving throw, you can use your reaction and expend one superiority die to add it to the roll, potentially causing the save to succeed."
+            ],
+            "foundrySystem": {
+                "activation.type": "reaction",
+                "activation.condition": "When you fail a saving throw",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to saving throw"
+            }
+        },
+
+        {
+            "name": "Parry",
+            "source": "DZC:ANA",
+            "page": 7,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Superiority Die",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:M"
+            ],
+            "entries": [
+                "When another creature damages you with a melee attack, you can use your reaction and expend one superiority die to reduce the damage by the number you roll on your superiority die + your Dexterity modifier."
+            ],
+            "foundrySystem": {
+                "activation.type": "reaction",
+                "activation.condition": "When another creature damages you with a melee attack",
+                "actionType": "healing",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2)) + @abilities.dex.mod",
+                        "healing"
+                    ]
+                ]
+            }
+        },
+
+        {
+            "name": "Precision Attack",
+            "source": "DZC:ANA",
+            "page": 7,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Superiority Die",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:M"
+            ],
+            "entries": [
+                "When you make a weapon attack roll against a creature, you can expend one superiority die to add it to the roll."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you make a weapon attack roll against a creature",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to weapon attack roll"
+            }
+        },
+
+        {
+            "name": "Pushing Attack",
+            "source": "DZC:ANA",
+            "page": 7,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Superiority Die",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:M"
+            ],
+            "entries": [
+                "When you hit with a weapon attack a creature no more than one size larger than you, you can expend one superiority die to attempt to drive the target back. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 10 feet away from you."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you hit a creature with a weapon attack",
+                "actionType": "save",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll",
+                "save.ability": "str"
+            }
+        },
+
+        {
+            "name": "Quick Toss",
+            "source": "DZC:ANA",
+            "page": 8,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Superiority Die",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:M"
+            ],
+            "entries": [
+                "As a bonus action, you can expend one superiority die and make a ranged attack with a weapon that has the thrown property. You can draw the weapon as part of making this attack. If you hit, add the superiority die to the weapon's damage roll."
+            ],
+            "foundrySystem": {
+                "activation.type": "bonus action",
                 "activation.cost": 1,
                 "actionType": "other",
                 "damage.parts": [
                     [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2)) + @abilities.wis.mod"
+                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
                     ]
                 ],
-                "rsr5e.quickDamage.context.0": "Your choice of bludgeoning, piercing, or slashing"
+                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
+            }
+        },
+
+        {
+            "name": "Rally",
+            "source": "DZC:ANA",
+            "page": 8,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Superiority Die",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:M"
+            ],
+            "entries": [
+                "On your turn, you can use a bonus action and expend one superiority die to bolster the resolve of one of your companions. When you do so, choose a friendly creature who can see or hear you. That creature gains temporary hit points equal to the superiority die roll + your Charisma modifier."
+            ],
+            "foundrySystem": {
+                "activation.type": "bonus action",
+                "activation.cost": 1,
+                "actionType": "healing",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2)) + @abilities.cha.mod",
+                        "temphp"
+                    ]
+                ]
+            }
+        },
+
+        {
+            "name": "Riposte",
+            "source": "DZC:ANA",
+            "page": 8,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Superiority Die",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:M"
+            ],
+            "entries": [
+                "When a creature misses you with a melee attack, you can use your reaction and expend one superiority die to make a melee weapon attack against the creature. If you hit, you add the superiority die to the attack's damage roll."
+            ],
+            "foundrySystem": {
+                "activation.type": "reaction",
+                "activation.condition": "When a creature misses you with a melee attack",
+                "activation.cost": 1,
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
+            }
+        },
+
+        {
+            "name": "Slowing Attack",
+            "source": "DZC:ANA",
+            "page": 8,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Superiority Die",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:M"
+            ],
+            "entries": [
+                "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to reduce that creature's speed. Roll your superiority die. The creature must succeed on a Constitution saving throw or have its speed reduced an ammount in feet equal to 5 times the number rolled on your superiority die. This effect lasts until the start of your next turn. If the maneuver reduces a creature's speed to 0, it becomes {@condition restrained} for the duration."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you hit a creature with a melee weapon attack",
+                "activation.cost": 1,
+                "actionType": "save",
+                "damage.parts": [
+                    [
+                        "5*1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Speed reduced in feet",
+                "save.ability": "con"
+            }
+        },
+
+        {
+            "name": "Sweeping Attack",
+            "source": "DZC:ANA",
+            "page": 8,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Superiority Die",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:M"
+            ],
+            "entries": [
+                "When you hit a creature with a melee weapon attack, you can expend one superiority die to attempt to damage another creature with the same attack. Choose another creature within 5 feet of the original target and within your reach. If the original attack roll would hit the second creature, it takes damage equal to the number you roll on your superiority die. The damage is of the same type dealt by the original attack."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you hit a creature with a melee weapon attack",
+                "activation.cost": 1,
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Weapon damage roll"
+            }
+        },
+
+        {
+            "name": "Tactical Assessment",
+            "source": "DZC:ANA",
+            "page": 8,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Superiority Die",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:M"
+            ],
+            "entries": [
+                "When you make an Intelligence ({@skill Investigation}), an Intelligence ({@skill History}), or a Wisdom ({@skill Insight}) check, you can expend one superiority die and add the superiority die to the ability check."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you make an Intelligence (Investigation), an Intelligence (History), or a Wisdom (Insight) check",
+                "activation.cost": 1,
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to skill check"
+            }
+        },
+
+        {
+            "name": "Trip Attack",
+            "source": "DZC:ANA",
+            "page": 8,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Superiority Die",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:M"
+            ],
+            "entries": [
+                "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock the target down. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you knock the target {@condition prone}."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you hit a creature with a weapon attack",
+                "actionType": "save",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll",
+                "save.ability": "dex"
             }
         }
+
     ],
-
-	"feat": [
-		{
-			"name": "Martial Arts Beginner",
-			"source": "DZC:ANA",
-			"page": 15,
-			"entries": [
-				"You have grasped the very basics of martial arts, which prove useful to aid you in battle.",
-
-				"You learn one Martial Arts Style of your choice from the monk class and learn all its features that don't have a level prerequisite. Your Martial Arts die for this style is a d6.",
-
-				"Whenever you gain a level that grants the Ability Score Improvement feature, you can replace this feat's style with another one from the monk class."
-			]
-		},
-		{
-			"name": "Minor Ki Control",
-			"source": "DZC:ANA",
-			"page": 15,
-			"entries": [
-				"You managed to tap on the surface of the power that is ki by connecting with your inner self and the flow of energy in your surroundings.",
-
-				"You gain two ki features of your choice from the monk class, which follow the restrictions described in the Ki Rules and Restrictions section of the feature. Your Martial Arts die for these features is a d6. If a ki feature you use requires your target to make a saving throw to resist its effects, the save DC equals 8 + your proficiency bonus + your Wisdom modifier. If the ki feature has a prerequisite of any kind, you can choose it only if you're a monk that meets them.",
-
-				"Whenever you gain a level, you can replace one of these feat's ki features with another one from the monk class.",
-
-				"You gain 2 ki points to spend on ki features (these points are added to any ki points you have from another source, but can be used only on ki features). You regain all expended ki points when you finish a short or long rest that you spent meditating uninterrupted for at least half of its duration."
-			]
-		}
-	],
 	
 	"subclass": [
 		{
