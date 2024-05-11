@@ -24,7 +24,8 @@
 			"DZC:CS:WS": "Fighter Rework; Combat Specialization: Weapon Specialization",
 			"DZC:CS:AS": "Fighter Rework; Combat Specialization: Armor Specialization",
 			"DZC:CS:PS": "Fighter Rework; Combat Specialization: Physical Specialization",
-            "DZC:M": "Fighter Rework; Maneuvers"
+            "DZC:M": "Fighter Rework; Maneuvers",
+            "DZC:IC": "Fighter Rework; Improved Critical"
         }
     },
     "class": [
@@ -162,15 +163,51 @@
 				{
 					"name": "Warrior's Training",
 					"featureType": [
-						"DZC:WT"
+						"DZC:CS"
 					],
 					"progression": {
 						"1": 2,
 						"9": 3,
 						"13": 4
 					}
+				},
+                {
+					"name": "Improved Critical",
+					"featureType": [
+						"DZC:IC"
+					],
+					"progression": {
+						"3": 19,
+						"7": 18,
+						"15": 17,
+                        "18": 16
+					}
 				}
             ],
+            "foundryAdvancement": [
+				{
+					"title": "Improved Critical",
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "imp-crit",
+						"type": "numeric",
+						"scale": {
+							"3": {
+								"value": 19
+							},
+                            "7": {
+								"value": 18
+							},
+                            "15": {
+								"value": 17
+							},
+                            "18": {
+								"value": 16
+							}
+						}
+					}
+				}
+			],
             "classTableGroups": [
                 {
                     "colLabels": [
