@@ -1826,137 +1826,90 @@
 	
 	"subclass": [
 		{
-			"name": "Way of the Inner Strength",
-			"shortName": "Inner Strength",
+			"name": "Champion",
+			"shortName": "Champion",
 			"source": "DZC:ANA",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
 			"page": 4,
-			"foundryImg": "icons/magic/holy/prayer-hands-glowing-yellow.webp",
+			"foundryImg": "",
 			"subclassFeatures": [
-				"Way of the Inner Strength|Fighter Rework|DZC:ANA|Inner Strength|DZC:ANA|3",
-				"Wholeness of Body|Fighter Rework|DZC:ANA|Inner Strength|DZC:ANA|6",
-				"Blank Mind|Fighter Rework|DZC:ANA|Inner Strength|DZC:ANA|11",
-				"Enlightenment|Fighter Rework|DZC:ANA|Inner Strength|DZC:ANA|17"
+				"Champion|Fighter Rework|DZC:ANA|Champion|DZC:ANA|3",
+				"Remarkable Athlete|Fighter Rework|DZC:ANA|Champion|DZC:ANA|7",
+				"Diamond Body|Fighter Rework|DZC:ANA|Champion|DZC:ANA|15",
+				"Survivor|Fighter Rework|DZC:ANA|Champion|DZC:ANA|18"
 			]
 		},
         {
-			"name": "Way of the Shadows",
-			"shortName": "Shadows",
+			"name": "Arcane Knight",
+			"shortName": "Arcane Knight",
 			"source": "DZC:ANA",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
 			"page": 5,
-			"foundryImg": "icons/skills/melee/maneuver-sword-katana-yellow.webp",
+			"foundryImg": "",
 			"subclassFeatures": [
-				"Way of the Shadows|Fighter Rework|DZC:ANA|Shadows|DZC:ANA|3",
-				"Shadow Step|Fighter Rework|DZC:ANA|Shadows|DZC:ANA|6",
-				"Cloak of Shadows|Fighter Rework|DZC:ANA|Shadows|DZC:ANA|11",
-				"Opportunist|Fighter Rework|DZC:ANA|Shadows|DZC:ANA|17"
-			],
-            "additionalSpells": [
-				{
-					"known": {
-						"3": [
-                            "message#c",
-							"minor illusion#c"
-						]
-					},
-					"innate": {
-						"3": {
-							"resource": {
-                                "1": [
-                                    "fog cloud",
-                                    "silent image",
-                                    "jump"
-                                ],
-								"2": [
-									"darkness",
-									"darkvision",
-									"pass without trace",
-									"silence"
-								]
-							}
-						}
-					},
-					"resourceName": "Ki",
-					"ability": "wis"
-				}
-			]
-		},
-        {
-			"name": "Way of the Elements",
-			"shortName": "Elements",
-			"source": "DZC:ANA",
-			"className": "Fighter Rework",
-			"classSource": "DZC:ANA",
-			"page": 6,
-			"foundryImg": "icons/magic/symbols/elements-air-earth-fire-water.webp",
-			"subclassFeatures": [
-				"Way of the Elements|Fighter Rework|DZC:ANA|Elements|DZC:ANA|3",
-				"Primal Stances|Fighter Rework|DZC:ANA|Elements|DZC:ANA|6",
-				"Step Shift|Fighter Rework|DZC:ANA|Elements|DZC:ANA|11",
-				"Elemental Mastery|Fighter Rework|DZC:ANA|Elements|DZC:ANA|17"
+				"Arcane Knight|Fighter Rework|DZC:ANA|Arcane Knight|DZC:ANA|3",
+				"War Magic|Fighter Rework|DZC:ANA|Arcane Knight|DZC:ANA|7",
+				"Arcane Charge|Fighter Rework|DZC:ANA|Arcane Knight|DZC:ANA|15",
+				"War Magic improvement|Fighter Rework|DZC:ANA|Arcane Knight|DZC:ANA|18"
 			]
 		}
 	],
 	"subclassFeature": [
 		{
-			"name": "Way of the Inner Strength",
+			"name": "Champion",
 			"source": "DZC:ANA",
 			"page": 4,
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
-			"subclassShortName": "Inner Strength",
+			"subclassShortName": "Champion",
 			"subclassSource": "DZC:ANA",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Monks of the Way of the Inner Strength are dedicated to cultivating the true potential of ki. They take on a path of diligent meditation and self discovery, searching for the mysteries that dwelve deep within them, rather than those of the universe around them.",
-
-				"More often than not, practicioners of this tradition isolate themselves for long periods of time, disconnecting their terrenal senses in order to heighten their spiritual eye. Only a few can endure this journey, and even less monks can achieve the state of true enlightenment.",
+				"A champion is the first thing that comes to mind when anyone thinks of a fighter, a hero who has defeated great foes by overwhelming them with their physical superiority. These fighters lack any special ability, so they train nonstop to bring their bodies to reach limits beyond what is humanly possible.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Ki Specialist|Fighter Rework|DZC:ANA|Inner Strength|DZC:ANA|3"
+					"subclassFeature": "Improved Critical|Fighter Rework|DZC:ANA|Champion|DZC:ANA|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Purity of Body|Fighter Rework|DZC:ANA|Inner Strength|DZC:ANA|3"
+					"subclassFeature": "Physical Expertise|Fighter Rework|DZC:ANA|Champion|DZC:ANA|3"
 				}
 			]
 		},
 
 		{
-			"name": "Ki Specialist",
+			"name": "Improved Critical",
 			"source": "DZC:ANA",
 			"page": 4,
-			"foundryImg": "icons/magic/light/hand-sparks-glow-yellow.webp",
+			"foundryImg": "",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
-			"subclassShortName": "Inner Strength",
+			"subclassShortName": "Champion",
 			"subclassSource": "DZC:ANA",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"With the liberation of your spiritual energy, you are less restricted in the use of your ki abilities. Beginning at 3rd level, choose two ki features that you know, that don't have a level restriction, to become your Specialized Ki Features. Once before the start of each of your turns, you can use a Specialized Ki Feature without spending ki points.",
-
-				"By spending 4 hours meditating or when you gain a level in this class, you can exchange one of your Specialized Ki Features for a different one with the same restrictions."
+				"Starting at 3rd level, your weapon attacks also score a critical hit on a roll of 19. They also score a critical hit on a roll of 18 at 7th level, 17 at 15th, and 16 at 18th."
 			]
 		},
 
 		{
-			"name": "Purity of Body",
+			"name": "Physical Expertise",
 			"source": "DZC:ANA",
-			"page": 5,
-			"foundryImg": "icons/magic/light/explosion-star-blue.webp",
+			"page": 4,
+			"foundryImg": "",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
-			"subclassShortName": "Inner Strength",
+			"subclassShortName": "Champion",
 			"subclassSource": "DZC:ANA",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Also at 3rd level, the ki flowing through your body makes you immune to disease and poison."
+				"Also at 3rd level, your dedicated physical training bears fruit. You gain proficiency in Acrobatics and Athletics if you don't already have them. Your proficiency bonus is doubled for any ability check you make that uses these skills.",
+                "In addition, your jumping distance increases by a number of feet equal to five times your proficiency bonus."
 			]
 		},
 
@@ -1967,7 +1920,7 @@
 			"foundryImg": "icons/magic/life/heart-glowing-red.webp",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
-			"subclassShortName": "Inner Strength",
+			"subclassShortName": "Champion",
 			"subclassSource": "DZC:ANA",
 			"level": 6,
 			"header": 2,
@@ -1983,7 +1936,7 @@
 			"foundryImg": "icons/magic/holy/prayer-hands-glowing-yellow-white.webp",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
-			"subclassShortName": "Inner Strength",
+			"subclassShortName": "Champion",
 			"subclassSource": "DZC:ANA",
 			"level": 11,
 			"header": 2,
@@ -1999,7 +1952,7 @@
 			"foundryImg": "icons/magic/perception/third-eye-blue-red.webp",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
-			"subclassShortName": "Inner Strength",
+			"subclassShortName": "Champion",
 			"subclassSource": "DZC:ANA",
 			"level": 17,
 			"header": 2,
@@ -2525,6 +2478,31 @@
 				"uses.per": "sr",
 				"uses.max": "ceil(@classes.fighter-rework.levels/3) + 3"
 			}
+		},
+        {
+            "name": "Improved Critical",
+			"source": "DZC:ANA",
+			"className": "Monk Rework",
+			"classSource": "DZC:ANA",
+			"level": 1,
+            "effects": [
+                {
+					"name": "Unarmored Defense (Wisdom)",
+					"changes": [
+						{
+							"key": "system.attributes.ac.calc",
+							"mode": "OVERRIDE",
+							"value": "custom"
+						},
+						{
+							"key": "system.attributes.ac.formula",
+							"mode": "CUSTOM",
+							"value": "10+@abilities.dex.mod+@abilities.wis.mod"
+						}
+					],
+                    "transfer": true
+				}
+			]
 		}
 	],
 	
