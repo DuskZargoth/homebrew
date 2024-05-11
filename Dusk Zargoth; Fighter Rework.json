@@ -1947,54 +1947,69 @@
 			"entries": [
 				"Also at 3rd level, your dedicated physical training bears fruit. You gain proficiency in Acrobatics and Athletics if you don't already have them. Your proficiency bonus is doubled for any ability check you make that uses these skills.",
                 "In addition, your jumping distance increases by a number of feet equal to five times your proficiency bonus."
-			]
+			],
+            "skillProficiencies": [
+                {
+                    "athletics": true,
+                    "acrobatics": true
+                }
+            ]
 		},
 
 		{
-			"name": "Wholeness of Body",
+			"name": "Remarkable Athlete",
 			"source": "DZC:ANA",
-			"page": 5,
-			"foundryImg": "icons/magic/life/heart-glowing-red.webp",
+			"page": 4,
+			"foundryImg": "",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Champion",
 			"subclassSource": "DZC:ANA",
-			"level": 6,
+			"level": 7,
 			"header": 2,
 			"entries": [
-				"At 6th level, whenever you finish a rest by meditating and spend at least one Hit Die to heal yourself, you regain additional hit points equal to three times your monk level."
+				"At 7th level, you can add half your proficiency bonus (rounded up) to any Strength, Dexterity, or Constitution check you make that doesn't already use your proficiency bonus.",
+                "In addition, climbing and swimming doesn't cost you extra movement."
 			]
 		},
 
 		{
-			"name": "Blank Mind",
+			"name": "Diamond Body",
 			"source": "DZC:ANA",
-			"page": 5,
-			"foundryImg": "icons/magic/holy/prayer-hands-glowing-yellow-white.webp",
+			"page": 4,
+			"foundryImg": "",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Champion",
 			"subclassSource": "DZC:ANA",
-			"level": 11,
+			"level": 15,
 			"header": 2,
 			"entries": [
-				"At 11th level, you can reach an state of absolute concentration, in which you, through uninterrupted meditation, can finish a short rest in 1 minute and a long rest in 1 hour. Once you do either of those, you can't do it again before 24 hours."
-			]
+				"At 15th level, your body can whitstand terrible attacks. When a creature scores a critical hit against you, you can use your reaction to turn it into a normal hit.",
+                "Once you use this feature, you can't use it again until you finish a short or long rest."
+			],
+            "foundrySystem": {
+                "activation.type": "reaction",
+                "activation.condition": "When a creature scores a critical hit against you",
+                "activation.cost": 1,
+                "uses.per": "sr",
+                "uses.max": "lr"
+            }
 		},
 
 		{
-			"name": "Enlightenment",
+			"name": "Survivor",
 			"source": "DZC:ANA",
 			"page": 5,
-			"foundryImg": "icons/magic/perception/third-eye-blue-red.webp",
+			"foundryImg": "",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Champion",
 			"subclassSource": "DZC:ANA",
-			"level": 17,
+			"level": 18,
 			"header": 2,
 			"entries": [
-				"By reaching deep within yourself, your soul blossomed to its maximum potential. At 17th level, you can now add one ki feature with a 5th level restriction and one with a 9th level restriction to your Specialized Ki Features."
+				"At 18th level, you attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier if you have no more than half of your hit points left. You don't gain this benefit if you have 0 hit points."
 			]
 		},
 
@@ -2519,22 +2534,17 @@
         {
             "name": "Improved Critical",
 			"source": "DZC:ANA",
-			"className": "Monk Rework",
+			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
 			"level": 1,
             "effects": [
                 {
-					"name": "Unarmored Defense (Wisdom)",
+					"name": "Improved Critical",
 					"changes": [
 						{
-							"key": "system.attributes.ac.calc",
+							"key": "flags.dnd5e.weaponCriticalThreshold",
 							"mode": "OVERRIDE",
-							"value": "custom"
-						},
-						{
-							"key": "system.attributes.ac.formula",
-							"mode": "CUSTOM",
-							"value": "10+@abilities.dex.mod+@abilities.wis.mod"
+							"value": "@scale.fighter-rework.imp-crit"
 						}
 					],
                     "transfer": true
