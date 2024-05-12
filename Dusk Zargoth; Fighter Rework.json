@@ -1995,8 +1995,11 @@
 			"subclassFeatures": [
 				"Champion|Fighter Rework|DZC:ANA|Champion|DZC:ANA|3",
 				"Remarkable Athlete|Fighter Rework|DZC:ANA|Champion|DZC:ANA|7",
+                "Improved Critical|Fighter Rework|DZC:ANA|Champion|DZC:ANA|7",
 				"Diamond Body|Fighter Rework|DZC:ANA|Champion|DZC:ANA|15",
-				"Survivor|Fighter Rework|DZC:ANA|Champion|DZC:ANA|18"
+                "Improved Critical|Fighter Rework|DZC:ANA|Champion|DZC:ANA|15",
+				"Survivor|Fighter Rework|DZC:ANA|Champion|DZC:ANA|18",
+                "Improved Critical|Fighter Rework|DZC:ANA|Champion|DZC:ANA|18"
 			]
 		},
         {
@@ -2326,6 +2329,54 @@
 			"header": 1,
 			"entries": [
 				"Starting at 3rd level, your weapon attacks also score a critical hit on a roll of 19. They also score a critical hit on a roll of 18 at 7th level, 17 at 15th, and 16 at 18th."
+			]
+		},
+
+        {
+			"name": "Improved Critical",
+			"source": "DZC:ANA",
+			"page": 4,
+			"foundryImg": "",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA",
+			"subclassShortName": "Champion",
+			"subclassSource": "DZC:ANA",
+			"level": 7,
+			"header": 1,
+			"entries": [
+				"Starting at 7th level, your weapon attacks score a critical hit on a roll of 18-20."
+			]
+		},
+
+        {
+			"name": "Improved Critical",
+			"source": "DZC:ANA",
+			"page": 4,
+			"foundryImg": "",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA",
+			"subclassShortName": "Champion",
+			"subclassSource": "DZC:ANA",
+			"level": 15,
+			"header": 1,
+			"entries": [
+				"Starting at 15th level, your weapon attacks score a critical hit on a roll of 17-20."
+			]
+		},
+
+        {
+			"name": "Improved Critical",
+			"source": "DZC:ANA",
+			"page": 4,
+			"foundryImg": "",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA",
+			"subclassShortName": "Champion",
+			"subclassSource": "DZC:ANA",
+			"level": 18,
+			"header": 1,
+			"entries": [
+				"Starting at 18th level, your weapon attacks score a critical hit on a roll of 16-20."
 			]
 		},
 
