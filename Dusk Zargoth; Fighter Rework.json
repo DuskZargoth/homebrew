@@ -2014,24 +2014,24 @@
 		},
 
         {
-			"name": "Way of the Shadows",
+			"name": "Arcane Knight",
 			"source": "DZC:ANA",
 			"page": 5,
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
-			"subclassShortName": "Shadows",
+			"subclassShortName": "Arcane Knight",
 			"subclassSource": "DZC:ANA",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Monks of the Way of the Shadows follow a tradition that values stealth and subterfuge. These monks might be called ninjas or shadowdancers, and they serve as spies and assassins.",
+				"Monks of the Way of the Arcane Knight follow a tradition that values stealth and subterfuge. These monks might be called ninjas or shadowdancers, and they serve as spies and assassins.",
 
 				"Sometimes the members of a ninja monastery are family members, forming a clan sworn to secrecy about their arts and missions. Other monasteries are more like thieves' guilds, hiring out their services to nobles, rich merchants, or anyone else who can pay their fees.",
 
                 "Regardless of their methods, the heads of these monasteries expect from their students unquestioning obedience, to show no scruple on their actions, and to carry their missions without failure. Otherwise, they won't hesitate to deliver severe punishment.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Shadow Arts|Fighter Rework|DZC:ANA|Shadows|DZC:ANA|3"
+					"subclassFeature": "Shadow Arts|Fighter Rework|DZC:ANA|Arcane Knight|DZC:ANA|3"
 				}
 			]
 		},
@@ -2043,7 +2043,7 @@
 			"foundryImg": "icons/magic/control/silhouette-aura-energy.webp",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
-			"subclassShortName": "Shadows",
+			"subclassShortName": "Arcane Knight",
 			"subclassSource": "DZC:ANA",
 			"level": 3,
 			"header": 1,
@@ -2061,7 +2061,7 @@
 			"foundryImg": "icons/magic/control/debuff-energy-hold-pink.webp",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
-			"subclassShortName": "Shadows",
+			"subclassShortName": "Arcane Knight",
 			"subclassSource": "DZC:ANA",
 			"level": 6,
 			"header": 2,
@@ -2071,18 +2071,18 @@
 		},
 
 		{
-			"name": "Cloak of Shadows",
+			"name": "Cloak of Arcane Knight",
 			"source": "DZC:ANA",
 			"page": 5,
 			"foundryImg": "icons/magic/perception/silhouette-stealth-shadow.webp",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
-			"subclassShortName": "Shadows",
+			"subclassShortName": "Arcane Knight",
 			"subclassSource": "DZC:ANA",
 			"level": 11,
 			"header": 2,
 			"entries": [
-				"At 11th level, you learn how to become one with the shadows. You can spend 2 ki points when you use your Shadow Step to become {@condition invisible}. You remain {@condition invisible} until you make an attack, cast a spell, or until you get into an area of bright light."
+				"At 11th level, you learn how to become one with the Arcane Knight. You can spend 2 ki points when you use your Shadow Step to become {@condition invisible}. You remain {@condition invisible} until you make an attack, cast a spell, or until you get into an area of bright light."
 			]
 		},
 
@@ -2093,7 +2093,7 @@
 			"foundryImg": "icons/magic/light/projectile-bolts-salvo-yellow.webp",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
-			"subclassShortName": "Shadows",
+			"subclassShortName": "Arcane Knight",
 			"subclassSource": "DZC:ANA",
 			"level": 17,
 			"header": 2,
