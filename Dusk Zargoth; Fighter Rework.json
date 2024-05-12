@@ -2342,7 +2342,7 @@
 			"subclassShortName": "Champion",
 			"subclassSource": "DZC:ANA",
 			"level": 7,
-			"header": 3,
+			"header": 2,
 			"entries": [
 				"Starting at 7th level, your weapon attacks score a critical hit on a roll of 18-20."
 			]
