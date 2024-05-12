@@ -489,7 +489,7 @@
                     "classFeature": "Martial Archetype|Fighter Rework|DZC:ANA|3",
                     "gainSubclassFeature": true
                 },
-                "Know Your Enemy|Fighter Rework|DZC:ANA|4",
+                "Know Your Enemy|Fighter Rework|DZC:ANA|3",
                 "Ability Score Improvement|Fighter Rework|DZC:ANA|4",
                 "Extra Attack|Fighter Rework|DZC:ANA|5",
                 "Combat Expertise|Fighter Rework|DZC:ANA|5",
@@ -715,7 +715,7 @@
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
             "page": 3,
-            "level": 2,
+            "level": 9,
             "entries": [
                 "Starting at 9th level, you can cancel both a disadvantage and a penalty to one of the listed rolls you make with a single use of this feature."
             ]
