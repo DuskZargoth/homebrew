@@ -25,7 +25,8 @@
 			"DZC:CS:AS": "Fighter Rework; Combat Specialization: Armor Specialization",
 			"DZC:CS:PS": "Fighter Rework; Combat Specialization: Physical Specialization",
             "DZC:M": "Fighter Rework; Maneuvers",
-            "DZC:IC": "Fighter Rework; Improved Critical"
+            "DZC:IC": "Fighter Rework; Improved Critical",
+            "DZC:WB": "Fighter Rework; Weapon Bond"
         }
     },
     "class": [
@@ -1857,6 +1858,127 @@
                 "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll",
                 "save.ability": "dex"
             }
+        },
+
+        {
+            "name": "Abjuration",
+            "source": "DZC:ANA",
+            "page": 5,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"featureType": [
+				"DZC:WB"
+            ],
+            "entries": [
+                "A creature can't be disarmed of this weapon against its will."
+            ]
+        },
+
+        {
+            "name": "Conjuration",
+            "source": "DZC:ANA",
+            "page": 5,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"featureType": [
+				"DZC:WB"
+            ],
+            "entries": [
+                "You can summon your bonded weapons to your hands as a bonus action, causing it to teleport instantly to your hand."
+            ],
+            "foundrySystem": {
+                "activation.type": "bonus action"
+            }
+        },
+
+        {
+            "name": "Divination",
+            "source": "DZC:ANA",
+            "page": 5,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"featureType": [
+				"DZC:WB"
+            ],
+            "entries": [
+                "When you roll a 1 on an attack roll using your bonded weapons, you can reroll the die. You must use the new result."
+            ]
+        },
+
+        {
+            "name": "Enchantment",
+            "source": "DZC:ANA",
+            "page": 5,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"featureType": [
+				"DZC:WB"
+            ],
+            "entries": [
+                "If you hit a creature with your bonded weapons, it has disadvantage on the next saving throw it makes against being {@condition charmed} or {@condition frightened} by a spell you cast before the end of your next turn."
+            ]
+        },
+
+        {
+            "name": "Evocation",
+            "source": "DZC:ANA",
+            "page": 5,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"featureType": [
+				"DZC:WB"
+            ],
+            "entries": [
+                "When you make an attack with your bonded weapon, you can change its damage type to acid, cold, fire, lightning, or thunder."
+            ]
+        },
+
+        {
+            "name": "Illusion",
+            "source": "DZC:ANA",
+            "page": 5,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"featureType": [
+				"DZC:WB"
+            ],
+            "entries": [
+                "The first time you attack with each of your bonded weapons on each of your turns, you create a mirage of your attack that gives you advantage on the attack roll. A creature is unaffected by this feature if it can’t see, if it relies on senses other than sight, or if it can perceive illusions as false."
+            ]
+        },
+
+        {
+            "name": "Necromancy",
+            "source": "DZC:ANA",
+            "page": 6,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"featureType": [
+				"DZC:WB"
+            ],
+            "entries": [
+                "When you reduce a creature to 0 hit points with an attack made with your bonded weapons, you gain a number of temporary hit points equal to your Intelligence modifier (minimum of 1)."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you reduce a creature to 0 hit points with an attack made with your bonded weapons",
+                "actionType": "healing",
+                "damage.parts": [
+                    [
+                        "@abilities.int.mod",
+                        "temphp"
+                    ]
+                ]
+            }
+        },
+
+        {
+            "name": "Transmutation",
+            "source": "DZC:ANA",
+            "page": 6,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+			"featureType": [
+				"DZC:WB"
+            ],
+            "entries": [
+                "As a bonus action, you can turn your light bonded weapons into heavy weapons, and viceversa. Alternatively, you can add or remove the property into your bonded weapons if it didn't have it initially."
+            ],
+            "foundrySystem": {
+                "activation.type": "bonus action"
+            }
         }
 
     ],
@@ -1885,6 +2007,280 @@
 			"classSource": "DZC:ANA",
 			"page": 5,
 			"foundryImg": "",
+            "spellcastingAbility": "int",
+			"casterProgression": "1/3",
+            "preparedSpells": "<$level$>/3 + <$int_mod$>",
+			"cantripProgression": [
+				0,
+				0,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				2,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3,
+				3
+			],
+            "subclassSpells": [
+                {
+					"className": "Fighter",
+					"classSource": "PHB",
+					"subclassName": "Eldritch Knight",
+					"subclassSource": "PHB"
+				}
+            ],
+			"additionalSpells": [
+				{
+					"expanded": {
+						"3": [
+							{
+								"all": "level=0|class=Wizard"
+							},
+							{
+								"all": "level=1|class=Wizard"
+							}
+						],
+						"7": [
+							{
+								"all": "level=2|class=Wizard"
+							}
+						],
+						"13": [
+							{
+								"all": "level=3|class=Wizard"
+							}
+						],
+						"19": [
+							{
+								"all": "level=4|class=Wizard"
+							}
+						]
+					}
+				}
+			],
+			"subclassTableGroups": [
+				{
+					"subclasses": [
+						{
+							"name": "Eldritch Knight",
+							"source": "PHB"
+						}
+					],
+					"colLabels": [
+						"{@filter Cantrips Known|spells|level=0|subclass=Fighter Rework: Arcane Knight}"
+					],
+					"rows": [
+						[
+							0
+						],
+						[
+							0
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							3
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						],
+						[
+							4
+						]
+					]
+				},
+				{
+					"title": "Spell Slots per Spell Level",
+					"subclasses": [
+						{
+							"name": "Arcane Knight",
+							"source": "DZC:ANA"
+						}
+					],
+					"colLabels": [
+                        "{@filter 1st|spells|level=1|subclass=Fighter: Eldritch Knight}",
+						"{@filter 2nd|spells|level=2|subclass=Fighter: Eldritch Knight}",
+						"{@filter 3rd|spells|level=3|subclass=Fighter: Eldritch Knight}",
+						"{@filter 4th|spells|level=4|subclass=Fighter: Eldritch Knight}"
+					],
+					"rowsSpellProgression": [
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							0,
+							0,
+							0,
+							0
+						],
+						[
+							2,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							3,
+							0,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							2,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							0,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							2,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							0
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						],
+						[
+							4,
+							3,
+							3,
+							1
+						]
+					]
+				}
+			],
 			"subclassFeatures": [
 				"Arcane Knight|Fighter Rework|DZC:ANA|Arcane Knight|DZC:ANA|3",
 				"War Magic|Fighter Rework|DZC:ANA|Arcane Knight|DZC:ANA|7",
@@ -1993,7 +2389,7 @@
                 "activation.condition": "When a creature scores a critical hit against you",
                 "activation.cost": 1,
                 "uses.per": "sr",
-                "uses.max": "lr"
+                "uses.max": "1"
             }
 		},
 
@@ -2024,23 +2420,27 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Monks of the Way of the Arcane Knight follow a tradition that values stealth and subterfuge. These monks might be called ninjas or shadowdancers, and they serve as spies and assassins.",
-
-				"Sometimes the members of a ninja monastery are family members, forming a clan sworn to secrecy about their arts and missions. Other monasteries are more like thieves' guilds, hiring out their services to nobles, rich merchants, or anyone else who can pay their fees.",
-
-                "Regardless of their methods, the heads of these monasteries expect from their students unquestioning obedience, to show no scruple on their actions, and to carry their missions without failure. Otherwise, they won't hesitate to deliver severe punishment.",
+				"Some fighters incorporate magic into their studies, becoming arcane knights. Thus they enlist to wizard academies or take a wizard as an instructor. An arcane knight studies magic to expand their repertoir of abilities in order to increase both their adaptability and versatility. However, given the secondary the priority of their magical studies are, they opt for an intensive rather than extensive approach. Hence why they only pick a few schools of magic to learn and then memorize a few spells from these.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Shadow Arts|Fighter Rework|DZC:ANA|Arcane Knight|DZC:ANA|3"
+					"subclassFeature": "Schools of Magic|Fighter Rework|DZC:ANA|Arcane Knight|DZC:ANA|3"
+				},
+                {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Spellcasting|Fighter Rework|DZC:ANA|Arcane Knight|DZC:ANA|3"
+				},
+                {
+					"type": "refSubclassFeature",
+					"subclassFeature": "Weapon Bond|Fighter Rework|DZC:ANA|Arcane Knight|DZC:ANA|3"
 				}
 			]
 		},
 
 		{
-			"name": "Shadow Arts",
+			"name": "Schools of Magic",
 			"source": "DZC:ANA",
 			"page": 5,
-			"foundryImg": "icons/magic/control/silhouette-aura-energy.webp",
+			"foundryImg": "",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Arcane Knight",
@@ -2048,440 +2448,208 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"With your training you are capable of replicating certain spells. At 3rd level, you gain the {@spell message} and {@spell minor illusion} cantrips if you don't already know them. In addition, you can spend 1 ki point to cast {@spell fog cloud}, {@spell silent image}, or {@spell jump}, and you can spend 2 ki points to cast {@spell darkness}, {@spell darkvision}, {@spell pass without trace}, or {@spell silence}.",
-
-				"When you cast {@spell silent image} in this way, you can only use it to create an image of yourself, and you can only cast {@spell jump} on yourself in this way."
+				"When you choose this tradition you must choose the two schools of magic that your character will study. The schools are Abjuration, Conjuration, Divination, Enchantment, Evocation, Illusion, Necromancy, and Transmutation. Whenever a feature in this subclass refers to your schools of magic, it refers to the ones you chose.",
+                {
+                    "type": "options",
+					"count": 2,
+					"entries": [
+                        {
+                            "type": "list",
+                            "items": [
+                                "{@filter Abjuration|spells|subclass=Fighter: Eldritch Knight|school=a}",
+                                "{@filter Conjuration|spells|subclass=Fighter: Eldritch Knight|school=c}",
+                                "{@filter Divination|spells|subclass=Fighter: Eldritch Knight|school=d}",
+                                "{@filter Enchantment|spells|subclass=Fighter: Eldritch Knight|school=e}",
+                                "{@filter Evocation|spells|subclass=Fighter: Eldritch Knight|school=v}",
+                                "{@filter Illusion|spells|subclass=Fighter: Eldritch Knight|school=i}",
+                                "{@filter Necromancy|spells|subclass=Fighter: Eldritch Knight|school=n}",
+                                "{@filter Transmutation|spells|subclass=Fighter: Eldritch Knight|school=t}"
+                            ]
+                        }
+                    ]
+                }
 			]
 		},
 
-		{
-			"name": "Shadow Step",
+        {
+			"name": "Spellcasting",
 			"source": "DZC:ANA",
 			"page": 5,
-			"foundryImg": "icons/magic/control/debuff-energy-hold-pink.webp",
+			"foundryImg": "",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Arcane Knight",
 			"subclassSource": "DZC:ANA",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"At 6th level, you gain the ability to step from one shadow into another. When you are in dim light or darkness, as a bonus action you can teleport up to 60 feet to an unoccupied space you can see that is also in dim light or darkness. You then have advantage on the first attack you make on that turn."
-			]
-		},
-
-		{
-			"name": "Cloak of Arcane Knight",
-			"source": "DZC:ANA",
-			"page": 5,
-			"foundryImg": "icons/magic/perception/silhouette-stealth-shadow.webp",
-			"className": "Fighter Rework",
-			"classSource": "DZC:ANA",
-			"subclassShortName": "Arcane Knight",
-			"subclassSource": "DZC:ANA",
-			"level": 11,
-			"header": 2,
-			"entries": [
-				"At 11th level, you learn how to become one with the Arcane Knight. You can spend 2 ki points when you use your Shadow Step to become {@condition invisible}. You remain {@condition invisible} until you make an attack, cast a spell, or until you get into an area of bright light."
-			]
-		},
-
-		{
-			"name": "Opportunist",
-			"source": "DZC:ANA",
-			"page": 5,
-			"foundryImg": "icons/magic/light/projectile-bolts-salvo-yellow.webp",
-			"className": "Fighter Rework",
-			"classSource": "DZC:ANA",
-			"subclassShortName": "Arcane Knight",
-			"subclassSource": "DZC:ANA",
-			"level": 17,
-			"header": 2,
-			"entries": [
-				"At 17th level, you can exploit a creature's momentary distraction when it is hit by an attack. Whenever a creature within 5 feet of you is hit by an attack made by a creature other than you, you can use your reaction to make an attack against that creature."
-			]
-		},
-
-        {
-			"name": "Way of the Elements",
-			"source": "DZC:ANA",
-			"page": 6,
-			"className": "Fighter Rework",
-			"classSource": "DZC:ANA",
-			"subclassShortName": "Elements",
-			"subclassSource": "DZC:ANA",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"This tradition teaches you to harness the energy of the four elements in ways that improve your combat prowess. Bend the forces of nature to invoke harmful effects on your enemies, or to surpass the mortal limits of your body. Some members of this tradition dedicate themselves to a single element, others explore different paths with them, and a few can weave the four elements together.",
-
-				"Each element is often associated with an aspect of an individual's personality or ideology. Air is associated with playfulness, peace, and solving problems from different angles. Earth with toughness, stability, and stubborness. Fire with anger, passion, and direct confrontation. Water with sadness, kindness, and adaptability.",
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Elemental Arts|Fighter Rework|DZC:ANA|Elements|DZC:ANA|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Elemental Strike|Fighter Rework|DZC:ANA|Elements|DZC:ANA|3"
-				},
-				{
-					"type": "refSubclassFeature",
-					"subclassFeature": "Elemental Manifestation|Fighter Rework|DZC:ANA|Elements|DZC:ANA|3"
-				}
-			]
-		},
-
-		{
-			"name": "Elemental Arts",
-			"source": "DZC:ANA",
-			"page": 6,
-			"foundryImg": "icons/magic/nature/beam-hand-leaves-green.webp",
-			"className": "Fighter Rework",
-			"classSource": "DZC:ANA",
-			"subclassShortName": "Elements",
-			"subclassSource": "DZC:ANA",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"Each element is contained within a field of study, known as {@filter Elemental Arts|optionalfeatures|feature type=DZC:EA}. Each elemental art has its own set of abilities, reflected as options within the features of this subclass. Whenever you gain a feature from this subclass you learn one of its options, each associated to an elemental art ({@filter air|optionalfeatures|feature type=DZC:EA:A}, {@filter earth|optionalfeatures|feature type=DZC:EA:E}, {@filter fire|optionalfeatures|feature type=DZC:EA:F}, and {@filter water|optionalfeatures|feature type=DZC:EA:W}).",
-
-				"Another property of these arts is that each has associated damage types, as shown in the Elemental Arts Damage table. Whenever a feature in this subclass refers to the damage of your elemental art, it refers to the ones in the table.",
+				"When you reach 3rd level, you augment your martial prowess with the ability to cast spells.",
                 {
-                    "type": "table",
-                    "caption": "Elemental Arts Damage",
-                    "colLabels": [
-                        "Elemental Art",
-                        "Maximum Ki Points for a Spell"
-                    ],
-                    "colStyles": [
-                        "col-5 text-center",
-                        "col-9 text-left"
-                    ],
-                    "rows": [
-                        [
-                            "Air",
-                            "Thunder"
-                        ],
-                        [
-                            "Earth",
-                            "Bludgeoning, Piercing, Slashing"
-                        ],
-                        [
-                            "Fire",
-                            "Fire"
-                        ],
-                        [
-                            "Water",
-                            "Cold"
-                        ]
+                    "type": "entries",
+                    "name": "Cantrips",
+                    "page": 5,
+                    "entries": [
+                        "You learn three cantrips of your choice from your schools of magic on the wizard spell list. You learn an additional cantrip of your choice with the same restrictions at 10th level."
                     ]
-                }
-			]
-		},
-
-		{
-			"name": "Elemental Strike",
-			"source": "DZC:ANA",
-			"page": 6,
-			"foundryImg": "icons/magic/fire/flame-burning-fist-strike.webp",
-			"className": "Fighter Rework",
-			"classSource": "DZC:ANA",
-			"subclassShortName": "Elements",
-			"subclassSource": "DZC:ANA",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"Starting when you choose this tradition at 3rd level, you learn to release elemental energy from your attacks. Once on your turn, when you hit a target with a weapon attack, you can spend 1 ki point to use an {@filter Elemental Strike|optionalfeature|feature type=DZC:EA:ES} option you know, dealing extra damage equal to one roll of your Martial Arts die, choosing from one of the damage types of its associated art. Each option has additional effect you can apply with it.",
-                {
-                    "type": "options",
-                    "count": 1,
-					"entries": [
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Thunderous Strike|DZC:ANA",
-							"name": "Thunderous Strike (Air Art)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Rocky Strike|DZC:ANA",
-							"name": "Rocky Strike (Earth Art)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Igneous Strike|DZC:ANA",
-							"name": "Igneous Strike (Fire Art)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Gelid Strike|DZC:ANA",
-							"name": "Gelid Strike (Water Art)"
-                        }
-                    ]
-                }
-			]
-		},
-
-		{
-			"name": "Elemental Manifestation",
-			"source": "DZC:ANA",
-			"page": 6,
-			"foundryImg": "icons/magic/earth/projectile-stone-boulder-brown.webp",
-			"className": "Fighter Rework",
-			"classSource": "DZC:ANA",
-			"subclassShortName": "Elements",
-			"subclassSource": "DZC:ANA",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"Also at 3rd level, you learn to shape the elements' energy into different effects. Once on your turn, you can spend 1 ki point to replace an attack from the Attack action with an {@filter Elemental Manifestation|optionalfeature|feature type=DZC:EA:EM} option you know.",
-                {
-                    "type": "options",
-                    "count": 1,
-					"entries": [
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Wind Blast|DZC:ANA",
-							"name": "Wind Blast (Air Art)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Stone Boulder|DZC:ANA",
-							"name": "Stone Boulder (Earth Art)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Flaming Blast|DZC:ANA",
-							"name": "Flaming Blast (Fire Art)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Water Swirl|DZC:ANA",
-							"name": "Water Swirl (Water Art)"
-                        }
-                    ]
-                }
-			]
-		},
-
-        {
-			"name": "Primal Stances",
-			"source": "DZC:ANA",
-			"page": 6,
-			"foundryImg": "icons/magic/water/elemental-water.webp",
-			"className": "Fighter Rework",
-			"classSource": "DZC:ANA",
-			"subclassShortName": "Elements",
-			"subclassSource": "DZC:ANA",
-			"level": 6,
-			"header": 2,
-			"entries": [
-				"At 6th level, you learn to infuse yourself with elemental energy. As a bonus action, you can spend 2 ki points to enter a {@filter Primal Stance|optionalfeature|feature type=DZC:EA:PS} option you know for 1 minute. For the duration, you gain the benefits of the chosen option. Your Primal Stance ends early if you are knocked unconscious, if you end it as a bonus action, or until you use this feature again.",
-                "Alternatively, you can learn an additional option from one of your previous features.",
-                {
-                    "type": "options",
-                    "count": 1,
-					"entries": [
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Wind Stance|DZC:ANA",
-							"name": "Wind Stance (Air Art)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Mountain Stance|DZC:ANA",
-							"name": "Mountain Stance (Earth Art)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Flame Stance|DZC:ANA",
-							"name": "Flame Stance (Fire Art)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "River Stance|DZC:ANA",
-							"name": "River Stance (Water Art)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Wind Blast|DZC:ANA",
-							"name": "Wind Blast (Air Art)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Stone Boulder|DZC:ANA",
-							"name": "Stone Boulder (Earth Art)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Flaming Blast|DZC:ANA",
-							"name": "Flaming Blast (Fire Art)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Water Swirl|DZC:ANA",
-							"name": "Water Swirl (Water Art)"
-                        }
-                    ]
-                }
-			]
-		},
-
-        {
-			"name": "Step Shift",
-			"source": "DZC:ANA",
-			"page": 7,
-			"foundryImg": "icons/creatures/abilities/wings-birdlike-blue.webp",
-			"className": "Fighter Rework",
-			"classSource": "DZC:ANA",
-			"subclassShortName": "Elements",
-			"subclassSource": "DZC:ANA",
-			"level": 11,
-			"header": 2,
-			"entries": [
-				"At 11th level, you learn how to move as one with the elements. Choose one of the {@filter Step Shift|optionalfeature|feature type=DZC:EA:SS}",
-                "Alternatively, you can learn an additional option from one of your previous features.",
-                {
-                    "type": "options",
-                    "count": 1,
-					"entries": [
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Aerial Lift|DZC:ANA",
-							"name": "Aerial Lift (Air Art)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Rock Walk|DZC:ANA",
-							"name": "Rock Walk (Earth Art)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Jet Burst|DZC:ANA",
-							"name": "Jet Burst (Fire Art)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Underwater Adaptations|DZC:ANA",
-							"name": "Underwater Adaptations (Water Art)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Wind Stance|DZC:ANA",
-							"name": "Wind Stance (Air Art)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Mountain Stance|DZC:ANA",
-							"name": "Mountain Stance (Earth Art)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Flame Stance|DZC:ANA",
-							"name": "Flame Stance (Fire Art)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "River Stance|DZC:ANA",
-							"name": "River Stance (Water Art)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Wind Blast|DZC:ANA",
-							"name": "Wind Blast (Air Art)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Stone Boulder|DZC:ANA",
-							"name": "Stone Boulder (Earth Art)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Flaming Blast|DZC:ANA",
-							"name": "Flaming Blast (Fire Art)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Water Swirl|DZC:ANA",
-							"name": "Water Swirl (Water Art)"
-                        }
-                    ]
-                }
-			]
-		},
-
-        {
-			"name": "Elemental Mastery",
-			"source": "DZC:ANA",
-			"page": 7,
-			"foundryImg": "icons/magic/nature/explosion-flame-blue.webp",
-			"className": "Fighter Rework",
-			"classSource": "DZC:ANA",
-			"subclassShortName": "Elements",
-			"subclassSource": "DZC:ANA",
-			"level": 17,
-			"header": 2,
-			"entries": [
-				"At 17th level, you have perfected the primal arts, learning to shape them in special ways. You gain the following benefits:",
-                {
-					"type": "list",
-					"items": [
-						"Once on your turn, when you hit a target with a weapon attack, you can deal extra damage equal to one roll of your Martial Arts die, choosing from one of the damage types of an elemental art you know.",
-						"You gain resistance to one of the damage types of an elemental art you know. If you have four arts in a single element, you ignore resistance to that damage."
-					]
                 },
-                "You also gain one of the following {@filter Elemental Mastery|optionalfeatures|feature type=DZC:EA:EMa} options of your choice. You must know the amount of elemental arts shown in parenthesis in order to take it.",
                 {
-                    "type": "options",
-                    "count": 1,
-					"entries": [
+                    "type": "entries",
+                    "name": "Spell Slots",
+                    "page": 5,
+                    "entries": [
+                        "The Arcane Knight Spellcasting table shows how many spell slots you have to cast your wizard spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spells Known",
+                    "page": 5,
+                    "entries": [
+                        "You know a number of wizard spells of your choice that are available for you to cast. The spells you choose must be from your schools of magic on the wizard spell list. The number of wizard spells you know is equal to your Intelligence modifier + a third of your fighter level (minimum of one spell).",
+                        "Whenever you gain a level in this class, you can replace one of the wizard spells you know with another one of your choice with the same restrictions."
+                    ]
+                },
+                {
+                    "type": "entries",
+                    "name": "Spells Known",
+                    "page": 5,
+                    "entries": [
+                        "Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.",
                         {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Air Master|DZC:ANA",
-							"name": "Air Master (Four Air Arts)"
+                            "type": "abilityDc",
+                            "name": "Spell",
+                            "attributes": [
+                                "int"
+                            ]
                         },
                         {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Earth Master|DZC:ANA",
-							"name": "Earth Master (Four Earth Arts)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Fire Master|DZC:ANA",
-							"name": "Fire Master (Four Fire Arts)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Water Master|DZC:ANA",
-							"name": "Water Master (Four Water Arts)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Lightning Adept|DZC:ANA",
-							"name": "Lightning Adept (Two or more Air Arts)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Acid Adept|DZC:ANA",
-							"name": "Acid Adept (Two or more Earth Arts)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Light Adept|DZC:ANA",
-							"name": "Light Adept (Two or more Fire Arts)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Heal Adept|DZC:ANA",
-							"name": "Heal Adept (Two or more Water Arts)"
-                        },
-                        {
-                            "type": "refOptionalfeature",
-							"optionalfeature": "Nature's Vessel|DZC:ANA",
-							"name": "Nature's Vessel (One Art in each Elemental)"
+                            "type": "abilityAttackMod",
+                            "name": "Spell",
+                            "attributes": [
+                                "int"
+                            ]
                         }
                     ]
                 }
 			]
+		},
+
+        {
+			"name": "Weapon Bond",
+			"source": "DZC:ANA",
+			"page": 5,
+			"foundryImg": "",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA",
+			"subclassShortName": "Arcane Knight",
+			"subclassSource": "DZC:ANA",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"At 3rd level, you learn a ritual that creates a magical bond between yourself and one weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. The weapon must be within your reach throughout the ritual, at the conclusion of which you touch the weapon and forge the bond.",
+                
+                "Once you have bonded a weapon to yourself, it counts as an arcane focus to you and it gains special properties depending on your schools of magic, each described below, as long as it is on the same plane of existence as you. These properties end if your weapon is no longer bonded to you or if you are unconscious.",
+
+                "You can have up to two bonded weapons. If you attempt to bond with a third weapon, you must break the bond with one of the other two.",
+
+                {
+                    "type": "options",
+                    "count": 2,
+                    "entries": [
+                        {
+							"type": "refOptionalfeature",
+							"optionalfeature": "Abjuration|DZC:ANA"
+						},
+                        {
+							"type": "refOptionalfeature",
+							"optionalfeature": "Conjuration|DZC:ANA"
+						},
+                        {
+							"type": "refOptionalfeature",
+							"optionalfeature": "Divination|DZC:ANA"
+						},
+                        {
+							"type": "refOptionalfeature",
+							"optionalfeature": "Enchantment|DZC:ANA"
+						},
+                        {
+							"type": "refOptionalfeature",
+							"optionalfeature": "Evocation|DZC:ANA"
+						},
+                        {
+							"type": "refOptionalfeature",
+							"optionalfeature": "Illusion|DZC:ANA"
+						},
+                        {
+							"type": "refOptionalfeature",
+							"optionalfeature": "Necromancy|DZC:ANA"
+						},
+                        {
+							"type": "refOptionalfeature",
+							"optionalfeature": "Transmutation|DZC:ANA"
+						}
+                    ]
+                }
+			]
+		},
+
+        {
+			"name": "War Magic",
+			"source": "DZC:ANA",
+			"page": 6,
+			"foundryImg": "",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA",
+			"subclassShortName": "Arcane Knight",
+			"subclassSource": "DZC:ANA",
+			"level": 7,
+			"header": 2,
+			"entries": [
+				"Beginning at 7th level, when you use your action to cast a cantrip, you can make one weapon attack as a bonus action. At 18th level, you can make this special attack when you use your action to cast any spell."
+			]
+		},
+
+        {
+			"name": "War Magic improvement",
+			"source": "DZC:ANA",
+			"page": 6,
+			"foundryImg": "",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA",
+			"subclassShortName": "Arcane Knight",
+			"subclassSource": "DZC:ANA",
+			"level": 18,
+			"header": 2,
+			"entries": [
+				"At 18th level, you can make this special attack when you use your action to cast any spell."
+			]
+		},
+
+        {
+			"name": "Arcane Charge",
+			"source": "DZC:ANA",
+			"page": 6,
+			"foundryImg": "",
+			"className": "Fighter Rework",
+			"classSource": "DZC:ANA",
+			"subclassShortName": "Arcane Knight",
+			"subclassSource": "DZC:ANA",
+			"level": 15,
+			"header": 2,
+			"entries": [
+				"At 15th level, you learn how to store residual magic inside of you, known as Arcane Charge. If you hit a creature with a weapon attack you can spend your Arcane Charge for one of the following effects:",
+                {
+                    "type": "list",
+                    "items": [
+                        "The creature has disadvantage on the next saving throw it makes against a spell before the end of your next turn.",
+                        "You can teleport up to 30 feet to an unoccupied space you can see, gaining advantage on your next weapon attack before the end your turn."
+                    ]
+                }
+			],
+            "foundrySystem": {
+				"uses.per": "sr",
+				"uses.max": "1"
+			}
 		}
 	
 	],
@@ -2536,7 +2704,7 @@
 			"source": "DZC:ANA",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
-			"level": 1,
+			"level": 3,
             "effects": [
                 {
 					"name": "Improved Critical",
@@ -2560,51 +2728,43 @@
 			"entries": [
 				{
 					"type": "section",
-					"name": "Monk",
+					"name": "Fighter",
 					"page": 1,
 					"source": "DZC:ANA",
 					"entries": [
-						"Jumping across the roofs with unmatched speed, she pursues the assassin across the city, slowing it little by little with arrows. The criminal now face to face with the wood elf shortly finds themselves immovilized on the ground, unwilling to continue fighting.",
+						"A stunning half-orc completely covered in metal armor stands tall next to her partners, rising her shield to protect them. Positioning herself in front of them, she prevents the ice mephits from freezing her allies by absorbing the most damage she can. She hopes that with this act of sacrifice she achieves the recognition of the knights order and win the grace of a noble family.",
 
-						"The half-orc battles the adult dragon, protecting the sanctuary's gate with nothing but his body. The little warrior holds his adversary by the neck and subdues it to the ground, finishing the assault.",
+						"At first glance he looks nothing much other than a plain thug, the drow sits at the bar, glancing over the people gathered in the stablishment, finding the meanest looking mercenaries, observing their every move. When they take notice they decide they don't like the fella spying on them, so it's time to take it outside. What they failed to realize was that the elf was studying their every weakness, which would bring forth their demise.",
 
-						"The human unwraps his bandages as the elite knights surround him and ready their weapons. Driven by the thirst of a fight, he dispateches them with hardened strikes that pierce their armors. After taking a deep breath he resumes his hunt for the tyrant.",
+						"An expreinced general directs the actions of his squad during a battle, maneuvering their positioning, coordinating their attacks, and protecting from most danger, so that they can be as efficient as possible. He was chosen not for his skills in combat, but for being an expert in the field of leadership, tactical genius, and succeeding in wars that seemed impossible to win.",
 
-						"Whatever their discipline, monks are united in their ability to magically harness the energy that flows in their bodies. Whether channeled as a striking display of combat prowess or a subtler focus of defensive ability and speed, this energy infuses all that a monk does.",
+						"All of these epic warriors are fighters, one of the most versatile combatants in the world. Since they lack any super natural powers, they cultivate their martial talents in order to surpass mortal limits, to the point they are known for their high competence in any field of combat, wether it's about wielding a weapon for destructive purposses or by learning the weak points of an enemy.",
 						{
 							"type": "entries",
-							"name": "The Magic of Ki",
+							"name": "Well-Rounded Specialist",
 							"page": 1,
 							"entries": [
-								"Monks make careful study of a magical energy that most Martial Archetypes call ki. This energy is an element of the magic that suffuses the multiverse-specifically, the element that flows through living bodies. Monks harness this power within themselves to create magical effects, exceed their bodies' physical capabilities, or alter the state of a creature by manipulating their ki. Using this energy, monks channel uncanny speed and strength into their attacks. As they gain experience, their martial training and their mastery of ki gives them more power over their bodies and the bodies of their foes."
+								"Fighters learn the basics of all combat styles. Every fighter can swing an axe, fence with a rapier, wield a longsword or a greatsword, use a bow, and even trap foes in a net with some degree of skill. Likewise, a fighter is adept with shields and every form of armor. Beyond that basic degree of familiarity, each fighter specializes in a certain style of combat, defined by the path they took to become one. Some concentrate on archery, some on ambushing unsuspecting victims, and some on augmenting their martial skills with magic. This combination of broad general ability and extensive specialization makes fighters superior combatants on battlefields and in dungeons alike."
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Training and Asceticism",
+							"name": "Trained for Danger",
 							"page": 1,
 							"entries": [
-								"Small walled cloisters dot the landscapes of the worlds of D&D, tiny refuges from the flow of ordinary life, where time seems to stand still. The monks who live there seek personal perfection through contemplation and rigorous training. Many entered the monastery as children, sent to live there when their parents died, when food couldn't be found to support them, or in return for some kindness that the monks had performed for their families.",
+								"Not every member of the city watch, the village militia, or the queen's army is a fighter. Most of these troops are relatively untrained soldiers with only the most basic combat knowledge. Veteran soldiers, military officers, trained bodyguards, dedicated knights, and similar figures are fighters. However, anyone with the right set of skills and mindset can develop their talents to become a fighter.",
 
-								"A monastery welcomes anyone seeking refuge, and all its inhabitants must abide by its community rules. However, to be considered a monk, it is required that one persistently and rigurously trains body and spirit, for they believe that only when both work in harmony and are pushed past its limitations everyday that one can reach their perfect self. Such is the goal of every monk. It is for that purpose that many Martial Archetypes have been created, for the path is unique for each individual.",
-
-								"Some monks live entirely apart from the surrounding population, secluded from anything that might impede their spiritual progress. Others are sworn to isolation, emerging only to serve their mentor or a divine power, often to fulfill a spiritual task, others to carry out an important mission. In some cases, they embark themselves on a meaningful journey for self discovery.",
-
-								"The majority of monks don't shun their neighbors, making frequent visits to nearby towns or villages and exchanging their service for food and other goods. As versatile warriors, monks often end up protecting their neighbors from monsters or tyrants.",
-
-								"For a monk, becoming an adventurer is a harsh transition. It means leaving a structured, communal lifestyle to become a wanderer. Thus, those who leave their cloisters don't undertake this change lightly. They work diligently, approaching their adventures as personal tests of their physical and spiritual growth. Monks care little for material wealth and are driven by a desire to accomplish a greater mission than slaying monsters and plundering their treasure."
+								"Some fighters feel drawn to use their training as adventurers. The dungeon delving, monster slaying, and other dangerous work common among adventurers is second nature for a fighter, not all that different from the life they left behind. There are greater risks, perhaps, but also much greater rewards—few fighters in the city watch have the opportunity to discover a magic flame tongue sword, for example."
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Creating a Monk",
+							"name": "Creating a Fighter",
 							"page": 2,
 							"entries": [
-								"As you make your monk character, think about your connection to the monastery where you learned your skills and spent your formative years. Were you an orphan or a child left on the monastery's threshold? Did your parents promise you to the monastery in gratitude for a service performed by the monks? Did you enter this secluded life to hide from a crime you committed? Or did you choose the monastic life for yourself? And why did you choose to study your discipline?",
+								"As you build your fighter, think about two related elements of your character's background: Where did you get your combat training, and what set you apart from the mundane warriors around you? Were you particularly ruthless? Did you get extra help from a mentor, perhaps because of your exceptional dedication? What drove you to this training in the first place? A threat to your homeland, a thirst for revenge, or a need to prove yourself might all have been factors.",
 								
-								"Consider why you left. Did the head of your monastery choose you for a particularly important mission beyond the cloister? Perhaps you were cast out because of some violation of the community's rules. Did you dread leaving, or were you happy to go? Is there something you hope to accomplish outside the monastery? Are you eager to return to your home?",
-
-								"As a result of the structured life of a monastic community and the discipline required to harness ki, monks are almost always lawful in alignment."
+								"You might have enjoyed formal training in a noble's army or in a local militia. Perhaps you trained in a war academy, learning strategy, tactics, and military history. Or you might be self-taught—unpolished but well tested. Did you take up the sword as a way to escape the limits of life on a farm, or are you following a proud family tradition? Where did you acquire your weapons and armor? They might have been military issue or family heirlooms, or perhaps you scrimped and saved for years to buy them. Your armaments are now among your most important possessions—the only things that stand between you and death's embrace."
 							]
 						},
 						{
@@ -2612,7 +2772,7 @@
 							"name": "Quick Build",
 							"page": 2,
 							"entries": [
-								"You can make a monk quickly by following these suggestions. First, make Dexterity your highest ability score, followed by Wisdom. Second, choose the {@background hermit} background. Take the Unarmed Style and when you learn ki features, choose {@optfeature Flurry of Blows|DZC:ANA}, {@optfeature Patient Defense|DZC:ANA}, and {@optfeature Step of the Wind|DZC:ANA}.",
+								"You can make a fighter quickly by following these suggestions. First, make Strength or Dexterity your highest ability score, depending on whether you want to focus on melee or ranged weapons. Your next highest score should be Constitution, or Intelligence if you plan to adopt a magical subclass. Second, choose the {@background soldier} background.",
                                 {
                                     "type": "inset",
                                     "name": "Can I add this Bonus?",
