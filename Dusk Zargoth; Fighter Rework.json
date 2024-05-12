@@ -2499,26 +2499,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you choose this tradition you must choose the two schools of magic that your character will study. The schools are Abjuration, Conjuration, Divination, Enchantment, Evocation, Illusion, Necromancy, and Transmutation. Whenever a feature in this subclass refers to your schools of magic, it refers to the ones you chose.",
-                {
-                    "type": "options",
-					"count": 2,
-					"entries": [
-                        {
-                            "type": "list",
-                            "items": [
-                                "{@filter Abjuration|spells|subclass=Fighter: Eldritch Knight|school=a}",
-                                "{@filter Conjuration|spells|subclass=Fighter: Eldritch Knight|school=c}",
-                                "{@filter Divination|spells|subclass=Fighter: Eldritch Knight|school=d}",
-                                "{@filter Enchantment|spells|subclass=Fighter: Eldritch Knight|school=e}",
-                                "{@filter Evocation|spells|subclass=Fighter: Eldritch Knight|school=v}",
-                                "{@filter Illusion|spells|subclass=Fighter: Eldritch Knight|school=i}",
-                                "{@filter Necromancy|spells|subclass=Fighter: Eldritch Knight|school=n}",
-                                "{@filter Transmutation|spells|subclass=Fighter: Eldritch Knight|school=t}"
-                            ]
-                        }
-                    ]
-                }
+				"When you choose this tradition you must choose the two schools of magic that your character will study. The schools are {@filter Abjuration|spells|subclass=Fighter: Eldritch Knight|school=a}, {@filter Conjuration|spells|subclass=Fighter: Eldritch Knight|school=c}, {@filter Divination|spells|subclass=Fighter: Eldritch Knight|school=d}, {@filter Enchantment|spells|subclass=Fighter: Eldritch Knight|school=e}, {@filter Evocation|spells|subclass=Fighter: Eldritch Knight|school=v}, {@filter Illusion|spells|subclass=Fighter: Eldritch Knight|school=i}, {@filter Necromancy|spells|subclass=Fighter: Eldritch Knight|school=n}, and {@filter Transmutation|spells|subclass=Fighter: Eldritch Knight|school=t}. Whenever a feature in this subclass refers to your schools of magic, it refers to the ones you chose."
 			]
 		},
 
