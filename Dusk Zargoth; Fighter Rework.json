@@ -2342,7 +2342,7 @@
 			"subclassShortName": "Champion",
 			"subclassSource": "DZC:ANA",
 			"level": 7,
-			"header": 1,
+			"header": 2,
 			"entries": [
 				"Starting at 7th level, your weapon attacks score a critical hit on a roll of 18-20."
 			]
@@ -2358,7 +2358,7 @@
 			"subclassShortName": "Champion",
 			"subclassSource": "DZC:ANA",
 			"level": 15,
-			"header": 1,
+			"header": 2,
 			"entries": [
 				"Starting at 15th level, your weapon attacks score a critical hit on a roll of 17-20."
 			]
@@ -2374,7 +2374,7 @@
 			"subclassShortName": "Champion",
 			"subclassSource": "DZC:ANA",
 			"level": 18,
-			"header": 1,
+			"header": 2,
 			"entries": [
 				"Starting at 18th level, your weapon attacks score a critical hit on a roll of 16-20."
 			]
