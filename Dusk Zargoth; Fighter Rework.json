@@ -908,7 +908,7 @@
             "source": "DZC:ANA",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
-            "foundryImg": "icons/skills/melee/spear-tips-triple-orange.webp",
+            "foundryImg": "icons/skills/melee/spear-tips-quintuple-orange.webp",
             "page": 4,
             "level": 17,
             "entries": [
@@ -1991,7 +1991,7 @@
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
 			"page": 4,
-			"foundryImg": "",
+			"foundryImg": "icons/skills/melee/strike-sword-slashing-red.webp",
 			"subclassFeatures": [
 				"Champion|Fighter Rework|DZC:ANA|Champion|DZC:ANA|3",
 				"Remarkable Athlete|Fighter Rework|DZC:ANA|Champion|DZC:ANA|7",
@@ -2009,7 +2009,7 @@
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
 			"page": 5,
-			"foundryImg": "",
+			"foundryImg": "icons/magic/unholy/hand-weapon-glow-black-green.webp",
             "spellcastingAbility": "int",
 			"casterProgression": "1/3",
             "preparedSpells": "<$level$>/3 + <$int_mod$>",
@@ -2320,7 +2320,7 @@
 			"name": "Improved Critical",
 			"source": "DZC:ANA",
 			"page": 4,
-			"foundryImg": "",
+			"foundryImg": "icons/skills/melee/blade-tip-chipped-blood-red.webp",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Champion",
@@ -2329,29 +2329,14 @@
 			"header": 1,
 			"entries": [
 				"Starting at 3rd level, your weapon attacks also score a critical hit on a roll of 19. They also score a critical hit on a roll of 18 at 7th level, 17 at 15th, and 16 at 18th."
-			],
-            "foundrySystem": {
-                "effects": [
-                    {
-                        "name": "Improved Critical",
-					    "changes": [
-						    {
-						    	"key": "flags.dnd5e.weaponCriticalThreshold",
-						    	"mode": "OVERRIDE",
-						    	"value": "@scale.fighter-rework.imp-crit"
-						    }
-					    ],
-                        "transfer": true
-				    }
-			    ]
-            }
+			]
 		},
 
         {
 			"name": "Improved Critical",
 			"source": "DZC:ANA",
 			"page": 4,
-			"foundryImg": "",
+			"foundryImg": "icons/skills/melee/blade-tip-chipped-blood-red.webp",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Champion",
@@ -2367,7 +2352,7 @@
 			"name": "Improved Critical",
 			"source": "DZC:ANA",
 			"page": 4,
-			"foundryImg": "",
+			"foundryImg": "icons/skills/melee/blade-tip-chipped-blood-red.webp",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Champion",
@@ -2383,7 +2368,7 @@
 			"name": "Improved Critical",
 			"source": "DZC:ANA",
 			"page": 4,
-			"foundryImg": "",
+			"foundryImg": "icons/skills/melee/blade-tip-chipped-blood-red.webp",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Champion",
@@ -2399,7 +2384,7 @@
 			"name": "Physical Expertise",
 			"source": "DZC:ANA",
 			"page": 4,
-			"foundryImg": "",
+			"foundryImg": "icons/magic/control/silhouette-grow-shrink-tan.webp",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Champion",
@@ -2422,7 +2407,7 @@
 			"name": "Remarkable Athlete",
 			"source": "DZC:ANA",
 			"page": 4,
-			"foundryImg": "",
+			"foundryImg": "icons/magic/control/buff-strength-muscle-damage-orange.webp",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Champion",
@@ -2439,7 +2424,7 @@
 			"name": "Diamond Body",
 			"source": "DZC:ANA",
 			"page": 4,
-			"foundryImg": "",
+			"foundryImg": "icons/magic/control/encase-creature-humanoid-hold.webp",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Champion",
@@ -2463,7 +2448,7 @@
 			"name": "Survivor",
 			"source": "DZC:ANA",
 			"page": 5,
-			"foundryImg": "",
+			"foundryImg": "icons/magic/life/heart-glowing-red.webp",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Champion",
@@ -2506,7 +2491,7 @@
 			"name": "Schools of Magic",
 			"source": "DZC:ANA",
 			"page": 5,
-			"foundryImg": "",
+			"foundryImg": "icons/skills/trades/academics-book-study-purple.webp",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Arcane Knight",
@@ -2522,7 +2507,7 @@
 			"name": "Spellcasting",
 			"source": "DZC:ANA",
 			"page": 5,
-			"foundryImg": "",
+			"foundryImg": "icons/magic/light/beam-rays-teal-large.webp",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Arcane Knight",
@@ -2585,7 +2570,7 @@
 			"name": "Weapon Bond",
 			"source": "DZC:ANA",
 			"page": 5,
-			"foundryImg": "",
+			"foundryImg": "icons/magic/fire/dagger-rune-enchant-flame-strong-teal.webp",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Arcane Knight",
@@ -2644,7 +2629,7 @@
 			"name": "War Magic",
 			"source": "DZC:ANA",
 			"page": 6,
-			"foundryImg": "",
+			"foundryImg": "icons/skills/melee/maneuver-greatsword-yellow.webp",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Arcane Knight",
@@ -2660,7 +2645,7 @@
 			"name": "War Magic improvement",
 			"source": "DZC:ANA",
 			"page": 6,
-			"foundryImg": "",
+			"foundryImg": "icons/skills/melee/maneuver-greatsword-yellow.webp",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Arcane Knight",
@@ -2676,7 +2661,7 @@
 			"name": "Arcane Charge",
 			"source": "DZC:ANA",
 			"page": 6,
-			"foundryImg": "",
+			"foundryImg": "icons/skills/ranged/projectile-explosion-black-orange.webp",
 			"className": "Fighter Rework",
 			"classSource": "DZC:ANA",
 			"subclassShortName": "Arcane Knight",
@@ -2745,7 +2730,27 @@
 				"uses.per": "sr",
 				"uses.max": "ceil(@classes.fighter-rework.levels/3) + 3"
 			}
-		}
+		},
+        {
+            "name": "Improved Critical",
+            "source": "DZC:ANA",
+            "className": "Fighter Rework",
+            "classSource": "DZC:ANA",
+            "level": 3,
+            "effects": [
+                {
+                    "name": "Improved Critical",
+                    "changes": [
+                        {
+                            "key": "flags.dnd5e.weaponCriticalThreshold",
+                            "mode": "OVERRIDE",
+                            "value": "@scale.fighter-rework.imp-crit"
+                        }
+                    ],
+                    "transfer": true
+                }
+            ]
+        }
 	],
 	
 	"classFluff": [
