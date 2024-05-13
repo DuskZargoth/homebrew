@@ -2329,7 +2329,22 @@
 			"header": 1,
 			"entries": [
 				"Starting at 3rd level, your weapon attacks also score a critical hit on a roll of 19. They also score a critical hit on a roll of 18 at 7th level, 17 at 15th, and 16 at 18th."
-			]
+			],
+            "foundrySystem": {
+                "effects": [
+                    {
+                        "name": "Improved Critical",
+					    "changes": [
+						    {
+						    	"key": "flags.dnd5e.weaponCriticalThreshold",
+						    	"mode": "OVERRIDE",
+						    	"value": "@scale.fighter-rework.imp-crit"
+						    }
+					    ],
+                        "transfer": true
+				    }
+			    ]
+            }
 		},
 
         {
@@ -2730,26 +2745,6 @@
 				"uses.per": "sr",
 				"uses.max": "ceil(@classes.fighter-rework.levels/3) + 3"
 			}
-		},
-        {
-            "name": "Improved Critical",
-			"source": "DZC:ANA",
-			"className": "Fighter Rework",
-			"classSource": "DZC:ANA",
-			"level": 3,
-            "effects": [
-                {
-					"name": "Improved Critical",
-					"changes": [
-						{
-							"key": "flags.dnd5e.weaponCriticalThreshold",
-							"mode": "OVERRIDE",
-							"value": 19
-						}
-					],
-                    "transfer": true
-				}
-			]
 		}
 	],
 	
