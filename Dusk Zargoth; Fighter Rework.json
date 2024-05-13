@@ -972,7 +972,7 @@
         {
             "name": "Swift Hands",
             "source": "DZC:ANA",
-            "page": 3,
+            "page": 0,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "featureType": [
 				"DZC:MT"
@@ -985,7 +985,7 @@
         {
             "name": "Crushing Blow",
             "source": "DZC:ANA",
-            "page": 3,
+            "page": 0,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "featureType": [
 				"DZC:MT"
@@ -1010,7 +1010,7 @@
         {
             "name": "Poker",
             "source": "DZC:ANA",
-            "page": 3,
+            "page": 0,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "featureType": [
 				"DZC:MT"
@@ -1032,7 +1032,7 @@
         {
             "name": "Bleeding",
             "source": "DZC:ANA",
-            "page": 3,
+            "page": 0,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "featureType": [
 				"DZC:MT"
@@ -1086,10 +1086,10 @@
                 "DZC:CS:WS"
             ],
             "entries": [
-                "You learn the {@optfeature Crushing Blows|DZC:ANA} technique.",
+                "You learn the {@optfeature Crushing Blow|DZC:ANA} technique.",
                 {
                     "type": "refOptionalfeature",
-                    "optionalfeature": "Crushing Blows|DZC:ANA"
+                    "optionalfeature": "Crushing Blow|DZC:ANA"
                 }
             ]
         },
