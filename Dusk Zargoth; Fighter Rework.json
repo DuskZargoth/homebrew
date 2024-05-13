@@ -1043,7 +1043,7 @@
             ],
             "foundrySystem": {
                 "activation.type": "special",
-                "activation.condition": "When you hit a creature with a weapon attack that deals bludgeoning damage",
+                "activation.condition": "When you hit a creature with a weapon attack that deals slashing damage",
                 "activation.cost": 1,
                 "uses.per": "sr",
 				"uses.max": "@prof",
@@ -1091,7 +1091,18 @@
                     "type": "refOptionalfeature",
                     "optionalfeature": "Crushing Blow|DZC:ANA"
                 }
-            ]
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you hit a creature with a weapon attack that deals bludgeoning damage",
+                "activation.cost": 1,
+                "uses.per": "sr",
+				"uses.max": "@prof",
+                "uses.value": 1,
+                "actionType": "save",
+                "save.ability": "str",
+                "save.scaling": "str"
+            }
         },
 
 		{
@@ -1109,7 +1120,15 @@
                     "type": "refOptionalfeature",
                     "optionalfeature": "Poker|DZC:ANA"
                 }
-            ]
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you hit a creature with a weapon attack that deals piercing damage",
+                "activation.cost": 1,
+                "uses.per": "sr",
+				"uses.max": "@prof",
+                "uses.value": 1
+            }
         },
 
 		{
@@ -1127,7 +1146,22 @@
                     "type": "refOptionalfeature",
                     "optionalfeature": "Bleeding|DZC:ANA"
                 }
-            ]
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you hit a creature with a weapon attack that deals slashing damage",
+                "activation.cost": 1,
+                "uses.per": "sr",
+				"uses.max": "@prof",
+                "uses.value": 1,
+                "actionType": "save",
+                "damage.parts": [
+                    [
+                        "1d(2 + (ceil(@classes.fighter-rework.levels / 4) * 2))",
+                        "slashing"
+                    ]
+                ]
+            }
         },
 
 		{
