@@ -2744,7 +2744,7 @@
 						{
 							"key": "flags.dnd5e.weaponCriticalThreshold",
 							"mode": "OVERRIDE",
-							"value": "@scale.fighter-rework.imp-crit"
+							"value": 19
 						}
 					],
                     "transfer": true
