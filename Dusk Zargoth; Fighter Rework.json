@@ -26,7 +26,8 @@
 			"DZC:CS:PS": "Fighter Rework; Combat Specialization: Physical Specialization",
             "DZC:M": "Fighter Rework; Maneuvers",
             "DZC:IC": "Fighter Rework; Improved Critical",
-            "DZC:WB": "Fighter Rework; Weapon Bond"
+            "DZC:WB": "Fighter Rework; Weapon Bond",
+            "DZC:MT": "DZC: Martial Techniques"
         }
     },
     "class": [
@@ -968,6 +969,95 @@
         }
     ],
     "optionalfeature": [
+        {
+            "name": "Swift Hands",
+            "source": "DZC:ANA",
+            "page": 3,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "featureType": [
+				"DZC:MT"
+            ],
+            "entries": [
+                "You can take an additional object interaction, which you can use exclusively to draw, seathe, or store a weapon."
+            ]
+        },
+
+        {
+            "name": "Crushing Blow",
+            "source": "DZC:ANA",
+            "page": 3,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "featureType": [
+				"DZC:MT"
+            ],
+            "entries": [
+                "When you hit a creature with a weapon attack that deals bludgeoning damage, you can impose a Strength saving throw on the target. The save DC equals 8 + your proficiency bonus + your Strength modifier. On a failed save, the creature is knocked {@condition prone}.",
+                "You can use this technique a number of times equal to your proficiency bonus. You regain all expended uses after you finish a short or long rest."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you hit a creature with a weapon attack that deals bludgeoning damage",
+                "activation.cost": 1,
+                "uses.per": "sr",
+				"uses.max": "@prof",
+                "uses.value": 1,
+                "actionType": "save",
+                "save.ability": "str",
+                "save.scaling": "str"
+            }
+        },
+
+        {
+            "name": "Poker",
+            "source": "DZC:ANA",
+            "page": 3,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "featureType": [
+				"DZC:MT"
+            ],
+            "entries": [
+                "When you hit a creature with a weapon that deals piercing damage, you can impose that creature to have disadvantage on attack rolls until the end of their next turn.",
+                "You can use this technique a number of times equal to your proficiency bonus. You regain all expended uses after you finish a short or long rest."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you hit a creature with a weapon attack that deals piercing damage",
+                "activation.cost": 1,
+                "uses.per": "sr",
+				"uses.max": "@prof",
+                "uses.value": 1
+            }
+        },
+
+        {
+            "name": "Bleeding",
+            "source": "DZC:ANA",
+            "page": 3,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "featureType": [
+				"DZC:MT"
+            ],
+            "entries": [
+                "When you hit a creature with a weapon attack that deals slashing damage, you can cause the creature to bleed until the start of its next turn, where it takes slashing damage equal to one roll of your Technical Dice. The next healing the creature receives stops the bleeding, but regains no hit points from it. This technique has no effect on constructs and undeads.",
+                "You can use this technique a number of times equal to your proficiency bonus. You regain all expended uses after you finish a short or long rest."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you hit a creature with a weapon attack that deals bludgeoning damage",
+                "activation.cost": 1,
+                "uses.per": "sr",
+				"uses.max": "@prof",
+                "uses.value": 1,
+                "actionType": "save",
+                "damage.parts": [
+                    [
+                        "1d(2 + (ceil(@classes.fighter-rework.levels / 4) * 2))",
+                        "slashing"
+                    ]
+                ]
+            }
+        },
+
 		{
             "name": "Changing Weapons",
             "source": "DZC:ANA",
