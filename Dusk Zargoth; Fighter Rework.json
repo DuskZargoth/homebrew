@@ -550,7 +550,7 @@
         {
             "name": "Warrior's Training",
             "source": "DZC:ANA",
-            "foundryImg": "",
+            "foundryImg": "icons/skills/melee/sword-shield-stylized-white.webp",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
             "page": 3,
@@ -610,7 +610,7 @@
 		{
 			"name": "Warrior's Training improvement",
 			"source": "DZC:ANA",
-            "foundryImg": "",
+            "foundryImg": "icons/skills/melee/sword-shield-stylized-white.webp",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
             "page": 3,
@@ -622,7 +622,7 @@
 		{
 			"name": "Warrior's Training improvement",
 			"source": "DZC:ANA",
-            "foundryImg": "",
+            "foundryImg": "icons/skills/melee/sword-shield-stylized-white.webp",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
             "page": 3,
@@ -634,7 +634,7 @@
         {
             "name": "Pump Action",
             "source": "DZC:ANA",
-            "foundryImg": "",
+            "foundryImg": "icons/skills/social/intimidation-impressing.webp",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
             "page": 3,
@@ -650,7 +650,7 @@
         {
             "name": "Combat Superiority",
             "source": "DZC:ANA",
-            "foundryImg": "",
+            "foundryImg": "icons/magic/fire/dagger-rune-enchant-flame-strong-blue-yellow.webp",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
             "page": 3,
@@ -696,7 +696,7 @@
         {
             "name": "Determination",
             "source": "DZC:ANA",
-            "foundryImg": "",
+            "foundryImg": "icons/magic/fire/flame-burning-fist-strike.webp",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
             "page": 3,
@@ -711,7 +711,7 @@
         {
             "name": "Determination improvement",
             "source": "DZC:ANA",
-            "foundryImg": "",
+            "foundryImg": "icons/magic/fire/flame-burning-fist-strike.webp",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
             "page": 3,
@@ -724,7 +724,7 @@
         {
             "name": "Know Your Enemy",
             "source": "DZC:ANA",
-            "foundryImg": "",
+            "foundryImg": "icons/sundries/books/symbol-axe-gold-grey.webp",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
             "page": 3,
@@ -918,7 +918,7 @@
         {
             "name": "Combat Expertise",
             "source": "DZC:ANA",
-            "foundryImg": "",
+            "foundryImg": "icons/skills/melee/hand-grip-staff-teal.webp",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
             "page": 4,
@@ -931,7 +931,7 @@
         {
             "name": "Relentless",
             "source": "DZC:ANA",
-            "foundryImg": "",
+            "foundryImg": "icons/skills/wounds/injury-pain-body-orange.webp",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
             "page": 4,
@@ -943,7 +943,7 @@
         {
             "name": "Knowledge Advantage",
             "source": "DZC:ANA",
-            "foundryImg": "",
+            "foundryImg": "icons/magic/perception/eye-ringed-glow-angry-red.webp",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
             "page": 4,
@@ -956,7 +956,7 @@
         {
             "name": "Legendary Warrior",
             "source": "DZC:ANA",
-            "foundryImg": "",
+            "foundryImg": "icons/skills/melee/weapons-crossed-swords-purple.webp",
             "className": "Fighter Rework",
             "classSource": "DZC:ANA",
             "page": 4,
