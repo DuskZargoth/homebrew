@@ -1068,7 +1068,7 @@
                 "DZC:CS:WS"
             ],
             "entries": [
-                "You learn the {@optfeature Swift Hands|DZC:ANA} technique.",
+                "You learn the {@optfeature Mayonesa|DZC:ANA} technique.",
                 {
                     "type": "refOptionalfeature",
                     "optionalfeature": "Swift Hands|DZC:ANA"
