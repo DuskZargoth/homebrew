@@ -1068,7 +1068,11 @@
                 "DZC:CS:WS"
             ],
             "entries": [
-                "You learn the Swift Hands technique."
+                "You learn the Swift Hands technique.",
+                {
+                    "type": "refOptionalfeature",
+                    "optionalfeature": "Swift Hands|DZC:ANA"
+                }
             ]
         },
 
@@ -1082,7 +1086,11 @@
                 "DZC:CS:WS"
             ],
             "entries": [
-                "You learn the Crushing Blow technique."
+                "You learn the Crushing Blow technique.",
+                {
+                    "type": "refOptionalfeature",
+                    "optionalfeature": "Crushing Blows|DZC:ANA"
+                }
             ]
         },
 
@@ -1096,7 +1104,11 @@
                 "DZC:CS:WS"
             ],
             "entries": [
-                "You learn the Poker technique."
+                "You learn the Poker technique.",
+                {
+                    "type": "refOptionalfeature",
+                    "optionalfeature": "Poker|DZC:ANA"
+                }
             ]
         },
 
@@ -1110,7 +1122,11 @@
                 "DZC:CS:WS"
             ],
             "entries": [
-                "You learn the Bleeding technique."
+                "You learn the Bleeding technique.",
+                {
+                    "type": "refOptionalfeature",
+                    "optionalfeature": "Bleeding|DZC:ANA"
+                }
             ]
         },
 
