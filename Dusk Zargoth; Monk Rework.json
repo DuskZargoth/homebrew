@@ -3,8 +3,8 @@
     "_meta": {
         "sources": [
             {
-                "json": "DZC:ANA",
-                "abbreviation": "DZC:ANA",
+                "json": "DZC:ANA:M",
+                "abbreviation": "DZC:ANA:M",
                 "full": "Monk Rework",
                 "authors": [
                     "Dusk Zargoth"
@@ -44,7 +44,7 @@
     "class": [
         {
             "name": "Monk Rework",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "foundryImg": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/classes/PHB/Monk.webp",
             "page": 1,
             "hd": {
@@ -516,44 +516,44 @@
                 }
             ],
             "classFeatures": [
-                "Martial Arts|Monk Rework|DZC:ANA|1",
-                "Meditation|Monk Rework|DZC:ANA|1",
-				"Unarmored Defense|Monk Rework|DZC:ANA|1",
-                "Ki|Monk Rework|DZC:ANA|2",
-                "Unarmored Movement|Monk Rework|DZC:ANA|2",
+                "Martial Arts|Monk Rework|DZC:ANA:M|1",
+                "Meditation|Monk Rework|DZC:ANA:M|1",
+				"Unarmored Defense|Monk Rework|DZC:ANA:M|1",
+                "Ki|Monk Rework|DZC:ANA:M|2",
+                "Unarmored Movement|Monk Rework|DZC:ANA:M|2",
                 {
-                    "classFeature": "Monastic Tradition|Monk Rework|DZC:ANA|3",
+                    "classFeature": "Monastic Tradition|Monk Rework|DZC:ANA:M|3",
                     "gainSubclassFeature": true
                 },
-                "Ability Score Improvement|Monk Rework|DZC:ANA|4",
-                "Extra Attack|Monk Rework|DZC:ANA|5",
-                "Ki-Empowered Strikes|Monk Rework|DZC:ANA|5",
-                "Ability Score Improvement|Monk Rework|DZC:ANA|6",
+                "Ability Score Improvement|Monk Rework|DZC:ANA:M|4",
+                "Extra Attack|Monk Rework|DZC:ANA:M|5",
+                "Ki-Empowered Strikes|Monk Rework|DZC:ANA:M|5",
+                "Ability Score Improvement|Monk Rework|DZC:ANA:M|6",
                 {
-                    "classFeature": "Monastic Tradition feature|Monk Rework|DZC:ANA|6",
+                    "classFeature": "Monastic Tradition feature|Monk Rework|DZC:ANA:M|6",
                     "gainSubclassFeature": true
                 },
-                "Meditation improvement|Monk Rework|DZC:ANA|7",
-                "Ability Score Improvement|Monk Rework|DZC:ANA|8",
-                "Martial Arts improvement|Monk Rework|DZC:ANA|9",
-                "Ability Score Improvement|Monk Rework|DZC:ANA|10",
+                "Meditation improvement|Monk Rework|DZC:ANA:M|7",
+                "Ability Score Improvement|Monk Rework|DZC:ANA:M|8",
+                "Martial Arts improvement|Monk Rework|DZC:ANA:M|9",
+                "Ability Score Improvement|Monk Rework|DZC:ANA:M|10",
                 {
-                    "classFeature": "Monastic Tradition feature|Monk Rework|DZC:ANA|11",
+                    "classFeature": "Monastic Tradition feature|Monk Rework|DZC:ANA:M|11",
                     "gainSubclassFeature": true
                 },
-                "Ability Score Improvement|Monk Rework|DZC:ANA|12",
-                "Timeless Body|Monk Rework|DZC:ANA|13",
-                "Unrelenting Soul|Monk Rework|DZC:ANA|14",
-                "Extra Attack (2)|Monk Rework|DZC:ANA|15",
-                "Ability Score Improvement|Monk Rework|DZC:ANA|16",
+                "Ability Score Improvement|Monk Rework|DZC:ANA:M|12",
+                "Timeless Body|Monk Rework|DZC:ANA:M|13",
+                "Unrelenting Soul|Monk Rework|DZC:ANA:M|14",
+                "Extra Attack (2)|Monk Rework|DZC:ANA:M|15",
+                "Ability Score Improvement|Monk Rework|DZC:ANA:M|16",
                 {
-                    "classFeature": "Monastic Tradition feature|Monk Rework|DZC:ANA|17",
+                    "classFeature": "Monastic Tradition feature|Monk Rework|DZC:ANA:M|17",
                     "gainSubclassFeature": true
                 },
-                "Martial Arts improvement|Monk Rework|DZC:ANA|18",
-                "Quickened Recovery|Monk Rework|DZC:ANA|19",
-                "Ability Score Improvement|Monk Rework|DZC:ANA|20",
-                "Perfect Self|Monk Rework|DZC:ANA|20"
+                "Martial Arts improvement|Monk Rework|DZC:ANA:M|18",
+                "Quickened Recovery|Monk Rework|DZC:ANA:M|19",
+                "Ability Score Improvement|Monk Rework|DZC:ANA:M|20",
+                "Perfect Self|Monk Rework|DZC:ANA:M|20"
             ],
             "subclassTitle": "Monastic Tradition",
             "multiclassing": {
@@ -574,10 +574,10 @@
     "classFeature": [
         {
             "name": "Martial Arts",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "foundryImg": "icons/skills/melee/unarmed-punch-fist-blue.webp",
             "className": "Monk Rework",
-            "classSource": "DZC:ANA",
+            "classSource": "DZC:ANA:M",
             "page": 3,
             "level": 1,
             "entries": [
@@ -653,10 +653,10 @@
         },
 		{
 			"name": "Martial Arts improvement",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
             "foundryImg": "icons/skills/melee/unarmed-punch-fist-blue.webp",
             "className": "Monk Rework",
-            "classSource": "DZC:ANA",
+            "classSource": "DZC:ANA:M",
             "page": 3,
             "level": 9,
             "entries": [
@@ -665,10 +665,10 @@
 		},
 		{
 			"name": "Martial Arts improvement",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
             "foundryImg": "icons/skills/melee/unarmed-punch-fist-blue.webp",
             "className": "Monk Rework",
-            "classSource": "DZC:ANA",
+            "classSource": "DZC:ANA:M",
             "page": 3,
             "level": 18,
             "entries": [
@@ -677,10 +677,10 @@
 		},
         {
             "name": "Meditation",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp",
             "className": "Monk Rework",
-            "classSource": "DZC:ANA",
+            "classSource": "DZC:ANA:M",
             "page": 3,
             "level": 1,
             "entries": [
@@ -692,10 +692,10 @@
 
 		{
             "name": "Meditation improvement",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "foundryImg": "icons/magic/holy/meditation-chi-focus-blue.webp",
             "className": "Monk Rework",
-            "classSource": "DZC:ANA",
+            "classSource": "DZC:ANA:M",
             "page": 3,
             "level": 7,
             "entries": [
@@ -705,10 +705,10 @@
 
 		{
             "name": "Unarmored Defense",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "foundryImg": "icons/magic/control/debuff-energy-hold-yellow.webp",
             "className": "Monk Rework",
-            "classSource": "DZC:ANA",
+            "classSource": "DZC:ANA:M",
             "page": 1,
             "level": 1,
             "entries": [
@@ -722,10 +722,10 @@
 
         {
             "name": "Ki",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "foundryImg": "icons/magic/symbols/runes-star-pentagon-blue.webp",
             "className": "Monk Rework",
-            "classSource": "DZC:ANA",
+            "classSource": "DZC:ANA:M",
             "page": 3,
             "level": 2,
             "entries": [
@@ -780,10 +780,10 @@
 
         {
             "name": "Unarmored Movement",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "foundryImg": "icons/skills/movement/feet-winged-sandals-tan.webp",
             "className": "Monk Rework",
-            "classSource": "DZC:ANA",
+            "classSource": "DZC:ANA:M",
             "page": 4,
             "level": 2,
             "entries": [
@@ -793,9 +793,9 @@
 
         {
             "name": "Monastic Tradition",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "className": "Monk Rework",
-            "classSource": "DZC:ANA",
+            "classSource": "DZC:ANA:M",
             "page": 4,
             "level": 3,
             "entries": [
@@ -805,9 +805,9 @@
 
         {
             "name": "Monastic Tradition feature",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "className": "Monk Rework",
-            "classSource": "DZC:ANA",
+            "classSource": "DZC:ANA:M",
             "page": 4,
             "level": 6,
             "entries": [
@@ -817,9 +817,9 @@
 
         {
             "name": "Monastic Tradition feature",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "className": "Monk Rework",
-            "classSource": "DZC:ANA",
+            "classSource": "DZC:ANA:M",
             "page": 4,
             "level": 11,
             "entries": [
@@ -829,9 +829,9 @@
 
         {
             "name": "Monastic Tradition feature",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "className": "Monk Rework",
-            "classSource": "DZC:ANA",
+            "classSource": "DZC:ANA:M",
             "page": 4,
             "level": 17,
             "entries": [
@@ -840,9 +840,9 @@
         },
         {
             "name": "Ability Score Improvement",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "className": "Monk Rework",
-            "classSource": "DZC:ANA",
+            "classSource": "DZC:ANA:M",
             "page": 4,
             "level": 4,
             "entries": [
@@ -852,9 +852,9 @@
         },
         {
             "name": "Ability Score Improvement",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "className": "Monk Rework",
-            "classSource": "DZC:ANA",
+            "classSource": "DZC:ANA:M",
             "page": 4,
             "level": 6,
             "entries": [
@@ -864,9 +864,9 @@
         },
         {
             "name": "Ability Score Improvement",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "className": "Monk Rework",
-            "classSource": "DZC:ANA",
+            "classSource": "DZC:ANA:M",
             "page": 4,
             "level": 8,
             "entries": [
@@ -876,9 +876,9 @@
         },
         {
             "name": "Ability Score Improvement",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "className": "Monk Rework",
-            "classSource": "DZC:ANA",
+            "classSource": "DZC:ANA:M",
             "page": 4,
             "level": 10,
             "entries": [
@@ -888,9 +888,9 @@
         },
         {
             "name": "Ability Score Improvement",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "className": "Monk Rework",
-            "classSource": "DZC:ANA",
+            "classSource": "DZC:ANA:M",
             "page": 4,
             "level": 12,
             "entries": [
@@ -900,9 +900,9 @@
         },
         {
             "name": "Ability Score Improvement",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "className": "Monk Rework",
-            "classSource": "DZC:ANA",
+            "classSource": "DZC:ANA:M",
             "page": 4,
             "level": 16,
             "entries": [
@@ -912,9 +912,9 @@
         },
         {
             "name": "Ability Score Improvement",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "className": "Monk Rework",
-            "classSource": "DZC:ANA",
+            "classSource": "DZC:ANA:M",
             "page": 4,
             "level": 20,
             "entries": [
@@ -924,9 +924,9 @@
         },
         {
             "name": "Extra Attack",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "className": "Monk Rework",
-            "classSource": "DZC:ANA",
+            "classSource": "DZC:ANA:M",
             "foundryImg": "icons/skills/melee/spear-tips-triple-orange.webp",
             "page": 4,
             "level": 5,
@@ -937,9 +937,9 @@
         },
         {
             "name": "Extra Attack (2)",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "className": "Monk Rework",
-            "classSource": "DZC:ANA",
+            "classSource": "DZC:ANA:M",
             "foundryImg": "icons/skills/melee/spear-tips-triple-orange.webp",
             "page": 4,
             "level": 15,
@@ -949,10 +949,10 @@
         },
         {
             "name": "Ki-Empowered Strikes",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "foundryImg": "icons/magic/symbols/runes-star-pentagon-orange.webp",
             "className": "Monk Rework",
-            "classSource": "DZC:ANA",
+            "classSource": "DZC:ANA:M",
             "page": 4,
             "level": 5,
             "entries": [
@@ -961,10 +961,10 @@
         },
         {
             "name": "Timeless Body",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "foundryImg": "icons/magic/unholy/orb-swirling-teal.webp",
             "className": "Monk Rework",
-            "classSource": "DZC:ANA",
+            "classSource": "DZC:ANA:M",
             "page": 4,
             "level": 13,
             "entries": [
@@ -974,10 +974,10 @@
         },
         {
             "name": "Unrelenting Soul",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "foundryImg": "icons/magic/control/debuff-energy-hold-yellow.webp",
             "className": "Monk Rework",
-            "classSource": "DZC:ANA",
+            "classSource": "DZC:ANA:M",
             "page": 4,
             "level": 14,
             "entries": [
@@ -986,10 +986,10 @@
         },
         {
             "name": "Quickened Recovery",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "foundryImg": "icons/magic/control/buff-strength-muscle-damage-orange.webp",
             "className": "Monk Rework",
-            "classSource": "DZC:ANA",
+            "classSource": "DZC:ANA:M",
             "page": 4,
             "level": 19,
             "entries": [
@@ -999,10 +999,10 @@
         },
         {
             "name": "Perfect Self",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "foundryImg": "icons/magic/control/silhouette-hold-change-blue.webp",
             "className": "Monk Rework",
-            "classSource": "DZC:ANA",
+            "classSource": "DZC:ANA:M",
             "page": 4,
             "level": 20,
             "entries": [
@@ -1014,7 +1014,7 @@
     "optionalfeature": [
 		{
             "name": "Chain Attack",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 3,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
             "featureType": [
@@ -1028,7 +1028,7 @@
 
 		{
             "name": "Ground Fighting",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 3,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
             "featureType": [
@@ -1042,7 +1042,7 @@
 
 		{
             "name": "Push Back",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 3,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
 			"featureType": [
@@ -1058,7 +1058,7 @@
                         "level": 9,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     }
@@ -1068,7 +1068,7 @@
 
 		{
             "name": "Set Up",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 3,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
 			"featureType": [
@@ -1084,7 +1084,7 @@
                         "level": 18,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     }
@@ -1094,7 +1094,7 @@
 
 		{
             "name": "Wrestling Mastery",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 3,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
 			"featureType": [
@@ -1108,7 +1108,7 @@
 
 		{
             "name": "Ground Hold",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 3,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
 			"featureType": [
@@ -1122,7 +1122,7 @@
 
 		{
             "name": "Dynamic Hold",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 3,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
 			"featureType": [
@@ -1138,7 +1138,7 @@
                         "level": 9,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     }
@@ -1148,7 +1148,7 @@
 
 		{
             "name": "Lock",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 3,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
 			"featureType": [
@@ -1164,7 +1164,7 @@
                         "level": 18,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     }
@@ -1174,7 +1174,7 @@
 
 		{
             "name": "Unarmed Mastery",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 3,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
 			"featureType": [
@@ -1188,7 +1188,7 @@
 
 		{
             "name": "Vital's Hit",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 3,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
 			"featureType": [
@@ -1218,7 +1218,7 @@
 
 		{
             "name": "Potent Strike",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 3,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
 			"featureType": [
@@ -1234,7 +1234,7 @@
                         "level": 9,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     }
@@ -1244,7 +1244,7 @@
 
 		{
             "name": "Fake Strike",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 3,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
 			"featureType": [
@@ -1260,7 +1260,7 @@
                         "level": 18,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     }
@@ -1270,7 +1270,7 @@
 
 		{
             "name": "Monk Weapon Mastery",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 3,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
 			"featureType": [
@@ -1284,7 +1284,7 @@
 
 		{
             "name": "Embracing Branch",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 3,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
 			"featureType": [
@@ -1298,7 +1298,7 @@
 
 		{
             "name": "Returning Guard",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 3,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
 			"featureType": [
@@ -1314,7 +1314,7 @@
                         "level": 9,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     }
@@ -1324,7 +1324,7 @@
 
 		{
             "name": "Passive Blockade",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 3,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
 			"featureType": [
@@ -1340,7 +1340,7 @@
                         "level": 18,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     }
@@ -1351,7 +1351,7 @@
         {
             "name": "Thunderous Strike",
 			"foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 6,
             "consumes": {
 				"name": "Ki",
@@ -1382,7 +1382,7 @@
         {
             "name": "Rocky Strike",
 		    "foundryImg": "icons/magic/earth/projectile-boulder-dust.webp",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 6,
             "consumes": {
 				"name": "Ki",
@@ -1413,7 +1413,7 @@
         {
             "name": "Igneous Strike",
 		    "foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 6,
             "consumes": {
 				"name": "Ki",
@@ -1444,7 +1444,7 @@
         {
             "name": "Gelid Strike",
 		    "foundryImg": "icons/magic/water/projectile-ice-snowball.webp",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 6,
             "consumes": {
 				"name": "Ki",
@@ -1475,7 +1475,7 @@
         {
             "name": "Wind Blast",
 		    "foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 6,
             "consumes": {
 				"name": "Ki",
@@ -1508,7 +1508,7 @@
         {
             "name": "Stone Boulder",
 		    "foundryImg": "icons/magic/earth/projectile-boulder-dust.webp",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 6,
             "consumes": {
 				"name": "Ki",
@@ -1540,7 +1540,7 @@
         {
             "name": "Flaming Blast",
 		    "foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 6,
             "consumes": {
 				"name": "Ki",
@@ -1573,7 +1573,7 @@
         {
             "name": "Water Swirl",
 		    "foundryImg": "icons/magic/water/projectile-ice-snowball.webp",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 6,
             "consumes": {
 				"name": "Ki",
@@ -1605,7 +1605,7 @@
         {
             "name": "Wind Stance",
 		    "foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 6,
             "consumes": {
 				"name": "Ki",
@@ -1624,7 +1624,7 @@
         {
             "name": "Mountain Stance",
 		    "foundryImg": "icons/magic/earth/projectile-boulder-dust.webp",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 7,
             "consumes": {
 				"name": "Ki",
@@ -1643,7 +1643,7 @@
         {
             "name": "Flame Stance",
 		    "foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 7,
             "consumes": {
 				"name": "Ki",
@@ -1662,7 +1662,7 @@
         {
             "name": "River Stance",
 		    "foundryImg": "icons/magic/water/projectile-ice-snowball.webp",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 7,
             "consumes": {
 				"name": "Ki",
@@ -1681,7 +1681,7 @@
         {
             "name": "Aerial Lift",
 		    "foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 6,
             "featureType": [
 				"DZC:EA",
@@ -1696,7 +1696,7 @@
         {
             "name": "Rock Walk",
 		    "foundryImg": "icons/magic/earth/projectile-boulder-dust.webp",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 7,
             "featureType": [
 				"DZC:EA",
@@ -1711,7 +1711,7 @@
         {
             "name": "Jet Burst",
 		    "foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 7,
             "featureType": [
 				"DZC:EA",
@@ -1726,7 +1726,7 @@
         {
             "name": "Underwater Adaptations",
 		    "foundryImg": "icons/magic/water/projectile-ice-snowball.webp",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 7,
             "featureType": [
 				"DZC:EA",
@@ -1743,7 +1743,7 @@
         {
             "name": "Air Master",
 		    "foundryImg": "icons/magic/air/wind-tornado-funnel-gray.webp",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 7,
             "featureType": [
 				"DZC:EA",
@@ -1765,7 +1765,7 @@
         {
             "name": "Earth Master",
 		    "foundryImg": "icons/magic/earth/projectile-boulder-dust.webp",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 7,
             "featureType": [
 				"DZC:EA",
@@ -1788,7 +1788,7 @@
         {
             "name": "Fire Master",
 		    "foundryImg": "icons/magic/fire/projectile-smoke-swirl-red.webp",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 7,
             "featureType": [
 				"DZC:EA",
@@ -1810,7 +1810,7 @@
         {
             "name": "Water Master",
 		    "foundryImg": "icons/magic/water/projectile-ice-snowball.webp",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 7,
             "featureType": [
 				"DZC:EA",
@@ -1832,7 +1832,7 @@
         {
             "name": "Lightning Adept",
 		    "foundryImg": "icons/magic/lightning/bolt-strike-sparks-blue.webp",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 7,
             "featureType": [
 				"DZC:EA",
@@ -1858,7 +1858,7 @@
         {
             "name": "Acid Adept",
 		    "foundryImg": "icons/magic/acid/dissolve-drip-droplet-smoke.webp",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 7,
             "featureType": [
 				"DZC:EA",
@@ -1884,7 +1884,7 @@
         {
             "name": "Light Adept",
 		    "foundryImg": "icons/magic/light/beam-rays-orange-large.webp",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 7,
             "featureType": [
 				"DZC:EA",
@@ -1910,7 +1910,7 @@
         {
             "name": "Heal Adept",
 		    "foundryImg": "icons/magic/life/heart-cross-blue.webp",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 7,
             "featureType": [
 				"DZC:EA",
@@ -1936,7 +1936,7 @@
         {
             "name": "Nature's Vessel",
 		    "foundryImg": "icons/magic/control/silhouette-hold-change-green.webp",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 7,
             "featureType": [
 				"DZC:EA",
@@ -1963,7 +1963,7 @@
         },
 	    {
             "name": "Delaying Strike",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 11,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -1980,7 +1980,7 @@
         },
         {
             "name": "Extension of Self",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 12,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -1997,7 +1997,7 @@
         },
         {
             "name": "Flurry of Blows",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 12,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2021,7 +2021,7 @@
         },
         {
             "name": "Heavy Strike",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 12,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2038,7 +2038,7 @@
         },
         {
             "name": "Pushing Strike",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 12,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2055,7 +2055,7 @@
         },
         {
             "name": "Strong Arm",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 12,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2079,7 +2079,7 @@
         },
         {
             "name": "Concussive Strike",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 12,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2100,7 +2100,7 @@
                         "level": 5,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     }
@@ -2109,7 +2109,7 @@
         },
         {
             "name": "Deadly Precision",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 12,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2129,7 +2129,7 @@
                         "level": 5,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     }
@@ -2145,7 +2145,7 @@
         },
         {
             "name": "Mighty Fists",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 12,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2165,7 +2165,7 @@
                         "level": 5,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     },
@@ -2177,7 +2177,7 @@
         },
         {
             "name": "Taunting Strike",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 12,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2197,7 +2197,7 @@
                         "level": 5,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     }
@@ -2206,7 +2206,7 @@
         },
         {
             "name": "Returning Attack",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 12,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2227,7 +2227,7 @@
                         "level": 5,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     },
@@ -2239,7 +2239,7 @@
         },
         {
             "name": "Restraining Hand",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 12,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2259,7 +2259,7 @@
                         "level": 5,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     },
@@ -2271,7 +2271,7 @@
         },
         {
             "name": "Stunning Strike",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 12,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2291,7 +2291,7 @@
                         "level": 5,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     }
@@ -2307,7 +2307,7 @@
         },
         {
             "name": "Legendary Lifter",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 12,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2327,7 +2327,7 @@
                         "level": 9,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     },
@@ -2339,7 +2339,7 @@
         },
         {
             "name": "Hardened Fists",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 12,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2359,7 +2359,7 @@
                         "level": 9,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     },
@@ -2371,7 +2371,7 @@
         },
         {
             "name": "Weakening Strike",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 12,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2391,7 +2391,7 @@
                         "level": 9,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     }
@@ -2400,7 +2400,7 @@
         },
         {
             "name": "Corrected Attack",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 12,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2420,7 +2420,7 @@
                         "level": 13,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     }
@@ -2429,7 +2429,7 @@
         },
         {
             "name": "Heavy Weight",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 12,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2449,7 +2449,7 @@
                         "level": 17,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     },
@@ -2461,7 +2461,7 @@
         },
         {
             "name": "Afterblast",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 12,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2481,7 +2481,7 @@
                         "level": 17,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     },
@@ -2493,7 +2493,7 @@
         },
         {
             "name": "Deflect Physical Attacks",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 12,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2523,7 +2523,7 @@
         },
         {
             "name": "Ki Coat",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 12,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2550,7 +2550,7 @@
         },
         {
             "name": "Patient Defense",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 12,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2567,7 +2567,7 @@
         },
         {
             "name": "Keep the Distance",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 12,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2597,7 +2597,7 @@
         },
         {
             "name": "Spiritual Shield",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 12,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2633,7 +2633,7 @@
         },
         {
             "name": "Tranquility",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 13,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2660,7 +2660,7 @@
         },
         {
             "name": "After Image",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 13,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2680,7 +2680,7 @@
                         "level": 5,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     }
@@ -2699,7 +2699,7 @@
         },
         {
             "name": "Footwork",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 13,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2719,7 +2719,7 @@
                         "level": 5,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     }
@@ -2728,7 +2728,7 @@
         },
         {
             "name": "Double Parry",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 13,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2748,7 +2748,7 @@
                         "level": 5,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     },
@@ -2760,7 +2760,7 @@
         },
         {
             "name": "Blocking Stance",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 13,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2772,7 +2772,7 @@
 				"DZC:KF:D"
             ],
             "entries": [
-                "When you use your {@optfeature Returning Guard|DZC:ANA}, you can spend 1 ki point to maintain its benefit against the next two attacks, instead of one."
+                "When you use your {@optfeature Returning Guard|DZC:ANA:M}, you can spend 1 ki point to maintain its benefit against the next two attacks, instead of one."
             ],
             "prerequisite": [
                 {
@@ -2780,7 +2780,7 @@
                         "level": 9,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     },
@@ -2792,7 +2792,7 @@
         },
         {
             "name": "Deflect Magical Attacks",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 13,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2804,7 +2804,7 @@
 				"DZC:KF:D"
             ],
             "entries": [
-                "When you are hit by a spell attack, you can use your {@optfeature Deflect Physical Attacks|DZC:ANA} against the attack by spending 1 additional ki point. When you do so, the following changes are applied:",
+                "When you are hit by a spell attack, you can use your {@optfeature Deflect Physical Attacks|DZC:ANA:M} against the attack by spending 1 additional ki point. When you do so, the following changes are applied:",
                 {
 					"type": "list",
 					"items": [
@@ -2833,7 +2833,7 @@
                         "level": 9,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     },
@@ -2845,7 +2845,7 @@
         },
         {
             "name": "Hardened Body",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 13,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2865,7 +2865,7 @@
                         "level": 9,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     },
@@ -2877,7 +2877,7 @@
         },
         {
             "name": "Resistive Force",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 13,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2897,7 +2897,7 @@
                         "level": 9,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     }
@@ -2906,7 +2906,7 @@
         },
         {
             "name": "Diamond Soul",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 13,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2926,7 +2926,7 @@
                         "level": 13,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     }
@@ -2935,7 +2935,7 @@
         },
         {
             "name": "Perfect Defense",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 13,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2955,7 +2955,7 @@
                         "level": 17,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     },
@@ -2967,7 +2967,7 @@
         },
         {
             "name": "Protective Tree",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 13,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -2987,7 +2987,7 @@
                         "level": 17,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     },
@@ -2999,7 +2999,7 @@
         },
         {
             "name": "Body Training",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 13,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -3025,7 +3025,7 @@
         },
         {
             "name": "Combat Awareness",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 13,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -3051,7 +3051,7 @@
         },
         {
             "name": "Ear of the Ancients",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 13,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -3078,7 +3078,7 @@
         },
         {
             "name": "Extra Speed",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 13,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -3090,12 +3090,12 @@
 				"DZC:KF:U"
             ],
             "entries": [
-                "At the start of your turn, you can spend 1 ki point to double the movement speed bonus from your {@optfeature Unarmored Movement|DZC:ANA} feature for 10 minutes and you ignore difficult terrain for the duration. This benefit ends early if you are incapacitated."
+                "At the start of your turn, you can spend 1 ki point to double the movement speed bonus from your {@optfeature Unarmored Movement|DZC:ANA:M} feature for 10 minutes and you ignore difficult terrain for the duration. This benefit ends early if you are incapacitated."
             ]
         },
         {
             "name": "Mental Training",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 14,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -3121,7 +3121,7 @@
         },
         {
             "name": "Slow Fall",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 14,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -3147,7 +3147,7 @@
         },
         {
             "name": "Spectacular Training",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 14,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -3173,7 +3173,7 @@
         },
         {
             "name": "Step of the Wind",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 14,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -3190,7 +3190,7 @@
         },
         {
             "name": "Blinding Speed",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 14,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -3210,7 +3210,7 @@
                         "level": 5,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     },
@@ -3222,7 +3222,7 @@
         },
         {
             "name": "Break Bindings",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 14,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -3242,7 +3242,7 @@
                         "level": 5,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     }
@@ -3251,7 +3251,7 @@
         },
         {
             "name": "Stillness of Mind",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 14,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -3271,7 +3271,7 @@
                         "level": 5,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     }
@@ -3280,7 +3280,7 @@
         },
         {
             "name": "Tongue of the Sun and Moon",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 14,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -3300,7 +3300,7 @@
                         "level": 5,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     },
@@ -3322,7 +3322,7 @@
         },
         {
             "name": "Agile Feet",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 14,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -3343,7 +3343,7 @@
                         "level": 9,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     }
@@ -3352,7 +3352,7 @@
         },
         {
             "name": "Healthy Body",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 14,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -3372,7 +3372,7 @@
                         "level": 9,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     }
@@ -3381,7 +3381,7 @@
         },
         {
             "name": "Light Reflection",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 14,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -3401,7 +3401,7 @@
                         "level": 9,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     }
@@ -3410,7 +3410,7 @@
         },
         {
             "name": "Third Sense",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 14,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -3430,7 +3430,7 @@
                         "level": 9,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     }
@@ -3439,7 +3439,7 @@
         },
         {
             "name": "Astral Sense",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 14,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -3459,7 +3459,7 @@
                         "level": 13,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     }
@@ -3478,7 +3478,7 @@
         },
         {
             "name": "Emptry Body",
-            "source": "DZC:ANA",
+            "source": "DZC:ANA:M",
             "page": 14,
             "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
@@ -3498,7 +3498,7 @@
                         "level": 17,
                         "class": {
                             "name": "Monk Rework",
-                            "source": "DZC:ANA",
+                            "source": "DZC:ANA:M",
                             "visible": true
                         }
                     }
@@ -3520,7 +3520,7 @@
 	"feat": [
 		{
 			"name": "Martial Arts Beginner",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"page": 15,
 			"entries": [
 				"You have grasped the very basics of martial arts, which prove useful to aid you in battle.",
@@ -3532,7 +3532,7 @@
 		},
 		{
 			"name": "Minor Ki Control",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"page": 15,
 			"entries": [
 				"You managed to tap on the surface of the power that is ki by connecting with your inner self and the flow of energy in your surroundings.",
@@ -3550,31 +3550,31 @@
 		{
 			"name": "Way of the Inner Strength",
 			"shortName": "Inner Strength",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"classSource": "DZC:ANA:M",
 			"page": 4,
 			"foundryImg": "icons/magic/holy/prayer-hands-glowing-yellow.webp",
 			"subclassFeatures": [
-				"Way of the Inner Strength|Monk Rework|DZC:ANA|Inner Strength|DZC:ANA|3",
-				"Wholeness of Body|Monk Rework|DZC:ANA|Inner Strength|DZC:ANA|6",
-				"Blank Mind|Monk Rework|DZC:ANA|Inner Strength|DZC:ANA|11",
-				"Enlightenment|Monk Rework|DZC:ANA|Inner Strength|DZC:ANA|17"
+				"Way of the Inner Strength|Monk Rework|DZC:ANA:M|Inner Strength|DZC:ANA:M|3",
+				"Wholeness of Body|Monk Rework|DZC:ANA:M|Inner Strength|DZC:ANA:M|6",
+				"Blank Mind|Monk Rework|DZC:ANA:M|Inner Strength|DZC:ANA:M|11",
+				"Enlightenment|Monk Rework|DZC:ANA:M|Inner Strength|DZC:ANA:M|17"
 			]
 		},
         {
 			"name": "Way of the Shadows",
 			"shortName": "Shadows",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"classSource": "DZC:ANA:M",
 			"page": 5,
 			"foundryImg": "icons/skills/melee/maneuver-sword-katana-yellow.webp",
 			"subclassFeatures": [
-				"Way of the Shadows|Monk Rework|DZC:ANA|Shadows|DZC:ANA|3",
-				"Shadow Step|Monk Rework|DZC:ANA|Shadows|DZC:ANA|6",
-				"Cloak of Shadows|Monk Rework|DZC:ANA|Shadows|DZC:ANA|11",
-				"Opportunist|Monk Rework|DZC:ANA|Shadows|DZC:ANA|17"
+				"Way of the Shadows|Monk Rework|DZC:ANA:M|Shadows|DZC:ANA:M|3",
+				"Shadow Step|Monk Rework|DZC:ANA:M|Shadows|DZC:ANA:M|6",
+				"Cloak of Shadows|Monk Rework|DZC:ANA:M|Shadows|DZC:ANA:M|11",
+				"Opportunist|Monk Rework|DZC:ANA:M|Shadows|DZC:ANA:M|17"
 			],
             "additionalSpells": [
 				{
@@ -3609,28 +3609,28 @@
         {
 			"name": "Way of the Elements",
 			"shortName": "Elements",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"classSource": "DZC:ANA:M",
 			"page": 6,
 			"foundryImg": "icons/magic/symbols/elements-air-earth-fire-water.webp",
 			"subclassFeatures": [
-				"Way of the Elements|Monk Rework|DZC:ANA|Elements|DZC:ANA|3",
-				"Primal Stances|Monk Rework|DZC:ANA|Elements|DZC:ANA|6",
-				"Step Shift|Monk Rework|DZC:ANA|Elements|DZC:ANA|11",
-				"Elemental Mastery|Monk Rework|DZC:ANA|Elements|DZC:ANA|17"
+				"Way of the Elements|Monk Rework|DZC:ANA:M|Elements|DZC:ANA:M|3",
+				"Primal Stances|Monk Rework|DZC:ANA:M|Elements|DZC:ANA:M|6",
+				"Step Shift|Monk Rework|DZC:ANA:M|Elements|DZC:ANA:M|11",
+				"Elemental Mastery|Monk Rework|DZC:ANA:M|Elements|DZC:ANA:M|17"
 			]
 		}
 	],
 	"subclassFeature": [
 		{
 			"name": "Way of the Inner Strength",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"page": 4,
 			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"classSource": "DZC:ANA:M",
 			"subclassShortName": "Inner Strength",
-			"subclassSource": "DZC:ANA",
+			"subclassSource": "DZC:ANA:M",
 			"level": 3,
 			"header": 1,
 			"entries": [
@@ -3639,24 +3639,24 @@
 				"More often than not, practicioners of this tradition isolate themselves for long periods of time, disconnecting their terrenal senses in order to heighten their spiritual eye. Only a few can endure this journey, and even less monks can achieve the state of true enlightenment.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Ki Specialist|Monk Rework|DZC:ANA|Inner Strength|DZC:ANA|3"
+					"subclassFeature": "Ki Specialist|Monk Rework|DZC:ANA:M|Inner Strength|DZC:ANA:M|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Purity of Body|Monk Rework|DZC:ANA|Inner Strength|DZC:ANA|3"
+					"subclassFeature": "Purity of Body|Monk Rework|DZC:ANA:M|Inner Strength|DZC:ANA:M|3"
 				}
 			]
 		},
 
 		{
 			"name": "Ki Specialist",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"page": 4,
 			"foundryImg": "icons/magic/light/hand-sparks-glow-yellow.webp",
 			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"classSource": "DZC:ANA:M",
 			"subclassShortName": "Inner Strength",
-			"subclassSource": "DZC:ANA",
+			"subclassSource": "DZC:ANA:M",
 			"level": 3,
 			"header": 1,
 			"entries": [
@@ -3668,13 +3668,13 @@
 
 		{
 			"name": "Purity of Body",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"page": 5,
 			"foundryImg": "icons/magic/light/explosion-star-blue.webp",
 			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"classSource": "DZC:ANA:M",
 			"subclassShortName": "Inner Strength",
-			"subclassSource": "DZC:ANA",
+			"subclassSource": "DZC:ANA:M",
 			"level": 3,
 			"header": 1,
 			"entries": [
@@ -3684,13 +3684,13 @@
 
 		{
 			"name": "Wholeness of Body",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"page": 5,
 			"foundryImg": "icons/magic/life/heart-glowing-red.webp",
 			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"classSource": "DZC:ANA:M",
 			"subclassShortName": "Inner Strength",
-			"subclassSource": "DZC:ANA",
+			"subclassSource": "DZC:ANA:M",
 			"level": 6,
 			"header": 2,
 			"entries": [
@@ -3700,13 +3700,13 @@
 
 		{
 			"name": "Blank Mind",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"page": 5,
 			"foundryImg": "icons/magic/holy/prayer-hands-glowing-yellow-white.webp",
 			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"classSource": "DZC:ANA:M",
 			"subclassShortName": "Inner Strength",
-			"subclassSource": "DZC:ANA",
+			"subclassSource": "DZC:ANA:M",
 			"level": 11,
 			"header": 2,
 			"entries": [
@@ -3716,13 +3716,13 @@
 
 		{
 			"name": "Enlightenment",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"page": 5,
 			"foundryImg": "icons/magic/perception/third-eye-blue-red.webp",
 			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"classSource": "DZC:ANA:M",
 			"subclassShortName": "Inner Strength",
-			"subclassSource": "DZC:ANA",
+			"subclassSource": "DZC:ANA:M",
 			"level": 17,
 			"header": 2,
 			"entries": [
@@ -3732,12 +3732,12 @@
 
         {
 			"name": "Way of the Shadows",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"page": 5,
 			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"classSource": "DZC:ANA:M",
 			"subclassShortName": "Shadows",
-			"subclassSource": "DZC:ANA",
+			"subclassSource": "DZC:ANA:M",
 			"level": 3,
 			"header": 1,
 			"entries": [
@@ -3748,20 +3748,20 @@
                 "Regardless of their methods, the heads of these monasteries expect from their students unquestioning obedience, to show no scruple on their actions, and to carry their missions without failure. Otherwise, they won't hesitate to deliver severe punishment.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Shadow Arts|Monk Rework|DZC:ANA|Shadows|DZC:ANA|3"
+					"subclassFeature": "Shadow Arts|Monk Rework|DZC:ANA:M|Shadows|DZC:ANA:M|3"
 				}
 			]
 		},
 
 		{
 			"name": "Shadow Arts",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"page": 5,
 			"foundryImg": "icons/magic/control/silhouette-aura-energy.webp",
 			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"classSource": "DZC:ANA:M",
 			"subclassShortName": "Shadows",
-			"subclassSource": "DZC:ANA",
+			"subclassSource": "DZC:ANA:M",
 			"level": 3,
 			"header": 1,
 			"entries": [
@@ -3773,13 +3773,13 @@
 
 		{
 			"name": "Shadow Step",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"page": 5,
 			"foundryImg": "icons/magic/control/debuff-energy-hold-pink.webp",
 			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"classSource": "DZC:ANA:M",
 			"subclassShortName": "Shadows",
-			"subclassSource": "DZC:ANA",
+			"subclassSource": "DZC:ANA:M",
 			"level": 6,
 			"header": 2,
 			"entries": [
@@ -3789,13 +3789,13 @@
 
 		{
 			"name": "Cloak of Shadows",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"page": 5,
 			"foundryImg": "icons/magic/perception/silhouette-stealth-shadow.webp",
 			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"classSource": "DZC:ANA:M",
 			"subclassShortName": "Shadows",
-			"subclassSource": "DZC:ANA",
+			"subclassSource": "DZC:ANA:M",
 			"level": 11,
 			"header": 2,
 			"entries": [
@@ -3805,13 +3805,13 @@
 
 		{
 			"name": "Opportunist",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"page": 5,
 			"foundryImg": "icons/magic/light/projectile-bolts-salvo-yellow.webp",
 			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"classSource": "DZC:ANA:M",
 			"subclassShortName": "Shadows",
-			"subclassSource": "DZC:ANA",
+			"subclassSource": "DZC:ANA:M",
 			"level": 17,
 			"header": 2,
 			"entries": [
@@ -3821,12 +3821,12 @@
 
         {
 			"name": "Way of the Elements",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"page": 6,
 			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"classSource": "DZC:ANA:M",
 			"subclassShortName": "Elements",
-			"subclassSource": "DZC:ANA",
+			"subclassSource": "DZC:ANA:M",
 			"level": 3,
 			"header": 1,
 			"entries": [
@@ -3835,28 +3835,28 @@
 				"Each element is often associated with an aspect of an individual's personality or ideology. Air is associated with playfulness, peace, and solving problems from different angles. Earth with toughness, stability, and stubborness. Fire with anger, passion, and direct confrontation. Water with sadness, kindness, and adaptability.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Elemental Arts|Monk Rework|DZC:ANA|Elements|DZC:ANA|3"
+					"subclassFeature": "Elemental Arts|Monk Rework|DZC:ANA:M|Elements|DZC:ANA:M|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Elemental Strike|Monk Rework|DZC:ANA|Elements|DZC:ANA|3"
+					"subclassFeature": "Elemental Strike|Monk Rework|DZC:ANA:M|Elements|DZC:ANA:M|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Elemental Manifestation|Monk Rework|DZC:ANA|Elements|DZC:ANA|3"
+					"subclassFeature": "Elemental Manifestation|Monk Rework|DZC:ANA:M|Elements|DZC:ANA:M|3"
 				}
 			]
 		},
 
 		{
 			"name": "Elemental Arts",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"page": 6,
 			"foundryImg": "icons/magic/nature/beam-hand-leaves-green.webp",
 			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"classSource": "DZC:ANA:M",
 			"subclassShortName": "Elements",
-			"subclassSource": "DZC:ANA",
+			"subclassSource": "DZC:ANA:M",
 			"level": 3,
 			"header": 1,
 			"entries": [
@@ -3898,13 +3898,13 @@
 
 		{
 			"name": "Elemental Strike",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"page": 6,
 			"foundryImg": "icons/magic/fire/flame-burning-fist-strike.webp",
 			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"classSource": "DZC:ANA:M",
 			"subclassShortName": "Elements",
-			"subclassSource": "DZC:ANA",
+			"subclassSource": "DZC:ANA:M",
 			"level": 3,
 			"header": 1,
 			"entries": [
@@ -3915,22 +3915,22 @@
 					"entries": [
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Thunderous Strike|DZC:ANA",
+							"optionalfeature": "Thunderous Strike|DZC:ANA:M",
 							"name": "Thunderous Strike (Air Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Rocky Strike|DZC:ANA",
+							"optionalfeature": "Rocky Strike|DZC:ANA:M",
 							"name": "Rocky Strike (Earth Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Igneous Strike|DZC:ANA",
+							"optionalfeature": "Igneous Strike|DZC:ANA:M",
 							"name": "Igneous Strike (Fire Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Gelid Strike|DZC:ANA",
+							"optionalfeature": "Gelid Strike|DZC:ANA:M",
 							"name": "Gelid Strike (Water Art)"
                         }
                     ]
@@ -3940,13 +3940,13 @@
 
 		{
 			"name": "Elemental Manifestation",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"page": 6,
 			"foundryImg": "icons/magic/earth/projectile-stone-boulder-brown.webp",
 			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"classSource": "DZC:ANA:M",
 			"subclassShortName": "Elements",
-			"subclassSource": "DZC:ANA",
+			"subclassSource": "DZC:ANA:M",
 			"level": 3,
 			"header": 1,
 			"entries": [
@@ -3957,22 +3957,22 @@
 					"entries": [
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Wind Blast|DZC:ANA",
+							"optionalfeature": "Wind Blast|DZC:ANA:M",
 							"name": "Wind Blast (Air Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Stone Boulder|DZC:ANA",
+							"optionalfeature": "Stone Boulder|DZC:ANA:M",
 							"name": "Stone Boulder (Earth Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Flaming Blast|DZC:ANA",
+							"optionalfeature": "Flaming Blast|DZC:ANA:M",
 							"name": "Flaming Blast (Fire Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Water Swirl|DZC:ANA",
+							"optionalfeature": "Water Swirl|DZC:ANA:M",
 							"name": "Water Swirl (Water Art)"
                         }
                     ]
@@ -3982,13 +3982,13 @@
 
         {
 			"name": "Primal Stances",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"page": 6,
 			"foundryImg": "icons/magic/water/elemental-water.webp",
 			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"classSource": "DZC:ANA:M",
 			"subclassShortName": "Elements",
-			"subclassSource": "DZC:ANA",
+			"subclassSource": "DZC:ANA:M",
 			"level": 6,
 			"header": 2,
 			"entries": [
@@ -4000,42 +4000,42 @@
 					"entries": [
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Wind Stance|DZC:ANA",
+							"optionalfeature": "Wind Stance|DZC:ANA:M",
 							"name": "Wind Stance (Air Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Mountain Stance|DZC:ANA",
+							"optionalfeature": "Mountain Stance|DZC:ANA:M",
 							"name": "Mountain Stance (Earth Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Flame Stance|DZC:ANA",
+							"optionalfeature": "Flame Stance|DZC:ANA:M",
 							"name": "Flame Stance (Fire Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "River Stance|DZC:ANA",
+							"optionalfeature": "River Stance|DZC:ANA:M",
 							"name": "River Stance (Water Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Wind Blast|DZC:ANA",
+							"optionalfeature": "Wind Blast|DZC:ANA:M",
 							"name": "Wind Blast (Air Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Stone Boulder|DZC:ANA",
+							"optionalfeature": "Stone Boulder|DZC:ANA:M",
 							"name": "Stone Boulder (Earth Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Flaming Blast|DZC:ANA",
+							"optionalfeature": "Flaming Blast|DZC:ANA:M",
 							"name": "Flaming Blast (Fire Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Water Swirl|DZC:ANA",
+							"optionalfeature": "Water Swirl|DZC:ANA:M",
 							"name": "Water Swirl (Water Art)"
                         }
                     ]
@@ -4045,13 +4045,13 @@
 
         {
 			"name": "Step Shift",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"page": 7,
 			"foundryImg": "icons/creatures/abilities/wings-birdlike-blue.webp",
 			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"classSource": "DZC:ANA:M",
 			"subclassShortName": "Elements",
-			"subclassSource": "DZC:ANA",
+			"subclassSource": "DZC:ANA:M",
 			"level": 11,
 			"header": 2,
 			"entries": [
@@ -4063,62 +4063,62 @@
 					"entries": [
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Aerial Lift|DZC:ANA",
+							"optionalfeature": "Aerial Lift|DZC:ANA:M",
 							"name": "Aerial Lift (Air Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Rock Walk|DZC:ANA",
+							"optionalfeature": "Rock Walk|DZC:ANA:M",
 							"name": "Rock Walk (Earth Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Jet Burst|DZC:ANA",
+							"optionalfeature": "Jet Burst|DZC:ANA:M",
 							"name": "Jet Burst (Fire Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Underwater Adaptations|DZC:ANA",
+							"optionalfeature": "Underwater Adaptations|DZC:ANA:M",
 							"name": "Underwater Adaptations (Water Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Wind Stance|DZC:ANA",
+							"optionalfeature": "Wind Stance|DZC:ANA:M",
 							"name": "Wind Stance (Air Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Mountain Stance|DZC:ANA",
+							"optionalfeature": "Mountain Stance|DZC:ANA:M",
 							"name": "Mountain Stance (Earth Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Flame Stance|DZC:ANA",
+							"optionalfeature": "Flame Stance|DZC:ANA:M",
 							"name": "Flame Stance (Fire Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "River Stance|DZC:ANA",
+							"optionalfeature": "River Stance|DZC:ANA:M",
 							"name": "River Stance (Water Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Wind Blast|DZC:ANA",
+							"optionalfeature": "Wind Blast|DZC:ANA:M",
 							"name": "Wind Blast (Air Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Stone Boulder|DZC:ANA",
+							"optionalfeature": "Stone Boulder|DZC:ANA:M",
 							"name": "Stone Boulder (Earth Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Flaming Blast|DZC:ANA",
+							"optionalfeature": "Flaming Blast|DZC:ANA:M",
 							"name": "Flaming Blast (Fire Art)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Water Swirl|DZC:ANA",
+							"optionalfeature": "Water Swirl|DZC:ANA:M",
 							"name": "Water Swirl (Water Art)"
                         }
                     ]
@@ -4128,13 +4128,13 @@
 
         {
 			"name": "Elemental Mastery",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"page": 7,
 			"foundryImg": "icons/magic/nature/explosion-flame-blue.webp",
 			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"classSource": "DZC:ANA:M",
 			"subclassShortName": "Elements",
-			"subclassSource": "DZC:ANA",
+			"subclassSource": "DZC:ANA:M",
 			"level": 17,
 			"header": 2,
 			"entries": [
@@ -4153,47 +4153,47 @@
 					"entries": [
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Air Master|DZC:ANA",
+							"optionalfeature": "Air Master|DZC:ANA:M",
 							"name": "Air Master (Four Air Arts)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Earth Master|DZC:ANA",
+							"optionalfeature": "Earth Master|DZC:ANA:M",
 							"name": "Earth Master (Four Earth Arts)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Fire Master|DZC:ANA",
+							"optionalfeature": "Fire Master|DZC:ANA:M",
 							"name": "Fire Master (Four Fire Arts)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Water Master|DZC:ANA",
+							"optionalfeature": "Water Master|DZC:ANA:M",
 							"name": "Water Master (Four Water Arts)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Lightning Adept|DZC:ANA",
+							"optionalfeature": "Lightning Adept|DZC:ANA:M",
 							"name": "Lightning Adept (Two or more Air Arts)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Acid Adept|DZC:ANA",
+							"optionalfeature": "Acid Adept|DZC:ANA:M",
 							"name": "Acid Adept (Two or more Earth Arts)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Light Adept|DZC:ANA",
+							"optionalfeature": "Light Adept|DZC:ANA:M",
 							"name": "Light Adept (Two or more Fire Arts)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Heal Adept|DZC:ANA",
+							"optionalfeature": "Heal Adept|DZC:ANA:M",
 							"name": "Heal Adept (Two or more Water Arts)"
                         },
                         {
                             "type": "refOptionalfeature",
-							"optionalfeature": "Nature's Vessel|DZC:ANA",
+							"optionalfeature": "Nature's Vessel|DZC:ANA:M",
 							"name": "Nature's Vessel (One Art in each Elemental)"
                         }
                     ]
@@ -4206,15 +4206,15 @@
 	"foundryClassFeature": [
         {
             "name": "Martial Arts",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"classSource": "DZC:ANA:M",
 			"level": 1,
 			"subEntities": {
 				"item": [
 					{
 						"name": "Unarmed Strike (Monk)",
-						"source": "DZC:ANA",
+						"source": "DZC:ANA:M",
 						"page": 1,
 						"type": "M",
 						"rarity": "none",
@@ -4239,9 +4239,9 @@
 		},
         {
             "name": "Unarmored Defense",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"classSource": "DZC:ANA:M",
 			"level": 1,
             "effects": [
                 {
@@ -4264,9 +4264,9 @@
 		},
         {
             "name": "Unarmored Movement",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"classSource": "DZC:ANA:M",
 			"level": 2,
             "effects": [
                 {
@@ -4304,9 +4304,9 @@
 		},
         {
 			"name": "Ki",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"className": "Monk Rework",
-			"classSource": "DZC:ANA",
+			"classSource": "DZC:ANA:M",
 			"level": 2,
 			"system": {
 				"uses.per": "lr",
@@ -4318,13 +4318,13 @@
 	"classFluff": [
 		{
 			"name": "Monk Rework",
-			"source": "DZC:ANA",
+			"source": "DZC:ANA:M",
 			"entries": [
 				{
 					"type": "section",
 					"name": "Monk",
 					"page": 1,
-					"source": "DZC:ANA",
+					"source": "DZC:ANA:M",
 					"entries": [
 						"Jumping across the roofs with unmatched speed, she pursues the assassin across the city, wearing him out little by little with her arrows until she comes face to face with him. The wood elf fends off his attacks attacks until he drops, unwilling to continue.",
 
@@ -4374,7 +4374,7 @@
 							"name": "Quick Build",
 							"page": 2,
 							"entries": [
-								"You can make a monk quickly by following these suggestions. First, make Dexterity your highest ability score, followed by Wisdom. Second, choose the {@background hermit} background. Take the Unarmed Style and when you learn ki features, choose {@optfeature Flurry of Blows|DZC:ANA}, {@optfeature Patient Defense|DZC:ANA}, and {@optfeature Step of the Wind|DZC:ANA}.",
+								"You can make a monk quickly by following these suggestions. First, make Dexterity your highest ability score, followed by Wisdom. Second, choose the {@background hermit} background. Take the Unarmed Style and when you learn ki features, choose {@optfeature Flurry of Blows|DZC:ANA:M}, {@optfeature Patient Defense|DZC:ANA:M}, and {@optfeature Step of the Wind|DZC:ANA:M}.",
                                 {
                                     "type": "inset",
                                     "name": "Can I add this Bonus?",
