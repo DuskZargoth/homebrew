@@ -954,7 +954,16 @@
             "page": 4,
             "level": 5,
             "entries": [
-                "Also at 5th level, you can prepare for any situation you might face in the short future. During a long rest, you can spend 1 hour learning how to use a skill or tool you have no proficiency with. At the end of the long rest, you add your proficiency bonus to checks using that skill or tool you studied. This benefit lasts until you use this feature again or you gain proficiency in the respective skill or tool."
+                "Also at 5th level, you can prepare for any situation you might face in the short future. During a long rest, you can spend 1 hour learning how to use a skill or tool you have no proficiency with. At the end of the long rest, you add your proficiency bonus to checks using that skill or tool you studied. This benefit lasts until you use this feature again or you gain proficiency in the respective skill or tool.",
+                {
+                    "type": "inset",
+                    "name": "The Quick Learner Effect",
+                    "entries": [
+                        "When imported via Plutonium, the feature will create an effect in you character sheet to add this benefit to a skill and a tool. By default it is set to add your proficiency bonus to your Acrobatics skill, and no bonus to your thieves' tools, you can manually modify it according to your choices.",
+                        "{@i {@b Skills' Abbreviations.}} The following is a list with all the skill's abbreviations found in the FoundryVTT software, in parenthesis is the skill it corresponds to: acr (Acrobatics), ani (Animal Handling), arc (Acrobatics), ath (Athletics), dec (Deception), his (History), ins (Insight), itm (Intimidation), inv (Investigation), med (Medicine), nat (Nature), prc (Perception), prf (Performance), per (Persuasion), rel (Religion), slt (Sleight of Hands), ste (Stealth), sur (Survival).",
+                        "{@i {@b Tools' Abbreviations.}} The following is a list with all the tool's abbreviations found in the FoundryVTT software, in parenthesis is the tool it corresponds to: art (artisan's tools), alchemist, brewer, calligrapher, carpenter, cartographer, coobler, cook, glassblower, jeweler, leatherworker, mason, painter, potter, smith, tinker, weaver, woodcarver, disg (disguise kit), forg (forgery kit), game (gaming set), chess (chess set), dice (dice set), card (playing cards set), herb (herbalism kit), music (musical instrument), bagpipes, drum, dulcimer, flute, horn, lute, lyre, panflute, shawm, viol, navg (navigator's tools), pois (poisoner's kit), thief (thieves' tools), vehicle (vehicles), air (air vehicle), land (vehicle), space (space vehicle), water (water vehicle)"
+                    ]
+                }
             ]
         },
 
@@ -993,7 +1002,16 @@
             "page": 4,
             "level": 19,
             "entries": [
-                "At 19th level, choose two of your proficiencies, either in skills or with tools. Your proficiency bonus is tripled for any ability check you make that uses either of the chosen proficiencies."
+                "At 19th level, choose two of your proficiencies, either in skills or with tools. Your proficiency bonus is tripled for any ability check you make that uses either of the chosen proficiencies.",
+                {
+                    "type": "inset",
+                    "name": "The Mastery Effect",
+                    "entries": [
+                        "When imported via Plutonium, the feature will create an effect in you character sheet to add this benefit to a skill and a tool. By default it is set to add double your proficiency bonus to your Acrobatics skill and your thieves' tools, you can manually modify it according to your choices.",
+                        "{@i {@b Skills' Abbreviations.}} The following is a list with all the skill's abbreviations found in the FoundryVTT software, in parenthesis is the skill it corresponds to: acr (Acrobatics), ani (Animal Handling), arc (Acrobatics), ath (Athletics), dec (Deception), his (History), ins (Insight), itm (Intimidation), inv (Investigation), med (Medicine), nat (Nature), prc (Perception), prf (Performance), per (Persuasion), rel (Religion), slt (Sleight of Hands), ste (Stealth), sur (Survival).",
+                        "{@i {@b Tools' Abbreviations.}} The following is a list with all the tool's abbreviations found in the FoundryVTT software, in parenthesis is the tool it corresponds to: art (artisan's tools), alchemist, brewer, calligrapher, carpenter, cartographer, coobler, cook, glassblower, jeweler, leatherworker, mason, painter, potter, smith, tinker, weaver, woodcarver, disg (disguise kit), forg (forgery kit), game (gaming set), chess (chess set), dice (dice set), card (playing cards set), herb (herbalism kit), music (musical instrument), bagpipes, drum, dulcimer, flute, horn, lute, lyre, panflute, shawm, viol, navg (navigator's tools), pois (poisoner's kit), thief (thieves' tools), vehicle (vehicles), air (air vehicle), land (vehicle), space (space vehicle), water (water vehicle)"
+                    ]
+                }
             ]
         },
 
@@ -1020,6 +1038,7 @@
             }
         }
     ],
+
     "optionalfeature": [
         {
             "name": "Swift Hands",
@@ -2880,7 +2899,7 @@
 
 	"foundryClassFeature": [
         {
-        "name": "Warrior's Training",
+        "name": "Reliable Partner",
 			"source": "DZC:ANA:Ro",
 			"className": "Rogue Rework",
 			"classSource": "DZC:ANA:Ro",
@@ -2913,30 +2932,60 @@
 			}
 		},
         {
-			"name": "Combat Superiority",
+			"name": "Roguish Talents",
 			"source": "DZC:ANA:Ro",
 			"className": "Rogue Rework",
 			"classSource": "DZC:ANA:Ro",
-			"level": 2,
+			"level": 1,
 			"system": {
 				"uses.per": "sr",
-				"uses.max": "ceil(@classes.fighter-rework.levels/3) + 3"
+				"uses.max": "ceil(@classes.rogue-rework.levels/2) + 2"
 			}
 		},
         {
-            "name": "Improved Critical",
+            "name": "Quick Learner",
             "source": "DZC:ANA:Ro",
             "className": "Rogue Rework",
             "classSource": "DZC:ANA:Ro",
-            "level": 3,
+            "level": 5,
             "effects": [
                 {
-                    "name": "Improved Critical",
+                    "name": "Quick Learner",
                     "changes": [
                         {
-                            "key": "flags.dnd5e.weaponCriticalThreshold",
-                            "mode": "OVERRIDE",
-                            "value": "@scale.fighter-rework.imp-crit"
+                            "key": "system.skills.acr.bonuses.check",
+                            "mode": "ADD",
+                            "value": "@prof"
+                        },
+                        {
+                            "key": "system.tools.thief.bonuses.check",
+                            "mode": "ADD",
+                            "value": "0"
+                        }
+                    ],
+                    "transfer": true
+                }
+            ]
+        },
+        {
+            "name": "Mastery",
+            "source": "DZC:ANA:Ro",
+            "className": "Rogue Rework",
+            "classSource": "DZC:ANA:Ro",
+            "level": 19,
+            "effects": [
+                {
+                    "name": "Mastery",
+                    "changes": [
+                        {
+                            "key": "system.skills.acr.bonuses.check",
+                            "mode": "ADD",
+                            "value": "2*@prof"
+                        },
+                        {
+                            "key": "system.tools.thief.bonuses.check",
+                            "mode": "ADD",
+                            "value": "2*@prof"
                         }
                     ],
                     "transfer": true
