@@ -69,38 +69,10 @@
                 ],
                 "toolProficiencies": [
                     {
-                        "choose": {
-                            "from": [
-                                "alchemist's supplies",
-                                "brewer's supplies",
-                                "calligrapher's supplies",
-                                "carpenter's tools",
-                                "cartographer's tools",
-                                "cobbler's tools",
-                                "cook's utensils",
-                                "glassblower's tools",
-                                "jeweler's tools",
-                                "leatherworker's tools",
-                                "mason's tools",
-                                "painter's supplies",
-                                "potter's tools",
-                                "smith's tools",
-                                "tinker's tools",
-                                "weaver's tools",
-                                "woodcarver's tools",
-                                "bagpipes",
-                                "drum",
-                                "dulcimer",
-                                "flute",
-                                "horn",
-                                "lute",
-                                "lyre",
-                                "pan flute",
-                                "shawn",
-                                "viol"
-                            ],
-                            "count": 1
-                        }
+                        "anyArtisansTool": 1
+                    },
+                    {
+                        "anyMusicalInstrument": 1
                     }
                 ],
                 "skills": [
@@ -711,6 +683,7 @@
                 "At 18th level, you learn an additional {@filter Martial Arts Feature|optionalfeatures|feature type=DZC:MA} of your choice from any style."
             ]
 		},
+        
         {
             "name": "Meditation",
             "source": "DZC:ANA:M",
