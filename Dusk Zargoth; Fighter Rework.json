@@ -81,7 +81,8 @@
                                 "vehicles (air)",
                                 "vehicles (land)",
                                 "vehicles (water)"
-                            ]
+                            ],
+                            "count": 1
                         }
                     }
                 ],
@@ -230,7 +231,7 @@
                     "colLabels": [
                         "Superiority Pool",
                         "Superiority Dice",
-                        "Maneuvers"
+                        "Maneuvers Known"
                     ],
                     "rows": [
                         [

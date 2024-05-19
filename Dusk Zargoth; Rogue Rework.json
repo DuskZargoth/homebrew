@@ -77,7 +77,8 @@
                                 "pan flute",
                                 "shawn",
                                 "viol"
-                            ]
+                            ],
+                            "count": 1
                         }
                     }
                 ],
@@ -174,9 +175,9 @@
             },
             "optionalfeatureProgression": [
                 {
-                    "name": "Maneuvers",
+                    "name": "Talents",
                     "featureType": [
-                        "DZC:M"
+                        "DZC:T"
                     ],
                     "progression": [
                         0,
@@ -202,385 +203,389 @@
                     ]
                 },
 				{
-					"name": "Warrior's Training",
+					"name": "Underhanded Tactics",
 					"featureType": [
-						"DZC:CS"
+						"DZC:UT"
 					],
 					"progression": {
 						"1": 2,
-						"9": 3,
-						"13": 4
-					}
-				},
-                {
-					"name": "Improved Critical",
-					"featureType": [
-						"DZC:IC"
-					],
-					"progression": {
-						"3": 19,
-						"7": 18,
-						"15": 17,
-                        "18": 16
+						"7": 3,
+						"14": 4
 					}
 				}
             ],
-            "foundryAdvancement": [
-				{
-					"title": "Improved Critical",
-					"type": "ScaleValue",
-					"configuration": {
-						"identifier": "imp-crit",
-						"type": "numeric",
-						"scale": {
-							"3": {
-								"value": 19
-							},
-                            "7": {
-								"value": 18
-							},
-                            "15": {
-								"value": 17
-							},
-                            "18": {
-								"value": 16
-							}
-						}
-					}
-				}
-			],
             "classTableGroups": [
                 {
                     "colLabels": [
-                        "Superiority Pool",
-                        "Superiority Dice",
-                        "Maneuvers"
+                        "Talent Pool",
+                        "Acquired Talents",
+                        "Known Tactics"
                     ],
                     "rows": [
                         [
-                            0,
                             {
                                 "type": "dice",
                                 "toRoll": [
                                     {
-                                        "number": 1,
+                                        "number": 3,
                                         "faces": 6
                                     }
                                 ]
-                            },                            
-                            0
+                            },       
+                            2,
+                            2
                         ],
                         [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 3,
+                                        "faces": 6
+                                    }
+                                ]
+                            },       
+                            3,
+                            2
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 4,
+                                        "faces": 6
+                                    }
+                                ]
+                            },       
+                            3,
+                            2
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 4,
+                                        "faces": 6
+                                    }
+                                ]
+                            },       
+                            3,
+                            2
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 5,
+                                        "faces": 6
+                                    }
+                                ]
+                            },       
                             4,
+                            2
+                        ],
+                        [
                             {
                                 "type": "dice",
                                 "toRoll": [
                                     {
-                                        "number": 1,
+                                        "number": 5,
                                         "faces": 6
                                     }
                                 ]
-                            },
-                            3
-                        ],
-                        [
+                            },       
                             4,
+                            2
+                        ],
+                        [
                             {
                                 "type": "dice",
                                 "toRoll": [
                                     {
-                                        "number": 1,
+                                        "number": 6,
                                         "faces": 6
                                     }
                                 ]
-                            },
+                            },       
+                            5,
                             3
                         ],
                         [
-                            5,
                             {
                                 "type": "dice",
                                 "toRoll": [
                                     {
-                                        "number": 1,
+                                        "number": 6,
                                         "faces": 6
                                     }
                                 ]
-                            },
+                            },       
+                            5,
                             3
                         ],
                         [
-                            5,
                             {
                                 "type": "dice",
                                 "toRoll": [
                                     {
-                                        "number": 1,
+                                        "number": 7,
                                         "faces": 6
                                     }
                                 ]
-                            },
+                            },       
+                            6,
+                            3
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 7,
+                                        "faces": 6
+                                    }
+                                ]
+                            },       
+                            6,
+                            3
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 8,
+                                        "faces": 6
+                                    }
+                                ]
+                            },       
+                            7,
+                            3
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 8,
+                                        "faces": 6
+                                    }
+                                ]
+                            },       
+                            7,
+                            3
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 9,
+                                        "faces": 6
+                                    }
+                                ]
+                            },       
+                            8,
+                            3
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 9,
+                                        "faces": 6
+                             
+                                    }
+                                ]
+                            },       
+                            8,
                             4
                         ],
                         [
-                            5,
                             {
                                 "type": "dice",
                                 "toRoll": [
                                     {
-                                        "number": 1,
-                                        "faces": 8
+                                        "number": 10,
+                                        "faces": 6
                                     }
                                 ]
-                            },
+                            },       
+                            9,
                             4
                         ],
                         [
-                            6,
                             {
                                 "type": "dice",
                                 "toRoll": [
                                     {
-                                        "number": 1,
-                                        "faces": 8
+                                        "number": 10,
+                                        "faces": 6
                                     }
                                 ]
-                            },
-                            5
-                        ],
-                        [
-                            6,
-                            {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 1,
-                                        "faces": 8
-                                    }
-                                ]
-                            },
-                            5
-                        ],
-                        [
-                            6,
-                            {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 1,
-                                        "faces": 8
-                                    }
-                                ]
-                            },
-                            6
-                        ],
-                        [
-                            7,
-                            {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 1,
-                                        "faces": 8
-                                    }
-                                ]
-                            },
-                            6
-                        ],
-                        [
-                            7,
-                            {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 1,
-                                        "faces": 10
-                                    }
-                                ]
-                            },
-                            7
-                        ],
-                        [
-                            7,
-                            {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 1,
-                                        "faces": 10
-                                    }
-                                ]
-                            },
-                            7
-                        ],
-                        [
-                            8,
-                            {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 1,
-                                        "faces": 10
-                                    }
-                                ]
-                            },
-                            8
-                        ],
-                        [
-                            8,
-                            {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 1,
-                                        "faces": 10
-                                    }
-                                ]
-                            },
-                            8
-                        ],
-                        [
-                            8,
-                            {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 1,
-                                        "faces": 10
-                                    }
-                                ]
-                            },
-                            9
-                        ],
-                        [
+                            },       
                             9,
+                            4
+                        ],
+                        [
                             {
                                 "type": "dice",
                                 "toRoll": [
                                     {
-                                        "number": 1,
-                                        "faces": 12
+                                        "number": 11,
+                                        "faces": 6
                                     }
                                 ]
-                            },
-                            9
-                        ],
-                        [
+                            },       
                             9,
+                            4
+                        ],
+                        [
                             {
                                 "type": "dice",
                                 "toRoll": [
                                     {
-                                        "number": 1,
-                                        "faces": 12
+                                        "number": 11,
+                                        "faces": 6
                                     }
                                 ]
-                            },
-                            9
-                        ],
-                        [
-                            9,
-                            {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 1,
-                                        "faces": 12
-                                    }
-                                ]
-                            },
-                            10
-                        ],
-                        [
+                            },       
                             10,
-                            {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 1,
-                                        "faces": 12
-                                    }
-                                ]
-                            },
-                            10
+                            4
                         ],
                         [
-                            10,
                             {
                                 "type": "dice",
                                 "toRoll": [
                                     {
-                                        "number": 1,
-                                        "faces": 12
+                                        "number": 12,
+                                        "faces": 6
                                     }
                                 ]
                             },
-                            10
+                            10,
+                            4
+                        ],
+                        [
+                            {
+                                "type": "dice",
+                                "toRoll": [
+                                    {
+                                        "number": 12,
+                                        "faces": 6
+                                    }
+                                ]
+                            },       
+                            10,
+                            4
                         ]
                     ]
                 }
             ],
             "classFeatures": [
-                "Warrior's Training|Rogue Rework|DZC:ANA:Ro|1",
-                "Pump Action|Rogue Rework|DZC:ANA:Ro|1",
-                "Combat Superiority|Rogue Rework|DZC:ANA:Ro|2",
-                "Determination|Rogue Rework|DZC:ANA:Ro|2",
+                "Reliable Partner|Rogue Rework|DZC:ANA:Ro|1",
+                "Roguish Talents|Rogue Rework|DZC:ANA:Ro|1",
+                "Underhanded Tactics|Rogue Rework|DZC:ANA:Ro|1",
+                "Cunning Action|Rogue Rework|DZC:ANA:Ro|2",
+                "Cheaper Craft|Rogue Rework|DZC:ANA:Ro|2",
                 {
-                    "classFeature": "Martial Archetype|Rogue Rework|DZC:ANA:Ro|3",
+                    "classFeature": "Roguish Vocation|Rogue Rework|DZC:ANA:Ro|3",
                     "gainSubclassFeature": true
                 },
-                "Know Your Enemy|Rogue Rework|DZC:ANA:Ro|3",
+                "Expertise|Rogue Rework|DZC:ANA:Ro|3",
                 "Ability Score Improvement|Rogue Rework|DZC:ANA:Ro|4",
-                "Extra Attack|Rogue Rework|DZC:ANA:Ro|5",
-                "Combat Expertise|Rogue Rework|DZC:ANA:Ro|5",
+                "Swift Consumption|Rogue Rework|DZC:ANA:Ro|5",
+                "Quick Learner|Rogue Rework|DZC:ANA:Ro|5",
                 "Ability Score Improvement|Rogue Rework|DZC:ANA:Ro|6",
-                {
-                    "classFeature": "Martial Archetype feature|Rogue Rework|DZC:ANA:Ro|7",
-                    "gainSubclassFeature": true
-                },
+                "Shared Misfortune|Rogue Rework|DZC:ANA:Ro|7",
                 "Ability Score Improvement|Rogue Rework|DZC:ANA:Ro|8",
-                "Warrior's Training improvement|Rogue Rework|DZC:ANA:Ro|9",
-                "Determination improvement|Rogue Rework|DZC:ANA:Ro|9",
+                {
+                    "classFeature": "Roguish Vocation feature|Rogue Rework|DZC:ANA:Ro|9",
+                    "gainSubclassFeature": true
+                },
                 "Ability Score Improvement|Rogue Rework|DZC:ANA:Ro|10",
-                "Extra Attack (2)|Rogue Rework|DZC:ANA:Ro|11",
+                "Expertise|Rogue Rework|DZC:ANA:Ro|10",
+                "Swift Consumption improvement|Rogue Rework|DZC:ANA:Ro|11",
                 "Ability Score Improvement|Rogue Rework|DZC:ANA:Ro|12",
-                "Warrior's Training improvement|Rogue Rework|DZC:ANA:Ro|13",
-                "Relentless|Rogue Rework|DZC:ANA:Ro|14",
                 {
-                    "classFeature": "Martial Archetype feature|Rogue Rework|DZC:ANA:Ro|15",
+                    "classFeature": "Roguish Vocation feature|Rogue Rework|DZC:ANA:Ro|13",
                     "gainSubclassFeature": true
                 },
+                "Opportunity for Improvement|Rogue Rework|DZC:ANA:Ro|14",
+                "Reliable Partner improvement|Rogue Rework|DZC:ANA:Ro|14",
                 "Ability Score Improvement|Rogue Rework|DZC:ANA:Ro|16",
-                "Extra Attack (3)|Rogue Rework|DZC:ANA:Ro|17",
                 {
-                    "classFeature": "Martial Archetype feature|Rogue Rework|DZC:ANA:Ro|18",
+                    "classFeature": "Roguish Vocation feature|Rogue Rework|DZC:ANA:Ro|17",
                     "gainSubclassFeature": true
                 },
-                "Knowledge Advantage|Rogue Rework|DZC:ANA:Ro|19",
+                "Swift Consumption improvement|Rogue Rework|DZC:ANA:Ro|18",
+                "Mastery|Rogue Rework|DZC:ANA:Ro|19",
                 "Ability Score Improvement|Rogue Rework|DZC:ANA:Ro|20",
-                "Legendary Warrior|Rogue Rework|DZC:ANA:Ro|20"
+                "Stroke of Luck|Rogue Rework|DZC:ANA:Ro|20"
             ],
-            "subclassTitle": "Martial Archetype",
+            "subclassTitle": "Roguish Vocation",
             "multiclassing": {
                 "requirements": {
-                    "or": [
-						{
-							"str": 13,
-							"dex": 13
-						}
-                    ],
-                    "con": 13
+                    "dex": 13,
+                    "cha": 13
                 },
                 "proficienciesGained": {
                     "armor": [
-						"light",
-						"medium",
-						"{@item shield|phb|shields}"
+						"light"
 					],
-					"weapons": [
-						"simple",
-						"martial"
-					]
+                    "skills": [
+                        {
+                            "choose": {
+                                "from": [
+                                    "acrobatics",
+                                    "athletics",
+                                    "deception",
+                                    "insight",
+                                    "intimidation",
+                                    "investigation",
+                                    "perception",
+                                    "performance",
+                                    "persuasion",
+                                    "sleight of hand",
+                                    "stealth"
+                                ],
+                                "count": 1
+                            }
+                        }
+                    ],
+                    "tools": [
+                        "Choose one type of the following: {@item alchemist's supplies|phb}, {@item disguise kit|phb}, {@item posioner's kit|phb}, {@item thieves' tools|phb}, one {@item gaming set|phb} of your choice, or one {@item musical instrument|phb} of your choice"
+                    ],
+                    "toolProficiencies": [
+                        {
+                            "choose": {
+                                "from": [
+                                    "alchemist's supplies",
+                                    "disguise kit",
+                                    "poisoner's kit",
+                                    "thieves' tools",
+                                    "dice set",
+                                    "dragonchess set",
+                                    "playing card set",
+                                    "bagpipes",
+                                    "drum",
+                                    "dulcimer",
+                                    "flute",
+                                    "horn",
+                                    "lute",
+                                    "lyre",
+                                    "pan flute",
+                                    "shawn",
+                                    "viol"
+                                ],
+                                "count": 1
+                            }
+                        }
+                    ]
                 }
             },
             "hasFluff": true
