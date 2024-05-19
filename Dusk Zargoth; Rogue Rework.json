@@ -107,54 +107,67 @@
                 "default": [
                     "(a) a {@item shortbow}, {@item quiver}, and {@item arrows (20)|phb|20 arrows} or (b) two {@item melee weapons|items|source=phb|category=basic|type=melee weapon}",
                     "(a) {@item alchemist's supplies|phb}, (b) {@item disguise kit|phb}, or (c) {@item thieves' tools|phb}",
+                    "(a) a {@item gaming set|phb} or (b) a {@item musical instrument|phb}",
                     "(a) a {@item burglar's pack|phb}, (b) a {@item dungeoneer's pack|phb}, or (c) an {@item explorer's pack|phb}",
-                    "{@item leather armor|phb}, two {@item dagger|phb|daggers}, and one {@item gaming set|phb} or {@item musical instrument|phb} of your choice"
+                    "{@item leather armor|phb} and two {@item dagger|phb|daggers}"
                 ],
                 "defaultData": [
                     {
 						"a": [
-							"chain mail|phb"
-						],
-						"b": [
-							"leather armor|phb",
 							"longbow|phb",
                             "quiver|phb",
 							"arrows (20)|phb"
-						]
+						],
+                        "b": [
+                            {
+                                "equipmentType": "weaponMelee",
+                                "quantity": 2
+                            }
+                        ]
 					},
 					{
 						"a": [
+							"alchemist's supplies|phb"
+						],
+						"b": [
+                            "disguise kit|phb"
+						],
+                        "c": [
+                            "thieve's tools|phb"
+                        ]
+					},
+					{
+						"a": [
+							"burglar's pack|phb"
+						],
+						"b": [
+							"dungeoneer's pack"
+						],
+                        "c": [
+                            "explorer's pack|phb"
+                        ]
+					},
+                    {
+						"a": [
 							{
-								"equipmentType": "weaponMartial"
-							},
-							"shield|phb"
+                                "item": "gaming set|phb",
+                                "quantity": 1
+                            }
 						],
 						"b": [
 							{
-								"equipmentType": "weaponMartial",
+                                "item": "musical instrument|phb",
+                                "quantity": 1
+                            }
+						]
+					},
+					{
+						"_": [
+							"Leather armor|phb",
+							{
+								"item": "dagger|phb",
 								"quantity": 2
 							}
-						]
-					},
-					{
-						"a": [
-							"light crossbow|phb",
-                            "crossbow bolt case|phb",
-							"crossbow bolts (20)|phb"
-						],
-						"b": [
-							{
-								"equipmentType": "weaponSimple",
-								"quantity": 2
-							}
-						]
-					},
-					{
-						"a": [
-							"dungeoneer's pack|phb"
-						],
-						"b": [
-							"explorer's pack|phb"
 						]
 					}
                 ]
