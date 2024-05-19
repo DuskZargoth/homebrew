@@ -56,6 +56,31 @@
                 "tools": [
                     "Choose one type of the following: {@item alchemist's supplies|phb}, {@item disguise kit|phb}, {@item posioner's kit|phb}, {@item thieves' tools|phb}, one {@item gaming set|phb} of your choice, or one {@item musical instrument|phb} of your choice"
                 ],
+                "toolProficiencies": [
+                    {
+                        "choose": {
+                            "from": [
+                                "alchemist's supplies",
+                                "disguise kit",
+                                "poisoner's kit",
+                                "thieves' tools",
+                                "dice set",
+                                "dragonchess set",
+                                "playing card set",
+                                "bagpipes",
+                                "drum",
+                                "dulcimer",
+                                "flute",
+                                "horn",
+                                "lute",
+                                "lyre",
+                                "pan flute",
+                                "shawn",
+                                "viol"
+                            ]
+                        }
+                    }
+                ],
                 "skills": [
                     {
                         "choose": {
