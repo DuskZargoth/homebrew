@@ -588,30 +588,7 @@
             "level": 1,
             "entries": [
                 "Starting at 1st level, you can outperform anyone if you take your time to do things well. If you spend at least 10 minutes performing a task, you gain a +5 bonus to the ability check you make for it.",
-                "Beginning at 15th level, your skills have improved considerably to the point you only need to spend at least 1 minute performing a task to gain the bonus. This bonus increases to +10 if you spend at least 10 minutes performing a task.",
-                {
-					"type": "inset",
-					"name": "Changes to Unarmed Strikes and the Finesse Property",
-					"entries": [
-						"In this compendium unarmed strikes and the finesse property suffer important changes meant to keep balance in check.",
-                        {
-                            "type": "entries",
-                            "name": "Finesse Property",
-                            "page": 14,
-                            "entries": [
-                                "The property now allows to choose between your Strength or Dexterity modifier only for the attack roll with the weapon, but not for the damage roll. For the damage roll you still have to use your Strength modifier for melee weapon attacks or your Dexterity modifier for ranged weapon attacks."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Unarmed Strikes",
-                            "page": 14,
-                            "entries": [
-                                "Unarmed strikes are now considered to have the finesse and light properties."
-                            ]
-                        }
-					]
-				}
+                "Beginning at 15th level, your skills have improved considerably to the point you only need to spend at least 1 minute performing a task to gain the bonus. This bonus increases to +10 if you spend at least 10 minutes performing a task."
             ]
         },
         {
@@ -960,8 +937,20 @@
                     "name": "The Quick Learner Effect",
                     "entries": [
                         "When imported via Plutonium, the feature will create an effect in you character sheet to add this benefit to a skill and a tool. By default it is set to add your proficiency bonus to your Acrobatics skill, and no bonus to your thieves' tools, you can manually modify it according to your choices.",
-                        "{@i {@b Skills' Abbreviations.}} The following is a list with all the skill's abbreviations found in the FoundryVTT software, in parenthesis is the skill it corresponds to: acr (Acrobatics), ani (Animal Handling), arc (Acrobatics), ath (Athletics), dec (Deception), his (History), ins (Insight), itm (Intimidation), inv (Investigation), med (Medicine), nat (Nature), prc (Perception), prf (Performance), per (Persuasion), rel (Religion), slt (Sleight of Hands), ste (Stealth), sur (Survival).",
-                        "{@i {@b Tools' Abbreviations.}} The following is a list with all the tool's abbreviations found in the FoundryVTT software, in parenthesis is the tool it corresponds to: art (artisan's tools), alchemist, brewer, calligrapher, carpenter, cartographer, coobler, cook, glassblower, jeweler, leatherworker, mason, painter, potter, smith, tinker, weaver, woodcarver, disg (disguise kit), forg (forgery kit), game (gaming set), chess (chess set), dice (dice set), card (playing cards set), herb (herbalism kit), music (musical instrument), bagpipes, drum, dulcimer, flute, horn, lute, lyre, panflute, shawm, viol, navg (navigator's tools), pois (poisoner's kit), thief (thieves' tools), vehicle (vehicles), air (air vehicle), land (vehicle), space (space vehicle), water (water vehicle)"
+                        {
+                            "type": "entries",
+                            "name": "Skills' Abbreviations",
+                            "entries": [
+                                "The following is a list with all the skill's abbreviations found in the FoundryVTT software, in parenthesis is the skill it corresponds to: acr (Acrobatics), ani (Animal Handling), arc (Acrobatics), ath (Athletics), dec (Deception), his (History), ins (Insight), itm (Intimidation), inv (Investigation), med (Medicine), nat (Nature), prc (Perception), prf (Performance), per (Persuasion), rel (Religion), slt (Sleight of Hands), ste (Stealth), sur (Survival)."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Tools' Abbreviations",
+                            "entries": [
+                                "The following is a list with all the tool's abbreviations found in the FoundryVTT software, in parenthesis is the tool it corresponds to: art (artisan's tools), alchemist, brewer, calligrapher, carpenter, cartographer, coobler, cook, glassblower, jeweler, leatherworker, mason, painter, potter, smith, tinker, weaver, woodcarver, disg (disguise kit), forg (forgery kit), game (gaming set), chess (chess set), dice (dice set), card (playing cards set), herb (herbalism kit), music (musical instrument), bagpipes, drum, dulcimer, flute, horn, lute, lyre, panflute, shawm, viol, navg (navigator's tools), pois (poisoner's kit), thief (thieves' tools), vehicle (vehicles), air (air vehicle), land (vehicle), space (space vehicle), water (water vehicle)"
+                            ]
+                        }
                     ]
                 }
             ]
@@ -1008,8 +997,20 @@
                     "name": "The Mastery Effect",
                     "entries": [
                         "When imported via Plutonium, the feature will create an effect in you character sheet to add this benefit to a skill and a tool. By default it is set to add double your proficiency bonus to your Acrobatics skill and your thieves' tools, you can manually modify it according to your choices.",
-                        "{@i {@b Skills' Abbreviations.}} The following is a list with all the skill's abbreviations found in the FoundryVTT software, in parenthesis is the skill it corresponds to: acr (Acrobatics), ani (Animal Handling), arc (Acrobatics), ath (Athletics), dec (Deception), his (History), ins (Insight), itm (Intimidation), inv (Investigation), med (Medicine), nat (Nature), prc (Perception), prf (Performance), per (Persuasion), rel (Religion), slt (Sleight of Hands), ste (Stealth), sur (Survival).",
-                        "{@i {@b Tools' Abbreviations.}} The following is a list with all the tool's abbreviations found in the FoundryVTT software, in parenthesis is the tool it corresponds to: art (artisan's tools), alchemist, brewer, calligrapher, carpenter, cartographer, coobler, cook, glassblower, jeweler, leatherworker, mason, painter, potter, smith, tinker, weaver, woodcarver, disg (disguise kit), forg (forgery kit), game (gaming set), chess (chess set), dice (dice set), card (playing cards set), herb (herbalism kit), music (musical instrument), bagpipes, drum, dulcimer, flute, horn, lute, lyre, panflute, shawm, viol, navg (navigator's tools), pois (poisoner's kit), thief (thieves' tools), vehicle (vehicles), air (air vehicle), land (vehicle), space (space vehicle), water (water vehicle)"
+                        {
+                            "type": "entries",
+                            "name": "Skills' Abbreviations",
+                            "entries": [
+                                "The following is a list with all the skill's abbreviations found in the FoundryVTT software, in parenthesis is the skill it corresponds to: acr (Acrobatics), ani (Animal Handling), arc (Acrobatics), ath (Athletics), dec (Deception), his (History), ins (Insight), itm (Intimidation), inv (Investigation), med (Medicine), nat (Nature), prc (Perception), prf (Performance), per (Persuasion), rel (Religion), slt (Sleight of Hands), ste (Stealth), sur (Survival)."
+                            ]
+                        },
+                        {
+                            "type": "entries",
+                            "name": "Tools' Abbreviations",
+                            "entries": [
+                                "The following is a list with all the tool's abbreviations found in the FoundryVTT software, in parenthesis is the tool it corresponds to: art (artisan's tools), alchemist, brewer, calligrapher, carpenter, cartographer, coobler, cook, glassblower, jeweler, leatherworker, mason, painter, potter, smith, tinker, weaver, woodcarver, disg (disguise kit), forg (forgery kit), game (gaming set), chess (chess set), dice (dice set), card (playing cards set), herb (herbalism kit), music (musical instrument), bagpipes, drum, dulcimer, flute, horn, lute, lyre, panflute, shawm, viol, navg (navigator's tools), pois (poisoner's kit), thief (thieves' tools), vehicle (vehicles), air (air vehicle), land (vehicle), space (space vehicle), water (water vehicle)"
+                            ]
+                        }
                     ]
                 }
             ]
@@ -1041,743 +1042,366 @@
 
     "optionalfeature": [
         {
-            "name": "Swift Hands",
-            "source": "DZC:ANA:Ro",
-            "page": 0,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-            "featureType": [
-				"DZC:MT"
-            ],
-            "entries": [
-                "You can take an additional object interaction, which you can use exclusively to draw, seathe, or store a weapon."
-            ]
-        },
-
-        {
-            "name": "Crushing Blow",
-            "source": "DZC:ANA:Ro",
-            "page": 0,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-            "featureType": [
-				"DZC:MT"
-            ],
-            "entries": [
-                "When you hit a creature with a weapon attack that deals bludgeoning damage, you can impose a Strength saving throw on the target. The save DC equals 8 + your proficiency bonus + your Strength modifier. On a failed save, the creature is knocked {@condition prone}.",
-                "You can use this technique a number of times equal to your proficiency bonus. You regain all expended uses after you finish a short or long rest."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you hit a creature with a weapon attack that deals bludgeoning damage",
-                "activation.cost": 1,
-                "uses.per": "sr",
-				"uses.max": "@prof",
-                "uses.value": 1,
-                "actionType": "save",
-                "save.ability": "str",
-                "save.scaling": "str"
-            }
-        },
-
-        {
-            "name": "Poker",
-            "source": "DZC:ANA:Ro",
-            "page": 0,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-            "featureType": [
-				"DZC:MT"
-            ],
-            "entries": [
-                "When you hit a creature with a weapon that deals piercing damage, you can impose that creature to have disadvantage on attack rolls until the end of their next turn.",
-                "You can use this technique a number of times equal to your proficiency bonus. You regain all expended uses after you finish a short or long rest."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you hit a creature with a weapon attack that deals piercing damage",
-                "activation.cost": 1,
-                "uses.per": "sr",
-				"uses.max": "@prof",
-                "uses.value": 1
-            }
-        },
-
-        {
-            "name": "Bleeding",
-            "source": "DZC:ANA:Ro",
-            "page": 0,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-            "featureType": [
-				"DZC:MT"
-            ],
-            "entries": [
-                "When you hit a creature with a weapon attack that deals slashing damage, you can cause the creature to bleed until the start of its next turn, where it takes slashing damage equal to one roll of your Technical Dice. The next healing the creature receives stops the bleeding, but regains no hit points from it. This technique has no effect on constructs and undeads.",
-                "You can use this technique a number of times equal to your proficiency bonus. You regain all expended uses after you finish a short or long rest."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you hit a creature with a weapon attack that deals slashing damage",
-                "activation.cost": 1,
-                "uses.per": "sr",
-				"uses.max": "@prof",
-                "uses.value": 1,
-                "actionType": "save",
-                "damage.parts": [
-                    [
-                        "1d(2 + (ceil(@classes.fighter-rework.levels / 4) * 2))",
-                        "slashing"
-                    ]
-                ]
-            }
-        },
-
-		{
-            "name": "Changing Weapons",
+            "name": "Ganging Up",
             "source": "DZC:ANA:Ro",
             "page": 3,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
             "featureType": [
-				"DZC:CS",
-                "DZC:CS:WS"
+				"DZC:UT"
             ],
             "entries": [
-                "You learn the {@optfeature Swift Hands|DZC:ANA:Ro} technique.",
-                {
-                    "type": "refOptionalfeature",
-                    "optionalfeature": "Swift Hands|DZC:ANA:Ro"
-                }
+                "It's easier to mess someone up when your gang's with you, and you're less likely to be messed with. If you and at least 2 friendly creatures are within 10 feet of the same creature, and no other hostile creature is within 10 feet from you and your companions, then your group has advantage on Intimidation and Persuasion checks, and advantage on saving throws against being charmed or frightened against the surrounded target."
             ]
         },
 
-		{
-            "name": "Bludgeoning Weapons",
+        {
+            "name": "Parkour",
             "source": "DZC:ANA:Ro",
             "page": 3,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
             "featureType": [
-				"DZC:CS",
-                "DZC:CS:WS"
+				"DZC:UT"
             ],
             "entries": [
-                "You learn the {@optfeature Crushing Blow|DZC:ANA:Ro} technique.",
-                {
-                    "type": "refOptionalfeature",
-                    "optionalfeature": "Crushing Blow|DZC:ANA:Ro"
-                }
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you hit a creature with a weapon attack that deals bludgeoning damage",
-                "activation.cost": 1,
-                "uses.per": "sr",
-				"uses.max": "@prof",
-                "uses.value": 1,
-                "actionType": "save",
-                "save.ability": "str",
-                "save.scaling": "str"
-            }
+                "You honed your skills to climb and move across buildings to evade authorities and thugs. Climbing doesn't cost you extra movement, the number of feet you can cover with a long jump increases by 10 feet, and you reduce the damage you take from falling an amount equal to your rogue level."
+            ]
         },
 
-		{
-            "name": "Piercing Weapons",
+        {
+            "name": "Pickpocketing",
             "source": "DZC:ANA:Ro",
             "page": 3,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"featureType": [
-				"DZC:CS",
-                "DZC:CS:WS"
+            "featureType": [
+				"DZC:UT"
             ],
             "entries": [
-                "You learn the {@optfeature Poker|DZC:ANA:Ro} technique.",
-                {
-                    "type": "refOptionalfeature",
-                    "optionalfeature": "Poker|DZC:ANA:Ro"
-                }
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you hit a creature with a weapon attack that deals piercing damage",
-                "activation.cost": 1,
-                "uses.per": "sr",
-				"uses.max": "@prof",
-                "uses.value": 1
-            }
+                "No purse is safe from you. You take no penalty to your checks for trying to steal a closely guarded object, as long as the object wouldn't be extremely noticeable or time consuming to remove (like worn shoes or armor, or wielded objects)."
+            ]
         },
 
-		{
-            "name": "Slashing Weapons",
+        {
+            "name": "Scamming",
             "source": "DZC:ANA:Ro",
             "page": 3,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"featureType": [
-				"DZC:CS",
-                "DZC:CS:WS"
+            "featureType": [
+				"DZC:UT"
             ],
             "entries": [
-                "You learn the {@optfeature Bleeding|DZC:ANA:Ro} technique.",
-                {
-                    "type": "refOptionalfeature",
-                    "optionalfeature": "Bleeding|DZC:ANA:Ro"
-                }
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you hit a creature with a weapon attack that deals slashing damage",
-                "activation.cost": 1,
-                "uses.per": "sr",
-				"uses.max": "@prof",
-                "uses.value": 1,
-                "actionType": "save",
-                "damage.parts": [
-                    [
-                        "1d(2 + (ceil(@classes.fighter-rework.levels / 4) * 2))",
-                        "slashing"
-                    ]
-                ]
-            }
-        },
-
-		{
-            "name": "Shield",
-            "source": "DZC:ANA:Ro",
-            "page": 3,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"featureType": [
-				"DZC:CS",
-                "DZC:CS:AS"
-            ],
-            "entries": [
-                "You can equip a shield the moment you roll initiative (no action required) at the cost of a -3 penalty to your initiative roll."
+                "You make use of your wits to take advantage of the gullible and the naive, convincing them of how your products are of a higher quality than any other. You have advantage on Charisma checks whenever you attempt to sell an item or your services for a higher price than the one normally offered."
             ]
         },
 
 		{
-            "name": "Light Armor",
+            "name": "Seduction",
             "source": "DZC:ANA:Ro",
             "page": 3,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"featureType": [
-				"DZC:CS",
-                "DZC:CS:AS"
+            "featureType": [
+				"DZC:UT"
             ],
             "entries": [
-                "If you were to be hit by a critical attack, or were to take damage that would reduce you to 0 hit points, you can choose to destroy the light armor you're wearing, reducing that instance of damage to 0."
+                "There is no denying that it's easier to get what you want by enamouring your audience than taking it by force. Seduction is an art that can be performed in many ways, some of the most common ones are by flirting, sweet talking, courting, or simply flaunting your physical attractiveness. If you spend at least 10 minutes seducing a creature, you have advantage on your next convince check against it."
             ]
         },
 
 		{
-            "name": "Medium Armor",
+            "name": "Sneaking",
             "source": "DZC:ANA:Ro",
             "page": 3,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"featureType": [
-				"DZC:CS",
-                "DZC:CS:AS"
+            "featureType": [
+				"DZC:UT"
             ],
             "entries": [
-                "You increase by 1 the maximum Dexterity modifier you can add to your AC while wearing medium armor."
+                "Your technique is to hide in less visible places in order to escape tough situations, like blending with crowds, ducking behind crates, or stepping into the shadows. You can attempt to hide from a creature when you are lightly obscured or behind three-quarters cover from it."
             ]
         },
 
 		{
-            "name": "Heavy Armor",
+            "name": "Academical",
             "source": "DZC:ANA:Ro",
-            "page": 3,
+            "page": 7,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Roguish Talents",
+                "amount": 1
+            },
 			"featureType": [
-				"DZC:CS",
-                "DZC:CS:AS"
+				"DZC:T",
+                "DZC:T:AC"
             ],
             "entries": [
-                "While wearing heavy armor, the bludgeoning, piercing, and slashing damage that you take is reduced by 3."
-            ]
+                "You can spend your Talent die on Intelligence checks related to academical research or memory."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you make an Intelligence check related to academical research or memory",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d6"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to ability check"
+            }
+        },
+
+        {
+            "name": "Athletic",
+            "source": "DZC:ANA:Ro",
+            "page": 7,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Roguish Talents",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:T",
+                "DZC:T:AC"
+            ],
+            "entries": [
+                "You can spend your Talent die on Strength checks related to climbing, jumping, running, or swimming."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you make a Strength check related to climbing, jumping, running, or swimming",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d6"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to ability check"
+            }
         },
 
 		{
-            "name": "Durability",
+            "name": "Endurance",
             "source": "DZC:ANA:Ro",
-            "page": 3,
+            "page": 7,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Roguish Talents",
+                "amount": 1
+            },
 			"featureType": [
-				"DZC:CS",
-                "DZC:CS:PS"
+				"DZC:T",
+                "DZC:T:AC"
             ],
             "entries": [
-                "At the start of your turn, if you have less than your maximum hit points, you can take a deep breath to regain your strength. When you do so, you gain a number of temporary hit points equal to 1d10 + your Constitution modifier (minimum of 1).",
-                "Once you use this feature, you can't use it again until you finish a short or long rest."
+                "You can spend your Talent die on Constitution checks related to enduring adverse conditions. For instance, going without sleep, surviving without food or water, being exposed to extreme temperatures, or resisting intoxication."
             ],
             "foundrySystem": {
                 "activation.type": "special",
-                "activation.condition": "At the start of your turn, if you have less than your maximum hit points",
-                "activation.cost": 1,
-                "actionType": "healing",
+                "activation.condition": "When you make a Constitution check related to enduring adverse conditions",
+                "actionType": "other",
                 "damage.parts": [
                     [
-                        "1d10 + @abilities.con.mod",
-                        "temphp"
+                        "1d6"
                     ]
-                ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to ability check"
             }
         },
 
-		{
-            "name": "Perseverance",
+        {
+            "name": "Exploration",
             "source": "DZC:ANA:Ro",
-            "page": 3,
+            "page": 7,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Roguish Talents",
+                "amount": 1
+            },
 			"featureType": [
-				"DZC:CS",
-                "DZC:CS:PS"
+				"DZC:T",
+                "DZC:T:AC"
             ],
             "entries": [
-				"With enough time, you can carve a path through the mightiest mountain. Standing up from {@condition prone} only costs you 10 feet of movement."
-            ]
+                "You can spend your Talent die on checks related to navigating through an area of wilderness, dungeons, or cities, such as avoid getting lost, finding resources or sustenance, or learning about its history or inhabitants."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you make a check related to navigating through an area of wilderness, dungeons, or cities",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d6"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to ability check"
+            }
         },
 
-		{
-            "name": "Stamina",
+        {
+            "name": "Feline Grace",
             "source": "DZC:ANA:Ro",
-            "page": 3,
+            "page": 7,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Roguish Talents",
+                "amount": 1
+            },
 			"featureType": [
-				"DZC:CS",
-                "DZC:CS:PS"
+				"DZC:T",
+                "DZC:T:AC"
             ],
             "entries": [
-                "You can momentarily ignore the fatigue of your body. When you roll initiative, if you have the {@condition exhaustion} condition, you can choose to reduce its level by one for the duration of the combat, or until you are knocked unconscious.",
-                "Once you use this feature, you can't use it again until you finish a short or long rest."
-            ]
+                "You can spend your Talent die on Dexterity checks related to coordinating your movements, avoid falling, and hiding."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you make a Dexterity check related to coordinating your movements, avoid falling, and hiding",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d6"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to ability check"
+            }
         },
 
-		{
-            "name": "Unyielding",
+        {
+            "name": "Medical",
             "source": "DZC:ANA:Ro",
-            "page": 3,
+            "page": 7,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"featureType": [
-				"DZC:CS",
-                "DZC:CS:PS"
-            ],
-            "entries": [
-                "If you start your turn at 0 hit points, you can choose to regain 1 hit point at the cost of one level of {@condition exhaustion}."
-            ]
-        },
-
-		{
-            "name": "Ambush",
-            "source": "DZC:ANA:Ro",
-            "page": 7,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
             "consumes": {
-                "name": "Superiority Die",
+                "name": "Roguish Talents",
                 "amount": 1
             },
 			"featureType": [
-				"DZC:M"
+				"DZC:T",
+                "DZC:T:AC"
             ],
             "entries": [
-                "When you make a Dexterity ({@skill Stealth}) check or an initiative roll, you can expend one superiority die and add the die to the roll, provided you aren't {@condition incapacitated}."
+                "You can spend your Talent die on Wisdom checks related to treating wounds or identifying common diseases."
             ],
             "foundrySystem": {
                 "activation.type": "special",
-                "activation.condition": "When you make a Dexterity (Stealth) check or an initiative roll",
+                "activation.condition": "When you make a Wisdom check related to treating wounds or identifying common diseases",
                 "actionType": "other",
                 "damage.parts": [
                     [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                        "1d6"
                     ]
                 ],
-                "rsr5e.quickDamage.context.0": "Bonus to skill check"
+                "rsr5e.quickDamage.context.0": "Bonus to ability check"
             }
         },
 
         {
-            "name": "Bait and Switch",
+            "name": "Searching",
             "source": "DZC:ANA:Ro",
             "page": 7,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
             "consumes": {
-                "name": "Superiority Die",
+                "name": "Roguish Talents",
                 "amount": 1
             },
 			"featureType": [
-				"DZC:M"
+				"DZC:T",
+                "DZC:T:AC"
             ],
             "entries": [
-                "When you're within 5 feet of a creature on your turn, you can expend one superiority die and switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and isn't {@condition incapacitated}. This movement doesn't provoke opportunity attacks.",
-                "Roll the superiority die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled."
+                "You can spend your Talent die on ability checks related to looking for creatures, objects, traps, or clues."
             ],
             "foundrySystem": {
                 "activation.type": "special",
-                "activation.condition": "When you're within 5 feet of a creature on your turn",
+                "activation.condition": "When you make an ability check related to looking for creatures, objects, traps, or clues",
                 "actionType": "other",
                 "damage.parts": [
                     [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                        "1d6"
                     ]
                 ],
-                "rsr5e.quickDamage.context.0": "Bonus to AC"
+                "rsr5e.quickDamage.context.0": "Bonus to ability check"
             }
         },
 
         {
-            "name": "Brace",
+            "name": "See Through",
             "source": "DZC:ANA:Ro",
             "page": 7,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
             "consumes": {
-                "name": "Superiority Die",
+                "name": "Roguish Talents",
                 "amount": 1
             },
 			"featureType": [
-				"DZC:M"
+				"DZC:T",
+                "DZC:T:AC"
             ],
             "entries": [
-                "When a creature you can see moves into the reach you have with the melee weapon you're wielding, you can use your reaction to expend one superiority die and make one attack against the creature, using that weapon. If the attack hits, add the superiority die to the weapon's damage roll."
-            ],
-            "foundrySystem": {
-                "activation.type": "reaction",
-                "activation.condition": "When a creature you can see moves into your reach",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
-            }
-        },
-
-        {
-            "name": "Commanding Presence",
-            "source": "DZC:ANA:Ro",
-            "page": 7,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-            "consumes": {
-                "name": "Superiority Die",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:M"
-            ],
-            "entries": [
-                "When you make a Charisma ({@skill Intimidation}), a Charisma ({@skill Performance}), or a Charisma ({@skill Persuasion}) check, you can expend one superiority die and add the superiority die to the ability check."
+                "You can spend your Talent die on checks related to examining for illusions or someone trying to deceive you."
             ],
             "foundrySystem": {
                 "activation.type": "special",
-                "activation.condition": "When you make a Charisma (Intimidation), a Charisma (Performance), or a Charisma (Persuasion) check",
+                "activation.condition": "When you make an ability check related to examining for illusions or someone trying to deceive you",
                 "actionType": "other",
                 "damage.parts": [
                     [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                        "1d6"
                     ]
                 ],
-                "rsr5e.quickDamage.context.0": "Bonus to skill check"
+                "rsr5e.quickDamage.context.0": "Bonus to ability check"
             }
         },
 
         {
-            "name": "Commander's Strike",
+            "name": "Theatrics",
             "source": "DZC:ANA:Ro",
             "page": 7,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
             "consumes": {
-                "name": "Superiority Die",
+                "name": "Roguish Talents",
                 "amount": 1
             },
 			"featureType": [
-				"DZC:M"
+				"DZC:T",
+                "DZC:T:AC"
             ],
             "entries": [
-                "When you take the Attack action on your turn, you can forgo one of your attacks and use a bonus action to direct one of your companions to strike. When you do so, choose a friendly creature who can see or hear you and expend one superiority die. That creature can immediately use its reaction to make one weapon attack, adding the superiority die to the attack's damage roll."
-            ],
-            "foundrySystem": {
-                "activation.type": "bonus action",
-                "activation.condition": "When you take the Attack action on your turn and forgo one attack",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
-            }
-        },
-
-        {
-            "name": "Disarming Attack",
-            "source": "DZC:ANA:Ro",
-            "page": 7,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-            "consumes": {
-                "name": "Superiority Die",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:M"
-            ],
-            "entries": [
-                "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to disarm the target, forcing it to drop one item of your choice that it's holding. You add the superiority die to the attack's damage roll, and the target must make a Strength saving throw. On a failed save, it drops the object you choose. The object lands at its feet."
+                "You can spend your Talent die on Charisma checks related to convincing or deceiving a creature, or performing an act."
             ],
             "foundrySystem": {
                 "activation.type": "special",
-                "activation.condition": "When you hit a creature with a weapon attack",
-                "actionType": "save",
+                "activation.condition": "When you make a Charisma check related to convincing or deceiving a creature, or performing an act",
+                "actionType": "other",
                 "damage.parts": [
                     [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                        "1d6"
                     ]
                 ],
-                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll",
-                "save.ability": "str"
+                "rsr5e.quickDamage.context.0": "Bonus to ability check"
             }
         },
 
         {
-            "name": "Distracting Strike",
+            "name": "Body Balance",
             "source": "DZC:ANA:Ro",
             "page": 7,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
             "consumes": {
-                "name": "Superiority Die",
+                "name": "Roguish Talents",
                 "amount": 1
             },
 			"featureType": [
-				"DZC:M"
+				"DZC:T",
+                "DZC:T:ST"
             ],
             "entries": [
-                "When you hit a creature with a weapon attack, you can expend one superiority die to distract the creature, giving your allies an opening. You add the superiority die to the attack's damage roll. The next attack roll against the target by an attacker other than you has advantage if the attack is made before the start of your next turn."
+                "You can spend your Talent die on saving throws against being {@condition grappled}, pushed, or knocked {@condition prone}."
             ],
             "foundrySystem": {
                 "activation.type": "special",
-                "activation.condition": "When you hit a creature with a weapon attack",
                 "actionType": "other",
                 "damage.parts": [
                     [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
-            }
-        },
-
-        {
-            "name": "Evasive Footwork",
-            "source": "DZC:ANA:Ro",
-            "page": 7,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-            "consumes": {
-                "name": "Superiority Die",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:M"
-            ],
-            "entries": [
-                "When you move, you can expend one superiority die, rolling the die and adding the number rolled to your AC until you stop moving."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you move",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to AC"
-            }
-        },
-
-        {
-            "name": "Feinting Attack",
-            "source": "DZC:ANA:Ro",
-            "page": 7,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-            "consumes": {
-                "name": "Superiority Die",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:M"
-            ],
-            "entries": [
-                "You can expend one superiority die and use a bonus action on your turn to feint, choosing one creature within 5 feet of you as your target. You have advantage on your next attack roll against that creature this turn. If that attack hits, add the superiority die to the attack's damage roll."
-            ],
-            "foundrySystem": {
-                "activation.type": "bonus action",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
-            }
-        },
-
-        {
-            "name": "Goading Attack",
-            "source": "DZC:ANA:Ro",
-            "page": 7,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-            "consumes": {
-                "name": "Superiority Die",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:M"
-            ],
-            "entries": [
-                "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to goad the target into attacking you. You add the superiority die to the attack's damage roll, and the target must make a Wisdom saving throw. On a failed save, the target has disadvantage on all attack rolls against targets other than you until the end of your next turn."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you hit a creature with a weapon attack",
-                "actionType": "save",
-                "damage.parts": [
-                    [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll",
-                "save.ability": "wis"
-            }
-        },
-
-        {
-            "name": "Grappling Attack",
-            "source": "DZC:ANA:Ro",
-            "page": 7,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-            "consumes": {
-                "name": "Superiority Die",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:M"
-            ],
-            "entries": [
-                "Immediately after you hit a creature with a melee attack on your turn, you can expend one superiority die and then try to grapple the target as a bonus action. Add the superiority die to your Strength ({@skill Athletics}) check."
-            ],
-            "foundrySystem": {
-                "activation.type": "bonus action",
-                "activation.condition": "Immediately after you hit a creature with a melee attack on your turn",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to skill check"
-            }
-        },
-
-        {
-            "name": "Lunging Attack",
-            "source": "DZC:ANA:Ro",
-            "page": 7,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-            "consumes": {
-                "name": "Superiority Die",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:M"
-            ],
-            "entries": [
-                "When you make a melee weapon attack on your turn, you can expend one superiority die to increase your reach for that attack by 5 feet. If you hit, you add the superiority die to the attack's damage roll."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you hit a creature with a weapon attack",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
-            }
-        },
-
-        {
-            "name": "Maneuvering Attack",
-            "source": "DZC:ANA:Ro",
-            "page": 7,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-            "consumes": {
-                "name": "Superiority Die",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:M"
-            ],
-            "entries": [
-                "When you hit a creature with a weapon attack, you can expend one superiority die to maneuver one of your comrades into a more advantageous position. You add the superiority die to the attack's damage roll, and you choose a friendly creature who can see or hear you. That creature can use its reaction to move up to half its speed without provoking opportunity attacks from the target of your attack."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you hit a creature with a weapon attack",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
-            }
-        },
-
-        {
-            "name": "Menacing Attack",
-            "source": "DZC:ANA:Ro",
-            "page": 7,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-            "consumes": {
-                "name": "Superiority Die",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:M"
-            ],
-            "entries": [
-                "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to frighten the target. You add the superiority die to the attack's damage roll, and the target must make a Wisdom saving throw. On a failed save, it is {@condition frightened} of you until the end of your next turn."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you hit a creature with a weapon attack",
-                "actionType": "save",
-                "damage.parts": [
-                    [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll",
-                "save.ability": "wis"
-            }
-        },
-        
-        {
-            "name": "Indomitable",
-            "source": "DZC:ANA:Ro",
-            "page": 7,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-            "consumes": {
-                "name": "Superiority Die",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:M"
-            ],
-            "entries": [
-                "When you fail a saving throw, you can use your reaction and expend one superiority die to add it to the roll, potentially causing the save to succeed."
-            ],
-            "foundrySystem": {
-                "activation.type": "reaction",
-                "activation.condition": "When you fail a saving throw",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                        "1d6"
                     ]
                 ],
                 "rsr5e.quickDamage.context.0": "Bonus to saving throw"
@@ -1785,140 +1409,342 @@
         },
 
         {
-            "name": "Parry",
+            "name": "Mental Resistance",
             "source": "DZC:ANA:Ro",
             "page": 7,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
             "consumes": {
-                "name": "Superiority Die",
+                "name": "Roguish Talents",
                 "amount": 1
             },
 			"featureType": [
-				"DZC:M"
+				"DZC:T",
+                "DZC:T:ST"
             ],
             "entries": [
-                "When another creature damages you with a melee attack, you can use your reaction and expend one superiority die to reduce the damage by the number you roll on your superiority die + your Dexterity modifier."
-            ],
-            "foundrySystem": {
-                "activation.type": "reaction",
-                "activation.condition": "When another creature damages you with a melee attack",
-                "actionType": "healing",
-                "damage.parts": [
-                    [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2)) + @abilities.dex.mod",
-                        "healing"
-                    ]
-                ]
-            }
-        },
-
-        {
-            "name": "Precision Attack",
-            "source": "DZC:ANA:Ro",
-            "page": 7,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-            "consumes": {
-                "name": "Superiority Die",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:M"
-            ],
-            "entries": [
-                "When you make a weapon attack roll against a creature, you can expend one superiority die to add it to the roll."
+                "You can spend your Talent die on Intelligence and Wisdom saving throws against magic."
             ],
             "foundrySystem": {
                 "activation.type": "special",
-                "activation.condition": "When you make a weapon attack roll against a creature",
                 "actionType": "other",
                 "damage.parts": [
                     [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                        "1d6"
                     ]
                 ],
-                "rsr5e.quickDamage.context.0": "Bonus to weapon attack roll"
+                "rsr5e.quickDamage.context.0": "Bonus to saving throw"
             }
         },
 
         {
-            "name": "Pushing Attack",
+            "name": "Physical Fortitude",
             "source": "DZC:ANA:Ro",
             "page": 7,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
             "consumes": {
-                "name": "Superiority Die",
+                "name": "Roguish Talents",
                 "amount": 1
             },
 			"featureType": [
-				"DZC:M"
+				"DZC:T",
+                "DZC:T:ST"
             ],
             "entries": [
-                "When you hit with a weapon attack a creature no more than one size larger than you, you can expend one superiority die to attempt to drive the target back. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you push the target up to 10 feet away from you."
+                "You can spend your Talent die on Strength and Constitution saving throws against magic."
             ],
             "foundrySystem": {
                 "activation.type": "special",
-                "activation.condition": "When you hit a creature with a weapon attack",
-                "actionType": "save",
-                "damage.parts": [
-                    [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll",
-                "save.ability": "str"
-            }
-        },
-
-        {
-            "name": "Quick Toss",
-            "source": "DZC:ANA:Ro",
-            "page": 8,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-            "consumes": {
-                "name": "Superiority Die",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:M"
-            ],
-            "entries": [
-                "As a bonus action, you can expend one superiority die and make a ranged attack with a weapon that has the thrown property. You can draw the weapon as part of making this attack. If you hit, add the superiority die to the weapon's damage roll."
-            ],
-            "foundrySystem": {
-                "activation.type": "bonus action",
-                "activation.cost": 1,
                 "actionType": "other",
                 "damage.parts": [
                     [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                        "1d6"
                     ]
                 ],
-                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
+                "rsr5e.quickDamage.context.0": "Bonus to saving throw"
             }
         },
 
         {
-            "name": "Rally",
+            "name": "Resistant Body",
             "source": "DZC:ANA:Ro",
-            "page": 8,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "page": 7,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
             "consumes": {
-                "name": "Superiority Die",
+                "name": "Roguish Talents",
                 "amount": 1
             },
 			"featureType": [
-				"DZC:M"
+				"DZC:T",
+                "DZC:T:ST"
             ],
             "entries": [
-                "On your turn, you can use a bonus action and expend one superiority die to bolster the resolve of one of your companions. When you do so, choose a friendly creature who can see or hear you. That creature gains temporary hit points equal to the superiority die roll + your Charisma modifier."
+                "You can spend your Talent die on saving throws against poisons and diseases."
             ],
             "foundrySystem": {
-                "activation.type": "bonus action",
-                "activation.cost": 1,
+                "activation.type": "special",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d6"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to saving throw"
+            }
+        },
+
+        {
+            "name": "Trap Connoisseur",
+            "source": "DZC:ANA:Ro",
+            "page": 7,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Roguish Talents",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:T",
+                "DZC:T:ST"
+            ],
+            "entries": [
+                "You can spend your Talent die on saving throws against traps."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d6"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to saving throw"
+            }
+        },
+
+        {
+            "name": "Trickster",
+            "source": "DZC:ANA:Ro",
+            "page": 7,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Roguish Talents",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:T",
+                "DZC:T:ST"
+            ],
+            "entries": [
+                "You can spend your Talent die on Dexterity and Charisma saving throws against magic."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d6"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to saving throw"
+            }
+        },
+
+        {
+            "name": "Unwavering Heart",
+            "source": "DZC:ANA:Ro",
+            "page": 7,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Roguish Talents",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:T",
+                "DZC:T:ST"
+            ],
+            "entries": [
+                "You can spend your Talent die on saving throws against being {@condition charmed} or {@condition frightened}."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d6"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to saving throw"
+            }
+        },
+
+        {
+            "name": "Alchemy",
+            "source": "DZC:ANA:Ro",
+            "page": 7,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Roguish Talents",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:T",
+                "DZC:T:TnK"
+            ],
+            "entries": [
+                "When you use {@item alchemist's supplies|phb} to craft a dose of {@item acid (vial)|phb|acid} acid or {@item alchemist's fire|phb}, you can spend your Talent die to increase the initial damage of that item by an amount equal to the total rolled. This extra damage lasts for 24 hours after the item is crafted."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d6"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to acid (vial) or alchemist's fire initial damage"
+            }
+        },
+
+        {
+            "name": "Disguising",
+            "source": "DZC:ANA:Ro",
+            "page": 7,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Roguish Talents",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:T",
+                "DZC:T:TnK"
+            ],
+            "entries": [
+                "While wearing a disguise you made using a {@item disguise kit|phb} and a creature tries to see through it, you can spend your Talent die and increase the DC for that check by the total rolled."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d6"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to disguise DC"
+            }
+        },
+
+        {
+            "name": "Gaming",
+            "source": "DZC:ANA:Ro",
+            "page": 7,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Roguish Talents",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:T",
+                "DZC:T:TnK"
+            ],
+            "entries": [
+                "Using a {@item gaming set|phb} you can spend one day gambling or performing a show with it. Spend your Talent die. Roll a d20 at the end of the day. Add your proficiency bonus to the roll if you have proficiency with that tool. If you roll a 15 or higher, you gain an amount of sp equal to the total rolled in your Talent die. If you are gambling, you lose that amount of sp if you fail the check, and double the amount you win if you roll a 20 or higher."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d6"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Amount of sp for this activity"
+            }
+        },
+
+        {
+            "name": "Musical",
+            "source": "DZC:ANA:Ro",
+            "page": 7,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Roguish Talents",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:T",
+                "DZC:T:TnK"
+            ],
+            "entries": [
+                "When you are performing a show in a public place using a {@item musical instrument|phb}, and your performance succeeds on captivating the public, you can spend your Talent die. You gain a number of fans equal to the total rolled.",
+                {
+                    "type": "inset",
+                    "name": "What if a Fan?",
+                    "entries": [
+                        "Fans are creatures who are friendly to you, and might offer some goods or services to you with almost no cost in return. The fan will assist you as much as a reasonable person would assist someone they admired. However, if a fan is {@condition charmed}, they might be convinced to go beyond, even if it costs them dearly."
+                    ]
+                }
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d6"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Amount of fans"
+            }
+        },
+
+        {
+            "name": "Poisoning",
+            "source": "DZC:ANA:Ro",
+            "page": 7,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Roguish Talents",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:T",
+                "DZC:T:TnK"
+            ],
+            "entries": [
+                "When you craft a {@item basic poison (vial)|phb|vial of basic poison} with a {@item poisoner's kit|phb}, you can spend your Talent die to improve its potency. When you do so, the first creature affected by that poison will take a penalty to the next ability check, saving throw, or attack roll it makes before the next minute. The penalty equals the total rolled on your Talent die. The poison retains this additional effect for 24 hours after it's crafted."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d6"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Penalty to the die roll"
+            }
+        },
+
+        {
+            "name": "Tending Wounds",
+            "source": "DZC:ANA:Ro",
+            "page": 7,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Roguish Talents",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:T",
+                "DZC:T:TnK"
+            ],
+            "entries": [
+                "When you use a {@item healer's kit|phb} on a creature, you can spend your Talent die to give the creature temporary hit points equal to the total rolled. These temporary hit points last for 10 minutes."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
                 "actionType": "healing",
                 "damage.parts": [
                     [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2)) + @abilities.cha.mod",
+                        "1d6",
                         "temphp"
                     ]
                 ]
@@ -1926,269 +1752,199 @@
         },
 
         {
-            "name": "Riposte",
+            "name": "Thievery",
             "source": "DZC:ANA:Ro",
-            "page": 8,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "page": 7,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
             "consumes": {
-                "name": "Superiority Die",
+                "name": "Roguish Talents",
                 "amount": 1
             },
 			"featureType": [
-				"DZC:M"
+				"DZC:T",
+                "DZC:T:TnK"
             ],
             "entries": [
-                "When a creature misses you with a melee attack, you can use your reaction and expend one superiority die to make a melee weapon attack against the creature. If you hit, you add the superiority die to the attack's damage roll."
+                "You can spend your Talent die whenever you use {@item thieves' tools|phb} to successfully unlock a treasure chest, a door to a trasure room, or other type of receptacle that contains loot. If you do, you find a number of gp within that treasure equal to the total rolled in your Talent die."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d6"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Extra gp"
+            }
+        },
+
+        {
+            "name": "Aiming",
+            "source": "DZC:ANA:Ro",
+            "page": 7,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Roguish Talents",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:T",
+                "DZC:T:C"
+            ],
+            "entries": [
+                "If you haven't moved on your turn and make a ranged weapon attack, you can spend your Talent die and add it to the attack roll. After you use this talent, your speed is 0 and can't use it again before the end of your turn."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d6"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to attack roll"
+            }
+        },
+
+        {
+            "name": "Blocking",
+            "source": "DZC:ANA:Ro",
+            "page": 7,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Roguish Talents",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:T",
+                "DZC:T:C"
+            ],
+            "entries": [
+                "When you take damage, you can use your reaction to spend your Talent die and reduce the damage taken by the total rolled."
             ],
             "foundrySystem": {
                 "activation.type": "reaction",
-                "activation.condition": "When a creature misses you with a melee attack",
-                "activation.cost": 1,
                 "actionType": "other",
                 "damage.parts": [
                     [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                        "1d6"
                     ]
                 ],
-                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
+                "rsr5e.quickDamage.context.0": "Reduced damage"
             }
         },
 
         {
-            "name": "Slowing Attack",
+            "name": "Cutting",
             "source": "DZC:ANA:Ro",
-            "page": 8,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "page": 7,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
             "consumes": {
-                "name": "Superiority Die",
+                "name": "Roguish Talents",
                 "amount": 1
             },
 			"featureType": [
-				"DZC:M"
+				"DZC:T",
+                "DZC:T:C"
             ],
             "entries": [
-                "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to reduce that creature's speed. Roll your superiority die. The creature must succeed on a Constitution saving throw or have its speed reduced an ammount in feet equal to 5 times the number rolled on your superiority die. This effect lasts until the start of your next turn. If the maneuver reduces a creature's speed to 0, it becomes {@condition restrained} for the duration."
+                "When you hit a creature with a weapon attack and have advantage on the attack roll, you can spend your Talent die on the attack's damage roll.",
+                "You don't need advantage on the attack roll if another creature is distracting the target (like when using the {@action Help|phb} or {@action Distract|DZC:ANA:Ro} action) and you don't have disadvantage on the attack roll."
             ],
             "foundrySystem": {
                 "activation.type": "special",
-                "activation.condition": "When you hit a creature with a melee weapon attack",
-                "activation.cost": 1,
-                "actionType": "save",
-                "damage.parts": [
-                    [
-                        "5*1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Speed reduced in feet",
-                "save.ability": "con"
-            }
-        },
-
-        {
-            "name": "Sweeping Attack",
-            "source": "DZC:ANA:Ro",
-            "page": 8,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-            "consumes": {
-                "name": "Superiority Die",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:M"
-            ],
-            "entries": [
-                "When you hit a creature with a melee weapon attack, you can expend one superiority die to attempt to damage another creature with the same attack. Choose another creature within 5 feet of the original target and within your reach. If the original attack roll would hit the second creature, it takes damage equal to the number you roll on your superiority die. The damage is of the same type dealt by the original attack."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you hit a creature with a melee weapon attack",
-                "activation.cost": 1,
                 "actionType": "other",
                 "damage.parts": [
                     [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                        "1d6"
                     ]
                 ],
-                "rsr5e.quickDamage.context.0": "Weapon damage roll"
+                "rsr5e.quickDamage.context.0": "Bonus to weapon attack damage"
             }
         },
 
         {
-            "name": "Tactical Assessment",
+            "name": "Dodging",
             "source": "DZC:ANA:Ro",
-            "page": 8,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "page": 7,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
             "consumes": {
-                "name": "Superiority Die",
+                "name": "Roguish Talents",
                 "amount": 1
             },
 			"featureType": [
-				"DZC:M"
+				"DZC:T",
+                "DZC:T:C"
             ],
             "entries": [
-                "When you make an Intelligence ({@skill Investigation}), an Intelligence ({@skill History}), or a Wisdom ({@skill Insight}) check, you can expend one superiority die and add the superiority die to the ability check."
+                "When a creature that you can see targets you with an attack, you can use your reaction to spend your Talent die and add it to your AC against that attack."
             ],
             "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you make an Intelligence (Investigation), an Intelligence (History), or a Wisdom (Insight) check",
-                "activation.cost": 1,
+                "activation.type": "reaction",
                 "actionType": "other",
                 "damage.parts": [
                     [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                        "1d6"
                     ]
                 ],
-                "rsr5e.quickDamage.context.0": "Bonus to skill check"
+                "rsr5e.quickDamage.context.0": "Bonus to AC"
             }
         },
 
         {
-            "name": "Trip Attack",
+            "name": "Striking",
             "source": "DZC:ANA:Ro",
-            "page": 8,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "page": 7,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
             "consumes": {
-                "name": "Superiority Die",
+                "name": "Roguish Talents",
                 "amount": 1
             },
 			"featureType": [
-				"DZC:M"
+				"DZC:T",
+                "DZC:T:C"
             ],
             "entries": [
-                "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock the target down. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you knock the target {@condition prone}."
+                "If you target a creature with a melee weapon attack and no other creature is within 5 feet from you or the target, you can spend your Talent die and add it to the attack roll."
             ],
             "foundrySystem": {
                 "activation.type": "special",
-                "activation.condition": "When you hit a creature with a weapon attack",
-                "actionType": "save",
+                "actionType": "other",
                 "damage.parts": [
                     [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                        "1d6"
                     ]
                 ],
-                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll",
-                "save.ability": "dex"
+                "rsr5e.quickDamage.context.0": "Bonus to attack roll"
             }
         },
 
         {
-            "name": "Abjuration",
+            "name": "Trapping",
             "source": "DZC:ANA:Ro",
-            "page": 5,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "page": 7,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+            "consumes": {
+                "name": "Roguish Talents",
+                "amount": 1
+            },
 			"featureType": [
-				"DZC:WB"
+				"DZC:T",
+                "DZC:T:C"
             ],
             "entries": [
-                "A creature can't be disarmed of this weapon against its will."
-            ]
-        },
-
-        {
-            "name": "Conjuration",
-            "source": "DZC:ANA:Ro",
-            "page": 5,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-			"featureType": [
-				"DZC:WB"
-            ],
-            "entries": [
-                "You can summon your bonded weapons to your hands as a bonus action, causing it to teleport instantly to your hand."
-            ],
-            "foundrySystem": {
-                "activation.type": "bonus action"
-            }
-        },
-
-        {
-            "name": "Divination",
-            "source": "DZC:ANA:Ro",
-            "page": 5,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-			"featureType": [
-				"DZC:WB"
-            ],
-            "entries": [
-                "When you roll a 1 on an attack roll using your bonded weapons, you can reroll the die. You must use the new result."
-            ]
-        },
-
-        {
-            "name": "Enchantment",
-            "source": "DZC:ANA:Ro",
-            "page": 5,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-			"featureType": [
-				"DZC:WB"
-            ],
-            "entries": [
-                "If you hit a creature with your bonded weapons, it has disadvantage on the next saving throw it makes against being {@condition charmed} or {@condition frightened} by a spell you cast before the end of your next turn."
-            ]
-        },
-
-        {
-            "name": "Evocation",
-            "source": "DZC:ANA:Ro",
-            "page": 5,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-			"featureType": [
-				"DZC:WB"
-            ],
-            "entries": [
-                "When you make an attack with your bonded weapon, you can change its damage type to acid, cold, fire, lightning, or thunder."
-            ]
-        },
-
-        {
-            "name": "Illusion",
-            "source": "DZC:ANA:Ro",
-            "page": 5,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-			"featureType": [
-				"DZC:WB"
-            ],
-            "entries": [
-                "The first time you attack with each of your bonded weapons on each of your turns, you create a mirage of your attack that gives you advantage on the attack roll. A creature is unaffected by this feature if it can’t see, if it relies on senses other than sight, or if it can perceive illusions as false."
-            ]
-        },
-
-        {
-            "name": "Necromancy",
-            "source": "DZC:ANA:Ro",
-            "page": 6,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-			"featureType": [
-				"DZC:WB"
-            ],
-            "entries": [
-                "When you reduce a creature to 0 hit points with an attack made with your bonded weapons, you gain a number of temporary hit points equal to your Intelligence modifier (minimum of 1)."
+                "When you are setting up a trap that deals damage when activated, you can spend your Talent die and add it to that trap's damage. This effect lasts for 1 hour before it's activated."
             ],
             "foundrySystem": {
                 "activation.type": "special",
-                "activation.condition": "When you reduce a creature to 0 hit points with an attack made with your bonded weapons",
-                "actionType": "healing",
+                "actionType": "other",
                 "damage.parts": [
                     [
-                        "@abilities.int.mod",
-                        "temphp"
+                        "1d6"
                     ]
-                ]
-            }
-        },
-
-        {
-            "name": "Transmutation",
-            "source": "DZC:ANA:Ro",
-            "page": 6,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-			"featureType": [
-				"DZC:WB"
-            ],
-            "entries": [
-                "As a bonus action, you can turn your light bonded weapons into heavy weapons, and viceversa. Alternatively, you can add or remove the property into your bonded weapons if it didn't have it initially."
-            ],
-            "foundrySystem": {
-                "activation.type": "bonus action"
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to trap's initial damage"
             }
         }
 
@@ -2993,6 +2749,81 @@
             ]
         }
 	],
+
+    "action": [
+        {
+            "source": "DZC:ANA:Ro",
+            "name": "Convince",
+            "page": 0,
+            "entries": [
+                "As an action, you attempt to manipulate a creature into thinking what you want it to think. Choose a creature within 30 feet from you that can see or hear you. Make a Charisma ({@skill Persuasion}) or Charisma ({@skill Deception}) check (your choice) contested by the target's Wisdom ({@skill Insight}) check. If you have done anything harmful to the creature within the last minute, you have disadvantage on your check. If you succeed, the creature will be swayed to your point of view to a reasonable degree. This can also cause the creature to turn friendly, indifferent, or hostile towards certain creatures, either of your or the DM's choice. Your DM has the final judgement on what the creature will do or how it will behave."
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ]
+        },
+        {
+            "source": "DZC:ANA:Ro",
+            "name": "Disable",
+            "page": 0,
+            "entries": [
+                "As an action, you attempt to momentarily disable one of a creature's senses, be it throwing debris at its eyes, making a deafening noise next to its ears, or dishing out a dirty attack to its eyes or ears. Choose a creature within your reach that is no more than one size larger than you. You can either target its eyes or ears, if it has any. The creature must succeed on a DC 10 Dexterity or Constitution saving throw (its choice) or become {@condition blinded} or {@condition deafened} until the start of your next turn, if you targeted the eyes or ears, respectively."
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ]
+        },
+        {
+            "source": "DZC:ANA:Ro",
+            "name": "Distract",
+            "page": 0,
+            "entries": [
+                "As an action, you do everything you can to distract one creature that you can see. Until the start of your next turn, while that creature is within 5 feet from you and you aren't incapacitated, your target has disadvantage on attack rolls against targets other than you, and disadvantage on {@skill Perception} checks."
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ]
+        },
+        {
+            "source": "DZC:ANA:Ro",
+            "name": "Intimidate",
+            "page": 0,
+            "entries": [
+                "As an action, you attempt to intimidate a creature. Choose a creature within 30 feet from you that can see or hear you. Make a Charisma ({@skill Intimidation}) check contested by the target's Wisdom ({@skill Insight}) check. If you succeed, the target is {@condition frightened} of you until the start of your next turn."
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ]
+        },
+        {
+            "source": "DZC:ANA:Ro",
+            "name": "Steal",
+            "page": 0,
+            "entries": [
+                "As an action, you try to take a Small object without being noticed, which usually requires at least one free hand. The object you are trying to steal can be unsecured, worn or carried, but it can't weight more than half a pound, and it mustn't be extremely noticeable or difficult to remove (like worn clothes or armor, or wielded objects).",
+                "To steal an object you must make a Dexterity ({@skill Sleight of Hands}) check against the Wisdom ({@skill Perception}) check of any observer in the area (passive Perception if they aren't in combat or alert), including the creature you are trying to steal from (if any). An observer sees you if it succeeds on the check. If the object is unsecured, you take it regardless of this result. If you fail on the check against the creature you are trying to steal from, you also fail to take the object. You also automatically fail the check against the creature you are trying to steal from if it's in combat or alert.",
+                "If the object is closely guarded (like inside a pocket or a sheathed weapon), you take a penalty to your Sleight of Hands check, usually a -5 penalty."
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ]
+        }
+    ],
 	
 	"classFluff": [
 		{
@@ -3051,6 +2882,34 @@
                                     "name": "Can I add this Bonus?",
                                     "entries": [
                                         "Sometimes an ability, feature, or spell allows you to add a bonus to an attack roll, ability check, or saving throw, such as the bard's Bardic Inspiration, a war cleric's  Channel Divinity: Guided Strike, the *bless* spell, the martial technique boost offensive, and many others. Other abilities allow you to reroll the die for those die rolls, such as the drunken master monk's Drunkard's Luck. There is another type of abilities, much rarer than the others, ones that allow you to add special effects to your actions, reactions, die rolls, etc., such as the monk's Evasion ki feature. These abilities have in common the lack of key words for its trigger, such as hit, succeed, miss, or fail, which is why you can choose to use these after seeing the roll, but before the DM says wether the roll succeeds or fails."
+                                    ]
+                                },
+                                {
+                                    "type": "inset",
+                                    "name": "Changes to Unarmed Strikes and the Finesse Property",
+                                    "entries": [
+                                        "In this compendium unarmed strikes and the finesse property suffer important changes meant to keep balance in check.",
+                                        {
+                                            "type": "entries",
+                                            "name": "Finesse Property",
+                                            "entries": [
+                                                "The property now allows to choose between your Strength or Dexterity modifier only for the attack roll with the weapon, but not for the damage roll. For the damage roll you still have to use your Strength modifier for melee weapon attacks or your Dexterity modifier for ranged weapon attacks."
+                                            ]
+                                        },
+                                        {
+                                            "type": "entries",
+                                            "name": "Unarmed Strikes",
+                                            "entries": [
+                                                "Unarmed strikes are now considered to have the finesse and light properties."
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "inset",
+                                    "name": "Additional Actions",
+                                    "entries": [
+                                        "You can incorporate the following actions into your game: {@action Convince|DZC:ANA:Ro}, {@action Disable|DZC:ANA:Ro}, {@action Distract|DZC:ANA:Ro}, {@action Intimidate|DZC:ANA:Ro}, and {@action Steal|DZC:ANA:Ro}"
                                     ]
                                 }
 							]
