@@ -2055,7 +2055,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Also at 3rd level, you learn the {{@optfeature Pickpocketing|DZC:ANA:Ro} tactic, or another one of your choice if you already know it. This tactic doesn't count against the number of tactics you know. In addition, you can also attempt to steal from creatures that are in combat or alert, but you take a –5 penalty to your check.",
+				"Also at 3rd level, you learn the {@optfeature Pickpocketing|DZC:ANA:Ro} tactic, or another one of your choice if you already know it. This tactic doesn't count against the number of tactics you know. In addition, you can also attempt to steal from creatures that are in combat or alert, but you take a –5 penalty to your check.",
                 {
                     "type": "refOptionalfeature",
 					"optionalfeature": "Pickpocketing|DZC:ANA:Ro"
