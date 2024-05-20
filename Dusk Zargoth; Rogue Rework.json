@@ -754,7 +754,7 @@
             "source": "DZC:ANA:Ro",
             "className": "Rogue Rework",
             "classSource": "DZC:ANA:Ro",
-            "page": 4,
+            "page": 3,
             "level": 3,
             "entries": [
                 "At 3rd level, choose two of your proficiencies, either in skills or with tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.",
@@ -775,7 +775,7 @@
             "source": "DZC:ANA:Ro",
             "className": "Rogue Rework",
             "classSource": "DZC:ANA:Ro",
-            "page": 4,
+            "page": 3,
             "level": 10,
             "entries": [
                 "At 10th level, you can choose two more of your skill or tool proficiencies to gain this benefit."
@@ -1050,7 +1050,7 @@
 				"DZC:UT"
             ],
             "entries": [
-                "It's easier to mess someone up when your gang's with you, and you're less likely to be messed with. If you and at least 2 friendly creatures are within 10 feet of the same creature, and no other hostile creature is within 10 feet from you and your companions, then your group has advantage on Intimidation and Persuasion checks, and advantage on saving throws against being charmed or frightened against the surrounded target."
+                "It's easier to mess someone up when your gang's with you, and you're less likely to be messed with. If you and at least 2 friendly creatures are within 10 feet of the same creature, and no other hostile creature is within 10 feet from you and your companions, then your group has advantage on {@skill Intimidation} and {@skill Persuasion} checks, and advantage on saving throws against being {@condition charmed} or {@condition frightened} against the surrounded target."
             ]
         },
 
@@ -1076,7 +1076,7 @@
 				"DZC:UT"
             ],
             "entries": [
-                "No purse is safe from you. You take no penalty to your checks for trying to steal a closely guarded object, as long as the object wouldn't be extremely noticeable or time consuming to remove (like worn shoes or armor, or wielded objects)."
+                "No purse is safe from you. You take no penalty to your checks for trying to {@action Steal|DZC:ANA:Ro|steal} a closely guarded object, as long as the object wouldn't be extremely noticeable or time consuming to remove (like worn shoes or armor, or wielded objects)."
             ]
         },
 
@@ -1923,7 +1923,7 @@
         {
             "name": "Trapping",
             "source": "DZC:ANA:Ro",
-            "page": 7,
+            "page": 8,
             "foundryImg": "modules/plutonium/media/icon/skills.svg",
             "consumes": {
                 "name": "Roguish Talents",
@@ -1952,705 +1952,286 @@
 	
 	"subclass": [
 		{
-			"name": "Champion",
-			"shortName": "Champion",
-			"source": "DZC:ANA:Ro",
-			"className": "Rogue Rework",
-			"classSource": "DZC:ANA:Ro",
-			"page": 4,
-			"foundryImg": "icons/skills/melee/strike-sword-slashing-red.webp",
-			"subclassFeatures": [
-				"Champion|Rogue Rework|DZC:ANA:Ro|Champion|DZC:ANA:Ro|3",
-				"Remarkable Athlete|Rogue Rework|DZC:ANA:Ro|Champion|DZC:ANA:Ro|7",
-                "Improved Critical|Rogue Rework|DZC:ANA:Ro|Champion|DZC:ANA:Ro|7",
-				"Diamond Body|Rogue Rework|DZC:ANA:Ro|Champion|DZC:ANA:Ro|15",
-                "Improved Critical|Rogue Rework|DZC:ANA:Ro|Champion|DZC:ANA:Ro|15",
-				"Survivor|Rogue Rework|DZC:ANA:Ro|Champion|DZC:ANA:Ro|18",
-                "Improved Critical|Rogue Rework|DZC:ANA:Ro|Champion|DZC:ANA:Ro|18"
-			]
-		},
-        {
-			"name": "Arcane Knight",
-			"shortName": "Arcane Knight",
+			"name": "Thief",
+			"shortName": "Thief",
 			"source": "DZC:ANA:Ro",
 			"className": "Rogue Rework",
 			"classSource": "DZC:ANA:Ro",
 			"page": 5,
-			"foundryImg": "icons/magic/unholy/hand-weapon-glow-black-green.webp",
-            "spellcastingAbility": "int",
-			"casterProgression": "1/3",
-            "preparedSpells": "<$level$>/3 + <$int_mod$>",
-			"cantripProgression": [
-				0,
-				0,
-				3,
-				3,
-				3,
-				3,
-				3,
-				3,
-				3,
-				4,
-				4,
-				4,
-				4,
-				4,
-				4,
-				4,
-				4,
-				4,
-				4,
-				4
-			],
-            "subclassSpells": [
-                {
-					"className": "Fighter",
-					"classSource": "PHB",
-					"subclassName": "Eldritch Knight",
-					"subclassSource": "PHB"
-				}
-            ],
-			"additionalSpells": [
-				{
-					"expanded": {
-						"3": [
-							{
-								"all": "level=0|class=Wizard"
-							},
-							{
-								"all": "level=1|class=Wizard"
-							}
-						],
-						"7": [
-							{
-								"all": "level=2|class=Wizard"
-							}
-						],
-						"13": [
-							{
-								"all": "level=3|class=Wizard"
-							}
-						],
-						"19": [
-							{
-								"all": "level=4|class=Wizard"
-							}
-						]
-					}
-				}
-			],
-			"subclassTableGroups": [
-				{
-					"subclasses": [
-						{
-							"name": "Eldritch Knight",
-							"source": "PHB"
-						}
-					],
-					"colLabels": [
-						"{@filter Cantrips Known|spells|level=0|subclass=Rogue Rework: Arcane Knight}"
-					],
-					"rows": [
-						[
-							0
-						],
-						[
-							0
-						],
-						[
-							3
-						],
-						[
-							3
-						],
-						[
-							3
-						],
-						[
-							3
-						],
-						[
-							3
-						],
-						[
-							3
-						],
-						[
-							3
-						],
-						[
-							4
-						],
-						[
-							4
-						],
-						[
-							4
-						],
-						[
-							4
-						],
-						[
-							4
-						],
-						[
-							4
-						],
-						[
-							4
-						],
-						[
-							4
-						],
-						[
-							4
-						],
-						[
-							4
-						],
-						[
-							4
-						]
-					]
-				},
-				{
-					"title": "Spell Slots per Spell Level",
-					"subclasses": [
-						{
-							"name": "Arcane Knight",
-							"source": "DZC:ANA:Ro"
-						}
-					],
-					"colLabels": [
-                        "{@filter 1st|spells|level=1|subclass=Fighter: Eldritch Knight}",
-						"{@filter 2nd|spells|level=2|subclass=Fighter: Eldritch Knight}",
-						"{@filter 3rd|spells|level=3|subclass=Fighter: Eldritch Knight}",
-						"{@filter 4th|spells|level=4|subclass=Fighter: Eldritch Knight}"
-					],
-					"rowsSpellProgression": [
-						[
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							0,
-							0,
-							0,
-							0
-						],
-						[
-							2,
-							0,
-							0,
-							0
-						],
-						[
-							3,
-							0,
-							0,
-							0
-						],
-						[
-							3,
-							0,
-							0,
-							0
-						],
-						[
-							3,
-							0,
-							0,
-							0
-						],
-						[
-							4,
-							2,
-							0,
-							0
-						],
-						[
-							4,
-							2,
-							0,
-							0
-						],
-						[
-							4,
-							2,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							0,
-							0
-						],
-						[
-							4,
-							3,
-							2,
-							0
-						],
-						[
-							4,
-							3,
-							2,
-							0
-						],
-						[
-							4,
-							3,
-							2,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							0
-						],
-						[
-							4,
-							3,
-							3,
-							1
-						],
-						[
-							4,
-							3,
-							3,
-							1
-						]
-					]
-				}
-			],
+			"foundryImg": "",
 			"subclassFeatures": [
-				"Arcane Knight|Rogue Rework|DZC:ANA:Ro|Arcane Knight|DZC:ANA:Ro|3",
-				"War Magic|Rogue Rework|DZC:ANA:Ro|Arcane Knight|DZC:ANA:Ro|7",
-				"Arcane Charge|Rogue Rework|DZC:ANA:Ro|Arcane Knight|DZC:ANA:Ro|15",
-				"War Magic improvement|Rogue Rework|DZC:ANA:Ro|Arcane Knight|DZC:ANA:Ro|18"
-			]
+				"Thief|Rogue Rework|DZC:ANA:Ro|Thief|DZC:ANA:Ro|3",
+				"Sneaky Thief|Rogue Rework|DZC:ANA:Ro|Thief|DZC:ANA:Ro|9",
+                "Mug|Rogue Rework|DZC:ANA:Ro|Thief|DZC:ANA:Ro|13",
+				"Legendary Thief|Rogue Rework|DZC:ANA:Ro|Thief|DZC:ANA:Ro|17"
+            ]
+		},
+        {
+			"name": "Assassin",
+			"shortName": "Assassin",
+			"source": "DZC:ANA:Ro",
+			"className": "Rogue Rework",
+			"classSource": "DZC:ANA:Ro",
+			"page": 5,
+			"foundryImg": "",
+			"subclassFeatures": [
+				"Assassin|Rogue Rework|DZC:ANA:Ro|Assassin|DZC:ANA:Ro|3",
+				"Incapacitate|Rogue Rework|DZC:ANA:Ro|Assassin|DZC:ANA:Ro|9",
+                "Potent Poison|Rogue Rework|DZC:ANA:Ro|Assassin|DZC:ANA:Ro|13",
+				"Assassinate|Rogue Rework|DZC:ANA:Ro|Assassin|DZC:ANA:Ro|17"
+            ]
 		}
 	],
 	"subclassFeature": [
 		{
-			"name": "Champion",
+			"name": "Thief",
 			"source": "DZC:ANA:Ro",
-			"page": 4,
+			"page": 5,
 			"className": "Rogue Rework",
 			"classSource": "DZC:ANA:Ro",
-			"subclassShortName": "Champion",
+			"subclassShortName": "Thief",
 			"subclassSource": "DZC:ANA:Ro",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"A champion is the first thing that comes to mind when anyone thinks of a fighter, a hero who has defeated great foes by overwhelming them with their physical superiority. These fighters lack any special ability, so they train nonstop to bring their bodies to reach limits beyond what is humanly possible.",
+				"Everything comes to he who waits, but quicker yet to he who takes! Such is the law of all thieves. Some do it for the thrill of a challenging robbery, some are driven by greed, and others believe they are distributing the wealths of the world.",
+                "These rogues often operate as burglars, bandits, and even cutpurses. They can steal coins from a purse or a jewel from a high security chamber, all without leaving a clue.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Improved Critical|Rogue Rework|DZC:ANA:Ro|Champion|DZC:ANA:Ro|3"
+					"subclassFeature": "Fast Hands|Rogue Rework|DZC:ANA:Ro|Thief|DZC:ANA:Ro|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Physical Expertise|Rogue Rework|DZC:ANA:Ro|Champion|DZC:ANA:Ro|3"
+					"subclassFeature": "Pickpocket Veteran|Rogue Rework|DZC:ANA:Ro|Thief|DZC:ANA:Ro|3"
 				}
 			]
 		},
 
 		{
-			"name": "Improved Critical",
+			"name": "Fast Hands",
 			"source": "DZC:ANA:Ro",
-			"page": 4,
-			"foundryImg": "icons/skills/melee/blade-tip-chipped-blood-red.webp",
+			"page": 5,
+			"foundryImg": "",
 			"className": "Rogue Rework",
 			"classSource": "DZC:ANA:Ro",
-			"subclassShortName": "Champion",
+			"subclassShortName": "Thief",
 			"subclassSource": "DZC:ANA:Ro",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting at 3rd level, your weapon attacks also score a critical hit on a roll of 19. They also score a critical hit on a roll of 18 at 7th level, 17 at 15th, and 16 at 18th."
-			]
-		},
-
-        {
-			"name": "Improved Critical",
-			"source": "DZC:ANA:Ro",
-			"page": 4,
-			"foundryImg": "icons/skills/melee/blade-tip-chipped-blood-red.webp",
-			"className": "Rogue Rework",
-			"classSource": "DZC:ANA:Ro",
-			"subclassShortName": "Champion",
-			"subclassSource": "DZC:ANA:Ro",
-			"level": 7,
-			"header": 2,
-			"entries": [
-				"Starting at 7th level, your weapon attacks score a critical hit on a roll of 18-20."
-			]
-		},
-
-        {
-			"name": "Improved Critical",
-			"source": "DZC:ANA:Ro",
-			"page": 4,
-			"foundryImg": "icons/skills/melee/blade-tip-chipped-blood-red.webp",
-			"className": "Rogue Rework",
-			"classSource": "DZC:ANA:Ro",
-			"subclassShortName": "Champion",
-			"subclassSource": "DZC:ANA:Ro",
-			"level": 15,
-			"header": 2,
-			"entries": [
-				"Starting at 15th level, your weapon attacks score a critical hit on a roll of 17-20."
-			]
-		},
-
-        {
-			"name": "Improved Critical",
-			"source": "DZC:ANA:Ro",
-			"page": 4,
-			"foundryImg": "icons/skills/melee/blade-tip-chipped-blood-red.webp",
-			"className": "Rogue Rework",
-			"classSource": "DZC:ANA:Ro",
-			"subclassShortName": "Champion",
-			"subclassSource": "DZC:ANA:Ro",
-			"level": 18,
-			"header": 2,
-			"entries": [
-				"Starting at 18th level, your weapon attacks score a critical hit on a roll of 16-20."
-			]
-		},
-
-		{
-			"name": "Physical Expertise",
-			"source": "DZC:ANA:Ro",
-			"page": 4,
-			"foundryImg": "icons/magic/control/silhouette-grow-shrink-tan.webp",
-			"className": "Rogue Rework",
-			"classSource": "DZC:ANA:Ro",
-			"subclassShortName": "Champion",
-			"subclassSource": "DZC:ANA:Ro",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"Also at 3rd level, your dedicated physical training bears fruit. You gain proficiency in Acrobatics and Athletics if you don't already have them. Your proficiency bonus is doubled for any ability check you make that uses these skills.",
-                "In addition, your jumping distance increases by a number of feet equal to five times your proficiency bonus."
+				"Starting at 3rd level, you gain proficiency with {@item thieves' tools|phb} if you don't already have it. In addition, you can use your {{@classFeature Cunning Action|Rogue Rework|DZC:ANA:Ro|2|DZC:ANA:Ro} to take the {@action Steal|DZC:ANA:Ro} action or use thieves' tools to disable a trap as a bonus action."
 			],
-            "skillProficiencies": [
+            "toolProficiencies": [
                 {
-                    "athletics": true,
-                    "acrobatics": true
+                    "thieves' tools": true
                 }
-            ]
+            ],
+            "foundrySystem": {
+                "activation.type": "bonus action"
+            }
 		},
 
-		{
-			"name": "Remarkable Athlete",
+        {
+			"name": "Pickpocket Veteran",
 			"source": "DZC:ANA:Ro",
-			"page": 4,
-			"foundryImg": "icons/magic/control/buff-strength-muscle-damage-orange.webp",
+			"page": 5,
+			"foundryImg": "",
 			"className": "Rogue Rework",
 			"classSource": "DZC:ANA:Ro",
-			"subclassShortName": "Champion",
+			"subclassShortName": "Thief",
 			"subclassSource": "DZC:ANA:Ro",
-			"level": 7,
-			"header": 2,
+			"level": 3,
+			"header": 1,
 			"entries": [
-				"At 7th level, you can add half your proficiency bonus (rounded up) to any Strength, Dexterity, or Constitution check you make that doesn't already use your proficiency bonus.",
-                "In addition, climbing and swimming doesn't cost you extra movement."
+				"Also at 3rd level, you learn the {{@optfeature Pickpocketing|DZC:ANA:Ro} tactic, or another one of your choice if you already know it. This tactic doesn't count against the number of tactics you know. In addition, you can also attempt to steal from creatures that are in combat or alert, but you take a –5 penalty to your check.",
+                {
+                    "type": "refOptionalfeature",
+					"optionalfeature": "Pickpocketing|DZC:UT"
+                }
 			]
 		},
 
 		{
-			"name": "Diamond Body",
+			"name": "Sneaky Thief",
 			"source": "DZC:ANA:Ro",
-			"page": 4,
-			"foundryImg": "icons/magic/control/encase-creature-humanoid-hold.webp",
+			"page": 5,
+			"foundryImg": "",
 			"className": "Rogue Rework",
 			"classSource": "DZC:ANA:Ro",
-			"subclassShortName": "Champion",
+			"subclassShortName": "Thief",
 			"subclassSource": "DZC:ANA:Ro",
-			"level": 15,
+			"level": 9,
 			"header": 2,
 			"entries": [
-				"At 15th level, your body can whitstand terrible attacks. When a creature scores a critical hit against you, you can use your reaction to turn it into a normal hit.",
-                "Once you use this feature, you can't use it again until you finish a short or long rest."
+				"At 9th level, a creature you are hidden from takes a -5 penalty to its {@skill Perception} check when you attempt to {@action Steal|DZC:ANA:Ro|steal}, unless the creature is in combat or alert."
+			]
+		},
+
+		{
+			"name": "Mug",
+			"source": "DZC:ANA:Ro",
+			"page": 5,
+			"foundryImg": "",
+			"className": "Rogue Rework",
+			"classSource": "DZC:ANA:Ro",
+			"subclassShortName": "Thief",
+			"subclassSource": "DZC:ANA:Ro",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"At 13th level, once on your turn, when you deal damage to a creature within your reach using a weapon attack made with your {@action Attack} action, you can take the {@action Steal|DZC:ANA:Ro} action against that target as part of the same action. You take no penalty to your checks for trying to steal from that creature until the end of your turn."
 			],
             "foundrySystem": {
-                "activation.type": "reaction",
-                "activation.condition": "When a creature scores a critical hit against you",
-                "activation.cost": 1,
-                "uses.per": "sr",
-                "uses.max": "1"
+                "activation.type": "action"
             }
 		},
 
 		{
-			"name": "Survivor",
+			"name": "Legendary Thief",
 			"source": "DZC:ANA:Ro",
 			"page": 5,
-			"foundryImg": "icons/magic/life/heart-glowing-red.webp",
+			"foundryImg": "",
 			"className": "Rogue Rework",
 			"classSource": "DZC:ANA:Ro",
-			"subclassShortName": "Champion",
+			"subclassShortName": "Thief",
 			"subclassSource": "DZC:ANA:Ro",
-			"level": 18,
+			"level": 17,
 			"header": 2,
 			"entries": [
-				"At 18th level, you attain the pinnacle of resilience in battle. At the start of each of your turns, you regain hit points equal to 5 + your Constitution modifier if you have no more than half of your hit points left. You don't gain this benefit if you have 0 hit points."
+				"At 17th level, you are capable of stealing anything in front of everyone's eyes. You can attempt to {@action Steal|DZC:ANA:Ro|steal} an object that is wielded, or that would be extremely noticeable or time consuming to remove. However, this takes you time to perform depending on how difficult it is to remove the object, which is usually 1 minute (armor for example takes significantly longer). Throughout this duration you must have some means of staying hidden, such as being inside a heavily obscured area.",
+                "When you do this, you take a –5 penalty to your check and observers will immediatly notice the object is gone after you steal it if it's extremely noticeable (like a full plate armor)."
 			]
 		},
 
         {
-			"name": "Arcane Knight",
+			"name": "Assassin",
 			"source": "DZC:ANA:Ro",
 			"page": 5,
 			"className": "Rogue Rework",
 			"classSource": "DZC:ANA:Ro",
-			"subclassShortName": "Arcane Knight",
+			"subclassShortName": "Assassin",
 			"subclassSource": "DZC:ANA:Ro",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Some fighters incorporate magic into their studies, becoming arcane knights. Thus they enlist to wizard academies or take a wizard as an instructor. An arcane knight studies magic to expand their repertoir of abilities in order to increase both their adaptability and versatility. However, given the secondary the priority of their magical studies are, they opt for an intensive rather than extensive approach. Hence why they only pick a few schools of magic to learn and then memorize a few spells from these.",
+				"Strike first and deadly. This is the motto of assassins, a workforce that operates from under the eyes. Their tactic revolves around efficiency, killing their target before giving room for persecution.",
+                "These rogues can be found in many places, ranging from governamental positions as the king's private assassins, through priests who exterminate enemies of their church, to hitmans from the underworld.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Schools of Magic|Rogue Rework|DZC:ANA:Ro|Arcane Knight|DZC:ANA:Ro|3"
+					"subclassFeature": "Poison Adept|Rogue Rework|DZC:ANA:Ro|Assassin|DZC:ANA:Ro|3"
 				},
                 {
 					"type": "refSubclassFeature",
-					"subclassFeature": "Spellcasting|Rogue Rework|DZC:ANA:Ro|Arcane Knight|DZC:ANA:Ro|3"
-				},
-                {
-					"type": "refSubclassFeature",
-					"subclassFeature": "Weapon Bond|Rogue Rework|DZC:ANA:Ro|Arcane Knight|DZC:ANA:Ro|3"
+					"subclassFeature": "Easy Dispatch|Rogue Rework|DZC:ANA:Ro|Assassin|DZC:ANA:Ro|3"
 				}
 			]
 		},
 
 		{
-			"name": "Schools of Magic",
+			"name": "Poison Adept",
 			"source": "DZC:ANA:Ro",
 			"page": 5,
-			"foundryImg": "icons/skills/trades/academics-book-study-purple.webp",
+			"foundryImg": "",
 			"className": "Rogue Rework",
 			"classSource": "DZC:ANA:Ro",
-			"subclassShortName": "Arcane Knight",
+			"subclassShortName": "Assassin",
 			"subclassSource": "DZC:ANA:Ro",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you choose this tradition you must choose the two schools of magic that your character will study. The schools are {@filter Abjuration|spells|subclass=Fighter: Eldritch Knight|school=a}, {@filter Conjuration|spells|subclass=Fighter: Eldritch Knight|school=c}, {@filter Divination|spells|subclass=Fighter: Eldritch Knight|school=d}, {@filter Enchantment|spells|subclass=Fighter: Eldritch Knight|school=e}, {@filter Evocation|spells|subclass=Fighter: Eldritch Knight|school=v}, {@filter Illusion|spells|subclass=Fighter: Eldritch Knight|school=i}, {@filter Necromancy|spells|subclass=Fighter: Eldritch Knight|school=n}, and {@filter Transmutation|spells|subclass=Fighter: Eldritch Knight|school=t}. Whenever a feature in this subclass refers to your schools of magic, it refers to the ones you chose."
-			]
+				"Starting at 3rd level, you gain proficiency with the {@item poisoner's kit|phb} if you don't already have it. Any poison you craft using poisoner's kit has a bonus to its saving throw DC and damage equal to your Intelligence modifier (minimum of 1), and it ignores resistance to poison damage."
+			],
+            "toolProficiencies": [
+                {
+                    "poisoner's kit": true
+                }
+            ]
 		},
 
         {
-			"name": "Spellcasting",
+			"name": "Easy Dispatch",
 			"source": "DZC:ANA:Ro",
 			"page": 5,
-			"foundryImg": "icons/magic/light/beam-rays-teal-large.webp",
+			"foundryImg": "",
 			"className": "Rogue Rework",
 			"classSource": "DZC:ANA:Ro",
-			"subclassShortName": "Arcane Knight",
+			"subclassShortName": "Assassin",
 			"subclassSource": "DZC:ANA:Ro",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you reach 3rd level, you augment your martial prowess with the ability to cast spells.",
-                {
-                    "type": "entries",
-                    "name": "Cantrips",
-                    "page": 5,
-                    "entries": [
-                        "You learn three cantrips of your choice from your schools of magic on the wizard spell list. You learn an additional cantrip of your choice with the same restrictions at 10th level."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Spell Slots",
-                    "page": 5,
-                    "entries": [
-                        "The Arcane Knight Spellcasting table shows how many spell slots you have to cast your wizard spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell's level or higher. You regain all expended spell slots when you finish a long rest."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Spells Known",
-                    "page": 5,
-                    "entries": [
-                        "You know a number of wizard spells of your choice that are available for you to cast. The spells you choose must be from your schools of magic on the wizard spell list. The number of wizard spells you know is equal to your Intelligence modifier + a third of your fighter level (minimum of one spell).",
-                        "Whenever you gain a level in this class, you can replace one of the wizard spells you know with another one of your choice with the same restrictions."
-                    ]
-                },
-                {
-                    "type": "entries",
-                    "name": "Spells Known",
-                    "page": 5,
-                    "entries": [
-                        "Intelligence is your spellcasting ability for your wizard spells, since you learn your spells through study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a wizard spell you cast and when making an attack roll with one.",
-                        {
-                            "type": "abilityDc",
-                            "name": "Spell",
-                            "attributes": [
-                                "int"
-                            ]
-                        },
-                        {
-                            "type": "abilityAttackMod",
-                            "name": "Spell",
-                            "attributes": [
-                                "int"
-                            ]
-                        }
-                    ]
-                }
+				"You can get an easy kill on weakened enemies, more so if you are faster than them. At 3rd level, on your first turn of combat, you have advantage on attack rolls against any creature that hasn't taken a turn yet.",
+                "In addition, if you hit with a weapon attack a creature that is incapacitated, poisoned, surprised, or that can't see you, you can spend up to three d6s from your talent pool and add it to the attack's damage roll."
 			]
 		},
 
         {
-			"name": "Weapon Bond",
+			"name": "Incapacitate",
 			"source": "DZC:ANA:Ro",
 			"page": 5,
-			"foundryImg": "icons/magic/fire/dagger-rune-enchant-flame-strong-teal.webp",
+			"foundryImg": "",
 			"className": "Rogue Rework",
 			"classSource": "DZC:ANA:Ro",
-			"subclassShortName": "Arcane Knight",
+			"subclassShortName": "Assassin",
 			"subclassSource": "DZC:ANA:Ro",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"At 3rd level, you learn a ritual that creates a magical bond between yourself and one weapon. You perform the ritual over the course of 1 hour, which can be done during a short rest. The weapon must be within your reach throughout the ritual, at the conclusion of which you touch the weapon and forge the bond.",
-                
-                "Once you have bonded a weapon to yourself, it counts as an arcane focus to you and it gains special properties depending on your schools of magic, each described below, as long as it is on the same plane of existence as you. These properties end if your weapon is no longer bonded to you or if you are unconscious.",
-
-                "You can have up to two bonded weapons. If you attempt to bond with a third weapon, you must break the bond with one of the other two.",
-
-                {
-                    "type": "options",
-                    "count": 2,
-                    "entries": [
-                        {
-							"type": "refOptionalfeature",
-							"optionalfeature": "Abjuration|DZC:ANA:Ro"
-						},
-                        {
-							"type": "refOptionalfeature",
-							"optionalfeature": "Conjuration|DZC:ANA:Ro"
-						},
-                        {
-							"type": "refOptionalfeature",
-							"optionalfeature": "Divination|DZC:ANA:Ro"
-						},
-                        {
-							"type": "refOptionalfeature",
-							"optionalfeature": "Enchantment|DZC:ANA:Ro"
-						},
-                        {
-							"type": "refOptionalfeature",
-							"optionalfeature": "Evocation|DZC:ANA:Ro"
-						},
-                        {
-							"type": "refOptionalfeature",
-							"optionalfeature": "Illusion|DZC:ANA:Ro"
-						},
-                        {
-							"type": "refOptionalfeature",
-							"optionalfeature": "Necromancy|DZC:ANA:Ro"
-						},
-                        {
-							"type": "refOptionalfeature",
-							"optionalfeature": "Transmutation|DZC:ANA:Ro"
-						}
-                    ]
-                }
-			]
-		},
-
-        {
-			"name": "War Magic",
-			"source": "DZC:ANA:Ro",
-			"page": 6,
-			"foundryImg": "icons/skills/melee/maneuver-greatsword-yellow.webp",
-			"className": "Rogue Rework",
-			"classSource": "DZC:ANA:Ro",
-			"subclassShortName": "Arcane Knight",
-			"subclassSource": "DZC:ANA:Ro",
-			"level": 7,
+			"level": 9,
 			"header": 2,
 			"entries": [
-				"Beginning at 7th level, when you use your action to cast a cantrip, you can make one weapon attack as a bonus action. At 18th level, you can make this special attack when you use your action to cast any spell."
-			]
-		},
-
-        {
-			"name": "War Magic improvement",
-			"source": "DZC:ANA:Ro",
-			"page": 6,
-			"foundryImg": "icons/skills/melee/maneuver-greatsword-yellow.webp",
-			"className": "Rogue Rework",
-			"classSource": "DZC:ANA:Ro",
-			"subclassShortName": "Arcane Knight",
-			"subclassSource": "DZC:ANA:Ro",
-			"level": 18,
-			"header": 2,
-			"entries": [
-				"At 18th level, you can make this special attack when you use your action to cast any spell."
-			]
-		},
-
-        {
-			"name": "Arcane Charge",
-			"source": "DZC:ANA:Ro",
-			"page": 6,
-			"foundryImg": "icons/skills/ranged/projectile-explosion-black-orange.webp",
-			"className": "Rogue Rework",
-			"classSource": "DZC:ANA:Ro",
-			"subclassShortName": "Arcane Knight",
-			"subclassSource": "DZC:ANA:Ro",
-			"level": 15,
-			"header": 2,
-			"entries": [
-				"At 15th level, you learn how to store residual magic inside of you, known as Arcane Charge. If you hit a creature with a weapon attack you can spend your Arcane Charge for one of the following effects:",
-                {
-                    "type": "list",
-                    "items": [
-                        "The creature has disadvantage on the next saving throw it makes against a spell before the end of your next turn.",
-                        "You can teleport up to 30 feet to an unoccupied space you can see, gaining advantage on your next weapon attack before the end your turn."
-                    ]
-                }
+				"At 9th level, you have a way to secure a kill, in case the first blow wasn't enough. On your first turn of combat, if you hit with a weapon attack a creature that hasn't taken a turn yet, it must succeed on a Constitution saving throw or become {@condition incapacitated} until the end of your next turn. The DC equals 10 or half the damage the creature takes, whichever number is higher."
 			],
             "foundrySystem": {
-				"uses.per": "sr",
-				"uses.max": "1"
-			}
-		}
-	
+                "activation.type": "special",
+                "activation.condition": "On your first turn of combat, if you hit with a weapon attack a creature that hasn't taken a turn yet",
+                "activation.cost": 1,
+                "actionType": "save",
+                "save.ability": "con",
+                "save.dc": 10,
+                "save.scaling": "flat"
+            }
+		},
+
+        {
+			"name": "Potent Poison",
+			"source": "DZC:ANA:Ro",
+			"page": 5,
+			"foundryImg": "",
+			"className": "Rogue Rework",
+			"classSource": "DZC:ANA:Ro",
+			"subclassShortName": "Assassin",
+			"subclassSource": "DZC:ANA:Ro",
+			"level": 13,
+			"header": 2,
+			"entries": [
+				"At 13th level, creatures have disadvantage on the first saving throw they make against a poison crafted by you.",
+                "Additionally, a creature {@condition poisoned} by you takes 3d6 poison damage at the end of each of its turns. This damage increases by 1d6 for each consecutive turn it remains poisoned."
+			]
+		},
+
+        {
+			"name": "Assassinate",
+			"source": "DZC:ANA:Ro",
+			"page": 5,
+			"foundryImg": "",
+			"className": "Rogue Rework",
+			"classSource": "DZC:ANA:Ro",
+			"subclassShortName": "Assassin",
+			"subclassSource": "DZC:ANA:Ro",
+			"level": 17,
+			"header": 2,
+			"entries": [
+				"Starting at 17th level, you become a master of instant death. If you target a creature with your {@subclassFeature Incapacitate|Rogue Rework|DZC:ANA:Ro|Assassin|DZC:ANA:Ro|9|DZC:ANA:Ro}, you can use this feature to make that attack more devastating. If you do, the creature is reduced to 0 hit points if it fails the saving throw against Incapacitate, and it becomes {@condition incapacitated} and vulnerable to all damage until the end of your next turn on a successful save.",
+                "Once you use this feature, you can't use it again on the same creature for the next 24 hours."
+			],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "On your first turn of combat, if you hit with a weapon attack a creature that hasn't taken a turn yet",
+                "activation.cost": 1,
+                "actionType": "save",
+                "save.ability": "con",
+                "save.dc": 10,
+                "save.scaling": "flat"
+            }
+		}	
 	],
 
 	"foundryClassFeature": [
