@@ -173,7 +173,7 @@
                         "DZC:T"
                     ],
                     "progression": [
-                        0,
+                        2,
                         3,
                         3,
                         3,
@@ -634,31 +634,7 @@
             "page": 3,
             "level": 1,
             "entries": [
-                "In order to survive in a harsh, competitive environment, you worked on your dirty tricks, known as {@filter Underhanded Tactics|optionalfeatures|feature type=DZC:UT}, each detailed below. The number of underhanded tactics you know is shown in the Known Tactics column of the Rogue table.",
-                {
-                    "type": "refOptionalfeature",
-					"optionalfeature": "Ganging Up|DZC:ANA:Ro"
-                },
-                {
-                    "type": "refOptionalfeature",
-					"optionalfeature": "Parkour|DZC:ANA:Ro"
-                },
-                {
-                    "type": "refOptionalfeature",
-					"optionalfeature": "Pickpocketing|DZC:ANA:Ro"
-                },
-                {
-                    "type": "refOptionalfeature",
-					"optionalfeature": "Scamming|DZC:ANA:Ro"
-                },
-                {
-                    "type": "refOptionalfeature",
-					"optionalfeature": "Seduction|DZC:ANA:Ro"
-                },
-                {
-                    "type": "refOptionalfeature",
-					"optionalfeature": "Sneaking|DZC:ANA:Ro"
-                }
+                "In order to survive in a harsh, competitive environment, you worked on your dirty tricks, known as {@filter Underhanded Tactics|optionalfeatures|feature type=DZC:UT}. The number of underhanded tactics you know is shown in the Known Tactics column of the Rogue table."
             ]
         },
 		{
@@ -779,6 +755,9 @@
                 {
                     "anyProficientSkill": 1,
                     "anyProficientTool": 1
+                },
+                {
+                    "anyProficientTool": 2
                 }
             ]
         },
@@ -799,6 +778,9 @@
                 {
                     "anyProficientSkill": 1,
                     "anyProficientTool": 1
+                },
+                {
+                    "anyProficientTool": 2
                 }
             ]
         },
