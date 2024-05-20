@@ -592,6 +592,18 @@
             ]
         },
         {
+            "name": "Reliable Partner improvement",
+            "source": "DZC:ANA:Ro",
+            "foundryImg": "",
+            "className": "Rogue Rework",
+            "classSource": "DZC:ANA:Ro",
+            "page": 3,
+            "level": 15,
+            "entries": [
+                "At 15th level, you only need to spend at least 1 minute performing a task to gain the bonus. This bonus increases to +10 if you spend at least 10 minutes performing a task."
+            ]
+        },
+        {
             "name": "Roguish Talents",
             "source": "DZC:ANA:Ro",
             "foundryImg": "",
