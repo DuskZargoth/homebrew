@@ -99,7 +99,7 @@
             "startingEquipment": {
                 "additionalFromBackground": true,
                 "default": [
-                    "(a) a {@item shortbow}, {@item quiver}, and {@item arrows (20)|phb|20 arrows} or (b) two {@item melee weapons|items|source=phb|category=basic|type=melee weapon}",
+                    "(a) a {@item shortbow}, {@item quiver}, and {@item arrows (20)|phb|20 arrows} or (b) two {@filter melee weapons|items|source=phb|category=basic|type=melee weapon}",
                     "(a) {@item alchemist's supplies|phb}, (b) {@item disguise kit|phb}, or (c) {@item thieves' tools|phb}",
                     "(a) a {@item gaming set|phb} or (b) a {@item musical instrument|phb}",
                     "(a) a {@item burglar's pack|phb}, (b) a {@item dungeoneer's pack|phb}, or (c) an {@item explorer's pack|phb}",
