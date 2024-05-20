@@ -2031,7 +2031,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting at 3rd level, you gain proficiency with {@item thieves' tools|phb} if you don't already have it. In addition, you can use your {{@classFeature Cunning Action|Rogue Rework|DZC:ANA:Ro|2|DZC:ANA:Ro} to take the {@action Steal|DZC:ANA:Ro} action or use thieves' tools to disable a trap as a bonus action."
+				"Starting at 3rd level, you gain proficiency with {@item thieves' tools|phb} if you don't already have it. In addition, you can use your {@classFeature Cunning Action|Rogue Rework|DZC:ANA:Ro|2|DZC:ANA:Ro} to take the {@action Steal|DZC:ANA:Ro} action or use thieves' tools to disable a trap as a bonus action."
 			],
             "toolProficiencies": [
                 {
