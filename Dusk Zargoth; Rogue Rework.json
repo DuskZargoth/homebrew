@@ -2413,11 +2413,8 @@
 					"source": "DZC:ANA:Ro",
 					"entries": [
 						"The halfling signals her companions to wait, then scouts the dungeon ahead on her own, disabling a potential trap and unlocking the door at the end of the hallway with her thieves' tools. After making sure there were no sounds to be heard from the other side, she steps into the darkness to hide and signals her teammates to procede forward.",
-
 						"Causing an uproar in the tavern for cheating on a card game, the goblin is immediatly surrounded by a group of violent drunks. However, he is well experienced in getting out of this predicament. He pulls out a harmonica from his pants and starts playing a catchy tune that slowly but surely shifts the mood of the place, enticing everyone to join the song, wether by complimenting the music or dancing. Once everyone has forgotten about the little fella's misdeed, he flees with a purse filled with the sap's money.",
-
 						"The unsuspecting group eats the food provided by the nice lady. Suddenly everyone falls unconscious on their plates. The lady then takes her time to cage each one of them, realizing too late one of them is missing. It's none other than the half-elf, who was faking being affected by the poison, waiting for the second the lady wasn't looking to make her escape. Enraged, she tries to pursue her, only to fall victim to a trap that renders her motionless. As she tries to escape, the half-elf jumps in to inject her with her own poison, making her fall unconscious. She cages her and releases her friends, waiting for them to wake up to leave together.",
-
 						"Rogues exploit their talents to get the upper hand in any situation. They have a knack for finding the solution to just about any problem, demonstrating a resourcefulness and versatility that is the cornerstone of any successful adventuring party.",
 						{
 							"type": "entries",
@@ -2425,26 +2422,26 @@
 							"page": 1,
 							"entries": [
 								"Rogues devote much more effort mastering the use of a variety of skills than perfecting their combat abilities, obtaining a broad expertise that few other characters can match. Many rogues focus on stealth and deception, while others refine the skills that help them in a dungeon environment, such as climbing, finding and disarming traps, and opening locks.",
+                                "When it comes to combat, rogues prioritize cunning over brute strength. They avoid danger, placing themselves in safe positions, using their quickness to aid the party by creating openings for them to attack the enemy and ensuring fail-safes to maximize their chances to win. Although, some rogues do acquire abilities that make them capable foes, like precise and powerful attacks, or evading mortal blows."
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Trained for Danger",
+							"name": "A Shady Living",
 							"page": 1,
 							"entries": [
-								"Not every member of the city watch, the village militia, or the queen's army is a fighter. Most of these troops are relatively untrained soldiers with only the most basic combat knowledge. Veteran soldiers, military officers, trained bodyguards, dedicated knights, and similar figures are fighters. However, anyone with the right set of skills and mindset can develop their talents to become a fighter.",
-
-								"Some fighters feel drawn to use their training as adventurers. The dungeon delving, monster slaying, and other dangerous work common among adventurers is second nature for a fighter, not all that different from the life they left behind. There are greater risks, perhaps, but also much greater rewards—few fighters in the city watch have the opportunity to discover a magic flame tongue sword, for example."
+								"Rogues commonly originate from cities and lawless lands, usually from a necessity to survive in a hostile environment, one where you have to compete for food, watch your back at every corner, lie to live another die, and even kill for a couple copper coins. Thus, they have to learn every trick they can to survive. More often than not they form big groups and organizations to protect themselves, like thieves' guilds, crime families, or a band of outlaws.",
+                                "In other cases, rogues are born from professions that require advanced skills and the will to get their hands dirty, such as spies, assassins, investigators, treasure hunters, exterminators, locksmiths, or ambassadors.",
+                                "As adventurers, rogues fall on both sides of the law. Some are hardened criminals who decide to seek their fortune in treasure hoards, while others take up a life of adventure to escape from the law. Some have learned and perfected their skills with the explicit purpose of infiltrating ancient ruins and hidden crypts in search of treasure."
 							]
 						},
 						{
 							"type": "entries",
-							"name": "Creating a Fighter",
+							"name": "Creating a Rogue",
 							"page": 2,
 							"entries": [
-								"As you build your fighter, think about two related elements of your character's background: Where did you get your combat training, and what set you apart from the mundane warriors around you? Were you particularly ruthless? Did you get extra help from a mentor, perhaps because of your exceptional dedication? What drove you to this training in the first place? A threat to your homeland, a thirst for revenge, or a need to prove yourself might all have been factors.",
-								
-								"You might have enjoyed formal training in a noble's army or in a local militia. Perhaps you trained in a war academy, learning strategy, tactics, and military history. Or you might be self-taught—unpolished but well tested. Did you take up the sword as a way to escape the limits of life on a farm, or are you following a proud family tradition? Where did you acquire your weapons and armor? They might have been military issue or family heirlooms, or perhaps you scrimped and saved for years to buy them. Your armaments are now among your most important possessions—the only things that stand between you and death's embrace."
+								"As you create your rogue character, consider the character's relationship to the law. Do you have a criminal past—or present? Are you on the run from the law or an organization that swore a vendetta on you? Did you leave your previous profession due to complications with your employers or to escape a monotonous routine in search of a more fulfilling life? Are you driven by greed or some other desire?",
+                                "What was the trigger that led you away from your previous life? Did a heist gone terribly wrong cause you to reevaluate your career? Maybe a successful robbery gave you the coin needed to escape the squalor of your life. Did wanderlust finally call you away from your home? Perhaps you suddenly found yourself cut off from your family or your mentor, and you had to find a new means of support. Could it be that you have an unfinished business causing you sleepless nights? Or maybe you made a new friend—another member of your adventuring party—who showed you new possibilities for earning a living and employing your particular talents."
 							]
 						},
 						{
@@ -2452,7 +2449,7 @@
 							"name": "Quick Build",
 							"page": 2,
 							"entries": [
-								"You can make a fighter quickly by following these suggestions. First, make Strength or Dexterity your highest ability score, depending on whether you want to focus on melee or ranged weapons. Your next highest score should be Constitution, or Intelligence if you plan to adopt a magical subclass. Second, choose the {@background soldier} background.",
+								"You can make a rogue quickly by following these suggestions. First, make Dexterity your highest ability score. Your next-highest should be Charisma if you plan to emphasize on social interactions or Intelligence if you want to focus on discovery and plan to adopt a magical subclass. Second, choose the charlatan background.",
                                 {
                                     "type": "inset",
                                     "name": "Can I add this Bonus?",
