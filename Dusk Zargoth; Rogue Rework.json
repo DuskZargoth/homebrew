@@ -581,7 +581,7 @@
         {
             "name": "Reliable Partner",
             "source": "DZC:ANA:Ro",
-            "foundryImg": "",
+            "foundryImg": "icons/magic/control/silhouette-grow-shrink-tan.webp",
             "className": "Rogue Rework",
             "classSource": "DZC:ANA:Ro",
             "page": 3,
@@ -594,7 +594,7 @@
         {
             "name": "Reliable Partner improvement",
             "source": "DZC:ANA:Ro",
-            "foundryImg": "",
+            "foundryImg": "icons/magic/control/silhouette-grow-shrink-tan.webp",
             "className": "Rogue Rework",
             "classSource": "DZC:ANA:Ro",
             "page": 3,
@@ -606,7 +606,7 @@
         {
             "name": "Roguish Talents",
             "source": "DZC:ANA:Ro",
-            "foundryImg": "",
+            "foundryImg": "icons/skills/social/peace-luck-insult.webp",
             "className": "Rogue Rework",
             "classSource": "DZC:ANA:Ro",
             "page": 3,
@@ -628,7 +628,7 @@
         {
             "name": "Underhanded Tactics",
             "source": "DZC:ANA:Ro",
-            "foundryImg": "",
+            "foundryImg": "icons/magic/control/mouth-smile-deception-purple.webp",
             "className": "Rogue Rework",
             "classSource": "DZC:ANA:Ro",
             "page": 3,
@@ -640,7 +640,7 @@
 		{
 			"name": "Underhanded Tactics improvement",
 			"source": "DZC:ANA:Ro",
-            "foundryImg": "",
+            "foundryImg": "icons/magic/control/mouth-smile-deception-purple.webp",
             "className": "Rogue Rework",
             "classSource": "DZC:ANA:Ro",
             "page": 3,
@@ -652,7 +652,7 @@
 		{
 			"name": "Underhanded Tactics improvement",
 			"source": "DZC:ANA:Ro",
-            "foundryImg": "",
+            "foundryImg": "icons/magic/control/mouth-smile-deception-purple.webp",
             "className": "Rogue Rework",
             "classSource": "DZC:ANA:Ro",
             "page": 3,
@@ -665,7 +665,7 @@
         {
             "name": "Cunning Action",
             "source": "DZC:ANA:Ro",
-            "foundryImg": "",
+            "foundryImg": "icons/magic/defensive/illusion-evasion-echo-purple.webp",
             "className": "Rogue Rework",
             "classSource": "DZC:ANA:Ro",
             "page": 3,
@@ -681,7 +681,7 @@
         {
             "name": "Cheaper Craft",
             "source": "DZC:ANA:Ro",
-            "foundryImg": "",
+            "foundryImg": "icons/skills/trades/construction-carpentry-hammer.webp",
             "className": "Rogue Rework",
             "classSource": "DZC:ANA:Ro",
             "page": 3,
@@ -694,7 +694,6 @@
         {
             "name": "Roguish Vocation",
             "source": "DZC:ANA:Ro",
-            "foundryImg": "",
             "className": "Rogue Rework",
             "classSource": "DZC:ANA:Ro",
             "page": 3,
@@ -740,6 +739,7 @@
         {
             "name": "Expertise",
             "source": "DZC:ANA:Ro",
+            "foundryImg": "icons/sundries/books/book-red-exclamation.webp",
             "className": "Rogue Rework",
             "classSource": "DZC:ANA:Ro",
             "page": 3,
@@ -764,6 +764,7 @@
         {
             "name": "Expertise",
             "source": "DZC:ANA:Ro",
+            "foundryImg": "icons/sundries/books/book-red-exclamation.webp",
             "className": "Rogue Rework",
             "classSource": "DZC:ANA:Ro",
             "page": 3,
@@ -873,9 +874,9 @@
         {
             "name": "Swift Consumption",
             "source": "DZC:ANA:Ro",
+            "foundryImg": "icons/skills/toxins/poison-bottle-open-blood-red.webp",
             "className": "Rogue Rework",
             "classSource": "DZC:ANA:Ro",
-            "foundryImg": "",
             "page": 4,
             "level": 5,
             "entries": [
@@ -888,9 +889,9 @@
         {
             "name": "Swift Consumption improvement",
             "source": "DZC:ANA:Ro",
+            "foundryImg": "icons/skills/toxins/poison-bottle-open-blood-red.webp",
             "className": "Rogue Rework",
             "classSource": "DZC:ANA:Ro",
-            "foundryImg": "",
             "page": 4,
             "level": 11,
             "entries": [
@@ -903,9 +904,9 @@
         {
             "name": "Swift Consumption improvement",
             "source": "DZC:ANA:Ro",
+            "foundryImg": "icons/skills/toxins/poison-bottle-open-blood-red.webp",
             "className": "Rogue Rework",
             "classSource": "DZC:ANA:Ro",
-            "foundryImg": "",
             "page": 4,
             "level": 18,
             "entries": [
@@ -919,7 +920,7 @@
         {
             "name": "Quick Learner",
             "source": "DZC:ANA:Ro",
-            "foundryImg": "",
+            "foundryImg": "icons/sundries/documents/blueprint-helmet.webp",
             "className": "Rogue Rework",
             "classSource": "DZC:ANA:Ro",
             "page": 4,
@@ -953,7 +954,7 @@
         {
             "name": "Shared Misfortune",
             "source": "DZC:ANA:Ro",
-            "foundryImg": "",
+            "foundryImg": "icons/skills/social/trading-injustice-scale-gray.webp",
             "className": "Rogue Rework",
             "classSource": "DZC:ANA:Ro",
             "page": 4,
@@ -966,7 +967,7 @@
         {
             "name": "Opportunity for Improvement",
             "source": "DZC:ANA:Ro",
-            "foundryImg": "",
+            "foundryImg": "icons/sundries/gaming/dice-pair-white-green.webp",
             "className": "Rogue Rework",
             "classSource": "DZC:ANA:Ro",
             "page": 4,
@@ -979,7 +980,7 @@
         {
             "name": "Mastery",
             "source": "DZC:ANA:Ro",
-            "foundryImg": "",
+            "foundryImg": "icons/sundries/books/book-symbol-square-blue-green.webp",
             "className": "Rogue Rework",
             "classSource": "DZC:ANA:Ro",
             "page": 4,
@@ -1013,7 +1014,7 @@
         {
             "name": "Stroke of Luck",
             "source": "DZC:ANA:Ro",
-            "foundryImg": "",
+            "foundryImg": "icons/commodities/flowers/clover.webp",
             "className": "Rogue Rework",
             "classSource": "DZC:ANA:Ro",
             "page": 4,
@@ -1952,7 +1953,7 @@
 			"className": "Rogue Rework",
 			"classSource": "DZC:ANA:Ro",
 			"page": 5,
-			"foundryImg": "",
+            "foundryImg": "icons/magic/death/undead-ghosts-trio-blue.webp",
 			"subclassFeatures": [
 				"Thief|Rogue Rework|DZC:ANA:Ro|Thief|DZC:ANA:Ro|3",
 				"Sneaky Thief|Rogue Rework|DZC:ANA:Ro|Thief|DZC:ANA:Ro|9",
@@ -1967,7 +1968,7 @@
 			"className": "Rogue Rework",
 			"classSource": "DZC:ANA:Ro",
 			"page": 5,
-			"foundryImg": "",
+			"foundryImg": "icons/skills/melee/strike-dagger-skull-white.webp",
 			"subclassFeatures": [
 				"Assassin|Rogue Rework|DZC:ANA:Ro|Assassin|DZC:ANA:Ro|3",
 				"Incapacitate|Rogue Rework|DZC:ANA:Ro|Assassin|DZC:ANA:Ro|9",
@@ -2005,7 +2006,7 @@
 			"name": "Fast Hands",
 			"source": "DZC:ANA:Ro",
 			"page": 5,
-			"foundryImg": "",
+			"foundryImg": "icons/skills/social/wave-halt-stop.webp",
 			"className": "Rogue Rework",
 			"classSource": "DZC:ANA:Ro",
 			"subclassShortName": "Thief",
@@ -2029,7 +2030,7 @@
 			"name": "Pickpocket Veteran",
 			"source": "DZC:ANA:Ro",
 			"page": 5,
-			"foundryImg": "",
+			"foundryImg": "icons/skills/social/theft-pickpocket-bribery-brown.webp",
 			"className": "Rogue Rework",
 			"classSource": "DZC:ANA:Ro",
 			"subclassShortName": "Thief",
@@ -2049,7 +2050,7 @@
 			"name": "Sneaky Thief",
 			"source": "DZC:ANA:Ro",
 			"page": 5,
-			"foundryImg": "",
+			"foundryImg": "icons/magic/perception/silhouette-stealth-shadow.webp",
 			"className": "Rogue Rework",
 			"classSource": "DZC:ANA:Ro",
 			"subclassShortName": "Thief",
@@ -2065,7 +2066,7 @@
 			"name": "Mug",
 			"source": "DZC:ANA:Ro",
 			"page": 5,
-			"foundryImg": "",
+			"foundryImg": "icons/skills/melee/strike-dagger-arcane-pink.webp",
 			"className": "Rogue Rework",
 			"classSource": "DZC:ANA:Ro",
 			"subclassShortName": "Thief",
@@ -2084,7 +2085,7 @@
 			"name": "Legendary Thief",
 			"source": "DZC:ANA:Ro",
 			"page": 5,
-			"foundryImg": "",
+			"foundryImg": "icons/magic/unholy/strike-hand-glow-pink.webp",
 			"className": "Rogue Rework",
 			"classSource": "DZC:ANA:Ro",
 			"subclassShortName": "Thief",
@@ -2125,7 +2126,7 @@
 			"name": "Poison Adept",
 			"source": "DZC:ANA:Ro",
 			"page": 5,
-			"foundryImg": "",
+			"foundryImg": "icons/skills/toxins/poison-bottle-corked-fire-green.webp",
 			"className": "Rogue Rework",
 			"classSource": "DZC:ANA:Ro",
 			"subclassShortName": "Assassin",
@@ -2146,7 +2147,7 @@
 			"name": "Easy Dispatch",
 			"source": "DZC:ANA:Ro",
 			"page": 5,
-			"foundryImg": "",
+			"foundryImg": "icons/weapons/daggers/dagger-curved-black.webp",
 			"className": "Rogue Rework",
 			"classSource": "DZC:ANA:Ro",
 			"subclassShortName": "Assassin",
@@ -2163,7 +2164,7 @@
 			"name": "Incapacitate",
 			"source": "DZC:ANA:Ro",
 			"page": 5,
-			"foundryImg": "",
+			"foundryImg": "icons/magic/control/voodoo-doll-pain-damage-tan.webp",
 			"className": "Rogue Rework",
 			"classSource": "DZC:ANA:Ro",
 			"subclassShortName": "Assassin",
@@ -2188,7 +2189,7 @@
 			"name": "Potent Poison",
 			"source": "DZC:ANA:Ro",
 			"page": 5,
-			"foundryImg": "",
+			"foundryImg": "icons/skills/toxins/symbol-poison-drop-skull-green.webp",
 			"className": "Rogue Rework",
 			"classSource": "DZC:ANA:Ro",
 			"subclassShortName": "Assassin",
@@ -2205,7 +2206,7 @@
 			"name": "Assassinate",
 			"source": "DZC:ANA:Ro",
 			"page": 5,
-			"foundryImg": "",
+			"foundryImg": "icons/skills/melee/blade-tip-chipped-blood-red.webp",
 			"className": "Rogue Rework",
 			"classSource": "DZC:ANA:Ro",
 			"subclassShortName": "Assassin",
@@ -2407,23 +2408,23 @@
 			"entries": [
 				{
 					"type": "section",
-					"name": "Fighter",
+					"name": "Rogue",
 					"page": 1,
 					"source": "DZC:ANA:Ro",
 					"entries": [
-						"A stunning half-orc completely covered in metal armor stands tall next to her partners, rising her shield to protect them. Positioning herself in front of them, she prevents the ice mephits from freezing her allies by absorbing the most damage she can. She hopes that with this act of sacrifice she achieves the recognition of the knights order and win the grace of a noble family.",
+						"The halfling signals her companions to wait, then scouts the dungeon ahead on her own, disabling a potential trap and unlocking the door at the end of the hallway with her thieves' tools. After making sure there were no sounds to be heard from the other side, she steps into the darkness to hide and signals her teammates to procede forward.",
 
-						"At first glance he looks nothing much other than a plain thug, the drow sits at the bar, glancing over the people gathered in the stablishment, finding the meanest looking mercenaries, observing their every move. When they take notice they decide they don't like the fella spying on them, so it's time to take it outside. What they failed to realize was that the elf was studying their every weakness, which would bring forth their demise.",
+						"Causing an uproar in the tavern for cheating on a card game, the goblin is immediatly surrounded by a group of violent drunks. However, he is well experienced in getting out of this predicament. He pulls out a harmonica from his pants and starts playing a catchy tune that slowly but surely shifts the mood of the place, enticing everyone to join the song, wether by complimenting the music or dancing. Once everyone has forgotten about the little fella's misdeed, he flees with a purse filled with the sap's money.",
 
-						"An expreinced general directs the actions of his squad during a battle, maneuvering their positioning, coordinating their attacks, and protecting from most danger, so that they can be as efficient as possible. He was chosen not for his skills in combat, but for being an expert in the field of leadership, tactical genius, and succeeding in wars that seemed impossible to win.",
+						"The unsuspecting group eats the food provided by the nice lady. Suddenly everyone falls unconscious on their plates. The lady then takes her time to cage each one of them, realizing too late one of them is missing. It's none other than the half-elf, who was faking being affected by the poison, waiting for the second the lady wasn't looking to make her escape. Enraged, she tries to pursue her, only to fall victim to a trap that renders her motionless. As she tries to escape, the half-elf jumps in to inject her with her own poison, making her fall unconscious. She cages her and releases her friends, waiting for them to wake up to leave together.",
 
-						"All of these epic warriors are fighters, one of the most versatile combatants in the world. Since they lack any super natural powers, they cultivate their martial talents in order to surpass mortal limits, to the point they are known for their high competence in any field of combat, wether it's about wielding a weapon for destructive purposses or by learning the weak points of an enemy.",
+						"Rogues exploit their talents to get the upper hand in any situation. They have a knack for finding the solution to just about any problem, demonstrating a resourcefulness and versatility that is the cornerstone of any successful adventuring party.",
 						{
 							"type": "entries",
-							"name": "Well-Rounded Specialist",
+							"name": "Skill and Precision",
 							"page": 1,
 							"entries": [
-								"Fighters learn the basics of all combat styles. Every fighter can swing an axe, fence with a rapier, wield a longsword or a greatsword, use a bow, and even trap foes in a net with some degree of skill. Likewise, a fighter is adept with shields and every form of armor. Beyond that basic degree of familiarity, each fighter specializes in a certain style of combat, defined by the path they took to become one. Some concentrate on archery, some on ambushing unsuspecting victims, and some on augmenting their martial skills with magic. This combination of broad general ability and extensive specialization makes fighters superior combatants on battlefields and in dungeons alike."
+								"Rogues devote much more effort mastering the use of a variety of skills than perfecting their combat abilities, obtaining a broad expertise that few other characters can match. Many rogues focus on stealth and deception, while others refine the skills that help them in a dungeon environment, such as climbing, finding and disarming traps, and opening locks.",
 							]
 						},
 						{
