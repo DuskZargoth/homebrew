@@ -17,74 +17,44 @@
             }
         ],
         "dateAdded": 1716449458,
-        "dateLastModified": 1716449458,
-        "optionalFeatureTypes": {
-        }
+        "dateLastModified": 1716449458
     },
     "class": [
         {
             "name": "Barbarian Rework",
             "source": "DZC:ANA:B",
-            "foundryImg": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/classes/PHB/Fighter.webp",
+            "foundryImg": "https://raw.githubusercontent.com/5etools-mirror-2/5etools-img/main/classes/PHB/Barbarian.webp",
             "page": 1,
             "hd": {
                 "number": 1,
-                "faces": 8
+                "faces": 12
             },
             "proficiency": [
-                "dex",
-                "cha"
+                "str",
+                "con"
             ],
             "startingProficiencies": {
                 "armor": [
-                    "light"
+                    "light",
+                    "medium",
+                    "{@item shield|phb|shields}"
                 ],
                 "weapons": [
                     "simple",
-                    "{@item hand crossbow|phb|hand crossbows}",
-					"{@item rapier|phb|rapiers}",
-					"{@item scimitar|phb|scimitars}",
-					"{@item shortsword|phb|shortswords}"
-                ],
-                "tools": [
-                    "Choose one type of the following: {@item alchemist's supplies|phb}, {@item disguise kit|phb}, {@item posioner's kit|phb}, {@item thieves' tools|phb}, one {@item gaming set|phb} of your choice, or one {@item musical instrument|phb} of your choice"
-                ],
-                "toolProficiencies": [
-                    {
-                        "choose": {
-                            "from": [
-                                "alchemist's supplies",
-                                "disguise kit",
-                                "poisoner's kit",
-                                "thieves' tools",
-                                "dice set",
-                                "dragonchess set",
-                                "playing card set"
-                            ],
-                            "count": 1
-                        }
-                    },
-                    {
-                        "anyMusicalInstrument": 1
-                    }
+                    "martial"
                 ],
                 "skills": [
                     {
                         "choose": {
                             "from": [
-                                "acrobatics",
+                                "animal handling",
                                 "athletics",
-                                "deception",
-                                "insight",
                                 "intimidation",
-                                "investigation",
+                                "nature",
                                 "perception",
-                                "performance",
-                                "persuasion",
-                                "sleight of hand",
-                                "stealth"
+                                "survival"
                             ],
-                            "count": 4
+                            "count": 2
                         }
                     }
                 ]
@@ -92,478 +62,227 @@
             "startingEquipment": {
                 "additionalFromBackground": true,
                 "default": [
-                    "(a) a {@item shortbow}, {@item quiver}, and {@item arrows (20)|phb|20 arrows} or (b) two {@filter melee weapons|items|source=phb|category=basic|type=melee weapon}",
-                    "(a) {@item alchemist's supplies|phb}, (b) {@item disguise kit|phb}, or (c) {@item thieves' tools|phb}",
-                    "(a) a {@item gaming set|phb} or (b) a {@item musical instrument|phb}",
-                    "(a) a {@item burglar's pack|phb}, (b) a {@item dungeoneer's pack|phb}, or (c) an {@item explorer's pack|phb}",
-                    "{@item leather armor|phb} and two {@item dagger|phb|daggers}"
+                    "(a) a {@item greataxe|phb} or (b) any {@filter martial melee weapon|items|source=phb|category=basic|type=martial weapon;melee weapon}",
+                    "(a) two {@item handaxe|phb|handaxes} or (b) any {@filter simple weapon|items|source=phb|category=basic|type=simple weapon}",
+                    "(a) an {@item explorer's pack|phb} and four {@item javelin|phb|javelins}"
                 ],
                 "defaultData": [
                     {
 						"a": [
-							"longbow|phb",
-                            "quiver|phb",
-							"arrows (20)|phb"
+							"greataxe|phb"
 						],
                         "b": [
                             {
-                                "equipmentType": "weaponMelee",
-                                "quantity": 2
-                            }
-                        ]
-					},
-					{
-						"a": [
-							"alchemist's supplies|phb"
-						],
-						"b": [
-                            "disguise kit|phb"
-						],
-                        "c": [
-                            "thieve's tools|phb"
-                        ]
-					},
-					{
-						"a": [
-							"burglar's pack|phb"
-						],
-						"b": [
-							"dungeoneer's pack"
-						],
-                        "c": [
-                            "explorer's pack|phb"
-                        ]
-					},
-                    {
-						"a": [
-							{
-                                "item": "gaming set|phb",
+                                "equipmentType": "weaponMartialMelee",
                                 "quantity": 1
                             }
-						],
-						"b": [
-							{
-                                "item": "musical instrument|phb",
-                                "quantity": 1
-                            }
-						]
+                        ]
 					},
 					{
-						"_": [
-							"Leather armor|phb",
-							{
-								"item": "dagger|phb",
-								"quantity": 2
-							}
+						"a": [
+							"item": "handaxe|phb",
+                            "quantity": 2
+						],
+						"b": [
+                            {
+                                "equipmentType": "weaponMartialMelee",
+                                "quantity": 1
+                            }
+                        ]
+					},
+					{
+						"-": [
+							"explorer's pack|phb",
+                            {
+                                "item": "javelin|phb",
+                                "quantity": 4
+                            }
 						]
-					}
+                    }
                 ]
             },
-            "optionalfeatureProgression": [
-                {
-                    "name": "Talents",
-                    "featureType": [
-                        "DZC:T"
-                    ],
-                    "progression": [
-                        2,
-                        3,
-                        3,
-                        3,
-                        4,
-                        4,
-                        5,
-                        5,
-                        6,
-                        6,
-                        7,
-                        7,
-                        8,
-                        8,
-                        9,
-                        9,
-                        9,
-                        10,
-                        10,
-                        10
-                    ]
-                },
-				{
-					"name": "Underhanded Tactics",
-					"featureType": [
-						"DZC:UT"
-					],
-					"progression": {
-						"1": 2,
-						"7": 3,
-						"14": 4
-					}
-				}
-            ],
             "classTableGroups": [
                 {
                     "colLabels": [
-                        "Talent Pool",
-                        "Acquired Talents",
-                        "Known Tactics"
+                        "Adrenaline Bonus"
                     ],
                     "rows": [
                         [
                             {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 3,
-                                        "faces": 6
-                                    }
-                                ]
-                            },       
-                            2,
-                            2
+                                "type": "bonus",
+                                "value": 2
+                            }
                         ],
                         [
                             {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 3,
-                                        "faces": 6
-                                    }
-                                ]
-                            },       
-                            3,
-                            2
+                                "type": "bonus",
+                                "value": 2
+                            }
                         ],
                         [
                             {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 4,
-                                        "faces": 6
-                                    }
-                                ]
-                            },       
-                            3,
-                            2
+                                "type": "bonus",
+                                "value": 2
+                            }
                         ],
                         [
                             {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 4,
-                                        "faces": 6
-                                    }
-                                ]
-                            },       
-                            3,
-                            2
+                                "type": "bonus",
+                                "value": 2
+                            }
                         ],
                         [
                             {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 5,
-                                        "faces": 6
-                                    }
-                                ]
-                            },       
-                            4,
-                            2
+                                "type": "bonus",
+                                "value": 2
+                            }
                         ],
                         [
                             {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 5,
-                                        "faces": 6
-                                    }
-                                ]
-                            },       
-                            4,
-                            2
+                                "type": "bonus",
+                                "value": 3
+                            }
                         ],
                         [
                             {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 6,
-                                        "faces": 6
-                                    }
-                                ]
-                            },       
-                            5,
-                            3
+                                "type": "bonus",
+                                "value": 3
+                            }
                         ],
                         [
                             {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 6,
-                                        "faces": 6
-                                    }
-                                ]
-                            },       
-                            5,
-                            3
+                                "type": "bonus",
+                                "value": 3
+                            }
                         ],
                         [
                             {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 7,
-                                        "faces": 6
-                                    }
-                                ]
-                            },       
-                            6,
-                            3
+                                "type": "bonus",
+                                "value": 3
+                            }
                         ],
                         [
                             {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 7,
-                                        "faces": 6
-                                    }
-                                ]
-                            },       
-                            6,
-                            3
+                                "type": "bonus",
+                                "value": 3
+                            }
                         ],
                         [
                             {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 8,
-                                        "faces": 6
-                                    }
-                                ]
-                            },       
-                            7,
-                            3
+                                "type": "bonus",
+                                "value": 4
+                            }
                         ],
                         [
                             {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 8,
-                                        "faces": 6
-                                    }
-                                ]
-                            },       
-                            7,
-                            3
+                                "type": "bonus",
+                                "value": 4
+                            }
                         ],
                         [
                             {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 9,
-                                        "faces": 6
-                                    }
-                                ]
-                            },       
-                            8,
-                            3
+                                "type": "bonus",
+                                "value": 4
+                            }
                         ],
                         [
                             {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 9,
-                                        "faces": 6
-                             
-                                    }
-                                ]
-                            },       
-                            8,
-                            4
+                                "type": "bonus",
+                                "value": 4
+                            }
                         ],
                         [
                             {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 10,
-                                        "faces": 6
-                                    }
-                                ]
-                            },       
-                            9,
-                            4
+                                "type": "bonus",
+                                "value": 4
+                            }
                         ],
                         [
                             {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 10,
-                                        "faces": 6
-                                    }
-                                ]
-                            },       
-                            9,
-                            4
+                                "type": "bonus",
+                                "value": 5
+                            }
                         ],
                         [
                             {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 11,
-                                        "faces": 6
-                                    }
-                                ]
-                            },       
-                            9,
-                            4
+                                "type": "bonus",
+                                "value": 5
+                            }
                         ],
                         [
                             {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 11,
-                                        "faces": 6
-                                    }
-                                ]
-                            },       
-                            10,
-                            4
+                                "type": "bonus",
+                                "value": 5
+                            }
                         ],
                         [
                             {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 12,
-                                        "faces": 6
-                                    }
-                                ]
-                            },
-                            10,
-                            4
+                                "type": "bonus",
+                                "value": 5
+                            }
                         ],
                         [
                             {
-                                "type": "dice",
-                                "toRoll": [
-                                    {
-                                        "number": 12,
-                                        "faces": 6
-                                    }
-                                ]
-                            },       
-                            10,
-                            4
+                                "type": "bonus",
+                                "value": 5
+                            }
                         ]
                     ]
                 }
             ],
             "classFeatures": [
-                "Reliable Partner|Barbarian Rework|DZC:ANA:B|1",
-                "Roguish Talents|Barbarian Rework|DZC:ANA:B|1",
-                "Underhanded Tactics|Barbarian Rework|DZC:ANA:B|1",
-                "Cunning Action|Barbarian Rework|DZC:ANA:B|2",
-                "Cheaper Craft|Barbarian Rework|DZC:ANA:B|2",
+                "Adrenaline|Barbarian Rework|DZC:ANA:B|1",
+                "Temperamental|Barbarian Rework|DZC:ANA:B|1",
+                "Frantic|Barbarian Rework|DZC:ANA:B|2",
+                "Primitive Scream|Barbarian Rework|DZC:ANA:B|2",
                 {
-                    "classFeature": "Roguish Vocation|Barbarian Rework|DZC:ANA:B|3",
+                    "classFeature": "Primal Path|Barbarian Rework|DZC:ANA:B|3",
                     "gainSubclassFeature": true
                 },
-                "Expertise|Barbarian Rework|DZC:ANA:B|3",
                 "Ability Score Improvement|Barbarian Rework|DZC:ANA:B|4",
-                "Swift Consumption|Barbarian Rework|DZC:ANA:B|5",
-                "Quick Learner|Barbarian Rework|DZC:ANA:B|5",
+                "Extra Attack|Barbarian Rework|DZC:ANA:B|5",
+                "Relentless|Barbarian Rework|DZC:ANA:B|5",
                 "Ability Score Improvement|Barbarian Rework|DZC:ANA:B|6",
-                "Shared Misfortune|Barbarian Rework|DZC:ANA:B|7",
+                {
+                    "classFeature": "Primal Path feature|Barbarian Rework|DZC:ANA:B|6",
+                    "gainSubclassFeature": true
+                },
+                "Adrenaline improvement|Barbarian Rework|DZC:ANA:B|7",
+                "Strong Scent|Barbarian Rework|DZC:ANA:B|7",
                 "Ability Score Improvement|Barbarian Rework|DZC:ANA:B|8",
                 {
-                    "classFeature": "Roguish Vocation feature|Barbarian Rework|DZC:ANA:B|9",
+                    "classFeature": "Primal Path feature|Barbarian Rework|DZC:ANA:B|9",
                     "gainSubclassFeature": true
                 },
                 "Ability Score Improvement|Barbarian Rework|DZC:ANA:B|10",
-                "Expertise|Barbarian Rework|DZC:ANA:B|10",
-                "Swift Consumption improvement|Barbarian Rework|DZC:ANA:B|11",
+                "Growth Spurt|Barbarian Rework|DZC:ANA:B|11",
                 "Ability Score Improvement|Barbarian Rework|DZC:ANA:B|12",
+                "Back to the Land|Barbarian Rework|DZC:ANA:B|13",
                 {
-                    "classFeature": "Roguish Vocation feature|Barbarian Rework|DZC:ANA:B|13",
+                    "classFeature": "Primal Path feature|Barbarian Rework|DZC:ANA:B|14",
                     "gainSubclassFeature": true
                 },
-                "Opportunity for Improvement|Barbarian Rework|DZC:ANA:B|14",
-                "Reliable Partner improvement|Barbarian Rework|DZC:ANA:B|15",
+                "Extra Attack (2)|Barbarian Rework|DZC:ANA:B|15",
                 "Ability Score Improvement|Barbarian Rework|DZC:ANA:B|16",
-                {
-                    "classFeature": "Roguish Vocation feature|Barbarian Rework|DZC:ANA:B|17",
-                    "gainSubclassFeature": true
-                },
-                "Swift Consumption improvement|Barbarian Rework|DZC:ANA:B|18",
-                "Mastery|Barbarian Rework|DZC:ANA:B|19",
+                "Savage Outburst|Barbarian Rework|DZC:ANA:B|17",
+                "Growth Spurt improvement|DZC:ANA:B|18",
+                "Adrenaline improvement|DZC:ANA:B|19",
                 "Ability Score Improvement|Barbarian Rework|DZC:ANA:B|20",
-                "Stroke of Luck|Barbarian Rework|DZC:ANA:B|20"
+                "King of the Jungle|Barbarian Rework|DZC:ANA:B|20"
             ],
-            "subclassTitle": "Roguish Vocation",
+            "subclassTitle": "Primal Path",
             "multiclassing": {
                 "requirements": {
-                    "dex": 13,
-                    "cha": 13
+                    "str": 13,
+                    "con": 13
                 },
                 "proficienciesGained": {
                     "armor": [
-						"light"
+						"{@item shield|phb|shields}"
 					],
-                    "skills": [
-                        {
-                            "choose": {
-                                "from": [
-                                    "acrobatics",
-                                    "athletics",
-                                    "deception",
-                                    "insight",
-                                    "intimidation",
-                                    "investigation",
-                                    "perception",
-                                    "performance",
-                                    "persuasion",
-                                    "sleight of hand",
-                                    "stealth"
-                                ],
-                                "count": 1
-                            }
-                        }
-                    ],
-                    "tools": [
-                        "Choose one type of the following: {@item alchemist's supplies|phb}, {@item disguise kit|phb}, {@item posioner's kit|phb}, {@item thieves' tools|phb}, one {@item gaming set|phb} of your choice, or one {@item musical instrument|phb} of your choice"
-                    ],
-                    "toolProficiencies": [
-                        {
-                            "choose": {
-                                "from": [
-                                    "alchemist's supplies",
-                                    "disguise kit",
-                                    "poisoner's kit",
-                                    "thieves' tools",
-                                    "dice set",
-                                    "dragonchess set",
-                                    "playing card set"
-                                ],
-                                "count": 1
-                            }
-                        },
-                        {
-                            "anyMusicalInstrument": 1
-                        }
+                    "weapons": [
+                        "simple",
+                        "martial"
                     ]
                 }
             },
