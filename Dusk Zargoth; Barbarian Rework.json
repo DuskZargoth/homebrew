@@ -80,8 +80,10 @@
 					},
 					{
 						"a": [
+                            {
 							"item": "handaxe|phb",
                             "quantity": 2
+                            }
 						],
 						"b": [
                             {
@@ -101,6 +103,30 @@
                     }
                 ]
             },
+            "foundryAdvancement": [
+				{
+					"title": "Adrenaline",
+					"type": "ScaleValue",
+					"configuration": {
+						"identifier": "adr",
+						"type": "numeric",
+						"scale": {
+							"1": {
+								"value": 2
+							},
+                            "6": {
+								"value": 3
+							},
+                            "11": {
+								"value": 4
+							},
+                            "16": {
+								"value": 5
+							}
+						}
+					}
+				}
+			],
             "classTableGroups": [
                 {
                     "colLabels": [
@@ -291,210 +317,219 @@
     ],
     "classFeature": [
         {
-            "name": "Reliable Partner",
+            "name": "Adrenaline",
             "source": "DZC:ANA:B",
-            "foundryImg": "icons/magic/control/silhouette-grow-shrink-tan.webp",
+            "foundryImg": "",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
-            "page": 3,
+            "page": 2,
             "level": 1,
             "entries": [
-                "Starting at 1st level, you can outperform anyone if you take your time to do things well. If you spend at least 10 minutes performing a task, you gain a +5 bonus to the ability check you make for it.",
-                "Beginning at 15th level, your skills have improved considerably to the point you only need to spend at least 1 minute performing a task to gain the bonus. This bonus increases to +10 if you spend at least 10 minutes performing a task."
-            ]
-        },
-        {
-            "name": "Reliable Partner improvement",
-            "source": "DZC:ANA:B",
-            "foundryImg": "icons/magic/control/silhouette-grow-shrink-tan.webp",
-            "className": "Barbarian Rework",
-            "classSource": "DZC:ANA:B",
-            "page": 3,
-            "level": 15,
-            "entries": [
-                "At 15th level, you only need to spend at least 1 minute performing a task to gain the bonus. This bonus increases to +10 if you spend at least 10 minutes performing a task."
-            ]
-        },
-        {
-            "name": "Roguish Talents",
-            "source": "DZC:ANA:B",
-            "foundryImg": "icons/skills/social/peace-luck-insult.webp",
-            "className": "Barbarian Rework",
-            "classSource": "DZC:ANA:B",
-            "page": 3,
-            "level": 1,
-            "entries": [
-                "Be it luck or a natural gift, you have a talent for succeeding in whatever you want. At 1st level, you have a pool of luck represented by a number of d6s, as shown in the Talent Pool column of the Rogue table. This pool is known as your Talent die.",
+                "Also at 1st level, your combat prowess increases with the ammount of damage you have sustained. You have an Adrenaline Bonus, as shown in the Adrenaline Bonus column of the Barbarian table. Choose one of the following options:",
                 {
-                    "type": "entries",
-                    "name": "Talents",
-                    "page": 3,
+                    "type": "options",
+                    "count": 1,
                     "entries": [
-                        "A talent is an ability that allows you to spend your pool of d6s in particular ways. You begin having two {@filter talents|optionalfeatures|feature type=DZC:T} of your choice. Your {@filter talents|optionalfeatures|feature type=DZC:T} are detailed at the end of the class description. When you gain certain rogue levels, you acquire additional talents of your choice, as shown in the Acquired Talents column of the Rogue table.",
-                        "When you use a talent, you can spend a number of d6s from your pool equal to half your proficiency bonus (rounded up) or less. Roll the spent die and add them to the die roll associated to your talent. You regain all of your expended die when you finish a short or long rest.",
-                        "Whenever you gain a level in this class, you can replace a talent you have with another one."
+                        {
+                            "type": "section",
+                            "entries": [
+                                "Strength and Constitution saving throws."
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "entries": [
+                                "Strength, Dexterity, and Constitution checks."
+                            ]
+                        },
+                        {
+                            "type": "section",
+                            "entries": [
+                                "Melee weapon damage rolls."
+                            ]
+                        }
                     ]
-                }
+                },
+                "If you have three quarters of your maximum hit points left or less, your Adrenaline state activates and you gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "Every instance of damage you take is reduced by an ammount equal to your Adrenaline Bonus, unless it's psychic damage.",
+                        "Your movement speed increases by 10 feet.",
+                        "You add your Adrenaline Bonus to the option chosen above."
+                    ]
+                },
+                "Your Adrenaline state remains active as long as you are in combat, or while a hostile creature, harmful effect, or enemy attack is within your line of sight. This feature won't activate immediatly if you fail to spot a hostile creature, harmful effect, or enemy attack, but rather after the effect or creature's turn has taken place. This feature has no effect on you if you are at 0 hit points.",
+                "If you have one quarter of your maximum hit points left or less, all your Adrenaline benefits are doubled.",
+                "At 7th level, while under the effects of your Adrenaline state, you can't be put to sleep or knocked unconscious, and you have advantage on saving throws against being charmed or frightened.",
+                "At 19th level, your Adrenaline state activates when you have less than your maximum hit points instead of three quarters, and its benefits are doubled if you have half of your maximum hit points left or less instead of one quarter."
             ]
         },
         {
-            "name": "Underhanded Tactics",
+            "name": "Adrenaline improvement",
             "source": "DZC:ANA:B",
-            "foundryImg": "icons/magic/control/mouth-smile-deception-purple.webp",
+            "foundryImg": "",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
-            "page": 3,
-            "level": 1,
-            "entries": [
-                "In order to survive in a harsh, competitive environment, you worked on your dirty tricks, known as {@filter Underhanded Tactics|optionalfeatures|feature type=DZC:UT}. The number of underhanded tactics you know is shown in the Known Tactics column of the Rogue table."
-            ]
-        },
-		{
-			"name": "Underhanded Tactics improvement",
-			"source": "DZC:ANA:B",
-            "foundryImg": "icons/magic/control/mouth-smile-deception-purple.webp",
-            "className": "Barbarian Rework",
-            "classSource": "DZC:ANA:B",
-            "page": 3,
+            "page": 2,
             "level": 7,
             "entries": [
-                "At 7th level, you learn an additional {@filter Underhanded Tactic|optionalfeatures|feature type=DZC:UT} of your choice."
+                "At 7th level, while under the effects of your Adrenaline state, you can't be put to sleep or knocked unconscious, and you have advantage on saving throws against being charmed or frightened."
             ]
-		},
-		{
-			"name": "Underhanded Tactics improvement",
-			"source": "DZC:ANA:B",
-            "foundryImg": "icons/magic/control/mouth-smile-deception-purple.webp",
+        },
+        {
+            "name": "Adrenaline improvement",
+            "source": "DZC:ANA:B",
+            "foundryImg": "",
+            "className": "Barbarian Rework",
+            "classSource": "DZC:ANA:B",
+            "page": 2,
+            "level": 19,
+            "entries": [
+                "At 19th level, your Adrenaline state activates when you have less than your maximum hit points instead of three quarters, and its benefits are doubled if you have half of your maximum hit points left or less instead of one quarter."
+            ]
+        },
+        {
+            "name": "Temperamental",
+            "source": "DZC:ANA:B",
+            "foundryImg": "",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 3,
-            "level": 14,
+            "level": 1,
             "entries": [
-                "At 14th level, you learn an additional {@filter Underhanded Tactic|optionalfeatures|feature type=DZC:CS} of your choice."
-            ]
-		},
-
+                "Starting at 1st level, your emotions are stronger than anyone else, often causing you to act irrationally and violent. When a situation challenges your personality, flaws, ideals, or bonds, you must make a DC 15 Charisma saving throw to retain your composure. You have a penalty to the roll equal to your Adrenaline bonus. You can choose to fail this saving throw."
+            ],
+            "foundrySystem": {
+                "actionType": "saving throw",
+                "save.ability": "cha",
+                "save.DC": "15",
+                "save.scaling": "flat"
+            }
+        },
         {
-            "name": "Cunning Action",
+            "name": "Frantic",
             "source": "DZC:ANA:B",
-            "foundryImg": "icons/magic/defensive/illusion-evasion-echo-purple.webp",
+            "foundryImg": "",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 3,
             "level": 2,
             "entries": [
-                "At 2nd level, your quick thinking and agility allow you to move and act quickly. You can take the {@action Dash}, {@action Disengage}, {@action Help}, {@action Hide}, or {@action Use an Object} action as a bonus action."
+                "Anger, sadness, fear, joy. Your emotions are highly volatile and can easily overwhelm your mind entirely. At 2nd level, choose one of the following benefits:",
+                {
+                    "type": "options",
+                    "count": 1,
+                    "entries": [
+                        {
+                            "type": "section",
+                            "entries": "Your Adrenaline benefits are doubled."
+                        },
+                        {
+                            "type": "section",
+                            "entries": "You have advantage on melee weapon attacks against a creature if at least one of your allies is within 5 feet from it and isn't incapacitated."
+                        },
+                        {
+                            "type": "section",
+                            "entries": "Your Adrenaline movement speed bonus is tripled and you add your Adrenaline bonus to your AC."
+                        }
+                    ]
+                },
+                "While under the effects of your Adrenaline state, you can use your bonus action to enter a Frantic state for 1 minute. Your Frantic state ends early if your Adrenaline state ends. For the duration, you receive the benefit chosen above, but you can't cast or concentrate on spells. Also, you can't speak words that have more syllables than your Intelligence modifier and if your Intelligence modifier is 0 or lower then you can only make unintelligible sounds.",
+                "You can use this feature two times. You regain all expended uses after you finish a short or long rest."
             ],
             "foundrySystem": {
-                "activation.type": "bonus action"
+                "uses.per": "sr",
+				"uses.max": "2",
+                "uses.value": 1
+            }
+        },
+
+		{
+			"name": "Primitive Scream",
+			"source": "DZC:ANA:B",
+            "foundryImg": "",
+            "className": "Barbarian Rework",
+            "classSource": "DZC:ANA:B",
+            "page": 3,
+            "level": 2,
+            "entries": [
+                "Also at 2nd level, when you enter your Frantic state, you can choose to release a sonorous scream which carries an animalistic power. Each creature within 30 feet from you that can hear you suffers the effect of the scream. You start by knowing one such effect: Fearsome Roar. Some primal paths grant you an additional one.",
+                "Some Primitive Scream effects require your target to make a saving throw to resist the feature's effects. The saving throw DC is calculated as follows:",
+                {
+                    "type": "abilityDc",
+                    "name": "Primitive Scream",
+                    "attributes": [
+                        "con"
+                    ]
+                },
+                {
+					"type": "refClassFeature",
+					"classFeature": "Primitive Scream: Fearsome Roar|Barbarian Rework|DZC:ANA:B|2"
+				}
+            ]
+		},
+        {
+            "name": "Primitive Scream: Fearsome Roar",
+			"source": "DZC:ANA:B",
+            "foundryImg": "",
+            "className": "Barbarian Rework",
+            "classSource": "DZC:ANA:B",
+            "page": 3,
+            "level": 2,
+			"header": 2,
+			"entries": [
+				"When this effect is activated, each creature within your scream's area must succeed on a Wisdom saving throw or become {@condition frightened} of you for 1 minute. A creature {@condition frightened} this way can repeat the saving throw at the end of each of its turns."
+			],
+            "foundrySystem": {
+                "actionType": "saving throw",
+                "save.ability": "wis",
+                "save.scaling": "con"
             }
         },
 
         {
-            "name": "Cheaper Craft",
-            "source": "DZC:ANA:B",
-            "foundryImg": "icons/skills/trades/construction-carpentry-hammer.webp",
-            "className": "Barbarian Rework",
-            "classSource": "DZC:ANA:B",
-            "page": 3,
-            "level": 2,
-            "entries": [
-                "It's important to make do with what little you have. At 2nd level, you learn how to craft certain items using cheaper materials. When you are crafting either a nonmagical or consumable item, you can reduce its material cost by a percentage equal to 15 times your Intelligence modifier (minimum of 5 percent). However, by doing so you sacrifice the item's quality. Thus, any item you craft in this way lasts for 24 hours and sells for a quarter of its selling price. After that time, the item breaks or loses potency, and the materials can't be reclaimed."
-            ]
-        },
-
-        {
-            "name": "Roguish Vocation",
+            "name": "Primal Path",
             "source": "DZC:ANA:B",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 3,
             "level": 3,
             "entries": [
-                "At 3rd level, you dedicate to a vocation that helps you compete in the market, all detailed at the end of the class description. Your archetype grants you features at 3rd level and again at 9th, 13th, and 17th level."
+                "At 3rd level, you choose a path that shapes the bond with your primal side, all detailed at the end of the class description. Your path grants you features at 3rd level and again at 6th, 9th, and 14th level."
             ]
         },
         {
-            "name": "Roguish Vocation feature",
+            "name": "Primal Path feature",
+            "source": "DZC:ANA:B",
+            "className": "Barbarian Rework",
+            "classSource": "DZC:ANA:B",
+            "page": 3,
+            "level": 6,
+            "entries": [
+                "At 6th level, you gain a feature granted by your Primal Path."
+            ]
+        },
+        {
+            "name": "Primal Path feature",
             "source": "DZC:ANA:B",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 3,
             "level": 9,
             "entries": [
-                "At 9th level, you gain a feature granted by your Roguish Vocation."
+                "At 9th level, you gain a feature granted by your Primal Path."
             ]
         },
         {
-            "name": "Roguish Vocation feature",
+            "name": "Primal Path feature",
             "source": "DZC:ANA:B",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 3,
-            "level": 13,
+            "level": 14,
             "entries": [
-                "At 13th level, you gain a feature granted by your Roguish Vocation."
-            ]
-        },
-        {
-            "name": "Roguish Vocation feature",
-            "source": "DZC:ANA:B",
-            "className": "Barbarian Rework",
-            "classSource": "DZC:ANA:B",
-            "page": 3,
-            "level": 17,
-            "entries": [
-                "At 17th level, you gain a feature granted by your Roguish Vocation."
-            ]
-        },
-
-        {
-            "name": "Expertise",
-            "source": "DZC:ANA:B",
-            "foundryImg": "icons/sundries/books/book-red-exclamation.webp",
-            "className": "Barbarian Rework",
-            "classSource": "DZC:ANA:B",
-            "page": 3,
-            "level": 3,
-            "entries": [
-                "At 3rd level, choose two of your proficiencies, either in skills or with tools. Your proficiency bonus is doubled for any ability check you make that uses either of the chosen proficiencies.",
-                "At 10th level, you can choose two more of your skill or tool proficiencies to gain this benefit."
-            ],
-            "expertise": [
-                {
-                    "anyProficientSkill": 2
-                },
-                {
-                    "anyProficientSkill": 1,
-                    "anyProficientTool": 1
-                },
-                {
-                    "anyProficientTool": 2
-                }
-            ]
-        },
-        {
-            "name": "Expertise",
-            "source": "DZC:ANA:B",
-            "foundryImg": "icons/sundries/books/book-red-exclamation.webp",
-            "className": "Barbarian Rework",
-            "classSource": "DZC:ANA:B",
-            "page": 3,
-            "level": 10,
-            "entries": [
-                "At 10th level, you can choose two more of your skill or tool proficiencies to gain this benefit."
-            ],
-            "expertise": [
-                {
-                    "anyProficientSkill": 2
-                },
-                {
-                    "anyProficientSkill": 1,
-                    "anyProficientTool": 1
-                },
-                {
-                    "anyProficientTool": 2
-                }
+                "At 14th level, you gain a feature granted by your Primal Path."
             ]
         },
 
@@ -584,1077 +619,196 @@
         },
 
         {
-            "name": "Swift Consumption",
+            "name": "Extra Attack",
             "source": "DZC:ANA:B",
-            "foundryImg": "icons/skills/toxins/poison-bottle-open-blood-red.webp",
+            "foundryImg": "",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
-            "page": 4,
+            "page": 3,
             "level": 5,
             "entries": [
-                "At 5th level, your fast hands can quickly activate certain magical items. You can use your Cunning Action to use a consumable magic item as a bonus action, such as potions or spell scrolls. The rarity of the item can't be greater than uncommon. You can use rare items with this feature at 11th level, and very rare ones at 18th level."
+                "Beginning at 5th level, you can attack twice, instead of once, whenever you take the {@action Attack} action on your turn.",
+                "The number of attacks increases to three when you reach 15th level in this class."
+            ]
+        },
+
+        {
+            "name": "Relentless",
+            "source": "DZC:ANA:B",
+            "foundryImg": "",
+            "className": "Barbarian Rework",
+            "classSource": "DZC:ANA:B",
+            "page": 3,
+            "level": 5,
+            "entries": [
+                "At 5th level, during your turn, if you are under an effect or condition that prevents you from moving, you can still move an ammount of feet up to the extra movement speed granted by your Adrenaline state. However, this doesn't end the effect or condition."
+            ]
+        },
+        {
+            "name": "Strong Scent",
+            "source": "DZC:ANA:B",
+            "foundryImg": "",
+            "className": "Barbarian Rework",
+            "classSource": "DZC:ANA:B",
+            "page": 3,
+            "level": 7,
+            "entries": [
+                "At 7th level, your glands produce a strong body smell akin to that of an odorous beast. This odor can be smelled up to 10 feet from you, which most creatures will perceive it as unpleasant or disgusting, specially for those unfamiliar with it.",
+                "As a bonus action, you can focus to release special scretions from your glands, which get mixed with your odor emissions. When you do so, choose one of the options below. Your secretions last for 1 minute, it ends early if you are incapacitated, die, or use this feature again. A creature that can smell your odor at the start of its turn becomes targeted by your secretions. If a secretion option requires a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.",
+                {
+					"type": "refClassFeature",
+					"classFeature": "Hostile Secretions|Barbarian Rework|DZC:ANA:B|7"
+				},
+                {
+					"type": "refClassFeature",
+					"classFeature": "Attracting Secretions|Barbarian Rework|DZC:ANA:B|7"
+				},
+                "A creature under the effects of your secretions can repeat the saving throw at the end of each of its turns. It has disadvantage if it's still within the area of your odor. A creature that is familiar with your smell (like one that has been exposed to it for weeks) has advantage on the saving throw. If a creature succeeds on the saving throw, it becomes immune to your secretions for the next 24 hours.",
+                "If you're thoroughly washed for 1 hour, your emissions disappear for 24 hours. Being thoroughly washed means going through a process that involves having every inch of your body scrubbed with soap and brushed (as many times as needed), having your hair degreased, then your body moisturized with oil and perfumed."
             ],
             "foundrySystem": {
-                "activation.type": "bonus action"
+                "activation.type": "bonus action",
+                "duration.value": 1,
+				"duration.units": "minute"
             }
         },
         {
-            "name": "Swift Consumption improvement",
+            "name": "Hostile Secretions",
+			"source": "DZC:ANA:B",
+            "foundryImg": "",
+            "className": "Barbarian Rework",
+            "classSource": "DZC:ANA:B",
+            "page": 4,
+            "level": 7,
+			"header": 3,
+			"entries": [
+				"Your odor changes to one of danger, like that of a predator. A creature targeted by your secretions must succeed on a Wisdom saving throw or become {@condition frightened} of you for 1 minute."
+			],
+            "foundrySystem": {
+                "actionType": "saving throw",
+                "save.ability": "wis",
+                "save.scaling": "con"
+            }
+        },
+        {
+            "name": "Attracting Secretions",
+			"source": "DZC:ANA:B",
+            "foundryImg": "",
+            "className": "Barbarian Rework",
+            "classSource": "DZC:ANA:B",
+            "page": 4,
+            "level": 7,
+			"header": 3,
+			"entries": [
+				"Your odor becomes a pleasant scent which evokes nice feelings. A creature targeted by your secretions must succeed on a Charisma saving throw or become {@condition charmed} by you for 1 minute."
+			],
+            "foundrySystem": {
+                "actionType": "saving throw",
+                "save.ability": "cha",
+                "save.scaling": "con"
+            }
+        },
+
+        {
+            "name": "Growth Spurt",
             "source": "DZC:ANA:B",
-            "foundryImg": "icons/skills/toxins/poison-bottle-open-blood-red.webp",
+            "foundryImg": "",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 4,
             "level": 11,
             "entries": [
-                "At 11th level you can use rare items with this feature."
-            ],
-            "foundrySystem": {
-                "activation.type": "bonus action"
-            }
+                "At 11th level, you gain the heavyweight title as your body doubles in size. Your character's weight is doubled, so you need to consume twice the amount of food and water per day to prevent suffering from exhaustion. You also gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "You double your carrying capacity and the weight you can push, drag, or lift.",
+                        "You count as one size larger for the purposes of shoving and grappling."
+                    ]
+                },
+                "At 18th level, your growth reaches its peak, developing stronger emissions and energy conservation. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "The area of your {@classFeature Strong Scent|Barbarian Rework|DZC:ANA:B|7|DZC:ANA} increases to 15 feet.",
+                        "The number of days you can go without eating or drinking (before suffering the effects of {@condition exhaustion}) increases by 5 after you have eaten and drunk your full required amount.",
+                        "You can travel for 10 hours a day without suffering the effects of {@condition exhaustion}."
+                    ]
+                }
+            ]
         },
         {
-            "name": "Swift Consumption improvement",
+            "name": "Growth Spurt improvement",
             "source": "DZC:ANA:B",
-            "foundryImg": "icons/skills/toxins/poison-bottle-open-blood-red.webp",
+            "foundryImg": "",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 4,
             "level": 18,
             "entries": [
-                "At 11th level you can use very rare items with this feature."
+                "At 18th level, your growth reaches its peak, developing stronger emissions and energy conservation. You gain the following benefits:",
+                {
+                    "type": "list",
+                    "items": [
+                        "The area of your {@classFeature Strong Scent|Barbarian Rework|DZC:ANA:B|7|DZC:ANA} increases to 15 feet.",
+                        "The number of days you can go without eating or drinking (before suffering the effects of {@condition exhaustion}) increases by 5 after you have eaten and drunk your full required amount.",
+                        "You can travel for 10 hours a day without suffering the effects of {@condition exhaustion}."
+                    ]
+                }
+            ]
+        },
+
+        {
+            "name": "Back to the Land",
+            "source": "DZC:ANA:B",
+            "foundryImg": "",
+            "className": "Barbarian Rework",
+            "classSource": "DZC:ANA:B",
+            "page": 4,
+            "level": 13,
+            "entries": [
+                "Starting at 13th level, life in civilization has become stressful and uncomfortable for you. You gain a level of {@condition exhaustion} for every week you spend somewhere bigger than a village. In comparison, you can easily subsist in the wilderness, since you can find in one hour everything needed to feed, quench the thirst, and shelter a Large creature for a day. In addition, you are immune to the effects extreme temperatures."
+            ]
+        },
+
+        {
+            "name": "Savage Outburst",
+            "source": "DZC:ANA:B",
+            "foundryImg": "",
+            "className": "Barbarian Rework",
+            "classSource": "DZC:ANA:B",
+            "page": 4,
+            "level": 17,
+            "entries": [
+                "At 17th level, when you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. When you do so, you end all conditions affecting you (except for {@condition exhaustion}) and you gain an additional turn at the end of the current one. You also have an additional action in this extra turn. Nonetheless, for the next minute you return to a savage state in which only falling {@condition unconscious} ends your Adrenaline state, you have advantage on all saving throws, and your main goal is dispatching nearby threats and running away to a safe place where you could rest.",
+                "Once you use this feature, you can't use it again until you finish a long rest."
             ],
             "foundrySystem": {
-                "activation.type": "bonus action"
+                "uses.per": "lr",
+				"uses.max": 1,
+                "uses.value": 1
             }
         },
 
         {
-            "name": "Quick Learner",
+            "name": "King of the Jungle",
             "source": "DZC:ANA:B",
-            "foundryImg": "icons/sundries/documents/blueprint-helmet.webp",
-            "className": "Barbarian Rework",
-            "classSource": "DZC:ANA:B",
-            "page": 4,
-            "level": 5,
-            "entries": [
-                "Also at 5th level, you can prepare for any situation you might face in the short future. During a long rest, you can spend 1 hour learning how to use a skill or tool you have no proficiency with. At the end of the long rest, you add your proficiency bonus to checks using that skill or tool you studied. This benefit lasts until you use this feature again or you gain proficiency in the respective skill or tool.",
-                {
-                    "type": "inset",
-                    "name": "The Quick Learner Effect",
-                    "entries": [
-                        "When imported via Plutonium, the feature will create an effect in you character sheet to add this benefit to a skill and a tool. By default it is set to add your proficiency bonus to your Acrobatics skill, and no bonus to your thieves' tools, you can manually modify it according to your choices.",
-                        {
-                            "type": "entries",
-                            "name": "Skills' Abbreviations",
-                            "entries": [
-                                "The following is a list with all the skill's abbreviations found in the FoundryVTT software, in parenthesis is the skill it corresponds to: acr (Acrobatics), ani (Animal Handling), arc (Acrobatics), ath (Athletics), dec (Deception), his (History), ins (Insight), itm (Intimidation), inv (Investigation), med (Medicine), nat (Nature), prc (Perception), prf (Performance), per (Persuasion), rel (Religion), slt (Sleight of Hands), ste (Stealth), sur (Survival)."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Tools' Abbreviations",
-                            "entries": [
-                                "The following is a list with all the tool's abbreviations found in the FoundryVTT software, in parenthesis is the tool it corresponds to: art (artisan's tools), alchemist, brewer, calligrapher, carpenter, cartographer, coobler, cook, glassblower, jeweler, leatherworker, mason, painter, potter, smith, tinker, weaver, woodcarver, disg (disguise kit), forg (forgery kit), game (gaming set), chess (chess set), dice (dice set), card (playing cards set), herb (herbalism kit), music (musical instrument), bagpipes, drum, dulcimer, flute, horn, lute, lyre, panflute, shawm, viol, navg (navigator's tools), pois (poisoner's kit), thief (thieves' tools), vehicle (vehicles), air (air vehicle), land (vehicle), space (space vehicle), water (water vehicle)"
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-
-        {
-            "name": "Shared Misfortune",
-            "source": "DZC:ANA:B",
-            "foundryImg": "icons/skills/social/trading-injustice-scale-gray.webp",
-            "className": "Barbarian Rework",
-            "classSource": "DZC:ANA:B",
-            "page": 4,
-            "level": 7,
-            "entries": [
-                "Bad luck always strikes at the worst possible time, unless it happens to someone else. At 7th level, whenever a creature that you can see within 30 feet from you makes an ability check, attack roll, or saving throw, you can give the creature disadvantage on the roll. When you do so, you can't use this feature again before the start of your next turn."
-            ]
-        },
-
-        {
-            "name": "Opportunity for Improvement",
-            "source": "DZC:ANA:B",
-            "foundryImg": "icons/sundries/gaming/dice-pair-white-green.webp",
-            "className": "Barbarian Rework",
-            "classSource": "DZC:ANA:B",
-            "page": 4,
-            "level": 14,
-            "entries": [
-                "No matter how dire the situation is, you can always count on your talent to fix it. Starting at 14th level, when you roll for initiative and have no Talent die remaining, you regain two Talent die. You also regain one Talent die when you fail an ability check, attack roll, or saving throw on your turn."
-            ]
-        },
-
-        {
-            "name": "Mastery",
-            "source": "DZC:ANA:B",
-            "foundryImg": "icons/sundries/books/book-symbol-square-blue-green.webp",
-            "className": "Barbarian Rework",
-            "classSource": "DZC:ANA:B",
-            "page": 4,
-            "level": 19,
-            "entries": [
-                "At 19th level, choose two of your proficiencies, either in skills or with tools. Your proficiency bonus is tripled for any ability check you make that uses either of the chosen proficiencies.",
-                {
-                    "type": "inset",
-                    "name": "The Mastery Effect",
-                    "entries": [
-                        "When imported via Plutonium, the feature will create an effect in you character sheet to add this benefit to a skill and a tool. By default it is set to add double your proficiency bonus to your Acrobatics skill and your thieves' tools, you can manually modify it according to your choices.",
-                        {
-                            "type": "entries",
-                            "name": "Skills' Abbreviations",
-                            "entries": [
-                                "The following is a list with all the skill's abbreviations found in the FoundryVTT software, in parenthesis is the skill it corresponds to: acr (Acrobatics), ani (Animal Handling), arc (Acrobatics), ath (Athletics), dec (Deception), his (History), ins (Insight), itm (Intimidation), inv (Investigation), med (Medicine), nat (Nature), prc (Perception), prf (Performance), per (Persuasion), rel (Religion), slt (Sleight of Hands), ste (Stealth), sur (Survival)."
-                            ]
-                        },
-                        {
-                            "type": "entries",
-                            "name": "Tools' Abbreviations",
-                            "entries": [
-                                "The following is a list with all the tool's abbreviations found in the FoundryVTT software, in parenthesis is the tool it corresponds to: art (artisan's tools), alchemist, brewer, calligrapher, carpenter, cartographer, coobler, cook, glassblower, jeweler, leatherworker, mason, painter, potter, smith, tinker, weaver, woodcarver, disg (disguise kit), forg (forgery kit), game (gaming set), chess (chess set), dice (dice set), card (playing cards set), herb (herbalism kit), music (musical instrument), bagpipes, drum, dulcimer, flute, horn, lute, lyre, panflute, shawm, viol, navg (navigator's tools), pois (poisoner's kit), thief (thieves' tools), vehicle (vehicles), air (air vehicle), land (vehicle), space (space vehicle), water (water vehicle)"
-                            ]
-                        }
-                    ]
-                }
-            ]
-        },
-
-        {
-            "name": "Stroke of Luck",
-            "source": "DZC:ANA:B",
-            "foundryImg": "icons/commodities/flowers/clover.webp",
+            "foundryImg": "",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 4,
             "level": 20,
             "entries": [
-                "At 20th level, you have an uncanny knack for succeeding when you need to. Before you make an ability check, attack roll, or saving throw, you can treat the d20 roll as a 20.",
-                "You can use this feature three times, you regain all expended uses when you finish a long rest.",
-                "In addition, when you finish a long rest, you can choose one of your acquired talents and replace it with a different one."
+                "You are on top of the food chain, standing proud at the peak from where everyone can admire your figure. At 20th level, your melee weapon attacks deal 3d6 extra damage to creatures whose challenge rating or level is equal to 15 or lower. In addition, those creatures have disadvantage against your {@classFeature Primitive Scream|Barbarian Rework|DZC:ANA:B|2|DZC:ANA} and {@classFeature Strong Scent|Barbarian Rework|DZC:ANA:B|7|DZC:ANA:B}."
             ],
             "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "Before you make an ability check, attack roll, or saving throw",
-                "activation.cost": 1,
-                "uses.per": "lr",
-				"uses.max": 3,
-                "uses.value": 1
+                "actionType": "other",
+                "damage.parts": [
+                    "3d6"
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to the damage of your melee weapon attack"
             }
         }
-    ],
-
-    "optionalfeature": [
-        {
-            "name": "Ganging Up",
-            "source": "DZC:ANA:B",
-            "page": 3,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "featureType": [
-				"DZC:UT"
-            ],
-            "entries": [
-                "It's easier to mess someone up when your gang's with you, and you're less likely to be messed with. If you and at least 2 friendly creatures are within 10 feet of the same creature, and no other hostile creature is within 10 feet from you and your companions, then your group has advantage on {@skill Intimidation} and {@skill Persuasion} checks, and advantage on saving throws against being {@condition charmed} or {@condition frightened} against the surrounded target."
-            ]
-        },
-
-        {
-            "name": "Parkour",
-            "source": "DZC:ANA:B",
-            "page": 3,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "featureType": [
-				"DZC:UT"
-            ],
-            "entries": [
-                "You honed your skills to climb and move across buildings to evade authorities and thugs. Climbing doesn't cost you extra movement, the number of feet you can cover with a long jump increases by 10 feet, and you reduce the damage you take from falling an amount equal to your rogue level."
-            ]
-        },
-
-        {
-            "name": "Pickpocketing",
-            "source": "DZC:ANA:B",
-            "page": 3,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "featureType": [
-				"DZC:UT"
-            ],
-            "entries": [
-                "No purse is safe from you. You take no penalty to your checks for trying to {@action Steal|DZC:ANA:B|steal} a closely guarded object, as long as the object wouldn't be extremely noticeable or time consuming to remove (like worn shoes or armor, or wielded objects)."
-            ]
-        },
-
-        {
-            "name": "Scamming",
-            "source": "DZC:ANA:B",
-            "page": 3,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "featureType": [
-				"DZC:UT"
-            ],
-            "entries": [
-                "You make use of your wits to take advantage of the gullible and the naive, convincing them of how your products are of a higher quality than any other. You have advantage on Charisma checks whenever you attempt to sell an item or your services for a higher price than the one normally offered."
-            ]
-        },
-
-		{
-            "name": "Seduction",
-            "source": "DZC:ANA:B",
-            "page": 3,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "featureType": [
-				"DZC:UT"
-            ],
-            "entries": [
-                "There is no denying that it's easier to get what you want by enamouring your audience than taking it by force. Seduction is an art that can be performed in many ways, some of the most common ones are by flirting, sweet talking, courting, or simply flaunting your physical attractiveness. If you spend at least 10 minutes seducing a creature, you have advantage on your next convince check against it."
-            ]
-        },
-
-		{
-            "name": "Sneaking",
-            "source": "DZC:ANA:B",
-            "page": 3,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "featureType": [
-				"DZC:UT"
-            ],
-            "entries": [
-                "Your technique is to hide in less visible places in order to escape tough situations, like blending with crowds, ducking behind crates, or stepping into the shadows. You can attempt to hide from a creature when you are lightly obscured or behind three-quarters cover from it."
-            ]
-        },
-
-		{
-            "name": "Academical",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:AC"
-            ],
-            "entries": [
-                "You can spend your Talent die on Intelligence checks related to academical research or memory."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you make an Intelligence check related to academical research or memory",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to ability check"
-            }
-        },
-
-        {
-            "name": "Athletic",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:AC"
-            ],
-            "entries": [
-                "You can spend your Talent die on Strength checks related to climbing, jumping, running, or swimming."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you make a Strength check related to climbing, jumping, running, or swimming",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to ability check"
-            }
-        },
-
-		{
-            "name": "Endurance",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:AC"
-            ],
-            "entries": [
-                "You can spend your Talent die on Constitution checks related to enduring adverse conditions. For instance, going without sleep, surviving without food or water, being exposed to extreme temperatures, or resisting intoxication."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you make a Constitution check related to enduring adverse conditions",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to ability check"
-            }
-        },
-
-        {
-            "name": "Exploration",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:AC"
-            ],
-            "entries": [
-                "You can spend your Talent die on checks related to navigating through an area of wilderness, dungeons, or cities, such as avoid getting lost, finding resources or sustenance, or learning about its history or inhabitants."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you make a check related to navigating through an area of wilderness, dungeons, or cities",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to ability check"
-            }
-        },
-
-        {
-            "name": "Feline Grace",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:AC"
-            ],
-            "entries": [
-                "You can spend your Talent die on Dexterity checks related to coordinating your movements, avoid falling, and hiding."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you make a Dexterity check related to coordinating your movements, avoid falling, and hiding",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to ability check"
-            }
-        },
-
-        {
-            "name": "Medical",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:AC"
-            ],
-            "entries": [
-                "You can spend your Talent die on Wisdom checks related to treating wounds or identifying common diseases."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you make a Wisdom check related to treating wounds or identifying common diseases",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to ability check"
-            }
-        },
-
-        {
-            "name": "Searching",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:AC"
-            ],
-            "entries": [
-                "You can spend your Talent die on ability checks related to looking for creatures, objects, traps, or clues."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you make an ability check related to looking for creatures, objects, traps, or clues",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to ability check"
-            }
-        },
-
-        {
-            "name": "See Through",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:AC"
-            ],
-            "entries": [
-                "You can spend your Talent die on checks related to examining for illusions or someone trying to deceive you."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you make an ability check related to examining for illusions or someone trying to deceive you",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to ability check"
-            }
-        },
-
-        {
-            "name": "Theatrics",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:AC"
-            ],
-            "entries": [
-                "You can spend your Talent die on Charisma checks related to convincing or deceiving a creature, or performing an act."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you make a Charisma check related to convincing or deceiving a creature, or performing an act",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to ability check"
-            }
-        },
-
-        {
-            "name": "Body Balance",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:ST"
-            ],
-            "entries": [
-                "You can spend your Talent die on saving throws against being {@condition grappled}, pushed, or knocked {@condition prone}."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to saving throw"
-            }
-        },
-
-        {
-            "name": "Mental Resistance",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:ST"
-            ],
-            "entries": [
-                "You can spend your Talent die on Intelligence and Wisdom saving throws against magic."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to saving throw"
-            }
-        },
-
-        {
-            "name": "Physical Fortitude",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:ST"
-            ],
-            "entries": [
-                "You can spend your Talent die on Strength and Constitution saving throws against magic."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to saving throw"
-            }
-        },
-
-        {
-            "name": "Resistant Body",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:ST"
-            ],
-            "entries": [
-                "You can spend your Talent die on saving throws against poisons and diseases."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to saving throw"
-            }
-        },
-
-        {
-            "name": "Trap Connoisseur",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:ST"
-            ],
-            "entries": [
-                "You can spend your Talent die on saving throws against traps."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to saving throw"
-            }
-        },
-
-        {
-            "name": "Trickster",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:ST"
-            ],
-            "entries": [
-                "You can spend your Talent die on Dexterity and Charisma saving throws against magic."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to saving throw"
-            }
-        },
-
-        {
-            "name": "Unwavering Heart",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:ST"
-            ],
-            "entries": [
-                "You can spend your Talent die on saving throws against being {@condition charmed} or {@condition frightened}."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to saving throw"
-            }
-        },
-
-        {
-            "name": "Alchemy",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:TnK"
-            ],
-            "entries": [
-                "When you use {@item alchemist's supplies|phb} to craft a dose of {@item acid (vial)|phb|acid} acid or {@item alchemist's fire|phb}, you can spend your Talent die to increase the initial damage of that item by an amount equal to the total rolled. This extra damage lasts for 24 hours after the item is crafted."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to acid (vial) or alchemist's fire initial damage"
-            }
-        },
-
-        {
-            "name": "Disguising",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:TnK"
-            ],
-            "entries": [
-                "While wearing a disguise you made using a {@item disguise kit|phb} and a creature tries to see through it, you can spend your Talent die and increase the DC for that check by the total rolled."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to disguise DC"
-            }
-        },
-
-        {
-            "name": "Gaming",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:TnK"
-            ],
-            "entries": [
-                "Using a {@item gaming set|phb} you can spend one day gambling or performing a show with it. Spend your Talent die. Roll a d20 at the end of the day. Add your proficiency bonus to the roll if you have proficiency with that tool. If you roll a 15 or higher, you gain an amount of sp equal to the total rolled in your Talent die. If you are gambling, you lose that amount of sp if you fail the check, and double the amount you win if you roll a 20 or higher."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Amount of sp for this activity"
-            }
-        },
-
-        {
-            "name": "Musical",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:TnK"
-            ],
-            "entries": [
-                "When you are performing a show in a public place using a {@item musical instrument|phb}, and your performance succeeds on captivating the public, you can spend your Talent die. You gain a number of fans equal to the total rolled.",
-                {
-                    "type": "inset",
-                    "name": "What if a Fan?",
-                    "entries": [
-                        "Fans are creatures who are friendly to you, and might offer some goods or services to you with almost no cost in return. The fan will assist you as much as a reasonable person would assist someone they admired. However, if a fan is {@condition charmed}, they might be convinced to go beyond, even if it costs them dearly."
-                    ]
-                }
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Amount of fans"
-            }
-        },
-
-        {
-            "name": "Poisoning",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:TnK"
-            ],
-            "entries": [
-                "When you craft a {@item basic poison (vial)|phb|vial of basic poison} with a {@item poisoner's kit|phb}, you can spend your Talent die to improve its potency. When you do so, the first creature affected by that poison will take a penalty to the next ability check, saving throw, or attack roll it makes before the next minute. The penalty equals the total rolled on your Talent die. The poison retains this additional effect for 24 hours after it's crafted."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Penalty to the die roll"
-            }
-        },
-
-        {
-            "name": "Tending Wounds",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:TnK"
-            ],
-            "entries": [
-                "When you use a {@item healer's kit|phb} on a creature, you can spend your Talent die to give the creature temporary hit points equal to the total rolled. These temporary hit points last for 10 minutes."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "actionType": "healing",
-                "damage.parts": [
-                    [
-                        "1d6",
-                        "temphp"
-                    ]
-                ]
-            }
-        },
-
-        {
-            "name": "Thievery",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:TnK"
-            ],
-            "entries": [
-                "You can spend your Talent die whenever you use {@item thieves' tools|phb} to successfully unlock a treasure chest, a door to a trasure room, or other type of receptacle that contains loot. If you do, you find a number of gp within that treasure equal to the total rolled in your Talent die."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Extra gp"
-            }
-        },
-
-        {
-            "name": "Aiming",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:C"
-            ],
-            "entries": [
-                "If you haven't moved on your turn and make a ranged weapon attack, you can spend your Talent die and add it to the attack roll. After you use this talent, your speed is 0 and can't use it again before the end of your turn."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to attack roll"
-            }
-        },
-
-        {
-            "name": "Blocking",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:C"
-            ],
-            "entries": [
-                "When you take damage, you can use your reaction to spend your Talent die and reduce the damage taken by the total rolled."
-            ],
-            "foundrySystem": {
-                "activation.type": "reaction",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Reduced damage"
-            }
-        },
-
-        {
-            "name": "Cutting",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:C"
-            ],
-            "entries": [
-                "When you hit a creature with a weapon attack and have advantage on the attack roll, you can spend your Talent die on the attack's damage roll.",
-                "You don't need advantage on the attack roll if another creature is distracting the target (like when using the {@action Help|phb} or {@action Distract|DZC:ANA:B} action) and you don't have disadvantage on the attack roll."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to weapon attack damage"
-            }
-        },
-
-        {
-            "name": "Dodging",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:C"
-            ],
-            "entries": [
-                "When a creature that you can see targets you with an attack, you can use your reaction to spend your Talent die and add it to your AC against that attack."
-            ],
-            "foundrySystem": {
-                "activation.type": "reaction",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to AC"
-            }
-        },
-
-        {
-            "name": "Striking",
-            "source": "DZC:ANA:B",
-            "page": 7,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:C"
-            ],
-            "entries": [
-                "If you target a creature with a melee weapon attack and no other creature is within 5 feet from you or the target, you can spend your Talent die and add it to the attack roll."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to attack roll"
-            }
-        },
-
-        {
-            "name": "Trapping",
-            "source": "DZC:ANA:B",
-            "page": 8,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-            "consumes": {
-                "name": "Roguish Talents",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:T",
-                "DZC:T:C"
-            ],
-            "entries": [
-                "When you are setting up a trap that deals damage when activated, you can spend your Talent die and add it to that trap's damage. This effect lasts for 1 hour before it's activated."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d6"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to trap's initial damage"
-            }
-        }
-
     ],
 	
 	"subclass": [
