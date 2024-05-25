@@ -982,9 +982,9 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting at 3rd level, you can use your {@classFeature Primitive Scream|Barbarian Rework|DZC:ANA|2|DZC:ANA} to call an animal spirit to help you in battle. When you do so, choose a {@filter beast that is no larger than Medium and that has a challenge rating of 1/8 or lower|bestiary|challenge rating=[&0;&1/8]|type=beast|size=f;d;t;s;m|miscellaneous=!swarm}. The beast appears in an unoccupied space of your choice within 10 feet from you. The beast disappears when your Frantic state ends, when it reaches 0 hit points, or if you summon another beast in this way.",
+				"Starting at 3rd level, you can use your {@classFeature Primitive Scream|Barbarian Rework|DZC:ANA|2|DZC:ANA} to call an animal spirit to help you in battle. When you do so, choose a {@filter beast that is no larger than Medium and that has a challenge rating of 1/8 or lower|bestiary|challenge rating=[&0;&1/8]|type=beast|size=t;s;m|miscellaneous=!swarm}. The beast appears in an unoccupied space of your choice within 10 feet from you. The beast disappears when your Frantic state ends, when it reaches 0 hit points, or if you summon another beast in this way.",
                 "The beast adds your proficiency bonus to its AC, attack rolls, damage rolls. Its hit point maximum equals the hit point number in its stat block or four times your barbarian level, whichever is higher.",
-                "The beast shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands, but you must use your bonus action to command it to take an action. If you don't issue any, the beast takes the Dodge action."
+                "The beast shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands, but you must use your bonus action to command it to take an action. If you don't issue any, the beast takes the {@action Dodge} action."
 			]
 		},
 
