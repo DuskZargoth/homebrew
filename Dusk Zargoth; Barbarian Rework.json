@@ -1204,10 +1204,10 @@
                 {
                     "type": "list",
                     "items": [
-                        "{@b{@i Beasthide}} The beast gains a +2 bonus to AC bonus and proficiency with all saving throws.",
-                        "{@b{@i Longtooth}} The beast has advantage on attack rolls against a creature if at least one of the beast's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}.",
-                        "{@b{@i Swiftstride}} The beast's movement speed increases by 10 feet and it doesn't provoke opportunity attacks.",
-                        "{@b{@i Wildhunt}} The beast adds double your proficiency bonus to its {@skill Perception} checks. In addition, no creature can make an attack roll with advantage against it, unless it's {@condition incapacitated}."
+                        "{@b {@i Beasthide}} The beast gains a +2 bonus to AC bonus and proficiency with all saving throws.",
+                        "{@b {@i Longtooth}} The beast has advantage on attack rolls against a creature if at least one of the beast's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}.",
+                        "{@b {@i Swiftstride}} The beast's movement speed increases by 10 feet and it doesn't provoke opportunity attacks.",
+                        "{@b {@i Wildhunt}} The beast adds double your proficiency bonus to its {@skill Perception} checks. In addition, no creature can make an attack roll with advantage against it, unless it's {@condition incapacitated}."
                     ]
                 }
 			]
