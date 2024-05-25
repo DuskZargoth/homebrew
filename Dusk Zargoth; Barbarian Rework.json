@@ -331,24 +331,9 @@
                     "type": "options",
                     "count": 1,
                     "entries": [
-                        {
-                            "type": "section",
-                            "entries": [
-                                "Strength and Constitution saving throws."
-                            ]
-                        },
-                        {
-                            "type": "section",
-                            "entries": [
-                                "Strength, Dexterity, and Constitution checks."
-                            ]
-                        },
-                        {
-                            "type": "section",
-                            "entries": [
-                                "Melee weapon damage rolls."
-                            ]
-                        }
+                        "Strength and Constitution saving throws.",
+                        "Strength, Dexterity, and Constitution checks.",
+                        "Melee weapon damage rolls."
                     ]
                 },
                 "If you have three quarters of your maximum hit points left or less, your Adrenaline state activates and you gain the following benefits:",
@@ -422,24 +407,9 @@
                     "type": "options",
                     "count": 1,
                     "entries": [
-                        {
-                            "type": "section",
-                            "entries": [
-                                "Your Adrenaline benefits are doubled."
-                            ]
-                        },
-                        {
-                            "type": "section",
-                            "entries": [
-                                "You have advantage on melee weapon attacks against a creature if at least one of your allies is within 5 feet from it and isn't {@condition incapacitated}."
-                            ]
-                        },
-                        {
-                            "type": "section",
-                            "entries": [
-                                "Your Adrenaline movement speed bonus is tripled and you add your Adrenaline bonus to your AC."
-                            ]
-                        }
+                        "Your Adrenaline benefits are doubled.",
+                        "You have advantage on melee weapon attacks against a creature if at least one of your allies is within 5 feet from it and isn't {@condition incapacitated}.",
+                        "Your Adrenaline movement speed bonus is tripled and you add your Adrenaline bonus to your AC."
                     ]
                 },
                 "While under the effects of your Adrenaline state, you can use your bonus action to enter a Frantic state for 1 minute. Your Frantic state ends early if your Adrenaline state ends. For the duration, you receive the benefit chosen above, but you can't cast or concentrate on spells. Also, you can't speak words that have more syllables than your Intelligence modifier and if your Intelligence modifier is 0 or lower then you can only make unintelligible sounds.",
