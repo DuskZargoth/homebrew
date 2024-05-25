@@ -319,7 +319,7 @@
         {
             "name": "Adrenaline",
             "source": "DZC:ANA:B",
-            "foundryImg": "icons/creatures/abilities/mouth-teeth-human.webp",
+            "foundryImg": "icons/skills/social/intimidation-impressing.webp",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 2,
@@ -368,7 +368,7 @@
         {
             "name": "Adrenaline improvement",
             "source": "DZC:ANA:B",
-            "foundryImg": "icons/creatures/abilities/mouth-teeth-human.webp",
+            "foundryImg": "icons/skills/social/intimidation-impressing.webp",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 2,
@@ -380,7 +380,7 @@
         {
             "name": "Adrenaline improvement",
             "source": "DZC:ANA:B",
-            "foundryImg": "icons/creatures/abilities/mouth-teeth-human.webp",
+            "foundryImg": "icons/skills/social/intimidation-impressing.webp",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 2,
@@ -392,7 +392,7 @@
         {
             "name": "Temperamental",
             "source": "DZC:ANA:B",
-            "foundryImg": "",
+            "foundryImg": "icons/skills/ranged/bomb-grenade-thrown-orange.webp",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 3,
@@ -454,7 +454,7 @@
 		{
 			"name": "Primitive Scream",
 			"source": "DZC:ANA:B",
-            "foundryImg": "",
+            "foundryImg": "icons/creatures/abilities/mouth-teeth-human.webp",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 3,
@@ -627,7 +627,7 @@
         {
             "name": "Extra Attack",
             "source": "DZC:ANA:B",
-            "foundryImg": "",
+            "foundryImg": "icons/skills/melee/spear-tips-triple-orange.webp",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 3,
@@ -637,11 +637,23 @@
                 "The number of attacks increases to three when you reach 15th level in this class."
             ]
         },
+        {
+            "name": "Extra Attack (2)",
+            "source": "DZC:ANA:B",
+            "foundryImg": "icons/skills/melee/spear-tips-triple-orange.webp",
+            "className": "Barbarian Rework",
+            "classSource": "DZC:ANA:B",
+            "page": 3,
+            "level": 15,
+            "entries": [
+                "At 15th level, you can attack three times whenever you take the {@action Attack} action on your turn."
+            ]
+        },
 
         {
             "name": "Relentless",
             "source": "DZC:ANA:B",
-            "foundryImg": "",
+            "foundryImg": "icons/magic/control/debuff-energy-snare-brown.webp",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 3,
@@ -653,7 +665,7 @@
         {
             "name": "Strong Scent",
             "source": "DZC:ANA:B",
-            "foundryImg": "",
+            "foundryImg": "icons/magic/control/encase-creature-humanoid-hold.webp",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 3,
@@ -681,7 +693,7 @@
         {
             "name": "Hostile Secretions",
 			"source": "DZC:ANA:B",
-            "foundryImg": "",
+            "foundryImg": "icons/magic/control/energy-stream-link-large-white.webp",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 4,
@@ -699,7 +711,7 @@
         {
             "name": "Attracting Secretions",
 			"source": "DZC:ANA:B",
-            "foundryImg": "",
+            "foundryImg": "icons/magic/control/energy-stream-link-white.webp",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 4,
@@ -718,7 +730,7 @@
         {
             "name": "Growth Spurt",
             "source": "DZC:ANA:B",
-            "foundryImg": "",
+            "foundryImg": "icons/magic/control/silhouette-grow-shrink-tan.webp",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 4,
@@ -746,7 +758,7 @@
         {
             "name": "Growth Spurt improvement",
             "source": "DZC:ANA:B",
-            "foundryImg": "",
+            "foundryImg": "icons/magic/control/silhouette-grow-shrink-tan.webp",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 4,
@@ -767,7 +779,7 @@
         {
             "name": "Back to the Land",
             "source": "DZC:ANA:B",
-            "foundryImg": "",
+            "foundryImg": "icons/magic/nature/plant-sproud-hands-dirt-green.webp",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 4,
@@ -780,7 +792,7 @@
         {
             "name": "Savage Outburst",
             "source": "DZC:ANA:B",
-            "foundryImg": "",
+            "foundryImg": "icons/skills/wounds/injury-eyes-blood-red-pink.webp",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 4,
@@ -799,7 +811,7 @@
         {
             "name": "King of the Jungle",
             "source": "DZC:ANA:B",
-            "foundryImg": "",
+            "foundryImg": "icons/creatures/abilities/paw-print-yellow.webp",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 4,
