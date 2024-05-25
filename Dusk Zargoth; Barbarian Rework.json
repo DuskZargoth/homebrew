@@ -328,9 +328,8 @@
             "entries": [
                 "Also at 1st level, your combat prowess increases with the ammount of damage you have sustained. You have an Adrenaline Bonus, as shown in the Adrenaline Bonus column of the Barbarian table. Choose one of the following options:",
                 {
-                    "type": "options",
-                    "count": 1,
-                    "entries": [
+                    "type": "list",
+                    "items": [
                         "Strength and Constitution saving throws.",
                         "Strength, Dexterity, and Constitution checks.",
                         "Melee weapon damage rolls."
@@ -404,9 +403,8 @@
             "entries": [
                 "Anger, sadness, fear, joy. Your emotions are highly volatile and can easily overwhelm your mind entirely. At 2nd level, choose one of the following benefits:",
                 {
-                    "type": "options",
-                    "count": 1,
-                    "entries": [
+                    "type": "list",
+                    "items": [
                         "Your Adrenaline benefits are doubled.",
                         "You have advantage on melee weapon attacks against a creature if at least one of your allies is within 5 feet from it and isn't {@condition incapacitated}.",
                         "Your Adrenaline movement speed bonus is tripled and you add your Adrenaline bonus to your AC."
