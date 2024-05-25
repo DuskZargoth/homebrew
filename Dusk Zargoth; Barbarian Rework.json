@@ -889,7 +889,7 @@
 		},
 
 		{
-			"name": "Primitive Scream: Eraging Roar",
+			"name": "Primitive Scream: Enraging Roar",
 			"source": "DZC:ANA:B",
 			"page": 4,
 			"foundryImg": "icons/magic/sonic/scream-wail-shout-teal.webp",
@@ -1247,7 +1247,7 @@
 		},
 
         {
-			"name": "Totemic Attunement",
+			"name": "Spiritual Attunement",
 			"source": "DZC:ANA:B",
 			"page": 5,
 			"foundryImg": "icons/weapons/wands/wand-totem.webp",
