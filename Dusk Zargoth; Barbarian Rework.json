@@ -17,7 +17,7 @@
             }
         ],
         "dateAdded": 1716449458,
-        "dateLastModified": 1716449458
+        "dateLastModified": 1716449458,
     },
     "class": [
         {
@@ -427,7 +427,7 @@
                         },
                         {
                             "type": "section",
-                            "entries": "You have advantage on melee weapon attacks against a creature if at least one of your allies is within 5 feet from it and isn't incapacitated."
+                            "entries": "You have advantage on melee weapon attacks against a creature if at least one of your allies is within 5 feet from it and isn't {@condition incapacitated}."
                         },
                         {
                             "type": "section",
@@ -654,7 +654,7 @@
             "level": 7,
             "entries": [
                 "At 7th level, your glands produce a strong body smell akin to that of an odorous beast. This odor can be smelled up to 10 feet from you, which most creatures will perceive it as unpleasant or disgusting, specially for those unfamiliar with it.",
-                "As a bonus action, you can focus to release special scretions from your glands, which get mixed with your odor emissions. When you do so, choose one of the options below. Your secretions last for 1 minute, it ends early if you are incapacitated, die, or use this feature again. A creature that can smell your odor at the start of its turn becomes targeted by your secretions. If a secretion option requires a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.",
+                "As a bonus action, you can focus to release special scretions from your glands, which get mixed with your odor emissions. When you do so, choose one of the options below. Your secretions last for 1 minute, it ends early if you are {@condition incapacitated}, die, or use this feature again. A creature that can smell your odor at the start of its turn becomes targeted by your secretions. If a secretion option requires a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.",
                 {
 					"type": "refClassFeature",
 					"classFeature": "Hostile Secretions|Barbarian Rework|DZC:ANA:B|7"
@@ -836,7 +836,7 @@
 			"className": "Barbarian Rework",
 			"classSource": "DZC:ANA:B",
 			"page": 5,
-			"foundryImg": "",
+			"foundryImg": "icons/commodities/treasure/trinket-totem-bone-green.webp",
 			"subclassFeatures": [
 				"Path of the Spirit Animal|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|3",
 				"Aspect of the Beast|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|6",
@@ -954,7 +954,7 @@
 			"level": 14,
 			"header": 2,
 			"entries": [
-				"At 14th level, your swings have enough back up strength to make up for the erratic swing. You now use the higher attack roll to determine if you hit the second target with your Splash Zone. In addition to that, if a creature you hit during your {@classFeature Splash Zone|Barbarian Rework|DZC:ANA|3|DZC:ANA} dies, you can target an additional creature within 5 feet of it and within your reach, following the same rules for the extra damage."
+				"At 14th level, your swings have enough back up strength to make up for the erratic swing. You now use the higher attack roll to determine if you hit the second target with your Splash Zone. In addition to that, if a creature you hit during your {@classFeature Splash Zone|Barbarian Rework|DZC:ANA:B|3|DZC:ANA:B} dies, you can target an additional creature within 5 feet of it and within your reach, following the same rules for the extra damage."
 			]
 		},
 
@@ -969,24 +969,25 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Strike first and deadly. This is the motto of Spirit Animals, a workforce that operates from under the eyes. Their tactic revolves around efficiency, killing their target before giving room for persecution.",
-                "These rogues can be found in many places, ranging from governamental positions as the king's private Spirit Animals, through priests who exterminate enemies of their church, to hitmans from the underworld.",
+				"Some barbarians are deeply attuned with the animal kingdom, seeking its wisdom to guide them through life, borrowing its strength to overcome challenges, and protecting it from dangers that threaten its delicate balance. Barbarians from the Path of the Totem Bearer have a special sense that allows them to commune and channel animal spirits, which provides them with guidance and power.",
+                "It's not typical for a barbarian to possess such an ability, even those who do usually have affinity with a single type of animal, which is why they dedicate themselves entirely to it. This is reflected in the behaviour of tribes (or its families), for they will often revere the same animal of the totem bearer. It's not uncommon to a totem bearer to be promoted as head of the tribe (or family).",
+                "The animal spirits are divided into four groups based on attributes they share: beasthide for stoic, stubborn, and thick-skinned beasts (like bears, boars, or elephants); longtooth for fierce beasts that live in packs (like canines, hyenas, or lions); swiftstride for quick and cunning, sometimes predatory, beasts (like eagles, felines, or rats); and wildhunt for sharp, insightful beasts specialized in prey tracking (like canines, felines, or dolphins). A barbarian from this path often carries a totemic talisman or similar amulet that represents a feature of their spirit animal (like feathers, claws, fangs, etc.). Some even gain minor physical attributes that are reminiscent of their spirit animal.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Poison Adept|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|3"
+					"subclassFeature": "Primitive Scream: Call Beast|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|3"
 				},
                 {
 					"type": "refSubclassFeature",
-					"subclassFeature": "Easy Dispatch|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|3"
+					"subclassFeature": "Spirit Animal|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|3"
 				}
 			]
 		},
 
 		{
-			"name": "Poison Adept",
+			"name": "Primitive Scream: Call Beast",
 			"source": "DZC:ANA:B",
 			"page": 5,
-			"foundryImg": "icons/skills/toxins/poison-bottle-corked-fire-green.webp",
+			"foundryImg": "icons/creatures/mammals/wolf-howl-moon-forest-blue.webp",
 			"className": "Barbarian Rework",
 			"classSource": "DZC:ANA:B",
 			"subclassShortName": "Spirit Animal",
@@ -994,37 +995,217 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting at 3rd level, you gain proficiency with the {@item poisoner's kit|phb} if you don't already have it. Any poison you craft using poisoner's kit has a bonus to its saving throw DC and damage equal to your Intelligence modifier (minimum of 1), and it ignores resistance to poison damage."
-			],
-            "toolProficiencies": [
-                {
-                    "poisoner's kit": true
-                }
-            ]
-		},
-
-        {
-			"name": "Easy Dispatch",
-			"source": "DZC:ANA:B",
-			"page": 5,
-			"foundryImg": "icons/weapons/daggers/dagger-curved-black.webp",
-			"className": "Barbarian Rework",
-			"classSource": "DZC:ANA:B",
-			"subclassShortName": "Spirit Animal",
-			"subclassSource": "DZC:ANA:B",
-			"level": 3,
-			"header": 1,
-			"entries": [
-				"You can get an easy kill on weakened enemies, more so if you are faster than them. At 3rd level, on your first turn of combat, you have advantage on attack rolls against any creature that hasn't taken a turn yet.",
-                "In addition, if you hit with a weapon attack a creature that is incapacitated, poisoned, surprised, or that can't see you, you can spend up to three d6s from your talent pool and add it to the attack's damage roll."
+				"Starting at 3rd level, you can use your {@classFeature Primitive Scream|Barbarian Rework|DZC:ANA|2|DZC:ANA} to call an animal spirit to help you in battle. When you do so, choose a beast that is no larger than Medium with a challenge rating of 1/8 or lower. The beast appears in an unoccupied space of your choice within 10 feet from you. The beast disappears when your Frantic state ends, when it reaches 0 hit points, or if you summon another beast in this way.",
+                "The beast adds your proficiency bonus to its AC, attack rolls, damage rolls. Its hit point maximum equals the hit point number in its stat block or four times your barbarian level, whichever is higher.",
+                "The beast shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands, but you must use your bonus action to command it to take an action. If you don't issue any, the beast takes the Dodge action."
 			]
 		},
 
         {
-			"name": "Incapacitate",
+			"name": "Spirit Animal",
 			"source": "DZC:ANA:B",
 			"page": 5,
-			"foundryImg": "icons/magic/control/voodoo-doll-pain-damage-tan.webp",
+			"foundryImg": "icons/magic/nature/wolf-paw-glow-large-purple-teal.webp",
+			"className": "Barbarian Rework",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "Spirit Animal",
+			"subclassSource": "DZC:ANA:B",
+			"level": 3,
+			"header": 1,
+			"entries": [
+				"Also at 3rd level, you choose a spirit animal and gain its feature while your Adrenaline state is active.",
+                {
+                    "type": "options",
+                    "count": 1,
+                    "entries": [
+                        {
+							"type": "refSubclassFeature",
+							"subclassFeature": "Beasthide|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|3"
+						},
+                        {
+							"type": "refSubclassFeature",
+							"subclassFeature": "Longtooth|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|3"
+						},
+                        {
+							"type": "refSubclassFeature",
+							"subclassFeature": "Swiftstride|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|3"
+						},
+                        {
+							"type": "refSubclassFeature",
+							"subclassFeature": "Wildhunt|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|3"
+						}
+                    ]
+                }
+			]
+		},
+
+        {
+			"name": "Beasthide",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"foundryImg": "icons/creatures/abilities/bear-roar-bite-brown.webp",
+			"className": "Barbarian Rework",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "Spirit Animal",
+			"subclassSource": "DZC:ANA:B",
+			"level": 3,
+			"entries": [
+				"You gain resistance to bludgeoning, piercing, and slashing damage."
+			]
+		},
+        {
+			"name": "Longtooth",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"foundryImg": "icons/creatures/abilities/lion-roar-yellow.webp",
+			"className": "Barbarian Rework",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "Spirit Animal",
+			"subclassSource": "DZC:ANA:B",
+			"level": 3,
+			"entries": [
+				"Your allies have advantage on melee attack rolls against any creature within 5 feet of you that is hostile to you."
+			]
+		},
+        {
+			"name": "Swiftstride",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"foundryImg": "icons/creatures/mammals/rodent-rat-diseaed-gray.webp",
+			"className": "Barbarian Rework",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "Spirit Animal",
+			"subclassSource": "DZC:ANA:B",
+			"level": 3,
+			"entries": [
+				"Your walking speed increases by 10 feet and you don't provoke opportunity attacks."
+			]
+		},
+        {
+			"name": "Wildhunt",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"foundryImg": "icons/creatures/mammals/dog-husky-white-blue.webp",
+			"className": "Barbarian Rework",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "Spirit Animal",
+			"subclassSource": "DZC:ANA:B",
+			"level": 3,
+			"entries": [
+				"When you attack a creature that has no allies within 5 feet from it, you add your proficiency bonus to the damage roll of melee weapon attacks you make against it."
+			],
+            "foundrySystem": {
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "@prof"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to the damage of your melee weapon attack"
+            }
+		},
+
+        {
+			"name": "Aspect of the Beast",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"foundryImg": "icons/commodities/claws/claws-bear-brown-white.webp",
+			"className": "Barbarian Rework",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "Spirit Animal",
+			"subclassSource": "DZC:ANA:B",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, you gain a magical benefit based on the spirit animal of your choice. You can choose the same the same animal you selected previously or a different one.",
+                {
+                    "type": "options",
+                    "count": 1,
+                    "entries": [
+                        {
+							"type": "refSubclassFeature",
+							"subclassFeature": "Beasthide|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|6"
+						},
+                        {
+							"type": "refSubclassFeature",
+							"subclassFeature": "Longtooth|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|6"
+						},
+                        {
+							"type": "refSubclassFeature",
+							"subclassFeature": "Swiftstride|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|6"
+						},
+                        {
+							"type": "refSubclassFeature",
+							"subclassFeature": "Wildhunt|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|6"
+						}
+                    ]
+                }
+			],
+            
+		},
+
+        {
+			"name": "Beasthide",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"foundryImg": "icons/creatures/abilities/bear-roar-bite-brown.webp",
+			"className": "Barbarian Rework",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "Spirit Animal",
+			"subclassSource": "DZC:ANA:B",
+			"level": 6,
+			"entries": [
+				"You gain a mighty strength. You have advantage on Strength checks made to push, pull, lift, or break objects. If your Adrenaline state is active you have advantage on all Strength ({@skill Athletics}) checks."
+			]
+		},
+        {
+			"name": "Longtooth",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"foundryImg": "icons/creatures/abilities/lion-roar-yellow.webp",
+			"className": "Barbarian Rework",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "Spirit Animal",
+			"subclassSource": "DZC:ANA:B",
+			"level": 6,
+			"entries": [
+				"Your group can travel faster. The travel pace of you and up to ten creatures of your choice is doubled, as long as they're within 60 feet of you and you're not {@condition incapacitated}. If a creature is mounted, it's the mount's travel pace that is doubled instead."
+			]
+		},
+        {
+			"name": "Swiftstride",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"foundryImg": "icons/creatures/mammals/rodent-rat-diseaed-gray.webp",
+			"className": "Barbarian Rework",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "Spirit Animal",
+			"subclassSource": "DZC:ANA:B",
+			"level": 6,
+			"entries": [
+				"You gain a sharp eyesight. You can see up to 1 mile away with no difficulty, able to discern even fine details as though looking at something no more than 100 feet away from you. Additionally, dim light doesn't impose disadvantage on your Wisdom ({@skill Perception}) checks."
+			]
+		},
+        {
+			"name": "Wildhunt",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"foundryImg": "icons/creatures/mammals/dog-husky-white-blue.webp",
+			"className": "Barbarian Rework",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "Spirit Animal",
+			"subclassSource": "DZC:ANA:B",
+			"level": 6,
+			"entries": [
+				"Your hunting senses heighten considerably. You can track other creatures while traveling at a fast pace, and you can move stealthily while traveling at a normal pace."
+			]
+		},
+
+        {
+			"name": "Enhanced Beast",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"foundryImg": "icons/magic/nature/leaf-glow-maple-teal.webp",
 			"className": "Barbarian Rework",
 			"classSource": "DZC:ANA:B",
 			"subclassShortName": "Spirit Animal",
@@ -1032,61 +1213,185 @@
 			"level": 9,
 			"header": 2,
 			"entries": [
-				"At 9th level, you have a way to secure a kill, in case the first blow wasn't enough. On your first turn of combat, if you hit with a weapon attack a creature that hasn't taken a turn yet, it must succeed on a Constitution saving throw or become {@condition incapacitated} until the end of your next turn. The DC equals 10 or half the damage the creature takes, whichever number is higher."
+				"At 9th level, when you use your {@subclassFeature Primitive Scream: Call Beast|Barbarian Rework|DZC:ANA:B|Animal Spirit|DZC:ANA:B|3|DZC:ANA:B|Call Beast}, you can choose one of the following spirit animals to bless the summoned beast.",
+                {
+                    "type": "options",
+                    "count": 1,
+                    "entries": [
+                        {
+							"type": "refSubclassFeature",
+							"subclassFeature": "Beasthide|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|9"
+						},
+                        {
+							"type": "refSubclassFeature",
+							"subclassFeature": "Longtooth|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|9"
+						},
+                        {
+							"type": "refSubclassFeature",
+							"subclassFeature": "Swiftstride|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|9"
+						},
+                        {
+							"type": "refSubclassFeature",
+							"subclassFeature": "Wildhunt|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|9"
+						}
+                    ]
+                }
 			],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "On your first turn of combat, if you hit with a weapon attack a creature that hasn't taken a turn yet",
-                "activation.cost": 1,
-                "actionType": "save",
-                "save.ability": "con",
-                "save.dc": 10,
-                "save.scaling": "flat"
-            }
+            
 		},
 
         {
-			"name": "Potent Poison",
+			"name": "Beasthide",
 			"source": "DZC:ANA:B",
 			"page": 5,
-			"foundryImg": "icons/skills/toxins/symbol-poison-drop-skull-green.webp",
+			"foundryImg": "icons/creatures/abilities/bear-roar-bite-brown.webp",
 			"className": "Barbarian Rework",
 			"classSource": "DZC:ANA:B",
 			"subclassShortName": "Spirit Animal",
 			"subclassSource": "DZC:ANA:B",
-			"level": 13,
-			"header": 2,
+			"level": 9,
 			"entries": [
-				"At 13th level, creatures have disadvantage on the first saving throw they make against a poison crafted by you.",
-                "Additionally, a creature {@condition poisoned} by you takes 3d6 poison damage at the end of each of its turns. This damage increases by 1d6 for each consecutive turn it remains poisoned."
+				"The beast gains a +2 bonus to AC bonus and proficiency with all saving throws."
+			]
+		},
+        {
+			"name": "Longtooth",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"foundryImg": "icons/creatures/abilities/lion-roar-yellow.webp",
+			"className": "Barbarian Rework",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "Spirit Animal",
+			"subclassSource": "DZC:ANA:B",
+			"level": 9,
+			"entries": [
+				"The beast has advantage on attack rolls against a creature if at least one of the beast's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+			]
+		},
+        {
+			"name": "Swiftstride",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"foundryImg": "icons/creatures/mammals/rodent-rat-diseaed-gray.webp",
+			"className": "Barbarian Rework",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "Spirit Animal",
+			"subclassSource": "DZC:ANA:B",
+			"level": 9,
+			"entries": [
+				"The beast's movement speed increases by 10 feet and it doesn't provoke opportunity attacks."
+			]
+		},
+        {
+			"name": "Wildhunt",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"foundryImg": "icons/creatures/mammals/dog-husky-white-blue.webp",
+			"className": "Barbarian Rework",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "Spirit Animal",
+			"subclassSource": "DZC:ANA:B",
+			"level": 9,
+			"entries": [
+				"The beast adds double your proficiency bonus to its {@skill Perception} checks. In addition, no creature can make an attack roll with advantage against it, unless it's {@condition incapacitated}."
 			]
 		},
 
         {
-			"name": "Spirit Animalate",
+			"name": "Totemic Attunement",
 			"source": "DZC:ANA:B",
 			"page": 5,
-			"foundryImg": "icons/skills/melee/blade-tip-chipped-blood-red.webp",
+			"foundryImg": "icons/weapons/wands/wand-totem.webp",
 			"className": "Barbarian Rework",
 			"classSource": "DZC:ANA:B",
 			"subclassShortName": "Spirit Animal",
 			"subclassSource": "DZC:ANA:B",
-			"level": 17,
+			"level": 14,
 			"header": 2,
 			"entries": [
-				"Starting at 17th level, you become a master of instant death. If you target a creature with your {@subclassFeature Incapacitate|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|9|DZC:ANA:B}, you can use this feature to make that attack more devastating. If you do, the creature is reduced to 0 hit points if it fails the saving throw against Incapacitate, and it becomes {@condition incapacitated} and vulnerable to all damage until the end of your next turn on a successful save.",
-                "Once you use this feature, you can't use it again on the same creature for the next 24 hours."
+				"At 14th level, you choose a spirit animal and gain its feature while your Adrenaline state is active. You can choose the same animal you selected previously or a different one.",
+                {
+                    "type": "options",
+                    "count": 1,
+                    "entries": [
+                        {
+							"type": "refSubclassFeature",
+							"subclassFeature": "Beasthide|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|14"
+						},
+                        {
+							"type": "refSubclassFeature",
+							"subclassFeature": "Longtooth|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|14"
+						},
+                        {
+							"type": "refSubclassFeature",
+							"subclassFeature": "Swiftstride|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|14"
+						},
+                        {
+							"type": "refSubclassFeature",
+							"subclassFeature": "Wildhunt|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|14"
+						}
+                    ]
+                }
 			],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "On your first turn of combat, if you hit with a weapon attack a creature that hasn't taken a turn yet",
-                "activation.cost": 1,
-                "actionType": "save",
-                "save.ability": "con",
-                "save.dc": 10,
-                "save.scaling": "flat"
-            }
-		}	
+            
+		},
+
+        {
+			"name": "Beasthide",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"foundryImg": "icons/creatures/abilities/bear-roar-bite-brown.webp",
+			"className": "Barbarian Rework",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "Spirit Animal",
+			"subclassSource": "DZC:ANA:B",
+			"level": 14,
+			"entries": [
+				"You gain 5 temporary hit points at the start of each of your turns."
+			]
+		},
+        {
+			"name": "Longtooth",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"foundryImg": "icons/creatures/abilities/lion-roar-yellow.webp",
+			"className": "Barbarian Rework",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "Spirit Animal",
+			"subclassSource": "DZC:ANA:B",
+			"level": 14,
+			"entries": [
+				"Enemy creatures within 5 feet of you have disadvantage on attack rolls against your allies or another creature with this feature. An enemy is immune to this effect if it can't see or hear you or if it can't be {@condition frightened}."
+			]
+		},
+        {
+			"name": "Swiftstride",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"foundryImg": "icons/creatures/mammals/rodent-rat-diseaed-gray.webp",
+			"className": "Barbarian Rework",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "Spirit Animal",
+			"subclassSource": "DZC:ANA:B",
+			"level": 14,
+			"entries": [
+				"You have short bursts of movement. Whenever you make a long or high jump, you can move up to 15 feet in that direction without spending your movement. You can also take the {@action Dash} action as a bonus action."
+			]
+		},
+        {
+			"name": "Wildhunt",
+			"source": "DZC:ANA:B",
+			"page": 5,
+			"foundryImg": "icons/creatures/mammals/dog-husky-white-blue.webp",
+			"className": "Barbarian Rework",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "Spirit Animal",
+			"subclassSource": "DZC:ANA:B",
+			"level": 14,
+			"entries": [
+				"If you move at least 20 feet in a straight line towards a Large or smaller creature right before making a melee weapon attack against it, the creature must succeed on a Dexterity saving throw or be knocked {@condition prone}. The DC for this saving throw equals 8 + your proficiency bonus + your Strength modifier."
+			]
+		}
 	],
 
 	"foundryClassFeature": [
@@ -1220,7 +1525,7 @@
             "name": "Distract",
             "page": 0,
             "entries": [
-                "As an action, you do everything you can to distract one creature that you can see. Until the start of your next turn, while that creature is within 5 feet from you and you aren't incapacitated, your target has disadvantage on attack rolls against targets other than you, and disadvantage on {@skill Perception} checks."
+                "As an action, you do everything you can to distract one creature that you can see. Until the start of your next turn, while that creature is within 5 feet from you and you aren't {@condition incapacitated}, your target has disadvantage on attack rolls against targets other than you, and disadvantage on {@skill Perception} checks."
             ],
             "time": [
                 {
