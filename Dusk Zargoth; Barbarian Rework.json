@@ -319,7 +319,7 @@
         {
             "name": "Adrenaline",
             "source": "DZC:ANA:B",
-            "foundryImg": "",
+            "foundryImg": "icons/creatures/abilities/mouth-teeth-human.webp",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 2,
@@ -368,7 +368,7 @@
         {
             "name": "Adrenaline improvement",
             "source": "DZC:ANA:B",
-            "foundryImg": "",
+            "foundryImg": "icons/creatures/abilities/mouth-teeth-human.webp",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 2,
@@ -380,7 +380,7 @@
         {
             "name": "Adrenaline improvement",
             "source": "DZC:ANA:B",
-            "foundryImg": "",
+            "foundryImg": "icons/creatures/abilities/mouth-teeth-human.webp",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 2,
@@ -410,7 +410,7 @@
         {
             "name": "Frantic",
             "source": "DZC:ANA:B",
-            "foundryImg": "",
+            "foundryImg": "icons/skills/wounds/injury-face-impact-orange.webp",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 3,
@@ -472,7 +472,7 @@
         {
             "name": "Primitive Scream: Fearsome Roar",
 			"source": "DZC:ANA:B",
-            "foundryImg": "",
+            "foundryImg": "icons/magic/control/fear-fright-monster-grin-red-orange.webp",
             "className": "Barbarian Rework",
             "classSource": "DZC:ANA:B",
             "page": 3,
@@ -804,7 +804,9 @@
             "foundrySystem": {
                 "actionType": "other",
                 "damage.parts": [
-                    "3d6"
+                    [
+                        "3d6"
+                    ]
                 ],
                 "rsr5e.quickDamage.context.0": "Bonus to the damage of your melee weapon attack"
             }
@@ -813,177 +815,169 @@
 	
 	"subclass": [
 		{
-			"name": "Thief",
-			"shortName": "Thief",
+			"name": "Path of the Berserker",
+			"shortName": "Berserker",
 			"source": "DZC:ANA:B",
 			"className": "Barbarian Rework",
 			"classSource": "DZC:ANA:B",
-			"page": 5,
-            "foundryImg": "icons/magic/death/undead-ghosts-trio-blue.webp",
+			"page": 4,
+            "foundryImg": "",
 			"subclassFeatures": [
-				"Thief|Barbarian Rework|DZC:ANA:B|Thief|DZC:ANA:B|3",
-				"Sneaky Thief|Barbarian Rework|DZC:ANA:B|Thief|DZC:ANA:B|9",
-                "Mug|Barbarian Rework|DZC:ANA:B|Thief|DZC:ANA:B|13",
-				"Legendary Thief|Barbarian Rework|DZC:ANA:B|Thief|DZC:ANA:B|17"
+				"Path of the Berserker|Barbarian Rework|DZC:ANA:B|Berserker|DZC:ANA:B|3",
+				"Improved Strike|Barbarian Rework|DZC:ANA:B|Berserker|DZC:ANA:B|6",
+                "Mindless Rage|Barbarian Rework|DZC:ANA:B|Berserker|DZC:ANA:B|9",
+				"Full Swing|Barbarian Rework|DZC:ANA:B|Berserker|DZC:ANA:B|14"
             ]
 		},
         {
-			"name": "Assassin",
-			"shortName": "Assassin",
+			"name": "Path of the Spirit Animal",
+			"shortName": "Spirit Animal",
 			"source": "DZC:ANA:B",
 			"className": "Barbarian Rework",
 			"classSource": "DZC:ANA:B",
 			"page": 5,
-			"foundryImg": "icons/skills/melee/strike-dagger-skull-white.webp",
+			"foundryImg": "",
 			"subclassFeatures": [
-				"Assassin|Barbarian Rework|DZC:ANA:B|Assassin|DZC:ANA:B|3",
-				"Incapacitate|Barbarian Rework|DZC:ANA:B|Assassin|DZC:ANA:B|9",
-                "Potent Poison|Barbarian Rework|DZC:ANA:B|Assassin|DZC:ANA:B|13",
-				"Assassinate|Barbarian Rework|DZC:ANA:B|Assassin|DZC:ANA:B|17"
+				"Path of the Spirit Animal|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|3",
+				"Aspect of the Beast|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|6",
+                "Enhanced Beast|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|9",
+				"Spiritual Attunement|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|14"
             ]
 		}
 	],
 	"subclassFeature": [
 		{
-			"name": "Thief",
+			"name": "Path of the Berserker",
 			"source": "DZC:ANA:B",
-			"page": 5,
+			"page": 4,
 			"className": "Barbarian Rework",
 			"classSource": "DZC:ANA:B",
-			"subclassShortName": "Thief",
+			"subclassShortName": "Berserker",
 			"subclassSource": "DZC:ANA:B",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Everything comes to he who waits, but quicker yet to he who takes! Such is the law of all thieves. Some do it for the thrill of a challenging robbery, some are driven by greed, and others believe they are distributing the wealths of the world.",
-                "These rogues often operate as burglars, bandits, and even cutpurses. They can steal coins from a purse or a jewel from a high security chamber, all without leaving a clue.",
+				"Those who are governed by anger will let rage take over their minds. Those who follow the Path of the Berserker are aggressive, quick to anger, and always be in the offense, having little to no regards of self-preservation. They can be so conflictive and territorial that is hard to find them living together. All of this is compensated with their brute force, as they can easily flatten groups of small enemies.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Fast Hands|Barbarian Rework|DZC:ANA:B|Thief|DZC:ANA:B|3"
+					"subclassFeature": "Primitive Scream: Enraging Roar|Barbarian Rework|DZC:ANA:B|Berserker|DZC:ANA:B|3"
 				},
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Pickpocket Veteran|Barbarian Rework|DZC:ANA:B|Thief|DZC:ANA:B|3"
+					"subclassFeature": "Splash Zone|Barbarian Rework|DZC:ANA:B|Berserker|DZC:ANA:B|3"
 				}
 			]
 		},
 
 		{
-			"name": "Fast Hands",
+			"name": "Primitive Scream: Eraging Roar",
 			"source": "DZC:ANA:B",
-			"page": 5,
-			"foundryImg": "icons/skills/social/wave-halt-stop.webp",
+			"page": 4,
+			"foundryImg": "icons/magic/sonic/scream-wail-shout-teal.webp",
 			"className": "Barbarian Rework",
 			"classSource": "DZC:ANA:B",
-			"subclassShortName": "Thief",
+			"subclassShortName": "Berserker",
 			"subclassSource": "DZC:ANA:B",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Starting at 3rd level, you gain proficiency with {@item thieves' tools|phb} if you don't already have it. In addition, you can use your {@classFeature Cunning Action|Barbarian Rework|DZC:ANA:B|2|DZC:ANA:B} to take the {@action Steal|DZC:ANA:B} action or use thieves' tools to disable a trap as a bonus action."
-			],
-            "toolProficiencies": [
-                {
-                    "thieves' tools": true
-                }
-            ],
-            "foundrySystem": {
-                "activation.type": "bonus action"
-            }
+				"Starting at 3rd level, you can use your Primitive Scream to boost your aggressive tendencies. When you do so, for the duration of your Frantic state, you have advantage on melee weapon attacks made against creatures, but attack rolls made against you have advantage as well."
+			]
 		},
 
         {
-			"name": "Pickpocket Veteran",
+			"name": "Splash Zone",
 			"source": "DZC:ANA:B",
-			"page": 5,
-			"foundryImg": "icons/skills/social/theft-pickpocket-bribery-brown.webp",
+			"page": 4,
+			"foundryImg": "icons/skills/melee/strike-axe-blood-red.webp",
 			"className": "Barbarian Rework",
 			"classSource": "DZC:ANA:B",
-			"subclassShortName": "Thief",
+			"subclassShortName": "Berserker",
 			"subclassSource": "DZC:ANA:B",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Also at 3rd level, you learn the {@optfeature Pickpocketing|DZC:ANA:B} tactic, or another one of your choice if you already know it. This tactic doesn't count against the number of tactics you know. In addition, you can also attempt to steal from creatures that are in combat or alert, but you take a –5 penalty to your check.",
-                {
-                    "type": "refOptionalfeature",
-					"optionalfeature": "Pickpocketing|DZC:ANA:B"
-                }
+				"Also at 3rd level, your swings become wide and erratic. If you have advantage on a melee weapon attack roll, you can attempt to damage another target within 5 feet of the original one and within your reach. If the lower attack roll would hit the second target, it takes damage equal to your Strength modifier + your Adrenaline bonus."
+			],
+            "foundrySystem": {
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "@abilities.str.mod + @scale.barbarian-rework.adr"
+                    ]                    
+                ],
+                "rsr5e.quickDamage.context.0": "Same damage type as your original attack"
+            }
+		},
+
+		{
+			"name": "Improved Strike",
+			"source": "DZC:ANA:B",
+			"page": 4,
+			"foundryImg": "icons/magic/fire/dagger-rune-enchant-flame-red.webp",
+			"className": "Barbarian Rework",
+			"classSource": "DZC:ANA:B",
+			"subclassShortName": "Berserker",
+			"subclassSource": "DZC:ANA:B",
+			"level": 6,
+			"header": 2,
+			"entries": [
+				"At 6th level, when you hit a target with a melee weapon attack, for every 5 points you get with your attack roll above the target's AC you can roll one of the weapon's damage dice one additional time and add it to the damage roll."
 			]
 		},
 
 		{
-			"name": "Sneaky Thief",
+			"name": "Mindless Rage",
 			"source": "DZC:ANA:B",
-			"page": 5,
-			"foundryImg": "icons/magic/perception/silhouette-stealth-shadow.webp",
+			"page": 4,
+			"foundryImg": "icons/magic/unholy/silhouette-evil-horned-giant.webp",
 			"className": "Barbarian Rework",
 			"classSource": "DZC:ANA:B",
-			"subclassShortName": "Thief",
+			"subclassShortName": "Berserker",
 			"subclassSource": "DZC:ANA:B",
 			"level": 9,
 			"header": 2,
 			"entries": [
-				"At 9th level, a creature you are hidden from takes a -5 penalty to its {@skill Perception} check when you attempt to {@action Steal|DZC:ANA:B|steal}, unless the creature is in combat or alert."
+				"Beginning 9th level, you can't be {@condition charmed} or {@condition frightened} while under the effects of your Adrenaline state. You also end any effect that has you {@condition charmed} or {@condition frightened} for the duration of that state."
 			]
 		},
 
 		{
-			"name": "Mug",
+			"name": "Full Swing",
 			"source": "DZC:ANA:B",
 			"page": 5,
-			"foundryImg": "icons/skills/melee/strike-dagger-arcane-pink.webp",
+			"foundryImg": "icons/skills/melee/strike-axe-red.webp",
 			"className": "Barbarian Rework",
 			"classSource": "DZC:ANA:B",
-			"subclassShortName": "Thief",
+			"subclassShortName": "Berserker",
 			"subclassSource": "DZC:ANA:B",
-			"level": 13,
+			"level": 14,
 			"header": 2,
 			"entries": [
-				"At 13th level, once on your turn, when you deal damage to a creature within your reach using a weapon attack made with your {@action Attack} action, you can take the {@action Steal|DZC:ANA:B} action against that target as part of the same action. You take no penalty to your checks for trying to steal from that creature until the end of your turn."
-			],
-            "foundrySystem": {
-                "activation.type": "action"
-            }
-		},
-
-		{
-			"name": "Legendary Thief",
-			"source": "DZC:ANA:B",
-			"page": 5,
-			"foundryImg": "icons/magic/unholy/strike-hand-glow-pink.webp",
-			"className": "Barbarian Rework",
-			"classSource": "DZC:ANA:B",
-			"subclassShortName": "Thief",
-			"subclassSource": "DZC:ANA:B",
-			"level": 17,
-			"header": 2,
-			"entries": [
-				"At 17th level, you are capable of stealing anything in front of everyone's eyes. You can attempt to {@action Steal|DZC:ANA:B|steal} an object that is wielded, or that would be extremely noticeable or time consuming to remove. However, this takes you time to perform depending on how difficult it is to remove the object, which is usually 1 minute (armor for example takes significantly longer). Throughout this duration you must have some means of staying hidden, such as being inside a heavily obscured area.",
-                "When you do this, you take a –5 penalty to your check and observers will immediatly notice the object is gone after you steal it if it's extremely noticeable (like a full plate armor)."
+				"At 14th level, your swings have enough back up strength to make up for the erratic swing. You now use the higher attack roll to determine if you hit the second target with your Splash Zone. In addition to that, if a creature you hit during your {@classFeature Splash Zone|Barbarian Rework|DZC:ANA|3|DZC:ANA} dies, you can target an additional creature within 5 feet of it and within your reach, following the same rules for the extra damage."
 			]
 		},
 
         {
-			"name": "Assassin",
+			"name": "Path of the Spirit Animal",
 			"source": "DZC:ANA:B",
 			"page": 5,
 			"className": "Barbarian Rework",
 			"classSource": "DZC:ANA:B",
-			"subclassShortName": "Assassin",
+			"subclassShortName": "Spirit Animal",
 			"subclassSource": "DZC:ANA:B",
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"Strike first and deadly. This is the motto of assassins, a workforce that operates from under the eyes. Their tactic revolves around efficiency, killing their target before giving room for persecution.",
-                "These rogues can be found in many places, ranging from governamental positions as the king's private assassins, through priests who exterminate enemies of their church, to hitmans from the underworld.",
+				"Strike first and deadly. This is the motto of Spirit Animals, a workforce that operates from under the eyes. Their tactic revolves around efficiency, killing their target before giving room for persecution.",
+                "These rogues can be found in many places, ranging from governamental positions as the king's private Spirit Animals, through priests who exterminate enemies of their church, to hitmans from the underworld.",
 				{
 					"type": "refSubclassFeature",
-					"subclassFeature": "Poison Adept|Barbarian Rework|DZC:ANA:B|Assassin|DZC:ANA:B|3"
+					"subclassFeature": "Poison Adept|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|3"
 				},
                 {
 					"type": "refSubclassFeature",
-					"subclassFeature": "Easy Dispatch|Barbarian Rework|DZC:ANA:B|Assassin|DZC:ANA:B|3"
+					"subclassFeature": "Easy Dispatch|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|3"
 				}
 			]
 		},
@@ -995,7 +989,7 @@
 			"foundryImg": "icons/skills/toxins/poison-bottle-corked-fire-green.webp",
 			"className": "Barbarian Rework",
 			"classSource": "DZC:ANA:B",
-			"subclassShortName": "Assassin",
+			"subclassShortName": "Spirit Animal",
 			"subclassSource": "DZC:ANA:B",
 			"level": 3,
 			"header": 1,
@@ -1016,7 +1010,7 @@
 			"foundryImg": "icons/weapons/daggers/dagger-curved-black.webp",
 			"className": "Barbarian Rework",
 			"classSource": "DZC:ANA:B",
-			"subclassShortName": "Assassin",
+			"subclassShortName": "Spirit Animal",
 			"subclassSource": "DZC:ANA:B",
 			"level": 3,
 			"header": 1,
@@ -1033,7 +1027,7 @@
 			"foundryImg": "icons/magic/control/voodoo-doll-pain-damage-tan.webp",
 			"className": "Barbarian Rework",
 			"classSource": "DZC:ANA:B",
-			"subclassShortName": "Assassin",
+			"subclassShortName": "Spirit Animal",
 			"subclassSource": "DZC:ANA:B",
 			"level": 9,
 			"header": 2,
@@ -1058,7 +1052,7 @@
 			"foundryImg": "icons/skills/toxins/symbol-poison-drop-skull-green.webp",
 			"className": "Barbarian Rework",
 			"classSource": "DZC:ANA:B",
-			"subclassShortName": "Assassin",
+			"subclassShortName": "Spirit Animal",
 			"subclassSource": "DZC:ANA:B",
 			"level": 13,
 			"header": 2,
@@ -1069,18 +1063,18 @@
 		},
 
         {
-			"name": "Assassinate",
+			"name": "Spirit Animalate",
 			"source": "DZC:ANA:B",
 			"page": 5,
 			"foundryImg": "icons/skills/melee/blade-tip-chipped-blood-red.webp",
 			"className": "Barbarian Rework",
 			"classSource": "DZC:ANA:B",
-			"subclassShortName": "Assassin",
+			"subclassShortName": "Spirit Animal",
 			"subclassSource": "DZC:ANA:B",
 			"level": 17,
 			"header": 2,
 			"entries": [
-				"Starting at 17th level, you become a master of instant death. If you target a creature with your {@subclassFeature Incapacitate|Barbarian Rework|DZC:ANA:B|Assassin|DZC:ANA:B|9|DZC:ANA:B}, you can use this feature to make that attack more devastating. If you do, the creature is reduced to 0 hit points if it fails the saving throw against Incapacitate, and it becomes {@condition incapacitated} and vulnerable to all damage until the end of your next turn on a successful save.",
+				"Starting at 17th level, you become a master of instant death. If you target a creature with your {@subclassFeature Incapacitate|Barbarian Rework|DZC:ANA:B|Spirit Animal|DZC:ANA:B|9|DZC:ANA:B}, you can use this feature to make that attack more devastating. If you do, the creature is reduced to 0 hit points if it fails the saving throw against Incapacitate, and it becomes {@condition incapacitated} and vulnerable to all damage until the end of your next turn on a successful save.",
                 "Once you use this feature, you can't use it again on the same creature for the next 24 hours."
 			],
             "foundrySystem": {
@@ -1156,7 +1150,7 @@
                             "value": "@prof"
                         },
                         {
-                            "key": "system.tools.thief.bonuses.check",
+                            "key": "system.tools.Berserker.bonuses.check",
                             "mode": "ADD",
                             "value": "0"
                         }
@@ -1181,7 +1175,7 @@
                             "value": "2*@prof"
                         },
                         {
-                            "key": "system.tools.thief.bonuses.check",
+                            "key": "system.tools.Berserker.bonuses.check",
                             "mode": "ADD",
                             "value": "2*@prof"
                         }
@@ -1297,7 +1291,7 @@
 							"page": 1,
 							"entries": [
 								"Rogues commonly originate from cities and lawless lands, usually from a necessity to survive in a hostile environment, one where you have to compete for food, watch your back at every corner, lie to live another die, and even kill for a couple copper coins. Thus, they have to learn every trick they can to survive. More often than not they form big groups and organizations to protect themselves, like thieves' guilds, crime families, or a band of outlaws.",
-                                "In other cases, rogues are born from professions that require advanced skills and the will to get their hands dirty, such as spies, assassins, investigators, treasure hunters, exterminators, locksmiths, or ambassadors.",
+                                "In other cases, rogues are born from professions that require advanced skills and the will to get their hands dirty, such as spies, Spirit Animals, investigators, treasure hunters, exterminators, locksmiths, or ambassadors.",
                                 "As adventurers, rogues fall on both sides of the law. Some are hardened criminals who decide to seek their fortune in treasure hoards, while others take up a life of adventure to escape from the law. Some have learned and perfected their skills with the explicit purpose of infiltrating ancient ruins and hidden crypts in search of treasure."
 							]
 						},
