@@ -3038,7 +3038,9 @@
             "name": "Intimidate",
             "page": 0,
             "entries": [
-                "As an action, you attempt to intimidate a creature. Choose a creature within 30 feet from you that can see or hear you. Make a Charisma ({@skill Intimidation}) check contested by the target's Wisdom ({@skill Insight}) check. If you succeed, the target is {@condition frightened} of you until the start of your next turn."
+                "Sometimes you need to be terrifying to bring order. As an action, you attempt to intimidate a creature. Choose a creature within 30 feet from you that can see or hear you. Make a DC 15 Strength ({@skill Intimidation}) or Charisma ({@skill Intimidation}) check (your choice). You fail automatically if the creature can't be frightened. If you succeed, the target is frightened of you until the start of your next turn.",
+                "If you fail this check by 5 or more points, the creature can't be intimidated by you in this way for the next 10 minutes.",
+                "The targeted creature can use its reaction to make a Strength ({@skill Intimidation}), Wisdom ({@skill Insight}), or Charisma ({@skill Intimidation}) check (its choice) against your skill check, replacing the standard DC."
             ],
             "foundrySystem": {
                 "activities": {
@@ -3051,11 +3053,46 @@
         },
         {
             "source": "DZC:ANA:F",
+            "name": "Parley",
+            "page": 0,
+            "entries": [
+                "Communication is crucial for two parties to reach an agreement, but sometimes one side is not willing to talk. As an action, you attempt to stablish a dialogue with another creature. Choose a creature within 30 feet from you that can hear and understand you. Make a DC 15 Charisma ({@skill Persuasion}) or Charisma ({@skill Deception}) check (your choice). If you have done anything harmful to the creature within the last minute, you have disadvantage on the check. On a successful check, you have presented a point that catches the attention of your target, making them more likely to listen further to what you have to say. Your DM has the final judgement on how this action will influence the creature.",
+                "If you fail this check by 5 or more points, the creature will be unwilling to listen to you for the next 10 minutes.",
+                "The targeted creature can use its reaction to make a Wisdom ({@skill Insight}), Charisma ({@skill Deception}), or Charisma ({@skill Persuasion}) check (its choice) against your skill check, replacing the standard DC."
+            ],
+            "foundrySystem": {
+                "activities": {
+                    "type": "check",
+                    "activation": {
+                        "type": "action"
+                    }
+                }
+            }
+        },
+        {
+            "source": "DZC:ANA:F",
+            "name": "Slipping",
+            "page": 0,
+            "entries": [
+                "When fighting, you can opt to get out of the enemy's line of attack to move to a more advantageous position. You can replace any attack you make with your Attack action with a slip. When you do so, choose a creature that you can see and make a Dexterity (Acrobatics) check contested by the target's Strength ({@skill Athletics}) or Dexterity ({@skill Acrobatics}) check (its choice). If you succeed, that creature can't make an opportunity attack against you the next time you would provoke it before the end of your turn."
+            ],
+            "foundrySystem": {
+                "activities": {
+                    "type": "attack",
+                    "activation": {
+                        "type": "special",
+                        "condition": "Replace an attack from your Attack action." 
+                    }
+                }
+            }
+        },
+        {
+            "source": "DZC:ANA:F",
             "name": "Steal",
             "page": 0,
             "entries": [
-                "As an action, you try to take a Small object without being noticed, which usually requires at least one free hand. The object you are trying to steal can be unsecured, worn or carried, but it can't weight more than half a pound, and it mustn't be extremely noticeable or difficult to remove (like worn clothes or armor, or wielded objects).",
-                "To steal an object you must make a Dexterity ({@skill Sleight of Hands}) check against the Wisdom ({@skill Perception}) check of any observer in the area (passive Perception if they aren't in combat or alert), including the creature you are trying to steal from (if any). An observer sees you if it succeeds on the check. If the object is unsecured, you take it regardless of this result. If you fail on the check against the creature you are trying to steal from, you also fail to take the object. You also automatically fail the check against the creature you are trying to steal from if it's in combat or alert.",
+                "As an action, you try to take an object without being noticed, usually requiring one free hand. Typically, the object you are trying to steal has to be Small and weight no more than half a pound, it can be unsecured, worn, or carried, but it musn't be extremely noticeable or difficult to remove (like worn clothes or armor, or wielded objects).",
+                "To steal an object you must make a Dexterity ({@skill Sleight of Hands}) check against the Wisdom ({@skill Perception}) check of any observer in the area (passive Perception if they aren't in combat or alert), including the creature you are trying to steal from (if any). An observer sees you if it succeeds on the check. If the object is unsecured, you take it regardless of this result. If the object is in a creature's possession, you do not take the object if you fail the check contest against that creature. Also, you automatically fail the check against the creature you are trying to steal from if it's in combat or alert.",
                 "If the object is closely guarded (like inside a pocket or a sheathed weapon), you take a penalty to your Sleight of Hands check, usually a -5 penalty."
             ],
             "foundrySystem": {
