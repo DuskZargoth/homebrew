@@ -3190,7 +3190,7 @@
                                     "type": "inset",
                                     "name": "Additional Actions",
                                     "entries": [
-                                        "You can incorporate the following actions into your game: {@action Convince|DZC:ANA:F}, {@action Disable|DZC:ANA:F}, {@action Distract|DZC:ANA:F}, {@action Intimidate|DZC:ANA:F}, and {@action Steal|DZC:ANA:F}"
+                                        "You can incorporate the following actions into your game: {@action Command|DZC:ANA:F}, {@action Counterspell|DZC:ANA:F}, {@action Disable|DZC:ANA:F}, {@action Disarm|DZC:ANA:F}, {@action Taunt|DZC:ANA:F}, {@action Intimidate|DZC:ANA:F}, {@action Parley|DZC:ANA:F}, {@action Slipping|DZC:ANA:F}, and {@action Steal|DZC:ANA:F}."
                                     ]
                                 }
 							]
