@@ -2875,10 +2875,27 @@
     "action": [
         {
             "source": "DZC:ANA:F",
-            "name": "Convince",
+            "name": "Command",
             "page": 0,
             "entries": [
-                "As an action, you attempt to manipulate a creature into thinking what you want it to think. Choose a creature within 30 feet from you that can see or hear you. Make a Charisma ({@skill Persuasion}) or Charisma ({@skill Deception}) check (your choice) contested by the target's Wisdom ({@skill Insight}) check. If you have done anything harmful to the creature within the last minute, you have disadvantage on your check. If you succeed, the creature will be swayed to your point of view to a reasonable degree. This can also cause the creature to turn friendly, indifferent, or hostile towards certain creatures, either of your or the DM's choice. Your DM has the final judgement on what the creature will do or how it will behave."
+                "As an action, you attempt to assess an enemy for weak spots or fighting patterns. Choose a creature that you can see within 30 feet from you, that creature becomes your scanned creature. Before the start of your next turn, when a creature makes an ability check, attack roll, or damage roll against the scanned creature, or when the scanned creature makes an attack roll against a creature or forces it to make a saving throw, you can use your reaction to attempt to provide the creature with a helpful command. When you do so, make a DC 15 Wisdom ({@skill Insight}) check. On a successful check, the commanded creature adds a d4 to the triggering roll or its AC against the triggering attack. The commanded creature gains a +1 bonus to the roll or its AC for every 5 points you get with your check above the DC, and a -1 penalty for every 5 points below.",
+                "The scanned creature can use its reaction to make a Charisma ({@skill Deception}) check against your Wisdom ({@skill Insight}) check, replacing the standard DC.",
+                "The die increases by one size at 5th, 9th, 13th, and 17th level."
+            ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ]
+        },
+        {
+            "source": "DZC:ANA:F",
+            "name": "Counterspell",
+            "page": 0,
+            "entries": [
+                "When a creature casts a spell and you can see its manifestations, you can expend one spell slot as a reaction to attempt to nulify it. The spell must be in your list of known or prepared spells, or in your spellbook. Make an ability check using your spellcasting modifier + your proficiency bonus. The DC equals the trigerring creature's spell save DC. If you succeed, you counter the spell as long as it's no more than one level higher than the slot you expended. On a failure, you counter the spell as long as it's level is lower than the slot you expended.",
+                "The effectivity of your counterspell can vary depending on your result. The maximum spell level you can successfully counter increases by the one for every 5 points you get with your check above the DC. If you get 5 points or less below the DC, you can't counter the spell."
             ],
             "time": [
                 {
@@ -2892,7 +2909,7 @@
             "name": "Disable",
             "page": 0,
             "entries": [
-                "As an action, you attempt to momentarily disable one of a creature's senses, be it throwing debris at its eyes, making a deafening noise next to its ears, or dishing out a dirty attack to its eyes or ears. Choose a creature within your reach that is no more than one size larger than you. You can either target its eyes or ears, if it has any. The creature must succeed on a DC 10 Dexterity or Constitution saving throw (its choice) or become {@condition blinded} or {@condition deafened} until the start of your next turn, if you targeted the eyes or ears, respectively."
+                "As an action, you attempt to momentarily disable the sight or hearing of a creature. Usually, this is accomplished by throwing debris at its eyes or making a deafening noise next to its ears. Choose a creature within your reach that is no more than one size larger than you. You can either target its eyes or ears, if it has any. The creature must succeed on a DC 15 Dexterity or Constitution saving throw (its choice) or become blinded or deafened until the start of your next turn, if you targeted the eyes or ears, respectively."
             ],
             "time": [
                 {
@@ -2903,11 +2920,34 @@
         },
         {
             "source": "DZC:ANA:F",
-            "name": "Distract",
+            "name": "Disarm",
             "page": 0,
             "entries": [
-                "As an action, you do everything you can to distract one creature that you can see. Until the start of your next turn, while that creature is within 5 feet from you and you aren't {@condition incapacitated}, your target has disadvantage on attack rolls against targets other than you, and disadvantage on {@skill Perception} checks."
+                "When you make a weapon attack as part of your Attack action, you can attempt to knock an object from the target's grasp. The target can't be more than one size larger than you. Your attack roll is contested by the target's Strength ({@skill Athletics}) check or Dexterity ({@skill Acrobatics}) check (its choice). If you succeed, the target drops the item and no damage or any other effect are applied to it.",
+                "If a creature misses you with an attack, you can use your reaction to attempt to dissarm it if it's within your reach.",
+                "You have disadvantage on the attack roll if the target is holding the item with two or more hands (or similar appendages).",
+                "The target has advantage on its ability check if it is larger than you, or disadvantage if it is smaller."
             ],
+            "time": [
+                {
+                    "number": 1,
+                    "unit": "action"
+                }
+            ]
+        },
+        {
+            "source": "DZC:ANA:F",
+            "name": "Taunt",
+            "page": 0,
+            "entries": [
+                "Being irritating can be a good quality at times. As an action, you attempt to taunt a creature. Choose a creature within 30 feet from you that can see or hear you. The creature must succeed on a DC 15 Wisdom saving throw or be taunted by you until the start of your next turn."
+            ],
+            "foundrySystem": {
+                "activation.type": "action",
+                "activation.cost": 1,
+                "actionType": "save",
+                "save.ability": "wis"
+            },
             "time": [
                 {
                     "number": 1,
