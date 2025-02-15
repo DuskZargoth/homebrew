@@ -4473,6 +4473,25 @@
         },
         {
             "source": "DZC:ANA:M",
+            "name": "Opportunity Attack",
+            "page": 0,
+            "entries": [
+                "In a fight, you have instances where you can punish a creature's opening. This is called an opportunity attack. A creature you can see usually provokes an opportunity attack from you right before it moves out of your reach, or when it moves 5 feet or more while within your reach.",
+                "When a creature provokes an opportunity attack from you, you can use your reaction to make one melee weapon attack against it.",
+                "You can avoid provoking an opportunity attack by taking the Disengage action. You also don’t provoke an opportunity attack when you teleport or when someone or something moves you without using your movement, action, or reaction. For example, you don’t provoke an opportunity attack if an explosion hurls you out of a foe’s reach or if gravity causes you to fall past an enemy."
+            ],
+            "foundrySystem": {
+                "activities": {
+                    "type": "attack",
+                    "activation": {
+                        "type": "reaction",
+                        "condition": "When a creature provokes an opportunity attack from you."
+                    }
+                }
+            }
+        },
+        {
+            "source": "DZC:ANA:M",
             "name": "Parley",
             "page": 0,
             "entries": [
