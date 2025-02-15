@@ -2896,6 +2896,7 @@
             "name": "Counterspell",
             "page": 0,
             "entries": [
+                "{@i Replaces {@spell counterspell}, {@book Player's Handbook|PHB|11}, p. 228}",
                 "When a creature casts a spell and you can see its manifestations, you can expend one spell slot as a reaction to attempt to nulify it. The spell must be in your list of known or prepared spells, or in your spellbook. Make an ability check using your spellcasting modifier + your proficiency bonus. The DC equals the trigerring creature's spell save DC. If you succeed, you counter the spell as long as it's no more than one level higher than the slot you expended. On a failure, you counter the spell as long as its level is lower than the slot you expended.",
                 "The effectivity of your counterspell can vary depending on your result. The maximum spell level you can successfully counter increases by the one for every 5 points you get with your check above the DC. If you get 5 points or less below the DC, you can't counter the spell."
             ],
@@ -2983,6 +2984,7 @@
             "name": "Disarm",
             "page": 0,
             "entries": [
+                "{@i {@book Dungeon Master's Guide|DMG|9}, p. 271}",
                 "When you make a weapon attack as part of your Attack action, you can attempt to knock an object from the target's grasp. The target can't be more than one size larger than you. Your attack roll is contested by the target's Strength ({@skill Athletics}) check or Dexterity ({@skill Acrobatics}) check (its choice). If you succeed, the target drops the item and no damage or any other effect are applied to it.",
                 "If a creature misses you with an attack, you can use your reaction to attempt to dissarm it if it's within your reach.",
                 "You have disadvantage on the attack roll if the target is holding the item with two or more hands (or similar appendages).",
@@ -3056,6 +3058,7 @@
             "name": "Opportunity Attack",
             "page": 0,
             "entries": [
+                "{@i {@book Player's Handbook|PHB|9}, p. 195}",
                 "In a fight, you have instances where you can punish a creature's opening. This is called an opportunity attack. A creature you can see usually provokes an opportunity attack from you right before it moves out of your reach, or when it moves 5 feet or more while within your reach.",
                 "When a creature provokes an opportunity attack from you, you can use your reaction to make one melee weapon attack against it.",
                 "You can avoid provoking an opportunity attack by taking the Disengage action. You also don’t provoke an opportunity attack when you teleport or when someone or something moves you without using your movement, action, or reaction. For example, you don’t provoke an opportunity attack if an explosion hurls you out of a foe’s reach or if gravity causes you to fall past an enemy."
@@ -3209,7 +3212,7 @@
                                     "type": "inset",
                                     "name": "Additional Actions",
                                     "entries": [
-                                        "You can incorporate the following actions into your game: {@action Command|DZC:ANA:F}, {@action Counterspell|DZC:ANA:F}, {@action Disable|DZC:ANA:F}, {@action Disarm|DZC:ANA:F}, {@action Taunt|DZC:ANA:F}, {@action Intimidate|DZC:ANA:F}, {@action Parley|DZC:ANA:F}, {@action Slipping|DZC:ANA:F}, and {@action Steal|DZC:ANA:F}."
+                                        "You can incorporate the following actions into your game: {@action Command|DZC:ANA:F}, {@action Counterspell|DZC:ANA:F}, {@action Disable|DZC:ANA:F}, {@action Disarm|DZC:ANA:F}, {@action Taunt|DZC:ANA:F}, {@action Intimidate|DZC:ANA:F}, {@action Opportunity Attack|DZC:ANA:F}, {@action Parley|DZC:ANA:F}, {@action Slipping|DZC:ANA:F}, and {@action Steal|DZC:ANA:F}."
                                     ]
                                 }
 							]
