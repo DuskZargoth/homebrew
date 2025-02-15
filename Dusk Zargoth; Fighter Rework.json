@@ -620,10 +620,16 @@
             "page": 3,
             "level": 1,
             "entries": [
-                "At 1st level, on your turn, you can forgo your bonus action and your reaction to take an additional action this turn."
+                "At 1st level, on your turn, you can forgo your bonus action and your reaction to take an additional action this turn. You can't use this action to cast a spell."
             ],
             "foundrySystem": {
-                "activation.type": "bonus action"
+                "activities": {
+                    "type": "use",
+                    "activation": {
+                        "type": "special",
+                        "condition": "Forgo your bonus action and reaction."
+                    }
+                }
             }
         },
 
@@ -682,10 +688,35 @@
             "page": 3,
             "level": 2,
             "entries": [
-                "You can't fail, not when everyone depends on you. At 2nd level, you can cancel the disadvantage or a penalty to an attack roll, ability check, or saving throw you make. You can cancel a penalty of up to -5 with this feature.",
-                "You can use this feature three times. You regain all expended uses after you finish a short or long rest.",
-                "Starting at 9th level, you can cancel both a disadvantage and a penalty to one of the listed rolls you make with a single use of this feature."
-            ]
+                "You can't fail, not when everyone depends on you. At 2nd level, you can use this feature (no action required) to overcome unfavorable odds. Whenever an attack roll, ability check, or saving throw you make has disadvantage or any form of penalty, you can cancel one such effect on the roll. Once you use this feature, you can't use it again until you finish a short or long rest.",
+                "Starting at 9th level, you can cancel any of the mentioned effects on a roll you make when you use this feature."
+            ],
+            "foundrySystem": {
+                "activities": {
+                    "type": "use",
+                    "activation": {
+                        "type": "special",
+                        "condition": "Whenever an attack roll, ability check, or saving throw you make has disadvantage or any form of penalty."
+                    },
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "activityUses",
+                                "value": "1"
+                            }
+                        ]
+                    },
+                    "uses": {
+                        "recovery": [
+                            {
+                                "period": "sr",
+                                "type": "recoveryAll"
+                            }
+                        ],
+                        "max": "1"
+                    }
+                }
+            }
         },
 
         {
@@ -697,7 +728,7 @@
             "page": 3,
             "level": 9,
             "entries": [
-                "Starting at 9th level, you can cancel both a disadvantage and a penalty to one of the listed rolls you make with a single use of this feature."
+                "Starting at 9th level, you can cancel any of the mentioned effects on a roll you make when you use this feature."
             ]
         },
 
@@ -942,7 +973,7 @@
             "page": 4,
             "level": 20,
             "entries": [
-                "You have reached the peak of your career, becoming an adventurer like no other ever seen. At 20th level, whenever you spend a Superiority Dice, you gain a +5 bonus to the roll you used it for and 5 temporary hit points.",
+                "You have reached the peak of your career, becoming an adventurer like no other ever seen. At 20th level, once before the start of your next turn, when you spend a Superiority Dice, you can choose to gain a +10 bonus to the roll you used it for and 10 temporary hit points.",
                 "In addition, when you finish a long rest, you can choose one of the maneuvers you know and replace it with a different one."
             ]
         }
@@ -1310,7 +1341,7 @@
 				"DZC:M"
             ],
             "entries": [
-                "When you're within 5 feet of a creature on your turn, you can expend one superiority die and switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and isn't {@condition incapacitated}. This movement doesn't provoke opportunity attacks.",
+                "When you take the Attack action on your turn, you can forgo one attack and expend one superiority die to switch places with a willing creature within 5 feet of, provided you spend at least 5 feet of movement and the creature isn't {@condition incapacitated}. This movement doesn't provoke opportunity attacks.",
                 "Roll the superiority die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled."
             ],
             "foundrySystem": {
@@ -1395,7 +1426,7 @@
 				"DZC:M"
             ],
             "entries": [
-                "When you take the Attack action on your turn, you can forgo one of your attacks and use a bonus action to direct one of your companions to strike. When you do so, choose a friendly creature who can see or hear you and expend one superiority die. That creature can immediately use its reaction to make one weapon attack, adding the superiority die to the attack's damage roll."
+                "When you take the Attack action on your turn, you can forgo one attack and expend one superiority die to direct one of your companions to strike. When you do so, choose a friendly creature who can see or hear you. That creature can immediately use its reaction to make one weapon attack, adding the superiority die to the attack's damage roll."
             ],
             "foundrySystem": {
                 "activation.type": "bonus action",
@@ -1407,6 +1438,36 @@
                     ]
                 ],
                 "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
+            }
+        },
+
+        {
+            "name": "Delaying Attack",
+            "source": "DZC:ANA:F",
+            "page": 8,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Combat Superiority",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:M"
+            ],
+            "entries": [
+                "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to delay the target. You add your superiority die to the attack's damage roll, and the target make a Constitution saving throw. On a failed save, the creature is delayed until the start of your next turn."
+            ],
+            "foundrySystem": {
+                "activation.type": "special",
+                "activation.condition": "When you hit a creature with a melee weapon attack",
+                "activation.cost": 1,
+                "actionType": "save",
+                "damage.parts": [
+                    [
+                        "5*1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Speed reduced in feet",
+                "save.ability": "con"
             }
         },
 
@@ -1508,7 +1569,7 @@
 				"DZC:M"
             ],
             "entries": [
-                "You can expend one superiority die and use a bonus action on your turn to feint, choosing one creature within 5 feet of you as your target. You have advantage on your next attack roll against that creature this turn. If that attack hits, add the superiority die to the attack's damage roll."
+                "When you take the Attack action on your turn, you can forgo one attack and expend one superiority die to feint, choosing one creature within 5 feet of you as your target. You have advantage on your next attack roll against that creature this turn. If that attack hits, add the superiority die to the attack's damage roll."
             ],
             "foundrySystem": {
                 "activation.type": "bonus action",
@@ -1535,7 +1596,7 @@
 				"DZC:M"
             ],
             "entries": [
-                "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to goad the target into attacking you. You add the superiority die to the attack's damage roll, and the target must make a Wisdom saving throw. On a failed save, the target has disadvantage on all attack rolls against targets other than you until the end of your next turn."
+                "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to goad the target into attacking you. You add the superiority die to the attack's damage roll, and the target must make a Wisdom saving throw. On a failed save, the target is taunted by you."
             ],
             "foundrySystem": {
                 "activation.type": "special",
@@ -1576,6 +1637,62 @@
                     ]
                 ],
                 "rsr5e.quickDamage.context.0": "Bonus to skill check"
+            }
+        },
+
+        {
+            "name": "Indomitable",
+            "source": "DZC:ANA:F",
+            "page": 7,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Combat Superiority",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:M"
+            ],
+            "entries": [
+                "When you fail a saving throw, you can use your reaction and expend one superiority die to add it to the roll, potentially causing the save to succeed."
+            ],
+            "foundrySystem": {
+                "activation.type": "reaction",
+                "activation.condition": "When you fail a saving throw",
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to saving throw"
+            }
+        },
+
+        {
+            "name": "Longshot",
+            "source": "DZC:ANA:F",
+            "page": 8,
+            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
+            "consumes": {
+                "name": "Combat Superiority",
+                "amount": 1
+            },
+			"featureType": [
+				"DZC:M"
+            ],
+            "entries": [
+                "When you make a ranged weapon attack, you can expend one superiority die to ignore the disadvantage on the attack roll imposed by attacking a target at the weapon's long range. If you hit, you add the superiority die to the attack's damage roll."
+            ],
+            "foundrySystem": {
+                "activation.type": "bonus action",
+                "activation.cost": 1,
+                "actionType": "other",
+                "damage.parts": [
+                    [
+                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
+                    ]
+                ],
+                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
             }
         },
 
@@ -1661,34 +1778,6 @@
                 ],
                 "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll",
                 "save.ability": "wis"
-            }
-        },
-        
-        {
-            "name": "Indomitable",
-            "source": "DZC:ANA:F",
-            "page": 7,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-            "consumes": {
-                "name": "Combat Superiority",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:M"
-            ],
-            "entries": [
-                "When you fail a saving throw, you can use your reaction and expend one superiority die to add it to the roll, potentially causing the save to succeed."
-            ],
-            "foundrySystem": {
-                "activation.type": "reaction",
-                "activation.condition": "When you fail a saving throw",
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to saving throw"
             }
         },
 
@@ -1778,34 +1867,6 @@
         },
 
         {
-            "name": "Quick Toss",
-            "source": "DZC:ANA:F",
-            "page": 8,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-            "consumes": {
-                "name": "Combat Superiority",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:M"
-            ],
-            "entries": [
-                "As a bonus action, you can expend one superiority die and make a ranged attack with a weapon that has the thrown property. You can draw the weapon as part of making this attack. If you hit, add the superiority die to the weapon's damage roll."
-            ],
-            "foundrySystem": {
-                "activation.type": "bonus action",
-                "activation.cost": 1,
-                "actionType": "other",
-                "damage.parts": [
-                    [
-                        "1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
-            }
-        },
-
-        {
             "name": "Rally",
             "source": "DZC:ANA:F",
             "page": 8,
@@ -1818,7 +1879,7 @@
 				"DZC:M"
             ],
             "entries": [
-                "On your turn, you can use a bonus action and expend one superiority die to bolster the resolve of one of your companions. When you do so, choose a friendly creature who can see or hear you. That creature gains temporary hit points equal to the superiority die roll + your Charisma modifier."
+                "When you take the Attack action your turn, you can forgo one attack and expend one superiority die to bolster the resolve of one of your companions. When you do so, choose a friendly creature who can see or hear you. That creature gains temporary hit points equal to the superiority die roll + your Charisma modifier."
             ],
             "foundrySystem": {
                 "activation.type": "bonus action",
@@ -1859,36 +1920,6 @@
                     ]
                 ],
                 "rsr5e.quickDamage.context.0": "Bonus to weapon damage roll"
-            }
-        },
-
-        {
-            "name": "Slowing Attack",
-            "source": "DZC:ANA:F",
-            "page": 8,
-            "foundryImg": "systems/dnd5e/icons/svg/items/feature.svg",
-            "consumes": {
-                "name": "Combat Superiority",
-                "amount": 1
-            },
-			"featureType": [
-				"DZC:M"
-            ],
-            "entries": [
-                "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to reduce that creature's speed. Roll your superiority die. The creature must succeed on a Constitution saving throw or have its speed reduced an ammount in feet equal to 5 times the number rolled on your superiority die. This effect lasts until the start of your next turn. If the maneuver reduces a creature's speed to 0, it becomes {@condition restrained} for the duration."
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you hit a creature with a melee weapon attack",
-                "activation.cost": 1,
-                "actionType": "save",
-                "damage.parts": [
-                    [
-                        "5*1d(4 + (ceil(@classes.fighter-rework.levels / 5) * 2))"
-                    ]
-                ],
-                "rsr5e.quickDamage.context.0": "Speed reduced in feet",
-                "save.ability": "con"
             }
         },
 
@@ -1963,7 +1994,7 @@
 				"DZC:M"
             ],
             "entries": [
-                "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock the target down. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Strength saving throw. On a failed save, you knock the target {@condition prone}."
+                "When you hit a creature with a weapon attack, you can expend one superiority die to attempt to knock the target down. You add the superiority die to the attack's damage roll, and if the target is Large or smaller, it must make a Dexterity saving throw. On a failed save, you knock the target {@condition prone}."
             ],
             "foundrySystem": {
                 "activation.type": "special",
@@ -2551,8 +2582,7 @@
 			"level": 15,
 			"header": 2,
 			"entries": [
-				"At 15th level, your body can whitstand terrible attacks. When a creature scores a critical hit against you, you can use your reaction to turn it into a normal hit.",
-                "Once you use this feature, you can't use it again until you finish a short or long rest."
+				"At 15th level, your body can whitstand terrible attacks. When a creature scores a critical hit against you, you can use your reaction to turn it into a normal hit."
 			],
             "foundrySystem": {
                 "activation.type": "reaction",
@@ -2618,7 +2648,7 @@
 			"level": 3,
 			"header": 1,
 			"entries": [
-				"When you choose this tradition you must choose the two schools of magic that your character will study. The schools are {@filter Abjuration|spells|subclass=Fighter: Eldritch Knight|school=a}, {@filter Conjuration|spells|subclass=Fighter: Eldritch Knight|school=c}, {@filter Divination|spells|subclass=Fighter: Eldritch Knight|school=d}, {@filter Enchantment|spells|subclass=Fighter: Eldritch Knight|school=e}, {@filter Evocation|spells|subclass=Fighter: Eldritch Knight|school=v}, {@filter Illusion|spells|subclass=Fighter: Eldritch Knight|school=i}, {@filter Necromancy|spells|subclass=Fighter: Eldritch Knight|school=n}, and {@filter Transmutation|spells|subclass=Fighter: Eldritch Knight|school=t}. Whenever a feature in this subclass refers to your schools of magic, it refers to the ones you chose."
+				"When you choose this tradition you must choose the two schools of magic that your character will study. The schools are {@filter Abjuration|spells|subclass=Fighter: Eldritch Knight|school=a}, {@filter Conjuration|spells|subclass=Fighter: Eldritch Knight|school=c}, {@filter Divination|spells|subclass=Fighter: Eldritch Knight|school=d}, {@filter Enchantment|spells|subclass=Fighter: Eldritch Knight|school=e}, {@filter Evocation|spells|subclass=Fighter: Eldritch Knight|school=v}, {@filter Illusion|spells|subclass=Fighter: Eldritch Knight|school=i}, {@filter Necromancy|spells|subclass=Fighter: Eldritch Knight|school=n}, and {@filter Transmutation|spells|subclass=Fighter: Eldritch Knight|school=t}. You learn an additional school at 7th, 13th, and 19th level. Whenever a feature in this subclass refers to your schools of magic, it refers to the ones you chose."
 			]
 		},
 
@@ -2756,7 +2786,7 @@
 			"level": 7,
 			"header": 2,
 			"entries": [
-				"Beginning at 7th level, when you use your action to cast a cantrip, you can make one weapon attack as a bonus action. At 18th level, you can make this special attack when you use your action to cast any spell."
+				"Beginning at 7th level, you can cast a spell of 2nd-level or lower with the additional action granted by Pump Action."
 			]
 		},
 
@@ -2772,7 +2802,7 @@
 			"level": 18,
 			"header": 2,
 			"entries": [
-				"At 18th level, you can make this special attack when you use your action to cast any spell."
+				"At 18th level, you can cast a spell of any level with this additional action."
 			]
 		},
 
