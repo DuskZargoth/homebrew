@@ -1268,21 +1268,6 @@
             ],
             "entries": [
                 "While wearing heavy armor, the bludgeoning, piercing, and slashing damage that you take is reduced by 3."
-            ]
-        },
-
-		{
-            "name": "Durability",
-            "source": "DZC:ANA:F",
-            "page": 3,
-            "foundryImg": "modules/plutonium/media/icon/skills.svg",
-			"featureType": [
-				"DZC:CS",
-                "DZC:CS:PS"
-            ],
-            "entries": [
-                "At the start of your turn, if you have less than your maximum hit points, you can take a deep breath to regain your strength. When you do so, you gain a number of temporary hit points equal to 1d10 + your Constitution modifier (minimum of 1).",
-                "Once you use this feature, you can't use it again until you finish a short or long rest."
             ],
             "foundrySystem": {
                 "effect": [
@@ -1311,6 +1296,21 @@
                     }
                 ]
             }
+        },
+
+		{
+            "name": "Durability",
+            "source": "DZC:ANA:F",
+            "page": 3,
+            "foundryImg": "modules/plutonium/media/icon/skills.svg",
+			"featureType": [
+				"DZC:CS",
+                "DZC:CS:PS"
+            ],
+            "entries": [
+                "At the start of your turn, if you have less than your maximum hit points, you can take a deep breath to regain your strength. When you do so, you gain a number of temporary hit points equal to 1d10 + your Constitution modifier (minimum of 1).",
+                "Once you use this feature, you can't use it again until you finish a short or long rest."
+            ],
         },
 
 		{
