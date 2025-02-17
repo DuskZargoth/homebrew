@@ -1311,6 +1311,48 @@
                 "At the start of your turn, if you have less than your maximum hit points, you can take a deep breath to regain your strength. When you do so, you gain a number of temporary hit points equal to 1d10 + your Constitution modifier (minimum of 1).",
                 "Once you use this feature, you can't use it again until you finish a short or long rest."
             ],
+            "foundrySystem": {
+                "activities": {
+                    "type": "heal",
+                    "activation": {
+                        "type": "turnStart",
+                        "condition": "At the start of your turn, if you have less than your maximum hit points."
+                    },
+                    "consumption": {
+                        "targets": [
+                            {
+                                "type": "itemUses",
+                                "value": "1"
+                            }
+                        ]
+                    },
+                    "uses": {
+                        "recovery": [
+                            {
+                                "period": "sr",
+                                "type": "recoveryAll"
+                            }
+                        ],
+                        "max": "1"
+                    },
+                    "range": {
+                        "units": "self"
+                    },
+                    "target": {
+                        "affects": {
+                            "type": "self"
+                        }
+                    },
+                    "healing": {
+                        "number": "1",
+                        "denomination": "10",
+                        "types": [
+                            "temphp"
+                        ],
+                        "bonus": "@abilities.con.mod"
+                    }
+                }
+            }
         },
 
 		{
