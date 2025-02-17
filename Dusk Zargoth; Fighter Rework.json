@@ -1285,15 +1285,30 @@
                 "Once you use this feature, you can't use it again until you finish a short or long rest."
             ],
             "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "At the start of your turn, if you have less than your maximum hit points",
-                "activation.cost": 1,
-                "actionType": "healing",
-                "damage.parts": [
-                    [
-                        "1d10 + @abilities.con.mod",
-                        "temphp"
-                    ]
+                "effect": [
+                    {
+                        "name": "Durability",
+                        "img": "systems/dnd5e/icons/svg/items/feature.svg",
+                        "type": "base",
+                        "changes": [
+                            {
+                                "key": "system.traits.dm.amount.bludgeoning",
+                                "mode": 2,
+                                "value": "-3"
+                            },
+                            {
+                                "key": "system.traits.dm.amount.piercing",
+                                "mode": 2,
+                                "value": "-3"
+                            },
+                            {
+                                "key": "system.traits.dm.amount.slashing",
+                                "mode": 2,
+                                "value": "-3"
+                            }
+                        ],
+                        "transfer": "true"
+                    }
                 ]
             }
         },
