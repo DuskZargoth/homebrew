@@ -1005,15 +1005,43 @@
                 "You can use this technique a number of times equal to your proficiency bonus. You regain all expended uses after you finish a short or long rest."
             ],
             "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you hit a creature with a weapon attack that deals bludgeoning damage",
-                "activation.cost": 1,
-                "uses.per": "sr",
-				"uses.max": "@prof",
-                "uses.value": 1,
-                "actionType": "save",
-                "save.ability": "str",
-                "save.scaling": "str"
+                "activities": {
+                    "type": "save",
+                    "activation": {
+                        "type": "special",
+                        "condition": "When you hit a creature with a weapon attack that deals bludgeoning damage"
+                    }
+                },
+                "consumption": {
+                    "targets": [
+                        {
+                            "type": "activityUses",
+                            "value": "1"
+                        }
+                    ]
+                },
+                "uses": {
+                    "recovery": [
+                        {
+                            "period": "sr",
+                            "type": "recoveryAll"
+                        }
+                    ],
+                    "max": "3"
+                },
+                "range": {
+                    "value": "special"
+                },
+                "affects": {
+                    "count": "1",
+                    "type": "creature"
+                },
+                "save": {
+                    "ability": "str",
+                    "dc": {
+                        "calculation": "str"
+                    }
+                }
             }
         },
 
@@ -1030,12 +1058,37 @@
                 "You can use this technique a number of times equal to your proficiency bonus. You regain all expended uses after you finish a short or long rest."
             ],
             "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you hit a creature with a weapon attack that deals piercing damage",
-                "activation.cost": 1,
-                "uses.per": "sr",
-				"uses.max": "@prof",
-                "uses.value": 1
+                "activities": {
+                    "type": "use",
+                    "activation": {
+                        "type": "special",
+                        "condition": "When you hit a creature with a weapon attack that deals piercing damage"
+                    }
+                },
+                "consumption": {
+                    "targets": [
+                        {
+                            "type": "activityUses",
+                            "value": "1"
+                        }
+                    ]
+                },
+                "uses": {
+                    "recovery": [
+                        {
+                            "period": "sr",
+                            "type": "recoveryAll"
+                        }
+                    ],
+                    "max": "3"
+                },
+                "range": {
+                    "value": "special"
+                },
+                "affects": {
+                    "count": "1",
+                    "type": "creature"
+                }
             }
         },
 
@@ -1052,19 +1105,41 @@
                 "You can use this technique a number of times equal to your proficiency bonus. You regain all expended uses after you finish a short or long rest."
             ],
             "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you hit a creature with a weapon attack that deals slashing damage",
-                "activation.cost": 1,
-                "uses.per": "sr",
-				"uses.max": "@prof",
-                "uses.value": 1,
-                "actionType": "save",
-                "damage.parts": [
-                    [
-                        "1d(2 + (ceil(@classes.fighter-rework.levels / 4) * 2))",
-                        "slashing"
+                "activities": {
+                    "type": "use",
+                    "activation": {
+                        "type": "special",
+                        "condition": "When you hit a creature with a weapon attack that deals slashing damage"
+                    }
+                },
+                "consumption": {
+                    "targets": [
+                        {
+                            "type": "activityUses",
+                            "value": "1"
+                        }
                     ]
-                ]
+                },
+                "uses": {
+                    "recovery": [
+                        {
+                            "period": "sr",
+                            "type": "recoveryAll"
+                        }
+                    ],
+                    "max": "3"
+                },
+                "range": {
+                    "value": "special"
+                },
+                "affects": {
+                    "count": "1",
+                    "type": "creature"
+                },
+                "roll": {
+                    "formula": "1d(2 + (ceil(@details.level / 4) * 2))",
+                    "name": "Slashing damage"
+                }
             }
         },
 
@@ -1101,18 +1176,7 @@
                     "type": "refOptionalfeature",
                     "optionalfeature": "Crushing Blow|DZC:ANA:F"
                 }
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you hit a creature with a weapon attack that deals bludgeoning damage",
-                "activation.cost": 1,
-                "uses.per": "sr",
-				"uses.max": "@prof",
-                "uses.value": 1,
-                "actionType": "save",
-                "save.ability": "str",
-                "save.scaling": "str"
-            }
+            ]
         },
 
 		{
@@ -1130,15 +1194,7 @@
                     "type": "refOptionalfeature",
                     "optionalfeature": "Poker|DZC:ANA:F"
                 }
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you hit a creature with a weapon attack that deals piercing damage",
-                "activation.cost": 1,
-                "uses.per": "sr",
-				"uses.max": "@prof",
-                "uses.value": 1
-            }
+            ]
         },
 
 		{
@@ -1156,22 +1212,7 @@
                     "type": "refOptionalfeature",
                     "optionalfeature": "Bleeding|DZC:ANA:F"
                 }
-            ],
-            "foundrySystem": {
-                "activation.type": "special",
-                "activation.condition": "When you hit a creature with a weapon attack that deals slashing damage",
-                "activation.cost": 1,
-                "uses.per": "sr",
-				"uses.max": "@prof",
-                "uses.value": 1,
-                "actionType": "save",
-                "damage.parts": [
-                    [
-                        "1d(2 + (ceil(@classes.fighter-rework.levels / 4) * 2))",
-                        "slashing"
-                    ]
-                ]
-            }
+            ]
         },
 
 		{
